@@ -1,0 +1,39 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	font-family: $font;
+	font-size: 16px;
+	background-color: #F0F5F5;
+
+	@media screen and (min-width: $bp-md) {
+		font-size: 20px;
+	}
+}
+
+a {
+	color: $color-link;
+	transition: $hover-transition;
+
+	&:visited {
+		color: $color-link;
+	}
+
+	&:hover,
+	&:active {
+		color: $color-link-hover;
+	}
+}
+
+.container {
+	max-width: 975px;
+	margin: 0 auto;
+	padding: 0 1em;
+}

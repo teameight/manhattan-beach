@@ -1,0 +1,12 @@
+.site-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 2em 0;
+}
+
+.site-title {
+	font-size: 1.4em;
+	margin: 0;
+	font-family: $title-font;
+}

@@ -1,0 +1,271 @@
+/* UTILITIES */
+@font-face {
+  font-family: 'Cera';
+  src: url("fonts/CeraPRO-Regular.eot");
+  src: url("fonts/CeraPRO-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/CeraPRO-Regular.woff") format("woff"), url("fonts/CeraPRO-Regular.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Cera';
+  src: url("fonts/CeraPRO-RegularItalic.eot");
+  src: url("fonts/CeraPRO-RegularItalic.eot?#iefix") format("embedded-opentype"), url("fonts/CeraPRO-RegularItalic.woff") format("woff"), url("fonts/CeraPRO-RegularItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Cera';
+  src: url("fonts/CeraPRO-Medium.eot");
+  src: url("fonts/CeraPRO-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/CeraPRO-Medium.woff") format("woff"), url("fonts/CeraPRO-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Cera';
+  src: url("fonts/CeraPRO-MediumItalic.eot");
+  src: url("fonts/CeraPRO-MediumItalic.eot?#iefix") format("embedded-opentype"), url("fonts/CeraPRO-MediumItalic.woff") format("woff"), url("fonts/CeraPRO-MediumItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Cera';
+  src: url("fonts/CeraPRO-Bold.eot");
+  src: url("fonts/CeraPRO-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/CeraPRO-Bold.woff") format("woff"), url("fonts/CeraPRO-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Cera';
+  src: url("fonts/CeraPRO-BoldItalic.eot");
+  src: url("fonts/CeraPRO-BoldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/CeraPRO-BoldItalic.woff") format("woff"), url("fonts/CeraPRO-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+
+/* COLORS */
+/* TYPOGRAPHY */
+/* TRANSITIONS */
+/* MEDIA QUERIES */
+/* BASE STYLES */
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit; }
+
+body {
+  font-family: "ff-tisa-web-pro", serif;
+  font-size: 16px;
+  background-color: #F0F5F5; }
+  @media screen and (min-width: 740px) {
+    body {
+      font-size: 20px; } }
+
+a {
+  color: #197380;
+  transition: all 0.2s ease-out; }
+  a:visited {
+    color: #197380; }
+  a:hover, a:active {
+    color: #B1A0A0; }
+
+.container {
+  max-width: 975px;
+  margin: 0 auto;
+  padding: 0 1em; }
+
+h1,
+.h1 {
+  font-family: "Cera", san-serif;
+  color: #14383D;
+  font-size: 2.3em;
+  font-weight: normal;
+  line-height: 1.15em; }
+
+h2,
+.h2 {
+  font-family: "Cera", san-serif;
+  color: #14383D;
+  font-size: 1.8em;
+  font-weight: normal; }
+
+h3,
+.h3 {
+  font-family: "Cera", san-serif;
+  color: #14383D;
+  font-size: 1em;
+  font-weight: bold; }
+
+h4,
+.h4 {
+  font-family: "Cera", san-serif;
+  color: #14383D;
+  font-size: 1em;
+  font-weight: normal; }
+
+.site-title a {
+  text-decoration: none; }
+
+.entry-title {
+  margin-top: 0;
+  margin-bottom: 0.65em; }
+
+/* COMPONENTS */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em 0; }
+
+.site-title {
+  font-size: 1.4em;
+  margin: 0;
+  font-family: "Cera", san-serif; }
+
+.main-navigation.toggled .nav-menu {
+  display: block; }
+
+.menu-toggle {
+  display: inline; }
+  @media screen and (min-width: 855px) {
+    .menu-toggle {
+      display: none; } }
+
+.nav-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: none; }
+  @media screen and (min-width: 855px) {
+    .nav-menu {
+      display: block; } }
+
+.menu-item {
+  display: inline-block;
+  font-family: "Cera", san-serif;
+  text-transform: uppercase; }
+  .menu-item a {
+    padding: 10px 20px;
+    font-size: 0.8em;
+    letter-spacing: 1.18px;
+    transition: all 0.2s ease-out;
+    text-decoration: none; }
+    .menu-item a:hover {
+      color: #197380;
+      background-color: #E8E1E1; }
+
+.menu-item-has-children {
+  position: relative;
+  cursor: pointer; }
+  .menu-item-has-children.active {
+    transition: all 0.2s ease-out; }
+    .menu-item-has-children.active > a {
+      background-color: #E8E1E1; }
+    .menu-item-has-children.active:after {
+      top: 130%;
+      left: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-top-color: #6C8094;
+      border-width: 10px;
+      margin-left: -10px; }
+
+.sub-menu {
+  background-color: #fff;
+  padding: 1.2em 0;
+  position: relative;
+  width: 100%;
+  margin: 0; }
+  @media screen and (min-width: 855px) {
+    .sub-menu {
+      display: none;
+      position: absolute;
+      width: 342px;
+      border: 1px solid #197380;
+      left: -2.15em;
+      top: 2.6em; } }
+  .sub-menu .menu-item {
+    text-transform: none;
+    display: block;
+    text-align: center;
+    line-height: 2.15em; }
+    .sub-menu .menu-item a {
+      display: block;
+      padding: 0; }
+
+.wp-caption-text {
+  font-family: "Cera", san-serif; }
+
+.btn,
+a.btn {
+  background-color: #197380;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Cera", san-serif;
+  padding: 1.25em 2.4em;
+  text-transform: uppercase;
+  transition: all 0.2s ease-out;
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none; }
+  .btn:hover,
+  a.btn:hover {
+    background-color: #B1A0A0; }
+
+.cta-link {
+  font-family: "Cera", san-serif; }
+
+/* TEMPLATE STYLES */
+.single-page {
+  max-width: 750px;
+  margin: 0 auto; }
+
+.single-book {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; }
+  @media screen and (min-width: 740px) {
+    .single-book {
+      flex-direction: row; } }
+  @media screen and (min-width: 740px) {
+    .single-book .site-main {
+      order: 2;
+      width: 66.67%; } }
+  .single-book .book-sidebar {
+    font-family: "Cera", san-serif; }
+    @media screen and (min-width: 740px) {
+      .single-book .book-sidebar {
+        order: 1;
+        width: 22%;
+        margin-top: 5px; } }
+  .single-book .book-sidebar-title {
+    text-transform: uppercase; }
+  .single-book .book-sidebar-img {
+    width: 100%;
+    height: auto; }
+  .single-book .book-buy-link {
+    font-weight: 200;
+    display: block;
+    line-height: 1.75em; }
+  .single-book .book-reviews,
+  .single-book .book-interviews {
+    margin-bottom: 4em; }
+  .single-book .book-review,
+  .single-book .book-interview {
+    border-bottom: 1px solid #6C8094;
+    margin-bottom: 2.15em;
+    padding-bottom: 2.15em; }
+    .single-book .book-review:last-of-type,
+    .single-book .book-interview:last-of-type {
+      border-bottom: none; }
+  .single-book .book-review-meta,
+  .single-book .book-review-author,
+  .single-book .book-interview-meta,
+  .single-book .book-interview-author {
+    font-family: "Cera", san-serif; }

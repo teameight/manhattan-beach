@@ -1,0 +1,31 @@
+/* COLORS */
+$blue: #197380;
+$dark-blue: #14383D;
+
+$blue-grey: #6C8094;
+
+$light-purple: #E8E1E1;
+$purple: #B1A0A0;
+
+$color-body: $dark-blue;
+$color-heading: $dark-blue;
+$color-link: $blue;
+$color-link-hover: $purple;
+$color-link-hover-bg: $light-purple;
+
+$color-button-primary: $blue;
+$color-button-primary-hover: $purple;
+
+/* TYPOGRAPHY */
+$font: "ff-tisa-web-pro", serif;
+$title-font: "Cera", san-serif;
+
+/* TRANSITIONS */
+$transition: all 0.2s ease-out;
+$hover-transition: all 0.2s ease-out;
+
+/* MEDIA QUERIES */
+$bp-sm: 320px;
+$bp-md: 740px;
+$bp-lg: 960px;
+$bp-xl: 1200px;

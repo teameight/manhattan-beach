@@ -1,0 +1,42 @@
+
+h1,
+.h1 {
+	font-family: $title-font;
+	color: $color-heading;
+	font-size: 2.3em;
+	font-weight: normal;
+	line-height: 1.15em;
+}
+
+h2,
+.h2 {
+	font-family: $title-font;
+	color: $color-heading;
+	font-size: 1.8em;
+	font-weight: normal;
+}
+
+h3,
+.h3 {
+	font-family: $title-font;
+	color: $color-heading;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+h4,
+.h4 {
+	font-family: $title-font;
+	color: $color-heading;
+	font-size: 1em;
+	font-weight: normal;
+}
+
+.site-title a {
+	text-decoration: none;
+}
+
+.entry-title {
+	margin-top: 0;
+	margin-bottom: 0.65em;
+}

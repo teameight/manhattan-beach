@@ -1,0 +1,21 @@
+.btn,
+a.btn {
+	background-color: $color-button-primary;
+	color: #fff;
+	cursor: pointer;
+	font-family: $title-font;
+	padding: 1.25em 2.4em;
+	text-transform: uppercase;
+	transition: $hover-transition;
+	display: inline-block;
+	line-height: 1;
+	text-decoration: none;
+
+	&:hover {
+		background-color: $color-button-primary-hover;
+	}
+}
+
+.cta-link {
+	font-family: $title-font;
+}

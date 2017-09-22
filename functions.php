@@ -119,6 +119,8 @@ add_action( 'widgets_init', 'manhattan_beach_widgets_init' );
 function manhattan_beach_scripts() {
 	wp_enqueue_style( 'manhattan-beach-style', get_stylesheet_uri() );
 
+	wp_enqueue_style( 'manhattan-beach-style-custom', get_template_directory_uri() . '/css/style.css' );
+
 	wp_enqueue_script( 'manhattan-beach-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'manhattan-beach-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
@@ -126,6 +128,10 @@ function manhattan_beach_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	wp_enqueue_script( 'jquery' );
+
+	wp_enqueue_script( 'mb_scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery') );
 }
 add_action( 'wp_enqueue_scripts', 'manhattan_beach_scripts' );
 
@@ -155,3 +161,119 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+
+
+add_action( 'init', 'jegan_book_init' );
+/**
+ * Register a book post type.
+ *
+ * @link http://codex.wordpress.org/Function_Reference/register_post_type
+ */
+
+function jegan_book_init() {
+
+	add_theme_support( 'post-thumbnails' );
+
+	$labels = array(
+		'name'              => _x( 'Books', 'taxonomy general name' ),
+		'singular_name'     => _x( 'Book', 'taxonomy singular name' ),
+		'search_items'      => __( 'Search Books' ),
+		'all_items'         => __( 'All Books' ),
+		'parent_item'       => __( 'Parent Book' ),
+		'parent_item_colon' => __( 'Parent Book:' ),
+		'edit_item'         => __( 'Edit Book' ),
+		'update_item'       => __( 'Update Book' ),
+		'add_new_item'      => __( 'Add New Book' ),
+		'new_item_name'     => __( 'New Book' ),
+		'menu_name'         => __( 'Book' ),
+	);
+
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => 'Books',
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'book' )
+	);
+	register_taxonomy( 'book', array( 'books', 'reviews', 'interviews', 'post' ), $args );
+
+/**/
+
+// Creates Slideshow post type
+	$args = array(
+		'label'             => 'Slideshows',
+		'public'			 => true,
+		'rewrite'            => array( 'slug' => 'slideshow' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'menu_icon'			=> 'dashicons-images-alt',
+		'hierarchical'       => false,
+		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'comments' )
+	);
+
+	register_post_type( 'slideshows', $args );
+
+// Creates Reviews post type
+	$args = array(
+		'label'             => 'Reviews',
+		'public'			 => true,
+		'taxonomies'         => array('book'),
+		'rewrite'            => array( 'slug' => 'reviews' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'menu_icon'			=> 'dashicons-welcome-write-blog',
+		'hierarchical'       => false,
+		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'comments' )
+	);
+
+	register_post_type( 'reviews', $args );
+
+// Creates Interviews post type
+	$args = array(
+		'label'             => 'Interviews',
+		'public'			 => true,
+		'taxonomies'         => array('book'),
+		'rewrite'            => array( 'slug' => 'interviews' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'menu_icon'			=> 'dashicons-microphone',
+		'hierarchical'       => false,
+		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'comments' )
+	);
+	register_post_type( 'interviews', $args );
+
+	$labels = array(
+		'name'               => _x( 'Books', 'post type general name', 'your-plugin-textdomain' ),
+		'singular_name'      => _x( 'Book', 'post type singular name', 'your-plugin-textdomain' ),
+		'menu_name'          => _x( 'Books', 'admin menu', 'your-plugin-textdomain' ),
+		'name_admin_bar'     => _x( 'Book', 'add new on admin bar', 'your-plugin-textdomain' ),
+		'add_new'            => _x( 'Add New', 'book', 'your-plugin-textdomain' ),
+		'add_new_item'       => __( 'Add New Book', 'your-plugin-textdomain' ),
+		'new_item'           => __( 'New Book', 'your-plugin-textdomain' ),
+		'edit_item'          => __( 'Edit Book', 'your-plugin-textdomain' ),
+		'view_item'          => __( 'View Book', 'your-plugin-textdomain' ),
+		'all_items'          => __( 'All Books', 'your-plugin-textdomain' ),
+		'search_items'       => __( 'Search Books', 'your-plugin-textdomain' ),
+		'parent_item_colon'  => __( 'Parent Books:', 'your-plugin-textdomain' ),
+		'not_found'          => __( 'No books found.', 'your-plugin-textdomain' ),
+		'not_found_in_trash' => __( 'No books found in Trash.', 'your-plugin-textdomain' )
+	);
+
+	$args = array(
+		'labels'             => $labels,
+		'public'			 => true,
+		'taxonomies'         => array('book'),
+		'rewrite'            => array( 'slug' => 'books' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_icon'			=> 'dashicons-book-alt',
+		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'comments' )
+	);
+
+	register_post_type( 'books', $args );
+
+}
+

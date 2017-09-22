@@ -40,15 +40,7 @@
 				),
 				get_the_title()
 			) );
-
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'manhattan-beach' ),
-				'after'  => '</div>',
-			) );
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php manhattan_beach_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -1,0 +1,65 @@
+.single-book {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+
+	@media screen and (min-width: $bp-md) {
+		flex-direction: row;
+	}
+
+	.site-main {
+		@media screen and (min-width: $bp-md) {
+			order: 2;
+			width: 66.67%;
+		}
+	}
+
+	.book-sidebar {
+		font-family: $title-font;
+
+		@media screen and (min-width: $bp-md) {
+			order: 1;
+			width: 22%;
+			margin-top: 5px;
+		}
+
+	}
+
+	.book-sidebar-title {
+		text-transform: uppercase;
+	}
+
+	.book-sidebar-img {
+		width: 100%;
+		height: auto;
+	}
+
+	.book-buy-link {
+		font-weight: 200;
+		display: block;
+		line-height: 1.75em;
+	}
+
+	.book-reviews,
+	.book-interviews {
+		margin-bottom: 4em;
+	}
+
+	.book-review,
+	.book-interview {
+		border-bottom: 1px solid $blue-grey;
+		margin-bottom: 2.15em;
+		padding-bottom: 2.15em;
+
+		&:last-of-type {
+			border-bottom: none;
+		}
+	}
+
+	.book-review-meta,
+	.book-review-author,
+	.book-interview-meta,
+	.book-interview-author {
+		font-family: $title-font;
+	}
+}
