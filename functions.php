@@ -262,18 +262,48 @@ function jegan_book_init() {
 	);
 
 	$args = array(
-		'labels'             => $labels,
-		'public'			 => true,
-		'taxonomies'         => array('book'),
-		'rewrite'            => array( 'slug' => 'books' ),
-		'capability_type'    => 'post',
-		'has_archive'        => true,
-		'hierarchical'       => false,
-		'menu_icon'			=> 'dashicons-book-alt',
-		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'comments' )
+		'labels'          	=> $labels,
+		'public'			 			=> true,
+		'taxonomies'      	=> array('book'),
+		'rewrite'         	=> array( 'slug' => 'books' ),
+		'capability_type' 	=> 'post',
+		'has_archive'     	=> true,
+		'hierarchical'   		=> false,
+		'menu_icon'					=> 'dashicons-book-alt',
+		'supports'        	=> array( 'title', 'editor', 'author', 'thumbnail', 'comments' )
 	);
 
 	register_post_type( 'books', $args );
+
+	$labels = array(
+		'name'               => _x( 'Non-Fiction', 'post type general name', 'your-plugin-textdomain' ),
+		'singular_name'      => _x( 'Non-Fiction', 'post type singular name', 'your-plugin-textdomain' ),
+		'menu_name'          => _x( 'Non-Fiction', 'admin menu', 'your-plugin-textdomain' ),
+		'name_admin_bar'     => _x( 'Non-Fiction', 'add new on admin bar', 'your-plugin-textdomain' ),
+		'add_new'            => _x( 'Add New', 'book', 'your-plugin-textdomain' ),
+		'add_new_item'       => __( 'Add New Non-Fiction', 'your-plugin-textdomain' ),
+		'new_item'           => __( 'New Non-Fiction', 'your-plugin-textdomain' ),
+		'edit_item'          => __( 'Edit Non-Fiction', 'your-plugin-textdomain' ),
+		'view_item'          => __( 'View Non-Fiction', 'your-plugin-textdomain' ),
+		'all_items'          => __( 'All Non-Fiction', 'your-plugin-textdomain' ),
+		'search_items'       => __( 'Search Non-Fiction', 'your-plugin-textdomain' ),
+		'parent_item_colon'  => __( 'Parent Non-Fiction:', 'your-plugin-textdomain' ),
+		'not_found'          => __( 'No non-fiction found.', 'your-plugin-textdomain' ),
+		'not_found_in_trash' => __( 'No non-fiction found in Trash.', 'your-plugin-textdomain' )
+	);
+
+	$args = array(
+		'labels'          	=> $labels,
+		'public'			 			=> true,
+		'rewrite'         	=> array( 'slug' => 'non-fiction' ),
+		'capability_type' 	=> 'post',
+		'has_archive'     	=> true,
+		'hierarchical'   		=> false,
+		'menu_icon'					=> 'dashicons-welcome-write-blog',
+		'supports'        	=> array( 'title', 'editor', 'author', 'thumbnail' )
+	);
+
+	register_post_type( 'non-fiction', $args );
 
 }
 
