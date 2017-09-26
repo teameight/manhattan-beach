@@ -1,0 +1,44 @@
+.news-heading {
+	margin-bottom: .15em;
+}
+
+.archive-description p {
+	margin: 0;
+	font-family: $title-font;
+	line-height: 1.5;
+}
+
+.news-post {
+	font-family: $title-font;
+	border-bottom: 1px solid $blue-grey;
+	margin-bottom: 2.4em;
+	padding-bottom: 1em;
+
+	&:last-of-type {
+		border: none;
+	}
+
+	p {
+		font-weight: lighter;
+	}
+}
+
+.news-post-date {
+	background-color: rgba($yellow-grey, .5);
+	padding: .25em .5em;
+	display: inline-block;
+	margin-bottom: 1.25em;
+}
+
+.calendar-event {
+	margin-bottom: 1em;
+}
+
+.calendar-event-date {
+	display: block;
+}
+
+.calendar-event-link {
+	display: block;
+	font-weight: lighter;
+}

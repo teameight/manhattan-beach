@@ -9,14 +9,17 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area single-column">
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-
+		ITNERVIEWSDFS
 		<?php
 		if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="extra-margin-heading">Non-Fiction</h1>
+				<?php
+					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_description( '<div class="archive-description">', '</div>' );
+				?>
 			</header><!-- .page-header -->
 
 			<?php
@@ -28,7 +31,7 @@ get_header(); ?>
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content', 'non-fiction' );
+				get_template_part( 'template-parts/content', get_post_format() );
 
 			endwhile;
 

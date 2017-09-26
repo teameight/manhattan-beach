@@ -12,7 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('non-fiction-item'); ?>>
 
 	<div class="entry-content">
-		<a class="cta-link" href=""><?php the_title(); ?></a>
+		<a class="cta-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 		<span class="non-fiction-item-pub"><?php the_field('publication'); ?></span>
 		<span class="non-fiction-item-date"><?php the_field('published_date'); ?></span>
 	</div><!-- .entry-content -->

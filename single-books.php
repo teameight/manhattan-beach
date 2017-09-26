@@ -9,13 +9,16 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area single-book">
+	<div id="primary" class="content-area two-column">
 		<main id="main" class="site-main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<section class="book-overview">
+				<header class="book-header">
 					<h1 class="entry-title"><?php the_title(); ?></h1>
+				</header>
+
+				<section class="book-overview">
 					<?php the_content(); ?>
 				</section>
 
@@ -25,36 +28,25 @@ get_header(); ?>
 
 			<section class="book-reviews">
 				<h2>Reviews</h2>
-				<article class="book-review">
-					<div class="book-review-meta">
-						<strong class="book-review-publication">Review Publication Name</strong>
-						<span class="book-review-date">January, 2000</span>
-					</div>
-					<p class="book-review-excerpt">
-						“When Halloween comes around this year, forgo the tired old horror movies and curl up with National Book Award nominee Jennifer Egan’s new novel The Keep…Part gothic romance, part ghost story, and peppered with Egan’s startling insights into the role of communication and loneliness in contemporary life, this is one brainy page-turner that will have you leaving the lights on at night.”
-					</p>
-					<span class="book-review-author">-Review Author</span>
-				</article>
-				<article class="book-review">
-					<div class="book-review-meta">
-						<strong class="book-review-publication">Review Publication Name</strong>
-						<span class="book-review-date">January, 2000</span>
-					</div>
-					<p class="book-review-excerpt">
-						“When Halloween comes around this year, forgo the tired old horror movies and curl up with National Book Award nominee Jennifer Egan’s new novel The Keep…Part gothic romance, part ghost story, and peppered with Egan’s startling insights into the role of communication and loneliness in contemporary life, this is one brainy page-turner that will have you leaving the lights on at night.”
-					</p>
-					<span class="book-review-author">-Review Author</span>
-				</article>
-				<article class="book-review">
-					<div class="book-review-meta">
-						<strong class="book-review-publication">Review Publication Name</strong>
-						<span class="book-review-date">January, 2000</span>
-					</div>
-					<p class="book-review-excerpt">
-						“When Halloween comes around this year, forgo the tired old horror movies and curl up with National Book Award nominee Jennifer Egan’s new novel The Keep…Part gothic romance, part ghost story, and peppered with Egan’s startling insights into the role of communication and loneliness in contemporary life, this is one brainy page-turner that will have you leaving the lights on at night.”
-					</p>
-					<span class="book-review-author">-Review Author</span>
-				</article>
+				<?php
+
+					$args = array(
+						'post_type' => 'reviews',
+						'posts_per_page' => 3
+					);
+					$query = new WP_Query($args);
+
+				if ( $query->have_posts() ) {
+					while ( $query->have_posts() ) : $query->the_post(); ?>
+						<article class="book-review">
+							<div class="book-review-content"><?php the_content(); ?></div>
+						</article>
+					<?php endwhile;
+						wp_reset_postdata();
+				} else {
+					echo 'no reviews yet';
+				}
+				?>
 			<a href="/" class="btn">See all reviews</a>
 			</section>
 			<section class="book-interviews">
@@ -94,9 +86,9 @@ get_header(); ?>
 
 		</main><!-- #main -->
 
-		<aside class="book-sidebar">
+		<aside class="sidebar">
 			<?php the_post_thumbnail('post-thumbnail', ['class' => 'book-sidebar-img']); ?>
-			<h3 class="book-sidebar-title">Buy the book</h3>
+			<h3 class="sidebar-title">Buy the book</h3>
 			<a class="book-buy-link" href="http://www.amazon.com/Visit-Goon-Squad-Jennifer-Egan/dp/0307592839/ref=ntt_at_ep_dpi_3">Amazon</a>
 			<a class="book-buy-link" href="http://search.barnesandnoble.com/A-Visit-from-the-Goon-Squad/Jennifer-Egan/e/9780307592835/?itm=5&amp;USRI=jennifer+egan">Barnes &amp; Noble</a>
 			<a class="book-buy-link" href="http://www.indiebound.org/book/9780307592835">Indiebound</a>

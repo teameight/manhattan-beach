@@ -186,18 +186,67 @@ function jegan_book_init() {
 		'update_item'       => __( 'Update Book' ),
 		'add_new_item'      => __( 'Add New Book' ),
 		'new_item_name'     => __( 'New Book' ),
-		'menu_name'         => __( 'Book' ),
+		'menu_name'         => __( 'Books' ),
 	);
 
 	$args = array(
 		'hierarchical'      => true,
-		'labels'            => 'Books',
+		'labels'            => $labels,
 		'show_ui'           => true,
 		'show_admin_column' => true,
 		'query_var'         => true,
 		'rewrite'           => array( 'slug' => 'book' )
 	);
-	register_taxonomy( 'book', array( 'books', 'reviews', 'interviews', 'post' ), $args );
+	register_taxonomy( 'book', array( 'books', 'interviews', 'post' ), $args );
+
+
+	$labels = array(
+		'name'              => _x( 'Reviewed Books', 'taxonomy general name' ),
+		'singular_name'     => _x( 'Reviewed Book', 'taxonomy singular name' ),
+		'search_items'      => __( 'Search Reviewed Books' ),
+		'all_items'         => __( 'All Reviewed Books' ),
+		'parent_item'       => __( 'Parent Reviewed Book' ),
+		'parent_item_colon' => __( 'Parent Reviewed Book:' ),
+		'edit_item'         => __( 'Edit Reviewed Book' ),
+		'update_item'       => __( 'Update Reviewed Book' ),
+		'add_new_item'      => __( 'Add New Reviewed Book' ),
+		'new_item_name'     => __( 'New Reviewed Book' ),
+		'menu_name'         => __( 'Reviewed Books' ),
+	);
+
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'reviewed-book' )
+	);
+	register_taxonomy( 'reviewed-book', array( 'reviews' ), $args );
+
+	$labels = array(
+		'name'              => _x( 'Interviewed Books', 'taxonomy general name' ),
+		'singular_name'     => _x( 'Interviewed Book', 'taxonomy singular name' ),
+		'search_items'      => __( 'Search Interviewed Books' ),
+		'all_items'         => __( 'All Interviewed Books' ),
+		'parent_item'       => __( 'Parent Interviewed Book' ),
+		'parent_item_colon' => __( 'Parent Interviewed Book:' ),
+		'edit_item'         => __( 'Edit Interviewed Book' ),
+		'update_item'       => __( 'Update Interviewed Book' ),
+		'add_new_item'      => __( 'Add New Interviewed Book' ),
+		'new_item_name'     => __( 'New Interviewed Book' ),
+		'menu_name'         => __( 'Interviewed Books' ),
+	);
+
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'interviewed-book' )
+	);
+	register_taxonomy( 'interviewed-book', array( 'interviews' ), $args );
 
 /**/
 
@@ -220,9 +269,9 @@ function jegan_book_init() {
 		'label'             => 'Reviews',
 		'public'			 => true,
 		'taxonomies'         => array('book'),
-		'rewrite'            => array( 'slug' => 'reviews' ),
+		'rewrite'            => array( 'slug' => 'reviews/%book%' ),
 		'capability_type'    => 'post',
-		'has_archive'        => true,
+		'has_archive'        => 'reviews',
 		'menu_icon'			=> 'dashicons-welcome-write-blog',
 		'hierarchical'       => false,
 		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'comments' )
@@ -235,9 +284,9 @@ function jegan_book_init() {
 		'label'             => 'Interviews',
 		'public'			 => true,
 		'taxonomies'         => array('book'),
-		'rewrite'            => array( 'slug' => 'interviews' ),
+		'rewrite'            => array( 'slug' => 'interviews/%book%','with_front' => false ),
 		'capability_type'    => 'post',
-		'has_archive'        => true,
+		'has_archive'        => 'interviews',
 		'menu_icon'			=> 'dashicons-microphone',
 		'hierarchical'       => false,
 		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'comments' )
@@ -307,3 +356,14 @@ function jegan_book_init() {
 
 }
 
+// change the permalink for reviews and interviews
+function filter_post_type_link($link, $post)
+{
+    if ($post->post_type != 'reviews' || $post->post_type != 'interviews')
+        return $link;
+
+    if ($cats = get_the_terms($post->ID, 'book'))
+        $link = str_replace('%book%', array_pop($cats)->slug, $link);
+    return $link;
+}
+add_filter('post_type_link', 'filter_post_type_link', 10, 2);

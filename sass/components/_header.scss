@@ -2,11 +2,12 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 2em 0;
+	margin: 3.65em 0 7.5em;
 }
 
 .site-title {
 	font-size: 1.4em;
 	margin: 0;
 	font-family: $title-font;
+	font-weight: lighter;
 }

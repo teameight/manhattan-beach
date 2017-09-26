@@ -72,9 +72,36 @@ a {
     color: #B1A0A0; }
 
 .container {
-  max-width: 975px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 0 1em; }
+
+.single-column {
+  max-width: 750px;
+  margin: 0 auto 8em; }
+
+.two-column {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; }
+  @media screen and (min-width: 740px) {
+    .two-column {
+      flex-direction: row; } }
+  @media screen and (min-width: 740px) {
+    .two-column .site-main {
+      order: 2;
+      width: 66.67%; } }
+
+.sidebar {
+  font-family: "Cera", san-serif; }
+  @media screen and (min-width: 740px) {
+    .sidebar {
+      order: 1;
+      width: 22%;
+      margin-top: 5px; } }
+
+.sidebar-title {
+  text-transform: uppercase; }
 
 h1,
 .h1 {
@@ -96,7 +123,8 @@ h3,
   font-family: "Cera", san-serif;
   color: #14383D;
   font-size: 1em;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-top: 0; }
 
 h4,
 .h4 {
@@ -112,17 +140,21 @@ h4,
   margin-top: 0;
   margin-bottom: 0.65em; }
 
+.extra-margin-heading {
+  margin-bottom: 5rem; }
+
 /* COMPONENTS */
 .site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2em 0; }
+  margin: 3.65em 0 7.5em; }
 
 .site-title {
   font-size: 1.4em;
   margin: 0;
-  font-family: "Cera", san-serif; }
+  font-family: "Cera", san-serif;
+  font-weight: lighter; }
 
 .main-navigation.toggled .nav-menu {
   display: block; }
@@ -199,6 +231,12 @@ h4,
       display: block;
       padding: 0; }
 
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+  font-family: "Cera", san-serif; }
+
 .wp-caption-text {
   font-family: "Cera", san-serif; }
 
@@ -222,50 +260,82 @@ a.btn {
   font-family: "Cera", san-serif; }
 
 /* TEMPLATE STYLES */
-.single-page {
-  max-width: 750px;
+.book-overview {
+  font-size: 1.1em; }
+
+.book-sidebar-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1em; }
+
+.book-buy-link {
+  font-weight: 200;
+  display: block;
+  line-height: 1.75em; }
+
+.book-reviews,
+.book-interviews {
+  margin-bottom: 4em; }
+
+.book-review,
+.book-interview {
+  border-bottom: 1px solid #6C8094;
+  margin-bottom: 2.15em;
+  padding-bottom: 2.15em; }
+  .book-review:last-of-type,
+  .book-interview:last-of-type {
+    border-bottom: none; }
+
+.book-review-content p:first-of-type {
+  font-family: "Cera", san-serif; }
+
+.book-review-content a:last-child {
+  font-family: "Cera", san-serif; }
+
+.non-fiction-archive {
+  max-width: 720px;
   margin: 0 auto; }
 
-.single-book {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column; }
-  @media screen and (min-width: 740px) {
-    .single-book {
-      flex-direction: row; } }
-  @media screen and (min-width: 740px) {
-    .single-book .site-main {
-      order: 2;
-      width: 66.67%; } }
-  .single-book .book-sidebar {
-    font-family: "Cera", san-serif; }
-    @media screen and (min-width: 740px) {
-      .single-book .book-sidebar {
-        order: 1;
-        width: 22%;
-        margin-top: 5px; } }
-  .single-book .book-sidebar-title {
-    text-transform: uppercase; }
-  .single-book .book-sidebar-img {
-    width: 100%;
-    height: auto; }
-  .single-book .book-buy-link {
-    font-weight: 200;
-    display: block;
-    line-height: 1.75em; }
-  .single-book .book-reviews,
-  .single-book .book-interviews {
-    margin-bottom: 4em; }
-  .single-book .book-review,
-  .single-book .book-interview {
-    border-bottom: 1px solid #6C8094;
-    margin-bottom: 2.15em;
-    padding-bottom: 2.15em; }
-    .single-book .book-review:last-of-type,
-    .single-book .book-interview:last-of-type {
-      border-bottom: none; }
-  .single-book .book-review-meta,
-  .single-book .book-review-author,
-  .single-book .book-interview-meta,
-  .single-book .book-interview-author {
-    font-family: "Cera", san-serif; }
+.non-fiction-item {
+  padding-bottom: 2em;
+  border-bottom: 1px solid #6C8094; }
+
+.non-fiction-item-pub,
+.non-fiction-item-date {
+  display: block;
+  font-family: "Cera", san-serif;
+  font-weight: lighter; }
+
+.news-heading {
+  margin-bottom: .15em; }
+
+.archive-description p {
+  margin: 0;
+  font-family: "Cera", san-serif;
+  line-height: 1.5; }
+
+.news-post {
+  font-family: "Cera", san-serif;
+  border-bottom: 1px solid #6C8094;
+  margin-bottom: 2.4em;
+  padding-bottom: 1em; }
+  .news-post:last-of-type {
+    border: none; }
+  .news-post p {
+    font-weight: lighter; }
+
+.news-post-date {
+  background-color: rgba(229, 223, 211, 0.5);
+  padding: .25em .5em;
+  display: inline-block;
+  margin-bottom: 1.25em; }
+
+.calendar-event {
+  margin-bottom: 1em; }
+
+.calendar-event-date {
+  display: block; }
+
+.calendar-event-link {
+  display: block;
+  font-weight: lighter; }

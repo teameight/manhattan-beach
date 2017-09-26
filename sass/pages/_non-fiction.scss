@@ -1,5 +1,17 @@
 // Archive page styles
+.non-fiction-archive {
+	max-width: 720px;
+	margin: 0 auto;
+}
+
 .non-fiction-item {
 	padding-bottom: 2em;
 	border-bottom: 1px solid $blue-grey;
+}
+
+.non-fiction-item-pub,
+.non-fiction-item-date {
+	display: block;
+	font-family: $title-font;
+	font-weight: lighter;
 }
