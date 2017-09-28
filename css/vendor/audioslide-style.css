@@ -1,0 +1,136 @@
+.clr{
+	clear: both;
+	padding: 0;
+	height: 0;
+	margin: 0;
+}
+/* Component style */
+.slideshow {
+	text-align:center;
+}
+.audio-slideshow {
+	position: relative;
+	padding:0 0 40px;
+	margin: 0 0 40px;
+}
+.sshow-inwrap {
+	position: relative;
+	width: 672px;
+	height: 520px;
+	margin: 0 auto;
+}
+.pop-ups .audio-slideshow {
+	position: relative;
+	padding:0 0 40px;
+	margin: 20px 0;
+}
+.pop-ups .sshow-inwrap {
+	position: relative;
+	width:520px;
+	height:402px;
+	margin: 0 auto;
+}
+
+.audio-slideshow .audio-slides {
+	position: relative;
+}
+
+.audio-slideshow .audio-slides img {
+	display: block;
+	position: absolute;
+	top: 0; left: 0;
+	width:100%;
+	height:auto;
+}
+
+.audio-slideshow .audio-control-interface {
+	position: absolute;
+	bottom: -40px;
+	left: 0;
+	width: 100%;
+	height: 40px;
+	background: #ddd;
+	border-top: 1px solid #c0c0c0;
+}
+
+.audio-slideshow .audio-controls {
+	margin: 0 auto;
+	width: 200px;
+	position: relative;
+}
+
+.audio-slideshow .audio-controls > div {
+	display:inline-block;
+}
+.audio-slideshow .slidenumbers {
+	display:inline-block;
+	position:absolute;
+	left: 20px;
+	top: .5em;
+}
+.audio-slideshow .slidenumbers input.slideinput {
+	width: 2em;
+	padding:.25em;
+	text-align: right;
+}
+.audio-slideshow .play-pause-container a {
+	outline: none;
+	width: 40px;
+	height: 40px;
+	position: relative;
+}
+.audio-slideshow .control
+ {
+	background: transparent url(images/player-controls.png) no-repeat 0 0;
+	text-indent: -99999px;
+	width: 40px;
+	height: 40px;
+	display:inline-block;
+	overflow:hidden;
+	cursor:pointer;
+}
+.audio-slideshow .control:hover {
+	background-color:#fff; 
+}
+.audio-slideshow .control:active {
+	background-color:#ccc; 
+}
+
+.audio-slideshow .play-pause-container a.audio-pause {
+	background-position: 0 -40px;
+}
+.audio-slideshow .forth-slide {
+	background-position: 0 -80px;
+}
+.audio-slideshow .back-slide {
+	background-position: 0 -120px;
+}
+.audio-slideshow .full-screen {
+	background-position: 0 -160px;
+	position:absolute;
+	top: 0;
+	right: 0;
+}
+.audio-slideshow .audio-control-interface .time-container {
+	right: 3px;
+}
+.audio-slideshow .timeline {
+	position: absolute;
+	width: 100%;
+	background-color: #c0c0c0;
+	height: 4px;
+	bottom: -4px;
+	left: 0;
+}
+.slidebg {
+	z-index: -1;
+	width: 100%;
+	height:auto;
+}
+
+.audio-slideshow .timeline .playhead {
+	position: absolute;
+	height: 4px;
+	background: #999;
+	width: 0;
+}

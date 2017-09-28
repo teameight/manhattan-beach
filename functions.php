@@ -83,6 +83,28 @@ if ( ! function_exists( 'manhattan_beach_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'manhattan_beach_setup' );
 
+
+// Set up Slideshow
+
+include_once 'functions/slideshow-shortcode.php';
+
+function slideshow_register_scripts() {
+    wp_enqueue_style( 'audioslide-style', get_template_directory_uri() . '/css/vendor/audioslide-style.css?v=1.1', false );
+    wp_enqueue_script( 'jquery' );
+    wp_register_script( 'jplayer', get_template_directory_uri() . '/js/vendor/jplayer/jquery.jplayer.js', array('jquery'), true );
+    wp_register_script( 'audioslideshow', get_template_directory_uri() . '/js/vendor/jquery.audioslideshow.js?v=1.1', array('jquery', 'jplayer'), true );
+    wp_register_script( 'screenfull', get_template_directory_uri() . '/js/vendor/screenfull.min.js', array('jquery'), true );
+
+		if ( is_singular('excerpt') ) {
+	    wp_enqueue_script( 'jplayer' );
+	    wp_enqueue_script( 'audioslideshow' );
+	    wp_enqueue_script( 'screenfull' );
+	  }
+
+}
+
+add_action( 'wp_enqueue_scripts', 'slideshow_register_scripts' );
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -325,6 +347,36 @@ function jegan_book_init() {
 	register_post_type( 'books', $args );
 
 	$labels = array(
+		'name'               => _x( 'Excerpts', 'post type general name', 'your-plugin-textdomain' ),
+		'singular_name'      => _x( 'Excerpt', 'post type singular name', 'your-plugin-textdomain' ),
+		'menu_name'          => _x( 'Excerpts', 'admin menu', 'your-plugin-textdomain' ),
+		'name_admin_bar'     => _x( 'Excerpt', 'add new on admin bar', 'your-plugin-textdomain' ),
+		'add_new'            => _x( 'Add New', 'book', 'your-plugin-textdomain' ),
+		'add_new_item'       => __( 'Add New Excerpt', 'your-plugin-textdomain' ),
+		'new_item'           => __( 'New Excerpt', 'your-plugin-textdomain' ),
+		'edit_item'          => __( 'Edit Excerpt', 'your-plugin-textdomain' ),
+		'view_item'          => __( 'View Excerpt', 'your-plugin-textdomain' ),
+		'all_items'          => __( 'All Excerpts', 'your-plugin-textdomain' ),
+		'search_items'       => __( 'Search Excerpts', 'your-plugin-textdomain' ),
+		'parent_item_colon'  => __( 'Parent Excerpts:', 'your-plugin-textdomain' ),
+		'not_found'          => __( 'No excerpts found.', 'your-plugin-textdomain' ),
+		'not_found_in_trash' => __( 'No excerpts found in Trash.', 'your-plugin-textdomain' )
+	);
+
+	$args = array(
+		'labels'          	=> $labels,
+		'public'			 			=> true,
+		'rewrite'         	=> array( 'slug' => 'excerpt' ),
+		'capability_type' 	=> 'post',
+		'has_archive'     	=> true,
+		'hierarchical'   		=> false,
+		'menu_icon'					=> 'dashicons-welcome-write-blog',
+		'supports'        	=> array( 'title', 'editor', 'author' )
+	);
+
+	register_post_type( 'excerpt', $args );
+
+	$labels = array(
 		'name'               => _x( 'Non-Fiction', 'post type general name', 'your-plugin-textdomain' ),
 		'singular_name'      => _x( 'Non-Fiction', 'post type singular name', 'your-plugin-textdomain' ),
 		'menu_name'          => _x( 'Non-Fiction', 'admin menu', 'your-plugin-textdomain' ),
@@ -367,3 +419,23 @@ function filter_post_type_link($link, $post)
     return $link;
 }
 add_filter('post_type_link', 'filter_post_type_link', 10, 2);
+
+function my_theme_archive_title( $title ) {
+    if ( is_category() ) {
+        $title = single_cat_title( '', false );
+    } elseif ( is_tag() ) {
+        $title = single_tag_title( '', false );
+    } elseif ( is_author() ) {
+        $title = '<span class="vcard">' . get_the_author() . '</span>';
+    } elseif ( is_post_type_archive() ) {
+        $title = post_type_archive_title( '', false );
+    } elseif ( is_tax() ) {
+        $title = single_term_title( '', false );
+    }
+  
+    return $title;
+}
+ 
+add_filter( 'get_the_archive_title', 'my_theme_archive_title' );
+
+

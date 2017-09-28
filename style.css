@@ -268,7 +268,7 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
+	font-family: "ff-tisa-web-pro", serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;

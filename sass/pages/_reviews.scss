@@ -1,0 +1,14 @@
+// Archive page styles
+.review-item {
+	padding-bottom: 1em;
+	margin-bottom: 2em;
+	border-bottom: 1px solid $blue-grey;
+
+	p:first-of-type {
+		font-family: $title-font;
+	}
+
+	a:last-of-type {
+		font-family: $title-font;
+	}
+}

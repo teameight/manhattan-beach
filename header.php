@@ -18,6 +18,9 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<script src="https://use.typekit.net/jno4zpo.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<script type="text/javascript">
+		var $pathtoswf = "<?php bloginfo('template_directory'); ?>/js/vendor/jplayer";
+	</script>
 	<?php wp_head(); ?>
 </head>
 
@@ -38,7 +41,10 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'manhattan-beach' ); ?></button>
+			<button type="button" class=" menu-toggle tcon tcon-menu--xcross" aria-label="toggle menu">
+			  <span class="tcon-menu__lines" aria-hidden="true"></span>
+			  <span class="tcon-visuallyhidden">Primary menu</span>
+			</button>
 			<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-1',

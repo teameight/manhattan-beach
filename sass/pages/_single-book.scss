@@ -2,16 +2,23 @@
 	font-size: 1.1em;
 }
 
+.book-sidebar {
+	p {
+		margin: 0;
+	}
+
+	a {
+		font-weight: lighter;
+		display: block;
+		line-height: 1.75em;
+		font-size: .9em;
+	}
+}
+
 .book-sidebar-img {
 	width: 100%;
 	height: auto;
 	margin-bottom: 1em;
-}
-
-.book-buy-link {
-	font-weight: 200;
-	display: block;
-	line-height: 1.75em;
 }
 
 .book-reviews,
@@ -30,7 +37,8 @@
 	}
 }
 
-.book-review-content {
+.book-review-content,
+.book-interview-content {
 	p:first-of-type {
 		font-family: $title-font;
 	}
@@ -38,4 +46,43 @@
 	a:last-child {
 		font-family: $title-font;
 	}
+}
+
+// Excerpt page
+.back-to-book-link {
+	display: block;
+	margin-bottom: 4em;
+}
+
+.back-to-book-btn {
+	margin-top: 4em;
+}
+
+.single-excerpt .entry-content {
+
+	h1:first-child,
+	h2:first-child,
+	h3:first-child,
+	h4:first-child {
+		margin-top: -0.8em;
+	}
+}
+
+// Book excerpts
+
+// Goon squad slideshow
+.slidenumbers {
+	font-size: .65em;
+	line-height: 1;
+}
+
+.slideinput {
+	font-size: 1em;
+}
+
+.sshow-inwrap {
+	width: 100%;
+	height: 73.38vw;
+	max-width: 672px;
+	max-height: 520px;
 }
