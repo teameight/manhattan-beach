@@ -257,7 +257,9 @@ h4,
     .nav-menu {
       position: relative;
       display: inline-block;
-      opacity: 1; } }
+      opacity: 1;
+      padding-top: 0;
+      overflow: visible; } }
 
 .menu-item {
   display: block;

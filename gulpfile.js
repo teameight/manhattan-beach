@@ -17,7 +17,7 @@ gulp.task( 'deploy', function() {
 
 	var conn = ftp.create( {
 		host: 		'staging.jenniferegan.com',
-		user: 		'teameight',
+		user: 		't8staging',
 		password: 'g3t2w0rk',
 		parallel: 10,
 		log: 			gutil.log
@@ -29,6 +29,8 @@ gulp.task( 'deploy', function() {
 		'inc/**',
 		'js/**',
 		'layouts/**',
+		'functions/**',
+		'css/**',
 		'sass/**',
 		'template-parts/**',
 		'!.git',
