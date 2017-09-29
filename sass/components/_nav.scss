@@ -49,14 +49,14 @@
 		text-decoration: none;
 		display: block;
 
-		&:hover {
-			color: $color-link;
-			background-color: $color-link-hover-bg;
-		}
-
 		@media screen and (min-width: 855px) {
 			padding: 10px 20px;
 			display: inline;
+
+			&:hover {
+				color: $color-link;
+				background-color: $color-link-hover-bg;
+			}
 		}
 	}
 }

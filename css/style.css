@@ -283,13 +283,13 @@ h4,
     transition: all 0.2s ease-out;
     text-decoration: none;
     display: block; }
-    .menu-item a:hover {
-      color: #197380;
-      background-color: #E8E1E1; }
     @media screen and (min-width: 855px) {
       .menu-item a {
         padding: 10px 20px;
-        display: inline; } }
+        display: inline; }
+        .menu-item a:hover {
+          color: #197380;
+          background-color: #E8E1E1; } }
 
 .menu-toggle {
   display: inline;
