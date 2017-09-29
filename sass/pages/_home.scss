@@ -1,16 +1,20 @@
 .home {
 
 	#page {
-		text-align:center;
+		text-align: center;
 	}
 
 	.book-title {
-		padding: 0 2vw;
-		height: 80vh;
+		padding: 0 0.5em;
+		height: 40vh;
 		max-width:700px;
-		margin:0 auto;
+		margin: 0 auto;
 		display: flex;
 		align-items: center;
+
+		@media screen and (min-width: $bp-md) {
+			height: 80vh;
+		}
 
 		.title-svg {
 			width: 100%;
@@ -24,19 +28,19 @@
 
 	.featured-review {
 		font-family: $font;
-		font-size:32px;
+		font-size: 1.6em;
 		line-height: 1.2;
-		color:$dark-blue;
-		margin:120px auto;
-		max-width:32ch;
+		color: $dark-blue;
+		margin: 6em auto 14em;
+		max-width: 32ch;
 
 		p {
-			margin-top:0;
-			margin-bottom:24px;
+			margin-top: 0;
+			margin-bottom: 24px;
 		}
 
 		p:last-child {
-			font-family:$title-font;
+			font-family: $title-font;
 			font-size: 16px;
 		}
 	}

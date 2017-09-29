@@ -544,12 +544,15 @@ a.btn {
   text-align: center; }
 
 .home .book-title {
-  padding: 0 2vw;
-  height: 80vh;
+  padding: 0 0.5em;
+  height: 40vh;
   max-width: 700px;
   margin: 0 auto;
   display: flex;
   align-items: center; }
+  @media screen and (min-width: 740px) {
+    .home .book-title {
+      height: 80vh; } }
   .home .book-title .title-svg {
     width: 100%;
     height: auto; }
@@ -559,10 +562,10 @@ a.btn {
 
 .home .featured-review {
   font-family: "ff-tisa-web-pro", serif;
-  font-size: 32px;
+  font-size: 1.6em;
   line-height: 1.2;
   color: #14383D;
-  margin: 120px auto;
+  margin: 6em auto 14em;
   max-width: 32ch; }
   .home .featured-review p {
     margin-top: 0;
