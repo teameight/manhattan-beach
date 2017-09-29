@@ -47,7 +47,8 @@
 /* MEDIA QUERIES */
 /* BASE STYLES */
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  position: relative; }
 
 *,
 *:before,
@@ -58,12 +59,17 @@ html {
 body {
   font-family: "ff-tisa-web-pro", serif;
   font-size: 16px;
-  background-color: #F0F5F5; }
-  body.no-scroll {
-    overflow: hidden; }
+  background-color: #F0F5F5;
+  position: relative; }
   @media screen and (min-width: 740px) {
     body {
       font-size: 20px; } }
+
+.no-scroll {
+  overflow-y: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%; }
 
 a {
   color: #197380;

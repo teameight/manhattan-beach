@@ -5,7 +5,12 @@
  * navigation support for dropdown menus.
  */
 ( function() {
-	var body, container, button, menu, links, i, len;
+	var html, body, container, button, menu, links, i, len;
+
+	html = document.getElementsByTagName( 'html' )[0];
+	if ( ! html ) {
+		return;
+	}
 
 	body = document.getElementsByTagName( 'body' )[0];
 	if ( ! body ) {
@@ -198,7 +203,7 @@
     for (var prop in DEFAULT_EVENTS) {
       eventLists[prop] = (events && events[prop]) ? getEventList(events[prop]) : DEFAULT_EVENTS[prop];
     }
-    
+
     // add or remove all events for all occasions to all elements
     while(currentElement--) {
       for (var occasion in eventLists) {
