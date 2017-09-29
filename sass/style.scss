@@ -15,9 +15,12 @@
 @import 'components/images';
 @import 'components/captions';
 @import 'components/buttons';
+@import 'components/animations';
+@import 'components/waves';
 
 /* TEMPLATE STYLES */
 
+@import 'pages/home';
 @import 'pages/single-page';
 @import 'pages/single-book';
 @import 'pages/non-fiction';

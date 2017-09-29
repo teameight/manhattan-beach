@@ -1,0 +1,145 @@
+$c_start: #8fbcab;
+$c_end: #305e61;
+
+$persp: 80;
+$persp-o: -100;
+
+$wave_offset:600; // this also sets the speed of the wave parallax compared to scroll. higher = slower.
+$wave_reveal: 23; //25.118;
+
+$v_o_seed: $wave_reveal / $wave_offset;
+
+$v_o_factor: $v_o_seed * $persp; //this number increases as $persp-o increases
+
+#body.above {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    perspective: $persp * 1vw;
+    perspective-origin: center $persp-o*1vw;
+    background: #60bab3; 
+}
+
+.wave-wrap {
+  width: 100vw;
+  position: absolute;
+  top: 0; }
+
+.wave-seg {
+  width: 100%;
+  transform-origin: center center;
+  position: absolute;
+  top: $wave_offset * 1vw;
+  height: 26.44vw;
+  left: 0;
+  z-index: 0;
+  // opacity:.9;
+
+  background: $c_start;
+
+  &:nth-child(even){
+    background: $c_end;
+  }
+
+  > div {
+      background: magenta;
+      height: 1px;
+      width: 100%;
+      border-top: 3px solid yellow;
+      position: absolute;
+      bottom: 5%;
+  }
+
+}
+
+$vert_offset: $v_o_factor*5; // half the ((height/width)-overlap) of each element
+$translate_z: $persp * ( 1 - ( $persp / $vert_offset ) );
+$scale: ( $persp - $translate_z ) / $persp;
+
+
+
+.wave-back {
+  top: ($wave_offset - 10) * 1vw;
+  height: 80vw;
+  background: #e1eced;
+  transform:translateZ( $translate_z * 1vw ) scale( $scale );
+}
+
+
+.wave-l-1 {
+  transform:translateZ( $translate_z * 1vw ) scale( $scale );
+}
+
+$vert_offset: $vert_offset + $v_o_factor;
+$translate_z: $persp * ( 1 - ($persp / $vert_offset ) );
+$scale: ( $persp - $translate_z ) / $persp;
+
+.wave-l-2 {
+  transform:translateZ( $translate_z * 1vw ) scale( $scale );
+}
+
+$vert_offset: $vert_offset + $v_o_factor;
+$translate_z: $persp * ( 1 - ($persp / $vert_offset ) );
+$scale: ( $persp - $translate_z ) / $persp;
+
+.wave-l-3 {
+  transform:translateZ( $translate_z * 1vw ) scale( $scale );
+}
+
+$vert_offset: $vert_offset + $v_o_factor;
+$translate_z: $persp * ( 1 - ($persp / $vert_offset ) );
+$scale: ( $persp - $translate_z ) / $persp;
+
+.wave-l-4 {
+  transform:translateZ( $translate_z * 1vw ) scale( $scale ); 
+}
+
+$vert_offset: $vert_offset + $v_o_factor;
+$translate_z: $persp * ( 1 - ($persp / $vert_offset ) );
+$scale: ( $persp - $translate_z ) / $persp;
+
+.wave-l-5 {
+  transform:translateZ( $translate_z * 1vw ) scale( $scale ); 
+}
+
+$vert_offset: $vert_offset + $v_o_factor;
+$translate_z: $persp * ( 1 - ($persp / $vert_offset ) );
+$scale: ( $persp - $translate_z ) / $persp;
+
+.wave-l-6 {
+  transform:translateZ( $translate_z * 1vw ) scale( $scale ); 
+}
+
+$vert_offset: $vert_offset + $v_o_factor;
+$translate_z: $persp * ( 1 - ($persp / $vert_offset ) );
+$scale: ( $persp - $translate_z ) / $persp;
+
+.wave-l-7 {
+  transform:translateZ( $translate_z * 1vw ) scale( $scale ); 
+}
+
+$vert_offset: $vert_offset + $v_o_factor;
+$translate_z: $persp * ( 1 - ($persp / $vert_offset ) );
+$scale: ( $persp - $translate_z ) / $persp;
+
+.wave-l-8 {
+  transform:translateZ( $translate_z * 1vw ) scale( $scale ); 
+}
+
+#canvas-container {
+  height: 30vw;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform:translateZ( $translate_z * 1vw ) scale( $scale );
+}
+#sineCanvas{
+  height:40vw;
+  width:110vw;
+  position:absolute;
+  top:-5vw;
+  left:-5vw;
+/*  filter: blur(1px) */
+}

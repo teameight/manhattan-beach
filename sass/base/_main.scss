@@ -20,6 +20,21 @@ body {
 	}
 }
 
+#body {
+  width: 100%;
+  height: 100%;
+}
+
+#page-wrap {
+  position: relative;
+  z-index: 5;
+	box-sizing:border-box;
+	padding-top: 1px;
+	padding-bottom: 10vw;
+	transform: translateZ(0vw);
+	background: linear-gradient(0deg, rgba(225, 236, 257, 0) 5%, rgba(225, 236, 257, 1) 40%, rgba(255, 255, 255, 1) 100%);
+}
+
 .no-scroll {
 	overflow-y: hidden;
 	position: fixed;
@@ -45,6 +60,8 @@ a {
 	max-width: 960px;
 	margin: 0 auto;
 	padding: 0 1em;
+	overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .single-column {

@@ -25,33 +25,64 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="container site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'manhattan-beach' ); ?></a>
+	<div id="body">
+		<div class="wave-wrap">
+			<div class="wave-back wave-seg"></div>
+			<img class="wave-l-1 wave-seg" src="<?php echo get_template_directory_uri(); ?>/img/waves/wave-1.jpg" alt"waves" />
+			<div class="wave-l-2 wave-seg">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/waves/w2t.png" alt"waves" />
+				<img src="<?php echo get_template_directory_uri(); ?>/img/waves/w2.jpg" alt"waves" />
+			</div>
+			<div class="wave-l-3 wave-seg">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/waves/w3t.png" alt"waves" />
+				<img src="<?php echo get_template_directory_uri(); ?>/img/waves/w3.jpg" alt"waves" />
+			</div>
+			<div class="wave-l-4 wave-seg">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/waves/w4t.png" alt"waves" />
+				<img src="<?php echo get_template_directory_uri(); ?>/img/waves/w4.jpg" alt"waves" />
+			</div>
+			<div class="wave-l-5 wave-seg">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/waves/w5t.png" alt"waves" />
+				<img src="<?php echo get_template_directory_uri(); ?>/img/waves/w5.jpg" alt"waves" />
+			</div>
+			<div class="wave-l-6 wave-seg">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/waves/w6t.png" alt"waves" />
+				<img src="<?php echo get_template_directory_uri(); ?>/img/waves/w6.jpg" alt"waves" />
+			</div>
+			<div class="wave-l-7 wave-seg">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/waves/w7t.png" alt"waves" />
+				<img src="<?php echo get_template_directory_uri(); ?>/img/waves/w7.jpg" alt"waves" />
+			</div>
+		</div>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;?>
-		</div><!-- .site-branding -->
+		<div id="page-wrap">
+			<div id="page" class="container site">
+				<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'manhattan-beach' ); ?></a>
 
-		<nav id="site-navigation" class="main-navigation">
-			<button type="button" class=" menu-toggle tcon tcon-menu--xcross" aria-label="toggle menu">
-			  <span class="tcon-menu__lines" aria-hidden="true"></span>
-			  <span class="tcon-visuallyhidden">Primary menu</span>
-			</button>
-			<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				) );
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+				<header id="masthead" class="site-header">
+					<div class="site-branding">
+						<?php
+						the_custom_logo();
+						if ( is_front_page() && is_home() ) : ?>
+							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						<?php else : ?>
+							<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+						<?php
+						endif;?>
+					</div><!-- .site-branding -->
 
-	<div id="content" class="site-content">
+					<nav id="site-navigation" class="main-navigation">
+						<button type="button" class=" menu-toggle tcon tcon-menu--xcross" aria-label="toggle menu">
+						  <span class="tcon-menu__lines" aria-hidden="true"></span>
+						  <span class="tcon-visuallyhidden">Primary menu</span>
+						</button>
+						<?php
+							wp_nav_menu( array(
+								'theme_location' => 'menu-1',
+								'menu_id'        => 'primary-menu',
+							) );
+						?>
+					</nav><!-- #site-navigation -->
+				</header><!-- #masthead -->
+
+				<div id="content" class="site-content">

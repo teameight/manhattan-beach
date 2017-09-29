@@ -11,9 +11,11 @@
 
 ?>
 
-	</div><!-- #content -->
+			</div><!-- #content -->
 
-</div><!-- #page -->
+		</div><!-- #page -->
+	</div><!-- #page-wrap -->
+</div><!-- #body -->
 
 <?php wp_footer(); ?>
 

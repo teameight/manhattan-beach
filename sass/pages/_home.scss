@@ -1,0 +1,45 @@
+.home {
+
+	#page {
+		text-align:center;
+	}
+
+	.book-title {
+		padding: 0 2vw;
+		height: 80vh;
+		max-width:700px;
+		margin:0 auto;
+		display: flex;
+		align-items: center;
+
+		.title-svg {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.reviews {
+		margin-top:50vw;
+	}
+
+	.featured-review {
+		font-family: $font;
+		font-size:32px;
+		line-height: 1.2;
+		color:$dark-blue;
+		margin:120px auto;
+		max-width:32ch;
+
+		p {
+			margin-top:0;
+			margin-bottom:24px;
+		}
+
+		p:last-child {
+			font-family:$title-font;
+			font-size: 16px;
+		}
+	}
+
+
+}

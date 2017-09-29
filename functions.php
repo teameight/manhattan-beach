@@ -91,6 +91,7 @@ include_once 'functions/slideshow-shortcode.php';
 function slideshow_register_scripts() {
     wp_enqueue_style( 'audioslide-style', get_template_directory_uri() . '/css/vendor/audioslide-style.css?v=1.1', false );
     wp_enqueue_script( 'jquery' );
+    wp_enqueue_script( 'wave-position', get_template_directory_uri() . '/js/wave-position.js', array('jquery') );
     wp_register_script( 'jplayer', get_template_directory_uri() . '/js/vendor/jplayer/jquery.jplayer.js', array('jquery'), true );
     wp_register_script( 'audioslideshow', get_template_directory_uri() . '/js/vendor/jquery.audioslideshow.js?v=1.1', array('jquery', 'jplayer'), true );
     wp_register_script( 'screenfull', get_template_directory_uri() . '/js/vendor/screenfull.min.js', array('jquery'), true );

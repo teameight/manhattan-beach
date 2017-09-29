@@ -1,0 +1,51 @@
+.background {
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: transform 1s ease;
+  overflow:hidden;
+  width: 100vw;
+  height: 100%;
+  
+  opacity:1;
+
+  .above & {
+    opacity:0!important;
+  }
+      
+
+  .structure {
+    transform-style: preserve-3d;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    transition: opacity 2s ease;
+    opacity:.8;
+
+    .above & {
+      opacity:0!important;
+    }
+  }
+
+  .st-0 {
+    transform: translateZ(-1600vw) scale(21.6);
+    bottom: -1120vw;
+
+    img {
+      width:100vw;
+      /*border: 1px solid yellow;*/
+    }
+  }
+  .st-1 {
+    transform: translateX(-40vw) translateZ(-600vw) scale(70) rotate3d(0, 1, 1, -30deg);
+
+    img {
+      width:15vw;
+    }
+  }
+
+
+
+}
