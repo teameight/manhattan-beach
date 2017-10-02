@@ -98,6 +98,8 @@ a {
   padding: 0 1em;
   overflow: hidden;
   text-overflow: ellipsis; }
+  .home .container {
+    overflow: visible; }
 
 .single-column {
   max-width: 750px;
