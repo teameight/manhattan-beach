@@ -481,7 +481,8 @@ a.btn {
 .wave-wrap {
   width: 100%;
   position: relative;
-  top: 0; }
+  top: 0;
+  overflow: hidden; }
 
 .wave-full {
   display: block;
