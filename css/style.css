@@ -85,11 +85,15 @@ body {
   height: 100%; }
 
 a {
-  color: #197380; }
+  color: #197380;
+  transition: all 0.2s ease-out; }
   a:visited {
     color: #197380; }
   a:active {
     color: #B1A0A0; }
+  @media screen and (min-width: 740px) {
+    a:hover {
+      color: #B1A0A0; } }
 
 .container {
   max-width: 960px;
@@ -277,6 +281,7 @@ h4,
   padding-top: 10%;
   bottom: 0;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   width: 100%;
   background-color: #FDFDFF;
   display: none;
@@ -397,9 +402,10 @@ a.btn {
   display: inline-block;
   line-height: 1;
   text-decoration: none; }
-  .btn:hover,
-  a.btn:hover {
-    background-color: #B1A0A0; }
+  @media screen and (min-width: 740px) {
+    .btn:hover,
+    a.btn:hover {
+      background-color: #B1A0A0; } }
 
 .cta-link {
   font-family: "Cera", san-serif; }

@@ -44,15 +44,20 @@ body {
 
 a {
 	color: $color-link;
-	// transition: $hover-transition;
+	transition: $hover-transition;
 
 	&:visited {
 		color: $color-link;
 	}
 
-	// &:hover,
 	&:active {
 		color: $color-link-hover;
+	}
+
+	@media screen and (min-width: $bp-md) {
+		&:hover {
+			color: $color-link-hover;
+		}
 	}
 }
 

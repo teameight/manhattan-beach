@@ -11,9 +11,12 @@ a.btn {
 	line-height: 1;
 	text-decoration: none;
 
-	&:hover {
-		background-color: $color-button-primary-hover;
+	@media screen and (min-width: $bp-md) {
+		&:hover {
+			background-color: $color-button-primary-hover;
+		}
 	}
+
 }
 
 .cta-link {
