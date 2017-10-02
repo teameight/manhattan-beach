@@ -80,8 +80,8 @@ a {
 
 	.site-main {
 		@media screen and (min-width: $bp-md) {
-			order: 2;
 			width: 66.67%;
+			margin-top: 5px;
 		}
 	}
 }
@@ -90,9 +90,7 @@ a {
 	font-family: $title-font;
 
 	@media screen and (min-width: $bp-md) {
-		order: 1;
 		width: 22%;
-		margin-top: 5px;
 	}
 
 }

@@ -1,3 +1,5 @@
+// Single book page
+
 .book-overview {
 	font-size: 1.1em;
 }
@@ -19,6 +21,28 @@
 	width: 100%;
 	height: auto;
 	margin-bottom: 1em;
+}
+
+ul.book-nav {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 0 1em;
+    padding: 0;
+    line-height: 1.1;
+    font-family: "Cera", san-serif;
+    font-size: .9em;
+    font-weight: lighter;
+}
+
+.book-nav li {
+    display: inline-block;
+    text-align: left;
+    border-right: 2px solid #999;
+    padding: 0 .5em;
+}
+
+.book-header .entry-title {
+    margin-bottom: 0.125em;
 }
 
 .book-reviews,

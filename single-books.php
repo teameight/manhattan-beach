@@ -10,6 +10,15 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area two-column">
+		<aside class="sidebar book-sidebar">
+			<?php the_post_thumbnail('post-thumbnail', ['class' => 'book-sidebar-img']); ?>
+			<h3 class="sidebar-title">Buy the book</h3>
+			<?php the_field('buy'); ?>
+			<?php if ( $guide = get_field('reading_guide') ) : ?>
+				<a class="cta-link" href="<?php echo $guide; ?>">Reading Guide</a>
+			<?php endif; ?>
+		</aside>
+
 		<main id="main" class="site-main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -18,6 +27,10 @@ get_header(); ?>
 
 				<header class="book-header">
 					<h1 class="entry-title"><?php the_title(); ?></h1>
+					<ul class="book-nav" style="">Skip to:
+    				<li><a href="#reviews">Reviews</a></li>
+    				<li><a href="#interviews">Interviews</a></li>
+					</ul>
 				</header>
 
 				<section class="book-overview">
@@ -47,6 +60,7 @@ get_header(); ?>
 
 				if ( $query->have_posts() ) { ?>
 					<section class="book-interviews">
+						<a name="reviews"></a>
 						<h2>Reviews</h2>
 					<?php
 					while ( $query->have_posts() ) : $query->the_post(); ?>
@@ -77,6 +91,7 @@ get_header(); ?>
 
 				if ( $query->have_posts() ) { ?>
 					<section class="book-interviews">
+						<a name="interviews"></a>
 						<h2>Interviews</h2>
 					<?php
 					while ( $query->have_posts() ) : $query->the_post(); ?>
@@ -94,14 +109,6 @@ get_header(); ?>
 
 		</main><!-- #main -->
 
-		<aside class="sidebar book-sidebar">
-			<?php the_post_thumbnail('post-thumbnail', ['class' => 'book-sidebar-img']); ?>
-			<h3 class="sidebar-title">Buy the book</h3>
-			<?php the_field('buy'); ?>
-			<?php if ( $guide = get_field('reading_guide') ) : ?>
-				<a class="cta-link" href="<?php echo $guide; ?>">Reading Guide</a>
-			<?php endif; ?>
-		</aside>
 
 	</div><!-- #primary -->
 
