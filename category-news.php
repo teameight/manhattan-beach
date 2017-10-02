@@ -36,12 +36,12 @@ get_header(); ?>
 						if ($eDate) : ?>
 
 							<div class="calendar-event">
-								<span class="calendar-event-date"><?php echo $eDate; ?></span>
 								<?php if ( $link ) echo '<a class="calendar-event-link" href="'.$link['url'].'" target="'.$link['target'].'">'; ?>
 								<span class="calendar-event-title"><?php the_title(); ?></span>
 								<?php if ( $link ) echo '</a>'; ?>
-								<?php if ( $eLocation ) echo '<span class="calendar-event-location">'.$eLocation.'</span>'; ?>
-								<?php if ( $eTime ) echo '<span class="calendar-event-time">'.$eTime.'</span>'; ?>
+								<span class="calendar-event-date"><strong>Date: </strong><?php echo $eDate; ?></span>
+								<?php if ( $eTime ) echo '<span class="calendar-event-time"><strong>Time: </strong>'.$eTime.'</span>'; ?>
+								<?php if ( $eLocation ) echo '<span class="calendar-event-location"><strong>Location: </strong>'.$eLocation.'</span>'; ?>
 
 								<?php if ( $eDesc ) echo '<span class="calendar-event-desc">'.$eDesc.'</span>'; ?>
 							</div>

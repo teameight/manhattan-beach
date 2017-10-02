@@ -244,8 +244,8 @@ $(window).on("load", function() {
 		var $page_offset = (pageHvw) * 100;
 
 		if($airlines.length){
-			
-			var bH = $('#body')[0].scrollHeight;
+
+			var bH = $('.b-inner')[0].scrollHeight;
 
 			$airlines.css({
 				'height': ( bH - (windowH*.6) ) + 'px'

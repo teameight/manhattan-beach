@@ -20,7 +20,7 @@
 	</div>
 
 	</div><!-- #b-inner -->
-</div><!-- #body -->
+<!-- </div> --><!-- #body -->
 
 <?php wp_footer(); ?>
 

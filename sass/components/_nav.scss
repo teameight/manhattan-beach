@@ -13,13 +13,14 @@
 	opacity: 0;
 	position: fixed;
 	width: 100%;
-	background-color: #F0F5F5;
+	background-color: #FDFDFF;
 	left: 0;
-	top: 19%;
+	top: 5%;
 	padding-top: 10%;
 	bottom: 0;
 	overflow: auto;
 	display: block;
+	z-index: 100;
 
 	@media screen and (min-width: 855px) {
 		position: relative;
