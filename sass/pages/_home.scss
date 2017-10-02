@@ -23,7 +23,11 @@
 	}
 
 	.reviews {
-		margin-top:50vw;
+		margin-top: 50vh;
+
+		@media screen and (min-width: $bp-md) {
+			margin-top: 50vw;
+		}
 	}
 
 	.featured-review {

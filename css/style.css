@@ -558,7 +558,10 @@ a.btn {
     height: auto; }
 
 .home .reviews {
-  margin-top: 50vw; }
+  margin-top: 50vh; }
+  @media screen and (min-width: 740px) {
+    .home .reviews {
+      margin-top: 50vw; } }
 
 .home .featured-review {
   font-family: "ff-tisa-web-pro", serif;
