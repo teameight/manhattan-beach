@@ -12,34 +12,3 @@ gulp.task('sass', function() {
 gulp.task('watch', function() {
 	gulp.watch('sass/**/*.scss', ['sass']);
 });
-
-gulp.task( 'deploy', function() {
-
-	var conn = ftp.create( {
-		host: 		'staging.jenniferegan.com',
-		user: 		't8staging',
-		password: 'g3t2w0rk',
-		parallel: 10,
-		log: 			gutil.log
-	});
-
-	var globs = [
-		'*',
-		'*.php',
-		'inc/**',
-		'js/**',
-		'layouts/**',
-		'functions/**',
-		'css/**',
-		'sass/**',
-		'template-parts/**',
-		'!.git',
-		'!.txt',
-		'!node_modules',
-		'!node_modules/**',
-	];
-
-	return gulp.src( globs, { base: '.', buffer: false })
-		.pipe( conn.newer( '/wp-content/themes/manhattan-beach'))
-		.pipe( conn.dest( '/wp-content/themes/manhattan-beach'));
-});

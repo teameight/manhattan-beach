@@ -632,6 +632,9 @@ ul.book-nav {
   max-width: 672px;
   max-height: 520px; }
 
+.full-screen.control {
+  display: none; }
+
 .non-fiction-archive {
   max-width: 720px;
   margin: 0 auto; }
