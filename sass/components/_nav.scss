@@ -22,7 +22,7 @@
 	z-index: 0;
 	max-height: calc(100vh - 100px);
 
-	@media screen and (min-width: 855px) {
+	@media screen and (min-width: $bp-nav) {
 		top: 0;
 		position: relative;
 		display: inline-block;
@@ -46,7 +46,7 @@
 	font-family: $title-font;
 	text-transform: uppercase;
 
-	@media screen and (min-width: 855px) {
+	@media screen and (min-width: $bp-nav) {
 		display: inline-block;
 		text-align: left;
 	}
@@ -59,7 +59,7 @@
 		text-decoration: none;
 		display: block;
 
-		@media screen and (min-width: 855px) {
+		@media screen and (min-width: $bp-nav) {
 			padding: 10px 20px;
 			display: inline;
 
@@ -78,7 +78,7 @@
 	top: -15px;
 	right: 0;
 
-	@media screen and (min-width: 855px) {
+	@media screen and (min-width: $bp-nav) {
 		display: none;
 	}
 }
@@ -97,7 +97,7 @@
 			background-color: $color-link-hover-bg;
 		}
 
-		@media screen and (min-width: 855px) {
+		@media screen and (min-width: $bp-nav) {
 			&:after {
 				top: 130%;
 				left: 50%;
@@ -126,7 +126,7 @@
 	border-bottom: 1px solid $blue;
 
 
-	@media screen and (min-width: 855px) {
+	@media screen and (min-width: $bp-nav) {
 		position: absolute;
 		width: 342px;
 		border-left: 1px solid $blue;

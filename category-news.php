@@ -10,6 +10,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area two-column two-column-wide">
+		<?php if (!is_paged()) : ?>
 		<aside class="sidebar calendar-sidebar">
 			<h3 class="sidebar-title">Calendar</h3>
 			<?php
@@ -62,6 +63,7 @@ get_header(); ?>
 				}
 			?>
 		</aside>
+	<?php endif; ?>
 
 		<main id="main" class="site-main">
 
