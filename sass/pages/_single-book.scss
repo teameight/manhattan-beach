@@ -19,8 +19,10 @@
 
 .book-sidebar-img {
 	width: 100%;
+	max-width: 250px;
 	height: auto;
-	margin-bottom: 1em;
+	margin: 0 auto 1em;
+	display: block;
 }
 
 ul.book-nav {

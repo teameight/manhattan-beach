@@ -30,8 +30,12 @@
 .calendar-event {
 	margin-bottom: 1.5em;
 	padding-bottom: 1.5em;
-	font-size: .8em;
+	font-size: 1em;
 	border-bottom: 1px solid $blue-grey;
+
+	@media screen and (min-width: $bp-md) {
+		font-size: .8em;
+	}
 
 	span {
 		display: block;
