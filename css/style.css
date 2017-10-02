@@ -698,8 +698,6 @@ ul.book-nav {
   border-bottom: 1px solid #6C8094;
   margin-bottom: 2.4em;
   padding-bottom: 1em; }
-  .news-post:last-of-type {
-    border: none; }
   .news-post p {
     font-weight: lighter; }
 
@@ -710,21 +708,37 @@ ul.book-nav {
   margin-bottom: 1.25em; }
 
 .calendar-event {
-  margin-bottom: 1em;
-  font-size: .8em; }
+  margin-bottom: 1.5em;
+  padding-bottom: 1.5em;
+  font-size: .8em;
+  border-bottom: 1px solid #6C8094; }
   .calendar-event span {
     display: block; }
+  .calendar-event:last-of-type {
+    border-bottom: none; }
+  .calendar-event *:last-child {
+    margin-bottom: 0; }
 
+.calendar-event-title {
+  font-weight: bold;
+  margin-bottom: 1rem; }
+
+.calendar-event-meta {
+  margin-bottom: 1rem; }
+
+.calendar-event-time,
+.calendar-event-location,
 .calendar-event-date {
-  display: block; }
+  font-weight: lighter; }
 
 .calendar-event-desc {
   font-weight: lighter;
-  margin: 1em 0; }
+  margin-bottom: 1rem; }
 
 .calendar-event-link {
   display: block;
-  font-weight: lighter; }
+  font-weight: lighter;
+  text-decoration: none; }
 
 .review-item {
   padding-bottom: 1em;
