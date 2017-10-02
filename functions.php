@@ -220,7 +220,7 @@ function jegan_book_init() {
 		'query_var'         => true,
 		'rewrite'           => array( 'slug' => 'book' )
 	);
-	register_taxonomy( 'book', array( 'books', 'interviews', 'post' ), $args );
+	register_taxonomy( 'book', array( 'books', 'post' ), $args );
 
 
 	$labels = array(
@@ -290,14 +290,14 @@ function jegan_book_init() {
 // Creates Reviews post type
 	$args = array(
 		'label'             => 'Reviews',
-		'public'			 => true,
-		'taxonomies'         => array('book'),
-		'rewrite'            => array( 'slug' => 'reviews/%book%' ),
+		'public'			 			=> true,
+		'taxonomies'         => array('reviewed-book'),
+		'rewrite'            => array( 'slug' => 'reviews/%book%','with_front' => false ),
 		'capability_type'    => 'post',
 		'has_archive'        => 'reviews',
-		'menu_icon'			=> 'dashicons-welcome-write-blog',
+		'menu_icon'						=> 'dashicons-welcome-write-blog',
 		'hierarchical'       => false,
-		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'comments' )
+		'supports'           => array( 'title', 'editor', 'author' )
 	);
 
 	register_post_type( 'reviews', $args );
@@ -306,13 +306,13 @@ function jegan_book_init() {
 	$args = array(
 		'label'             => 'Interviews',
 		'public'			 => true,
-		'taxonomies'         => array('book'),
+		'taxonomies'         => array('interviewed-book'),
 		'rewrite'            => array( 'slug' => 'interviews/%book%','with_front' => false ),
 		'capability_type'    => 'post',
 		'has_archive'        => 'interviews',
 		'menu_icon'			=> 'dashicons-microphone',
 		'hierarchical'       => false,
-		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'comments' )
+		'supports'           => array( 'title', 'editor', 'author' )
 	);
 	register_post_type( 'interviews', $args );
 
