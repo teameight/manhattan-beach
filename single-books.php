@@ -57,6 +57,12 @@ get_header(); ?>
 								'field'			=> 'slug',
 								'terms'			=> $slug
 							)
+						),
+						'meta_query'	=> array(
+							array(
+								'key'	 	=> 'featured',
+								'value'	  	=> true,
+							)
 						)
 					);
 					$query = new WP_Query($args);
@@ -71,9 +77,8 @@ get_header(); ?>
 							<div class="book-review-content"><?php the_content(); ?></div>
 						</article>
 					<?php endwhile;
-						if ( $query->found_posts > 3 ) : ?>
-							<a href="<?php echo home_url(); ?>/reviewed-book/<?php echo $slug; ?>" class="btn">See all reviews</a>
-						<?php endif; ?>
+					?>
+					<a href="<?php echo home_url(); ?>/reviewed-book/<?php echo $slug; ?>" class="btn">See all reviews</a>
 					</section>
 				<?php	wp_reset_postdata();
 					}
@@ -88,6 +93,12 @@ get_header(); ?>
 								'field'			=> 'slug',
 								'terms'			=> $slug
 							)
+						),
+						'meta_query'	=> array(
+							array(
+								'key'	 	=> 'featured',
+								'value'	  	=> true,
+							)
 						)
 					);
 					$query = new WP_Query($args);
@@ -101,10 +112,8 @@ get_header(); ?>
 						<article class="book-interview">
 							<div class="book-interview-content"><?php the_content(); ?></div>
 						</article>
-					<?php endwhile;
-						if ( $query->found_posts > 3 ) : ?>
+					<?php endwhile; ?>
 						<a href="<?php echo home_url(); ?>/interviewed-book/<?php echo $slug; ?>" class="btn">See all interviews</a>
-						<?php endif; ?>
 					</section>
 				<?php wp_reset_postdata();
 					}
