@@ -19,7 +19,9 @@ get_header(); ?>
 					'category_name' => 'engagements',
 					'meta_key'     => 'event_date',
 					'meta_value'   => date( "Ymd" ), // change to how "event date" is stored
-					'meta_compare' => '>'
+					'meta_compare' => '>',
+					'order_by'			=> 'meta_value',
+					'order'					=> 'ASC'
 				);
 
 				$query = new WP_Query($args);
@@ -36,14 +38,17 @@ get_header(); ?>
 						if ($eDate) : ?>
 
 							<div class="calendar-event">
-								<?php if ( $link ) echo '<a class="calendar-event-link" href="'.$link['url'].'" target="'.$link['target'].'">'; ?>
 								<span class="calendar-event-title"><?php the_title(); ?></span>
-								<?php if ( $link ) echo '</a>'; ?>
-								<span class="calendar-event-date"><strong>Date: </strong><?php echo $eDate; ?></span>
-								<?php if ( $eTime ) echo '<span class="calendar-event-time"><strong>Time: </strong>'.$eTime.'</span>'; ?>
-								<?php if ( $eLocation ) echo '<span class="calendar-event-location"><strong>Location: </strong>'.$eLocation.'</span>'; ?>
+								<div class="calendar-event-meta">
+									<span class="calendar-event-date"><strong>Date: </strong><?php echo $eDate; ?></span>
+									<?php if ( $eTime ) echo '<span class="calendar-event-time"><strong>Time: </strong>'.$eTime.'</span>'; ?>
+									<?php if ( $eLocation ) echo '<span class="calendar-event-location"><strong>Location: </strong>'.$eLocation.'</span>'; ?>
+								</div>
 
 								<?php if ( $eDesc ) echo '<span class="calendar-event-desc">'.$eDesc.'</span>'; ?>
+
+								<?php if ( $link ) echo '<a class="calendar-event-link" href="'.$link['url'].'" target="'.$link['target'].'">more info</a>'; ?>
+
 							</div>
 
 						<?php

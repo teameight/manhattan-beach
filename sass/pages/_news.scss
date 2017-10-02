@@ -31,24 +31,47 @@
 }
 
 .calendar-event {
-	margin-bottom: 1em;
+	margin-bottom: 1.5em;
+	padding-bottom: 1.5em;
 	font-size: .8em;
+	border-bottom: 1px solid $blue-grey;
 
 	span {
 		display: block;
 	}
+
+	&:last-of-type {
+		border-bottom: none;
+	}
+
+	*:last-child {
+		margin-bottom: 0;
+	}
 }
 
-.calendar-event-date {
-	display: block;
+.calendar-event-title {
+	font-weight: bold;
+	margin-bottom: 1rem;
 }
+
+.calendar-event-meta {
+	margin-bottom: 1rem;
+}
+
+.calendar-event-time,
+.calendar-event-location,
+.calendar-event-date {
+	font-weight: lighter;
+}
+
 
 .calendar-event-desc {
 	font-weight: lighter;
-	margin: 1em 0;
+	margin-bottom: 1rem;
 }
 
 .calendar-event-link {
 	display: block;
 	font-weight: lighter;
+	text-decoration: none;
 }
