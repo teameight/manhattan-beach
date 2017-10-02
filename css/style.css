@@ -479,7 +479,7 @@ a.btn {
   background: #e1ecff; }
 
 .wave-wrap {
-  width: 100vw;
+  width: 100%;
   position: relative;
   top: 0; }
 
@@ -612,13 +612,17 @@ ul.book-nav {
   text-align: left;
   border-right: 2px solid #999;
   padding: 0 .5em; }
+  .book-nav li:last-child {
+    border: none; }
+  .book-nav li:first-child {
+    padding-left: 0; }
 
 .book-header .entry-title {
   margin-bottom: 0.125em; }
 
 .book-reviews,
 .book-interviews {
-  margin-bottom: 4em; }
+  margin: 4em 0; }
 
 .book-review,
 .book-interview {
@@ -627,7 +631,8 @@ ul.book-nav {
   padding-bottom: 2.15em; }
   .book-review:last-of-type,
   .book-interview:last-of-type {
-    border-bottom: none; }
+    border-bottom: none;
+    margin-bottom: .5em; }
 
 .book-review-content p:first-of-type,
 .book-interview-content p:first-of-type {

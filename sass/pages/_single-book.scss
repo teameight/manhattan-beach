@@ -39,6 +39,13 @@ ul.book-nav {
     text-align: left;
     border-right: 2px solid #999;
     padding: 0 .5em;
+
+    &:last-child {
+    	border:none;
+    }
+    &:first-child {
+    	padding-left: 0;
+    }
 }
 
 .book-header .entry-title {
@@ -47,7 +54,7 @@ ul.book-nav {
 
 .book-reviews,
 .book-interviews {
-	margin-bottom: 4em;
+	margin: 4em 0;
 }
 
 .book-review,
@@ -58,6 +65,7 @@ ul.book-nav {
 
 	&:last-of-type {
 		border-bottom: none;
+		margin-bottom: .5em;
 	}
 }
 
