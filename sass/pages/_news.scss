@@ -32,10 +32,20 @@
 
 .calendar-event {
 	margin-bottom: 1em;
+	font-size: .8em;
+
+	span {
+		display: block;
+	}
 }
 
 .calendar-event-date {
 	display: block;
+}
+
+.calendar-event-desc {
+	font-weight: lighter;
+	margin: 1em 0;
 }
 
 .calendar-event-link {

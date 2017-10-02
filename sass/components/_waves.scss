@@ -10,7 +10,7 @@
     height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
-    background: rgba(225, 236, 257, 1); 
+    background: rgba(225, 236, 257, 1);
 }
 .below #body {
   perspective-origin: center 45vh;
@@ -20,12 +20,14 @@
   width: 100%;
   height:auto;
   /*overflow: hidden;*/
+  background: rgba(225, 236, 257, 1); 
+
 }
 
 .wave-wrap {
   width: 100vw;
   position: relative;
-  top: 0; 
+  top: 0;
 
 }
 

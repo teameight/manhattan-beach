@@ -51,9 +51,14 @@ a {
 		color: $color-link;
 	}
 
-	&:hover,
 	&:active {
 		color: $color-link-hover;
+	}
+
+	@media screen and (min-width: $bp-md) {
+		&:hover {
+			color: $color-link-hover;
+		}
 	}
 }
 
@@ -89,6 +94,14 @@ a {
 			margin-top: 5px;
 		}
 	}
+
+	&.two-column-wide {
+		.site-main {
+			@media screen and (min-width: $bp-md) {
+				width: 58.33%
+			}
+		}
+	}
 }
 
 .sidebar {
@@ -96,6 +109,10 @@ a {
 
 	@media screen and (min-width: $bp-md) {
 		width: 22%;
+
+		.two-column-wide & {
+			width: 33.33%
+		}
 	}
 
 }

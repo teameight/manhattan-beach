@@ -25,8 +25,8 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<div id="body">
-		<div class="b-inner">
+<!-- 	<div id="body">
+ -->		<div class="b-inner">
 		<div id="page-wrap">
 			<div id="page" class="container site">
 				<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'manhattan-beach' ); ?></a>

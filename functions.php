@@ -95,12 +95,9 @@ function slideshow_register_scripts() {
     wp_register_script( 'jplayer', get_template_directory_uri() . '/js/vendor/jplayer/jquery.jplayer.js', array('jquery'), true );
     wp_register_script( 'audioslideshow', get_template_directory_uri() . '/js/vendor/jquery.audioslideshow.js?v=1.1', array('jquery', 'jplayer'), true );
     wp_register_script( 'screenfull', get_template_directory_uri() . '/js/vendor/screenfull.min.js', array('jquery'), true );
-
-		if ( is_singular('excerpt') ) {
-	    wp_enqueue_script( 'jplayer' );
-	    wp_enqueue_script( 'audioslideshow' );
-	    wp_enqueue_script( 'screenfull' );
-	  }
+    wp_enqueue_script( 'jplayer' );
+    wp_enqueue_script( 'audioslideshow' );
+    wp_enqueue_script( 'screenfull' );
 
 }
 
