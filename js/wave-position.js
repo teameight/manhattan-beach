@@ -151,7 +151,6 @@ function drawSine(t) {
 	for (var li = 0; li < linesParameters.length; li++) {
 
 		p = linesParameters[li];
-		//console.log(p.letter);
 
     var x = 0;
     var y = t + p.rand;
@@ -244,16 +243,15 @@ $(window).on("load", function() {
 
 		var $page_offset = (pageHvw) * 100;
 
-		var bH = $('#body')[0].scrollHeight;
-
 		if($airlines.length){
+			
+			var bH = $('#body')[0].scrollHeight;
+
 			$airlines.css({
-				'height': ( bH - (windowH/2) ) + 'px'
+				'height': ( bH - (windowH*.6) ) + 'px'
 			});
 			airLinesInit();
 		}
-
-		console.log(bH + '/' + windowH/2);
 
 	}
 
