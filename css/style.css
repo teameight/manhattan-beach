@@ -702,11 +702,12 @@ ul.book-nav {
   .news-post p {
     font-weight: lighter; }
 
-.news-post-date {
+.news-post-title {
   background-color: rgba(229, 223, 211, 0.5);
-  padding: .25em .5em;
-  display: inline-block;
-  margin-bottom: 1.25em; }
+  display: inline;
+  padding: 5px 0;
+  margin-bottom: 1.25em;
+  font-weight: normal; }
 
 .calendar-event {
   margin-bottom: 1.5em;

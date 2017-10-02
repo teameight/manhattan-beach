@@ -19,7 +19,7 @@ get_header(); ?>
 					'category_name' => 'engagements',
 					'meta_key'     => 'event_date',
 					'meta_value'   => date( "Ymd" ), // change to how "event date" is stored
-					'meta_compare' => '>',
+					'meta_compare' => '>=',
 					'order_by'			=> 'meta_value',
 					'order'					=> 'ASC'
 				);
@@ -78,8 +78,7 @@ get_header(); ?>
 			while ( have_posts() ) : the_post(); ?>
 
 				<article class="news-post">
-					<span class="news-post-date"><?php the_time('F d, Y'); ?></span>
-					<h3><?php the_title(); ?></h3>
+					<h3 class="news-post-title"><?php the_title(); ?></h3>
 					<?php the_content(); ?>
 				</article>
 

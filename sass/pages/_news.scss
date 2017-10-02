@@ -19,11 +19,12 @@
 	}
 }
 
-.news-post-date {
+.news-post-title {
 	background-color: rgba($yellow-grey, .5);
-	padding: .25em .5em;
-	display: inline-block;
+	display: inline;
+	padding: 5px 0;
 	margin-bottom: 1.25em;
+	font-weight: normal;
 }
 
 .calendar-event {
