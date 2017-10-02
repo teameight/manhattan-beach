@@ -261,9 +261,11 @@ h4,
     position: static;
     width: auto; }
 
-.main-navigation.toggled .nav-menu {
-  opacity: 1;
-  transition: all 0.2s ease-out; }
+.main-navigation {
+  position: relative; }
+  .main-navigation.toggled .nav-menu {
+    opacity: 1;
+    transition: all 0.2s ease-out; }
 
 .nav-menu {
   list-style-type: none;
@@ -274,7 +276,7 @@ h4,
   width: 100%;
   background-color: #FDFDFF;
   left: 0;
-  top: 5%;
+  top: 19vh;
   padding-top: 10%;
   bottom: 0;
   overflow: auto;
@@ -315,7 +317,10 @@ h4,
 
 .menu-toggle {
   display: inline;
-  padding: 0; }
+  padding: 0;
+  position: absolute;
+  top: -15px;
+  right: 0; }
   @media screen and (min-width: 855px) {
     .menu-toggle {
       display: none; } }

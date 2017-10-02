@@ -1,4 +1,5 @@
 .main-navigation {
+	position: relative;
 
 	&.toggled .nav-menu {
 		opacity: 1;
@@ -15,7 +16,7 @@
 	width: 100%;
 	background-color: #FDFDFF;
 	left: 0;
-	top: 5%;
+	top: 19vh;
 	padding-top: 10%;
 	bottom: 0;
 	overflow: auto;
@@ -66,6 +67,9 @@
 .menu-toggle {
 	display: inline;
 	padding: 0;
+	position: absolute;
+	top: -15px;
+	right: 0;
 
 	@media screen and (min-width: 855px) {
 		display: none;
