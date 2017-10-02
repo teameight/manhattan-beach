@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all single posts
+ * The template for displaying all single books
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
@@ -14,9 +14,6 @@ get_header(); ?>
 			<?php the_post_thumbnail('post-thumbnail', ['class' => 'book-sidebar-img']); ?>
 			<h3 class="sidebar-title">Buy the book</h3>
 			<?php the_field('buy'); ?>
-			<?php if ( $guide = get_field('reading_guide') ) : ?>
-				<a class="cta-link" href="<?php echo $guide; ?>">Reading Guide</a>
-			<?php endif; ?>
 		</aside>
 
 		<main id="main" class="site-main">
@@ -27,9 +24,12 @@ get_header(); ?>
 
 				<header class="book-header">
 					<h1 class="entry-title"><?php the_title(); ?></h1>
-					<ul class="book-nav" style="">Skip to:
+					<ul class="book-nav" style="">
     				<li><a href="#reviews">Reviews</a></li>
     				<li><a href="#interviews">Interviews</a></li>
+    				<?php if ( $guide = get_field('reading_guide') ) : ?>
+							<li><a href="<?php echo $guide; ?>">Reading Guide</a></li>
+						<?php endif; ?>
 					</ul>
 				</header>
 
@@ -39,8 +39,11 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
-			<?php if ( $excerpt = get_field('excerpt') ) : ?>
-				<a href="<?php echo $excerpt; ?>" class="btn">Read Excerpt</a>
+			<?php if ( $excerpt = get_field('excerpt') ) :
+				$btntext = get_field('excerpt_button_text')?get_field('excerpt_button_text'):'Read Excerpt';
+
+			?>
+				<a href="<?php echo $excerpt; ?>" class="btn"><?php echo $btntext; ?></a>
 			<?php endif; ?>
 
 				<?php
