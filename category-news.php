@@ -80,7 +80,7 @@ get_header(); ?>
 
 			<?php endwhile;
 
-			the_posts_navigation();
+			the_posts_navigation(array('prev_text' => 'Older', 'next_text' => 'Newer'));
 
 		else :
 
