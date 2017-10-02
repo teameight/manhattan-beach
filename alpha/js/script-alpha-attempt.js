@@ -1,3 +1,5 @@
+var isSafari = /constructor/i.test(function HTMLElementConstructor() {});
+
 /**
  * 
  * Air lines on Home page
@@ -13,7 +15,7 @@ var canvas, ctx, container,
 	linesParameters = [
 			{
 				letter:'a1',
-				freq: 0.75,
+				freq: 1.75,
 				amp: 4,
 				left: .216,
 				rand: getRandomArbitrary(0, Math.PI),
@@ -21,7 +23,7 @@ var canvas, ctx, container,
 			},
 			{
 				letter:'n',
-				freq: 0.75,
+				freq: 1.75,
 				amp: 4,
 				left: .332,
 				rand: getRandomArbitrary(0, Math.PI),
@@ -29,7 +31,7 @@ var canvas, ctx, container,
 			},
 			{
 				letter:'he',
-				freq: 0.75,
+				freq: 1.75,
 				amp: 4,
 				left: .383,
 				rand: getRandomArbitrary(0, Math.PI),
@@ -38,7 +40,7 @@ var canvas, ctx, container,
 			},
 			{
 				letter:'a2',
-				freq: 0.75,
+				freq: 1.75,
 				amp: 4,
 				left: .575,
 				rand: getRandomArbitrary(0, Math.PI),
@@ -46,7 +48,7 @@ var canvas, ctx, container,
 			},
 			{
 				letter:'t',
-				freq: 0.75,
+				freq: 1.75,
 				amp: 4,
 				left: .635,
 				rand: getRandomArbitrary(0, Math.PI),
@@ -54,7 +56,7 @@ var canvas, ctx, container,
 			},
 			{
 				letter:'a3',
-				freq: 0.75,
+				freq: 1.75,
 				amp: 4,
 				left: .875,
 				rand: getRandomArbitrary(0, Math.PI),
@@ -62,7 +64,7 @@ var canvas, ctx, container,
 			},
 			{
 				letter:'a4',
-				freq: 0.75,
+				freq: 1.75,
 				amp: 4,
 				left: .44,
 				rand: getRandomArbitrary(0, Math.PI),
@@ -70,7 +72,7 @@ var canvas, ctx, container,
 			},
 			{
 				letter:'h2',
-				freq: 0.75,
+				freq: 1.75,
 				amp: 4,
 				left: .7475,
 				rand: getRandomArbitrary(0, Math.PI),
@@ -199,9 +201,9 @@ function drawSine(t) {
 
 		var gradient = ctx.createLinearGradient(width/2, 0, width/2, height*.9);
     gradient.addColorStop(0.00, wavestrokecolor);
-    gradient.addColorStop(0.20, 'rgba(0,0,0,0.3)');
-    gradient.addColorStop(0.90, 'rgba(0,0,0,0.15)');
-    gradient.addColorStop(1.00, 'rgba(0,0,0,0)');
+    gradient.addColorStop(0.30, 'rgba(169,125,107,0.5)');
+    gradient.addColorStop(0.90, 'rgba(169,125,107,0.25)');
+    gradient.addColorStop(1.00, 'rgba(169,125,107,0)');
 
     // draw the gradient-stroked line at this point
     ctx.strokeStyle = gradient;		
@@ -245,17 +247,88 @@ $(window).on("load", function() {
 		var ratioH = screenHvw/pageHvw;
 
 		var $page_offset = (pageHvw) * 100;
+		var $persp = 80,
+			$persp_o = screenHvw * 30;
 
-		var bH = $('#body')[0].scrollHeight;
+		var $wave_offset = 100 + screenHvw*10 + (windowH/offset * 200 * screenHvw );//((pageHvw + screenHvw) * (100 + $persp)) - 100, // this also sets the speed of the wave parallax compared to scroll. higher = slower.
+			//it also controls at which point in the scroll the last slide goes off the top of the screen
+
+			$wave_reveal = 25.118;
+
+		var widthMult = 0;
+		if(screenHvw > 2){
+			widthMult = screenHvw * (3-screenHvw) * pageHvw * .0004;
+		}
+		if(screenHvw <= 2 && screenHvw > .75){
+			widthMult = screenHvw * (2-screenHvw) * pageHvw * .01;
+		}
+
+		//var $vert_offset = ( ((offset / windowH)*.002 ) + widthMult + (windowH/offset*.1) ) * $persp;// * (1 + (screenHvw)) * (1 + (pageHvw / screenHvw)*((pageHvw / screenHvw)*.0003));//pageHvw; //(($page_offset / $wave_offset) * $persp) + ( $persp_o * 1 ) + screenHvw;
+
+
+		var	$v_o_factor = $wave_reveal / $persp_o;//($wave_reveal / $persp_o); //this number increases as $persp-o increases
+
+		var $vert_offset = 1 - ($persp/$persp);
+
+		var $translate_z = $persp * ( $vert_offset );
+
+		console.log($vert_offset + '|' + $translate_z);
+
+		var $scale = ( $persp - $translate_z ) / $persp;
+
+		// console.log(pageHvw + ' p|s ' + screenHvw + ' // ' + screenHvw / pageHvw + ' // ' + pageHvw / screenHvw);
+		// console.log(offset / windowH  + ' w/o');
+		// 		console.log(windowH/offset  + ' o/w');
+		// console.log($vert_offset);
+
+
+
+		$('#body').css({
+		    'perspective': $persp + 'vw',
+		    'perspective-origin': 'center ' + $persp_o + 'vw'
+		});
+
+
+		$('.wave-seg').css({
+			'top': (($wave_offset + (screenHvw * (100 - ratioH))) * screenHvw) + $persp_o + 'vw'
+		});
+
 
 		if($airlines.length){
-			$airlines.css({
-				'height': ( bH - (windowH/2) ) + 'px'
-			});
+			// $airlines.css({
+			// 	'height': ( $page_offset + (screenHvw * 5) + 100 ) + 'vw'
+			// });
 			airLinesInit();
 		}	   
 
-		console.log(bH + '/' + windowH/2);
+		// $('.wave-back').css({
+		// 	'top': ($wave_offset + (screenHvw * 100)) + 'vw', 
+		// 	'transform': 'translateZ( ' + $translate_z + 'vw ) scale( ' + $scale + ' )'
+		// });
+		for (var i = 8; i >= 1; i--) {
+
+			$('.wave-l-'+i).css({
+				'transform': 'translateZ( ' + $translate_z + 'vw ) scale( ' + $scale + ' )',
+				// 'top': (($wave_reveal) * (i * .1)) + (($wave_offset + (screenHvw * (100 - ratioH))) * screenHvw) + $persp_o + 'vw'
+			});
+
+			$vert_offset = $vert_offset + $v_o_factor;
+			$translate_z = $persp * ( 0 - $vert_offset );
+			$scale = ( $persp - $translate_z ) / $persp;
+
+
+			console.log($vert_offset + '|' + $translate_z);
+
+
+		}
+
+
+		// var bSh = $('#body')[0].scrollHeight;
+		// $('.lastwave').css({
+		// 	'top': (bSh - windowH) + 'px',
+		// 	'bottom': 'auto'
+		// });
+		// console.log(bSh + '-' + windowH);
 
 	}
 

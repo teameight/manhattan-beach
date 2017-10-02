@@ -8,7 +8,7 @@ body {
   font-family: 'Karla', sans-serif;
   margin:0;
   padding:0;
-  background:#090905;
+  background:rgba(225, 236, 257, 1);
   color:white;
 	overflow-x:hidden;
 }
@@ -24,8 +24,8 @@ body {
 		box-sizing:border-box;
 		/*background-color: rgba(255, 255, 255, 1);*/
 		padding-top: 1px;
-		padding-bottom: 1vw;
+		padding-bottom: 10vw;
 		transform: translateZ(0vw);
-		background: linear-gradient(0deg, rgba(225, 236, 257, 0) 0%, rgba(225, 236, 257, 1) 30%, rgba(255, 255, 255, 1) 100%);
+		background: linear-gradient(0deg, rgba(225, 236, 257, 0) 5%, rgba(225, 236, 257, 1) 40%, rgba(255, 255, 255, 1) 100%);
 
 }

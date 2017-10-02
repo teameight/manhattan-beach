@@ -13,7 +13,7 @@ var canvas, ctx, container,
 	linesParameters = [
 			{
 				letter:'a1',
-				freq: 0.75,
+				freq: 1.75,
 				amp: 4,
 				left: .216,
 				rand: getRandomArbitrary(0, Math.PI),
@@ -21,7 +21,7 @@ var canvas, ctx, container,
 			},
 			{
 				letter:'n',
-				freq: 0.75,
+				freq: 1.75,
 				amp: 4,
 				left: .332,
 				rand: getRandomArbitrary(0, Math.PI),
@@ -29,7 +29,7 @@ var canvas, ctx, container,
 			},
 			{
 				letter:'he',
-				freq: 0.75,
+				freq: 1.75,
 				amp: 4,
 				left: .383,
 				rand: getRandomArbitrary(0, Math.PI),
@@ -38,7 +38,7 @@ var canvas, ctx, container,
 			},
 			{
 				letter:'a2',
-				freq: 0.75,
+				freq: 1.75,
 				amp: 4,
 				left: .575,
 				rand: getRandomArbitrary(0, Math.PI),
@@ -46,7 +46,7 @@ var canvas, ctx, container,
 			},
 			{
 				letter:'t',
-				freq: 0.75,
+				freq: 1.75,
 				amp: 4,
 				left: .635,
 				rand: getRandomArbitrary(0, Math.PI),
@@ -54,7 +54,7 @@ var canvas, ctx, container,
 			},
 			{
 				letter:'a3',
-				freq: 0.75,
+				freq: 1.75,
 				amp: 4,
 				left: .875,
 				rand: getRandomArbitrary(0, Math.PI),
@@ -62,7 +62,7 @@ var canvas, ctx, container,
 			},
 			{
 				letter:'a4',
-				freq: 0.75,
+				freq: 1.75,
 				amp: 4,
 				left: .44,
 				rand: getRandomArbitrary(0, Math.PI),
@@ -70,7 +70,7 @@ var canvas, ctx, container,
 			},
 			{
 				letter:'h2',
-				freq: 0.75,
+				freq: 1.75,
 				amp: 4,
 				left: .7475,
 				rand: getRandomArbitrary(0, Math.PI),
@@ -199,8 +199,8 @@ function drawSine(t) {
 
 		var gradient = ctx.createLinearGradient(width/2, 0, width/2, height*.9);
     gradient.addColorStop(0.00, wavestrokecolor);
-    gradient.addColorStop(0.20, 'rgba(0,0,0,0.3)');
-    gradient.addColorStop(0.90, 'rgba(0,0,0,0.15)');
+    gradient.addColorStop(0.30, 'rgba(0,0,0,0.5)');
+    gradient.addColorStop(0.90, 'rgba(0,0,0,0.25)');
     gradient.addColorStop(1.00, 'rgba(0,0,0,0)');
 
     // draw the gradient-stroked line at this point
@@ -245,17 +245,107 @@ $(window).on("load", function() {
 		var ratioH = screenHvw/pageHvw;
 
 		var $page_offset = (pageHvw) * 100;
+		var $persp = 80,
+			$persp_o = screenHvw * 40;
 
-		var bH = $('#body')[0].scrollHeight;
+		var $wave_offset = 100;// + screenHvw*10 + (windowH/offset * 200 * screenHvw );//((pageHvw + screenHvw) * (100 + $persp)) - 100, // this also sets the speed of the wave parallax compared to scroll. higher = slower.
+			//it also controls at which point in the scroll the last slide goes off the top of the screen
+
+			$wave_reveal = 25.118;
+
+
+		var	$v_o_factor = $wave_reveal;//($wave_reveal / $persp_o); //this number increases as $persp-o increases
+
+		var $vert_offset = 1 - ($persp*$persp);
+		
+
+		var $translate_z = $persp * ( 1 - ( $persp / $vert_offset ) );
+		var $scale = ( $persp - $translate_z ) / $persp;
+
+		// console.log(pageHvw + ' p|s ' + screenHvw + ' // ' + screenHvw / pageHvw + ' // ' + pageHvw / screenHvw);
+		// console.log(offset / windowH  + ' w/o');
+		// 		console.log(windowH/offset  + ' o/w');
+		// console.log($vert_offset);
+
+
+
+		$('#body').css({
+		    'perspective': $persp + 'vw',
+		    'perspective-origin': 'center ' + $persp_o + 'vw'
+		});
+
+
+		$('.wave-seg').css({
+			'top': 0 //(($wave_offset + (screenHvw * (100 - ratioH))) * screenHvw) + $persp_o + 'vw'
+		});
+
+		// $('.b-inner').css({
+		// 	'height': ( $page_offset + (screenHvw * 50) + 100 ) + 'vw'
+		// });
 
 		if($airlines.length){
 			$airlines.css({
-				'height': ( bH - (windowH/2) ) + 'px'
+				'height': '100vw'//( $page_offset + (screenHvw * 5) + 100 ) + 'vw'
 			});
 			airLinesInit();
 		}	   
 
-		console.log(bH + '/' + windowH/2);
+		$('.wave-back').css({
+			'top': ($wave_offset + (screenHvw * 100)) + 'vw', 
+			'transform': 'translateZ( ' + $translate_z + 'vw ) scale( ' + $scale + ' )'
+		});
+
+		$('.wave-l-7').css({
+			'transform': 'translateZ( ' + $translate_z + 'vw ) scale( ' + $scale + ' )'
+		});
+
+		$vert_offset = $vert_offset - $v_o_factor;
+		$translate_z = $persp * ( 1 - ($persp / $vert_offset ) );
+		$scale = ( $persp - $translate_z ) / $persp;
+
+		$('.wave-l-6').css({
+			'transform': 'translateZ( ' + $translate_z + 'vw ) scale( ' + $scale + ' )'
+		});
+
+		$vert_offset = $vert_offset - $v_o_factor;
+		$translate_z = $persp * ( 1 - ($persp / $vert_offset ) );
+		$scale = ( $persp - $translate_z ) / $persp;
+
+		$('.wave-l-5').css({
+			'transform': 'translateZ( ' + $translate_z + 'vw ) scale( ' + $scale + ' )'
+		});
+
+		$vert_offset = $vert_offset - $v_o_factor;
+		$translate_z = $persp * ( 1 - ($persp / $vert_offset ) );
+		$scale = ( $persp - $translate_z ) / $persp;
+
+		$('.wave-l-4').css({
+			'transform': 'translateZ( ' + $translate_z + 'vw ) scale( ' + $scale + ' )'
+		});
+
+		$vert_offset = $vert_offset - $v_o_factor;
+		$translate_z = $persp * ( 1 - ($persp / $vert_offset ) );
+		$scale = ( $persp - $translate_z ) / $persp;
+
+		$('.wave-l-3').css({
+			'transform': 'translateZ( ' + $translate_z + 'vw ) scale( ' + $scale + ' )'
+		});
+
+		$vert_offset = $vert_offset - $v_o_factor;
+		$translate_z = $persp * ( 1 - ($persp / $vert_offset ) );
+		$scale = ( $persp - $translate_z ) / $persp;
+
+		$('.wave-l-2').css({
+			'transform': 'translateZ( ' + $translate_z + 'vw ) scale( ' + $scale + ' )'
+		});
+
+		$vert_offset = $vert_offset - $v_o_factor;
+		$translate_z = $persp * ( 1 - ($persp / $vert_offset ) );
+		$scale = ( $persp - $translate_z ) / $persp;
+
+		$('.wave-l-1').css({
+			'transform': 'translateZ( ' + $translate_z + 'vw ) scale( ' + $scale + ' )'
+		});
 
 	}
 

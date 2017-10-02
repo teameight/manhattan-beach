@@ -1,1 +1,94 @@
+/* COLORS */
+$blue: #197380;
+$dark-blue: #14383D;
 $lt-blue: #bdccd4;
+
+$blue-grey: #6C8094;
+$yellow-grey: #E5DFD3;
+
+$light-purple: #E8E1E1;
+$purple: #B1A0A0;
+
+$color-body: $dark-blue;
+$color-heading: $dark-blue;
+$color-link: $blue;
+$color-link-hover: $purple;
+$color-link-hover-bg: $light-purple;
+
+$color-button-primary: $blue;
+$color-button-primary-hover: $purple;
+
+/* TYPOGRAPHY */
+$font: "ff-tisa-web-pro", serif;
+$title-font: "Cera", san-serif;
+
+/* TRANSITIONS */
+$transition: all 0.2s ease-out;
+$hover-transition: all 0.2s ease-out;
+
+/* MEDIA QUERIES */
+$bp-sm: 320px;
+$bp-md: 740px;
+$bp-lg: 960px;
+$bp-xl: 1200px;
+
+
+@font-face {
+	font-family: 'Cera';
+	src: url('fonts/CeraPRO-Regular.eot');
+	src: url('fonts/CeraPRO-Regular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/CeraPRO-Regular.woff') format('woff'),
+		url('fonts/CeraPRO-Regular.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Cera';
+	src: url('fonts/CeraPRO-RegularItalic.eot');
+	src: url('fonts/CeraPRO-RegularItalic.eot?#iefix') format('embedded-opentype'),
+		url('fonts/CeraPRO-RegularItalic.woff') format('woff'),
+		url('fonts/CeraPRO-RegularItalic.ttf') format('truetype');
+	font-weight: 200;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Cera';
+	src: url('fonts/CeraPRO-Medium.eot');
+	src: url('fonts/CeraPRO-Medium.eot?#iefix') format('embedded-opentype'),
+		url('fonts/CeraPRO-Medium.woff') format('woff'),
+		url('fonts/CeraPRO-Medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Cera';
+	src: url('fonts/CeraPRO-MediumItalic.eot');
+	src: url('fonts/CeraPRO-MediumItalic.eot?#iefix') format('embedded-opentype'),
+		url('fonts/CeraPRO-MediumItalic.woff') format('woff'),
+		url('fonts/CeraPRO-MediumItalic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Cera';
+	src: url('fonts/CeraPRO-Bold.eot');
+	src: url('fonts/CeraPRO-Bold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/CeraPRO-Bold.woff') format('woff'),
+		url('fonts/CeraPRO-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Cera';
+	src: url('fonts/CeraPRO-BoldItalic.eot');
+	src: url('fonts/CeraPRO-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('fonts/CeraPRO-BoldItalic.woff') format('woff'),
+		url('fonts/CeraPRO-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}

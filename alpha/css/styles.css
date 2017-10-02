@@ -1,4 +1,50 @@
 /* DO not edit the styles.css file. We're using SASS!!! */
+/* COLORS */
+/* TYPOGRAPHY */
+/* TRANSITIONS */
+/* MEDIA QUERIES */
+@font-face {
+  font-family: 'Cera';
+  src: url("fonts/CeraPRO-Regular.eot");
+  src: url("fonts/CeraPRO-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/CeraPRO-Regular.woff") format("woff"), url("fonts/CeraPRO-Regular.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Cera';
+  src: url("fonts/CeraPRO-RegularItalic.eot");
+  src: url("fonts/CeraPRO-RegularItalic.eot?#iefix") format("embedded-opentype"), url("fonts/CeraPRO-RegularItalic.woff") format("woff"), url("fonts/CeraPRO-RegularItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Cera';
+  src: url("fonts/CeraPRO-Medium.eot");
+  src: url("fonts/CeraPRO-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/CeraPRO-Medium.woff") format("woff"), url("fonts/CeraPRO-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Cera';
+  src: url("fonts/CeraPRO-MediumItalic.eot");
+  src: url("fonts/CeraPRO-MediumItalic.eot?#iefix") format("embedded-opentype"), url("fonts/CeraPRO-MediumItalic.woff") format("woff"), url("fonts/CeraPRO-MediumItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Cera';
+  src: url("fonts/CeraPRO-Bold.eot");
+  src: url("fonts/CeraPRO-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/CeraPRO-Bold.woff") format("woff"), url("fonts/CeraPRO-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Cera';
+  src: url("fonts/CeraPRO-BoldItalic.eot");
+  src: url("fonts/CeraPRO-BoldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/CeraPRO-BoldItalic.woff") format("woff"), url("fonts/CeraPRO-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+
 /* Any additional imported files */
 .ui-loader {
   display: none; }
@@ -8,7 +54,7 @@ body {
   font-family: 'Karla', sans-serif;
   margin: 0;
   padding: 0;
-  background: #090905;
+  background: #e1ecff;
   color: white;
   overflow-x: hidden; }
 
@@ -22,114 +68,38 @@ body {
   box-sizing: border-box;
   /*background-color: rgba(255, 255, 255, 1);*/
   padding-top: 1px;
-  padding-bottom: 1vw;
+  padding-bottom: 10vw;
   transform: translateZ(0vw);
-  background: linear-gradient(0deg, rgba(225, 236, 255, 0) 0%, #e1ecff 30%, white 100%); }
+  background: linear-gradient(0deg, rgba(225, 236, 255, 0) 5%, #e1ecff 40%, white 100%); }
+
+#page-wrap .bottom {
+  width: 100%;
+  height: 1px; }
 
 #body {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
-  perspective: 80vw;
-  perspective-origin: center -12vw;
-  background: #3f626f; }
+  background: #e1ecff; }
 
 .below #body {
   perspective-origin: center 45vh; }
 
+.b-inner {
+  width: 100%;
+  height: auto;
+  /*overflow: hidden;*/ }
+
 .wave-wrap {
   width: 100vw;
-  position: absolute;
-  top: 0;
-  overflow: hidden; }
-  .below .wave-wrap {
-    display: none; }
-
-.waterline {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  z-index: 100; }
-  .waterline > div {
-    border-bottom: 2px solid orange;
-    box-sizing: border-box;
-    width: 100vw;
-    height: 0px;
-    position: relative; }
-    .waterline > div.window-w {
-      border-color: yellow; }
-    .waterline > div.window-h {
-      border-color: magenta; }
-    .waterline > div.wave-reveal {
-      border-color: blue; }
-    .waterline > div.persp-o {
-      border-color: green; }
-
-.wave-seg {
-  width: 100%;
-  transform-origin: center center;
-  position: absolute;
-  top: 600vw;
-  height: 26.44vw;
-  left: 0;
-  z-index: 0; }
-  .wave-seg img {
-    display: block;
-    width: 100%;
-    height: auto; }
-
-.waterline {
-  top: 9.6px;
+  position: relative;
   top: 0; }
 
-.wave-back {
-  top: 200vw;
-  height: 210vw;
-  background: #e1ecff;
-  transform: translateZ(-586.66667vw) scale(8.33333); }
-
-.wave-l-1 {
-  transform: translateZ(-586.66667vw) scale(8.33333); }
-
-.wave-l-2 {
-  transform: translateZ(-453.33333vw) scale(6.66667); }
-
-.wave-l-3 {
-  transform: translateZ(-364.44444vw) scale(5.55556); }
-
-.wave-l-4 {
-  transform: translateZ(-300.95238vw) scale(4.7619); }
-
-.wave-l-5 {
-  transform: translateZ(-253.33333vw) scale(4.16667); }
-
-.wave-l-6 {
-  transform: translateZ(-216.2963vw) scale(3.7037); }
-
-.wave-l-7 {
-  transform: translateZ(-186.66667vw) scale(3.33333);
-  /*background: orange;*/ }
-
-.wave-l-8 {
-  transform: translateZ(-162.42424vw) scale(3.0303); }
-
-#canvas-container {
-  height: 30vw;
+.wave-full {
+  display: block;
   width: 100%;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  transform: translateZ(-162.42424vw) scale(3.0303); }
-
-#sineCanvas {
-  height: 40vw;
-  width: 110vw;
-  position: absolute;
-  top: -5vw;
-  left: -5vw;
-  filter: blur(2px); }
+  height: auto; }
 
 article,
 aside,
@@ -1056,6 +1026,64 @@ h4,
     transform: translateX(-40vw) translateZ(-600vw) scale(70) rotate3d(0, 1, 1, -30deg); }
     .background .st-1 img {
       width: 15vw; }
+
+body.home #page {
+  text-align: center; }
+
+body.home .book-title {
+  padding: 0;
+  height: 80vh;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative; }
+  body.home .book-title .t-svg-wrap {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 35.8%;
+    overflow: visible; }
+  body.home .book-title .title-svg {
+    width: 100%;
+    height: auto; }
+
+body.home .air-lines > div {
+  width: 0.55%;
+  position: absolute;
+  height: 300vh;
+  background: black;
+  top: 26.7%; }
+
+body.home #airlinesCanvas {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+body.home #al-a1 {
+  left: 70.4%; }
+
+body.home .reviews {
+  margin-top: 50vw;
+  z-index: 2;
+  position: relative; }
+
+body.home .mb-review {
+  font-family: "ff-tisa-web-pro", serif;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #14383D;
+  margin: 120px auto;
+  max-width: 32ch;
+  text-shadow: 0px 0px 2px rgba(225, 236, 255, 0.2); }
+  body.home .mb-review p {
+    margin-top: 0;
+    margin-bottom: 24px; }
+  body.home .mb-review p:last-child {
+    font-family: "Cera", san-serif;
+    font-size: 16px; }
 
 @keyframes distance-wobble {
   0% {
