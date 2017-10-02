@@ -114,12 +114,17 @@ a {
     .two-column .site-main {
       width: 66.67%;
       margin-top: 5px; } }
+  @media screen and (min-width: 740px) {
+    .two-column.two-column-wide .site-main {
+      width: 58.33%; } }
 
 .sidebar {
   font-family: "Cera", san-serif; }
   @media screen and (min-width: 740px) {
     .sidebar {
-      width: 22%; } }
+      width: 22%; }
+      .two-column-wide .sidebar {
+        width: 33.33%; } }
 
 .sidebar-title {
   text-transform: uppercase; }
@@ -645,10 +650,17 @@ ul.book-nav {
   margin-bottom: 1.25em; }
 
 .calendar-event {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  font-size: .8em; }
+  .calendar-event span {
+    display: block; }
 
 .calendar-event-date {
   display: block; }
+
+.calendar-event-desc {
+  font-weight: lighter;
+  margin: 1em 0; }
 
 .calendar-event-link {
   display: block;

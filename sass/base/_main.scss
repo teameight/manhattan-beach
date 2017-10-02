@@ -84,6 +84,14 @@ a {
 			margin-top: 5px;
 		}
 	}
+
+	&.two-column-wide {
+		.site-main {
+			@media screen and (min-width: $bp-md) {
+				width: 58.33%
+			}
+		}
+	}
 }
 
 .sidebar {
@@ -91,6 +99,10 @@ a {
 
 	@media screen and (min-width: $bp-md) {
 		width: 22%;
+
+		.two-column-wide & {
+			width: 33.33%
+		}
 	}
 
 }
