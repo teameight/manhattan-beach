@@ -44,13 +44,13 @@ body {
 
 a {
 	color: $color-link;
-	transition: $hover-transition;
+	// transition: $hover-transition;
 
 	&:visited {
 		color: $color-link;
 	}
 
-	&:hover,
+	// &:hover,
 	&:active {
 		color: $color-link-hover;
 	}
