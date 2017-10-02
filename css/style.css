@@ -74,9 +74,10 @@ body {
   z-index: 5;
   box-sizing: border-box;
   padding-top: 1px;
-  padding-bottom: 10vw;
+  padding-bottom: 0;
   transform: translateZ(0vw);
-  background: linear-gradient(0deg, rgba(225, 236, 255, 0) 5%, #e1ecff 40%, white 100%); }
+  background: linear-gradient(0deg, rgba(225, 236, 255, 0) 5%, #e1ecff 40%, white 100%);
+  margin-bottom: -25vw; }
 
 .no-scroll {
   overflow-y: hidden;
@@ -103,7 +104,7 @@ a {
 
 .single-column {
   max-width: 750px;
-  margin: 0 auto 8em; }
+  margin: 0 auto; }
 
 .two-column {
   display: flex;
@@ -500,23 +501,24 @@ a.btn {
   width: 100%;
   position: absolute;
   top: 0;
-  left: 0; }
+  left: 0;
+  pointer-events: none; }
 
 .home #al-a1 {
   left: 70.4%; }
 
 .home .reviews {
-  margin-top: 50vh; }
+  margin-top: 20vh; }
   @media screen and (min-width: 740px) {
     .home .reviews {
-      margin-top: 50vw; } }
+      margin-top: 30vw; } }
 
 .home .featured-review {
   font-family: "ff-tisa-web-pro", serif;
   font-size: 1.6em;
   line-height: 1.2;
   color: #14383D;
-  margin: 6em auto 14em;
+  margin: 40vh auto;
   max-width: 32ch; }
   .home .featured-review p {
     margin-top: 0;
@@ -524,6 +526,35 @@ a.btn {
   .home .featured-review p:last-child {
     font-family: "Cera", san-serif;
     font-size: 16px; }
+
+.home .wave-wrap .wavetext {
+  position: absolute;
+  bottom: 8vw;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Cera", san-serif;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 200;
+  animation: float-wobble 120s infinite linear; }
+  .home .wave-wrap .wavetext > * {
+    max-width: 40ch; }
+
+@keyframes float-wobble {
+  0% {
+    transform: rotate(0deg) translateX(1.8%) rotate(0deg); }
+  25% {
+    transform: rotate(360deg) translateX(2.4%) rotate(-358deg); }
+  55% {
+    transform: rotate(720deg) translateX(1.2%) rotate(-722deg); }
+  80% {
+    transform: rotate(1080deg) translateX(2%) rotate(-1078.5deg); }
+  100% {
+    transform: rotate(1440deg) translateX(1.8%) rotate(-1440deg); } }
 
 .book-overview {
   font-size: 1.1em; }

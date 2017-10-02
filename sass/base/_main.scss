@@ -30,9 +30,10 @@ body {
   z-index: 5;
 	box-sizing:border-box;
 	padding-top: 1px;
-	padding-bottom: 10vw;
+	padding-bottom: 0;
 	transform: translateZ(0vw);
 	background: linear-gradient(0deg, rgba(225, 236, 257, 0) 5%, rgba(225, 236, 257, 1) 40%, rgba(255, 255, 255, 1) 100%);
+	margin-bottom: -25vw;
 }
 
 .no-scroll {
@@ -70,7 +71,7 @@ a {
 
 .single-column {
 	max-width: 750px;
-	margin: 0 auto 8em;
+	margin: 0 auto;
 }
 
 .two-column {
