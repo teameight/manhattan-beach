@@ -432,128 +432,76 @@ a.btn {
   100% {
     transform: rotate(1440deg) translateX(1.8%) rotate(-1440deg); } }
 
+#page-wrap .bottom {
+  width: 100%;
+  height: 1px; }
+
 #body {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
-  perspective: 80vw;
-  perspective-origin: center -12vw;
   background: #e1ecff; }
 
 .below #body {
   perspective-origin: center 45vh; }
 
+.b-inner {
+  width: 100%;
+  height: auto;
+  /*overflow: hidden;*/ }
+
 .wave-wrap {
   width: 100vw;
-  position: absolute;
-  top: 0;
-  overflow: hidden; }
-  .below .wave-wrap {
-    display: none; }
-
-.waterline {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  z-index: 100; }
-  .waterline > div {
-    border-bottom: 2px solid orange;
-    box-sizing: border-box;
-    width: 100vw;
-    height: 0px;
-    position: relative; }
-    .waterline > div.window-w {
-      border-color: yellow; }
-    .waterline > div.window-h {
-      border-color: magenta; }
-    .waterline > div.wave-reveal {
-      border-color: blue; }
-    .waterline > div.persp-o {
-      border-color: green; }
-
-.wave-seg {
-  width: 100%;
-  transform-origin: center center;
-  position: absolute;
-  top: 600vw;
-  height: 26.44vw;
-  left: 0;
-  z-index: 0; }
-  .wave-seg img {
-    display: block;
-    width: 100%;
-    height: auto; }
-
-.waterline {
-  top: 9.6px;
+  position: relative;
   top: 0; }
 
-.wave-back {
-  top: 200vw;
-  height: 210vw;
-  background: #e1ecff;
-  transform: translateZ(-586.66667vw) scale(8.33333); }
-
-.wave-l-1 {
-  transform: translateZ(-586.66667vw) scale(8.33333); }
-
-.wave-l-2 {
-  transform: translateZ(-453.33333vw) scale(6.66667); }
-
-.wave-l-3 {
-  transform: translateZ(-364.44444vw) scale(5.55556); }
-
-.wave-l-4 {
-  transform: translateZ(-300.95238vw) scale(4.7619); }
-
-.wave-l-5 {
-  transform: translateZ(-253.33333vw) scale(4.16667); }
-
-.wave-l-6 {
-  transform: translateZ(-216.2963vw) scale(3.7037); }
-
-.wave-l-7 {
-  transform: translateZ(-186.66667vw) scale(3.33333);
-  /*background: orange;*/ }
-
-.wave-l-8 {
-  transform: translateZ(-162.42424vw) scale(3.0303); }
-
-#canvas-container {
-  height: 30vw;
+.wave-full {
+  display: block;
   width: 100%;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  transform: translateZ(-162.42424vw) scale(3.0303); }
-
-#sineCanvas {
-  height: 40vw;
-  width: 110vw;
-  position: absolute;
-  top: -5vw;
-  left: -5vw;
-  filter: blur(2px); }
+  height: auto; }
 
 /* TEMPLATE STYLES */
 .home #page {
   text-align: center; }
 
 .home .book-title {
-  padding: 0 0.5em;
+  padding: 0;
   height: 40vh;
   max-width: 700px;
   margin: 0 auto;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
   @media screen and (min-width: 740px) {
     .home .book-title {
       height: 80vh; } }
+  .home .book-title .t-svg-wrap {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 35.8%;
+    overflow: visible; }
   .home .book-title .title-svg {
     width: 100%;
     height: auto; }
+
+.home .air-lines > div {
+  width: 0.55%;
+  position: absolute;
+  height: 300vh;
+  background: black;
+  top: 26.7%; }
+
+.home #airlinesCanvas {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.home #al-a1 {
+  left: 70.4%; }
 
 .home .reviews {
   margin-top: 50vh; }

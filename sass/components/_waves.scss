@@ -1,179 +1,36 @@
-$persp: 80;
-$persp-o: -12;
-
-$wave_offset:600; // this also sets the speed of the wave parallax compared to scroll. higher = slower.
-$wave_reveal: 18; //25.118;
-
-$v_o_seed: $wave_reveal / $wave_offset;
-
-$v_o_factor: $v_o_seed * $persp; //this number increases as $persp-o increases
+#page-wrap {
+  .bottom {
+    width: 100%;
+    height:1px;
+  }
+}
 
 #body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
-    perspective: $persp * 1vw;
-    perspective-origin: center $persp-o*1vw;
     background: rgba(225, 236, 257, 1); 
 }
 .below #body {
   perspective-origin: center 45vh;
 }
 
+.b-inner {
+  width: 100%;
+  height:auto;
+  /*overflow: hidden;*/
+}
+
 .wave-wrap {
   width: 100vw;
-  position: absolute;
-  top: 0; 
-  overflow: hidden;
-
-  .below & {
-    display:none;
-  }
-
-}
-
-.waterline {
-  position: absolute;
-  top:0;
-  left: 0;
-  width: 100vw;
-  z-index: 100;
-
-  > div {
-    border-bottom:2px solid orange;
-    box-sizing: border-box;
-    width: 100vw;
-    height:0px;
-    position:relative;
-
-    &.window-w {
-      border-color:yellow;
-    }
-
-    &.window-h {
-      border-color:magenta;
-    }
-
-    &.wave-reveal {
-      border-color:blue;
-    }
-
-    &.persp-o {
-      border-color:green;
-    }
-  }
-}
-
-
-.wave-seg {
-  width: 100%;
-  transform-origin: center center;
-  position: absolute;
-  top: $wave_offset * 1vw;
-  height: 26.44vw;
-  left: 0;
-  z-index: 0;
-
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-}
-
-$vert_offset: $v_o_factor*4; // half the ((height/width)-overlap) of each element
-$translate_z: $persp * ( 1 - ( $persp / $vert_offset ) );
-$scale: ( $persp - $translate_z ) / $persp;
-
-.waterline {
-  top:$vert_offset * 1px;
-  top:0;
-}
-
-.wave-back {
-  top: ($wave_offset - 400) * 1vw;
-  height: 210vw;
-  background: rgba(225, 236, 257, 1);
-  transform:translateZ( $translate_z * 1vw ) scale( $scale );
-}
-
-
-.wave-l-1 {
-  transform:translateZ( $translate_z * 1vw ) scale( $scale );
-}
-
-$vert_offset: $vert_offset + $v_o_factor;
-$translate_z: $persp * ( 1 - ($persp / $vert_offset ) );
-$scale: ( $persp - $translate_z ) / $persp;
-
-.wave-l-2 {
-  transform:translateZ( $translate_z * 1vw ) scale( $scale );
-}
-
-$vert_offset: $vert_offset + $v_o_factor;
-$translate_z: $persp * ( 1 - ($persp / $vert_offset ) );
-$scale: ( $persp - $translate_z ) / $persp;
-
-.wave-l-3 {
-  transform:translateZ( $translate_z * 1vw ) scale( $scale );
-}
-
-$vert_offset: $vert_offset + $v_o_factor;
-$translate_z: $persp * ( 1 - ($persp / $vert_offset ) );
-$scale: ( $persp - $translate_z ) / $persp;
-
-.wave-l-4 {
-  transform:translateZ( $translate_z * 1vw ) scale( $scale ); 
-}
-
-$vert_offset: $vert_offset + $v_o_factor;
-$translate_z: $persp * ( 1 - ($persp / $vert_offset ) );
-$scale: ( $persp - $translate_z ) / $persp;
-
-.wave-l-5 {
-  transform:translateZ( $translate_z * 1vw ) scale( $scale ); 
-}
-
-$vert_offset: $vert_offset + $v_o_factor;
-$translate_z: $persp * ( 1 - ($persp / $vert_offset ) );
-$scale: ( $persp - $translate_z ) / $persp;
-
-.wave-l-6 {
-  transform:translateZ( $translate_z * 1vw ) scale( $scale ); 
-}
-
-$vert_offset: $vert_offset + $v_o_factor;
-$translate_z: $persp * ( 1 - ($persp / $vert_offset ) );
-$scale: ( $persp - $translate_z ) / $persp;
-
-.wave-l-7 {
-  transform:translateZ( $translate_z * 1vw ) scale( $scale ); 
-  /*background: orange;*/
-}
-
-$vert_offset: $vert_offset + $v_o_factor;
-$translate_z: $persp * ( 1 - ($persp / $vert_offset ) );
-$scale: ( $persp - $translate_z ) / $persp;
-
-.wave-l-8 {
-  transform:translateZ( $translate_z * 1vw ) scale( $scale ); 
-}
-
-#canvas-container {
-  height: 30vw;
-  width: 100%;
-  margin: 0 auto;
   position: relative;
-  overflow: hidden;
-  transform:translateZ( $translate_z * 1vw ) scale( $scale );
+  top: 0; 
+
 }
-#sineCanvas{
-  height:40vw;
-  width:110vw;
-  position:absolute;
-  top:-5vw;
-  left:-5vw;
- filter: blur(2px)
+
+.wave-full {
+    display: block;
+    width:100%;
+    height:auto;
 }

@@ -26,35 +26,7 @@
 
 <body <?php body_class(); ?>>
 	<div id="body">
-		<div class="wave-wrap">
-			<div class="wave-back wave-seg"></div>
-			<img class="wave-l-1 wave-seg" src="<?php echo get_template_directory_uri(); ?>/img/waves/wave-1.jpg" alt"waves" />
-			<div class="wave-l-2 wave-seg">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/waves/w2t.png" alt"waves" />
-				<img src="<?php echo get_template_directory_uri(); ?>/img/waves/w2.jpg" alt"waves" />
-			</div>
-			<div class="wave-l-3 wave-seg">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/waves/w3t.png" alt"waves" />
-				<img src="<?php echo get_template_directory_uri(); ?>/img/waves/w3.jpg" alt"waves" />
-			</div>
-			<div class="wave-l-4 wave-seg">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/waves/w4t.png" alt"waves" />
-				<img src="<?php echo get_template_directory_uri(); ?>/img/waves/w4.jpg" alt"waves" />
-			</div>
-			<div class="wave-l-5 wave-seg">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/waves/w5t.png" alt"waves" />
-				<img src="<?php echo get_template_directory_uri(); ?>/img/waves/w5.jpg" alt"waves" />
-			</div>
-			<div class="wave-l-6 wave-seg">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/waves/w6t.png" alt"waves" />
-				<img src="<?php echo get_template_directory_uri(); ?>/img/waves/w6.jpg" alt"waves" />
-			</div>
-			<div class="wave-l-7 wave-seg">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/waves/w7t.png" alt"waves" />
-				<img src="<?php echo get_template_directory_uri(); ?>/img/waves/w7.jpg" alt"waves" />
-			</div>
-		</div>
-
+		<div class="b-inner">
 		<div id="page-wrap">
 			<div id="page" class="container site">
 				<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'manhattan-beach' ); ?></a>

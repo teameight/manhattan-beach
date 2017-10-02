@@ -15,6 +15,11 @@
 
 		</div><!-- #page -->
 	</div><!-- #page-wrap -->
+	<div class="wave-wrap">
+		<img class="wave-full" src="<?php echo get_template_directory_uri(); ?>/img/waves/wave-full.jpg" alt"waves" />
+	</div>
+
+	</div><!-- #b-inner -->
 </div><!-- #body -->
 
 <?php wp_footer(); ?>
