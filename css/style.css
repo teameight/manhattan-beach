@@ -131,7 +131,8 @@ a {
   margin-bottom: 1em; }
   @media screen and (min-width: 740px) {
     .sidebar {
-      width: 22%; }
+      width: 22%;
+      border-bottom: none; }
       .two-column-wide .sidebar {
         width: 33.33%; } }
 

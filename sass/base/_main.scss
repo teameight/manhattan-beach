@@ -112,6 +112,7 @@ a {
 
 	@media screen and (min-width: $bp-md) {
 		width: 22%;
+		border-bottom: none;
 
 		.two-column-wide & {
 			width: 33.33%
