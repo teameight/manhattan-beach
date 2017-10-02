@@ -288,7 +288,7 @@ h4,
   display: none;
   z-index: 0;
   max-height: calc(100vh - 100px); }
-  @media screen and (min-width: 855px) {
+  @media screen and (min-width: 888px) {
     .menu-menu-1-container {
       top: 0;
       position: relative;
@@ -308,7 +308,7 @@ h4,
   text-align: center;
   font-family: "Cera", san-serif;
   text-transform: uppercase; }
-  @media screen and (min-width: 855px) {
+  @media screen and (min-width: 888px) {
     .menu-item {
       display: inline-block;
       text-align: left; } }
@@ -319,7 +319,7 @@ h4,
     transition: all 0.2s ease-out;
     text-decoration: none;
     display: block; }
-    @media screen and (min-width: 855px) {
+    @media screen and (min-width: 888px) {
       .menu-item a {
         padding: 10px 20px;
         display: inline; }
@@ -333,7 +333,7 @@ h4,
   position: absolute;
   top: -15px;
   right: 0; }
-  @media screen and (min-width: 855px) {
+  @media screen and (min-width: 888px) {
     .menu-toggle {
       display: none; } }
 
@@ -342,7 +342,7 @@ h4,
   cursor: pointer; }
   .menu-item-has-children.active > a {
     background-color: #E8E1E1; }
-  @media screen and (min-width: 855px) {
+  @media screen and (min-width: 888px) {
     .menu-item-has-children.active:after {
       top: 130%;
       left: 50%;
@@ -365,7 +365,7 @@ h4,
   display: none;
   border-top: 1px solid #197380;
   border-bottom: 1px solid #197380; }
-  @media screen and (min-width: 855px) {
+  @media screen and (min-width: 888px) {
     .sub-menu {
       position: absolute;
       width: 342px;
