@@ -44,16 +44,17 @@
 		position:absolute;
 		top:0;
 		left:0;
+		pointer-events: none;
 	}
 	#al-a1 {
 		left:70.4%;
 	}
 
 	.reviews {
-		margin-top: 50vh;
+		margin-top: 20vh;
 
 		@media screen and (min-width: $bp-md) {
-			margin-top: 50vw;
+			margin-top: 30vw;
 		}
 	}
 
@@ -62,7 +63,7 @@
 		font-size: 1.6em;
 		line-height: 1.2;
 		color: $dark-blue;
-		margin: 6em auto 14em;
+		margin: 40vh auto;
 		max-width: 32ch;
 
 		p {
@@ -76,5 +77,36 @@
 		}
 	}
 
+	.wave-wrap {
 
+		.wavetext {
+			position: absolute;
+			bottom: 8vw;
+			left: 0;
+			width:100%;
+			text-align: center;
+			color:white;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			font-family: $title-font;
+			color:rgba(255,255,255,.5);
+			font-weight: 200;
+
+			animation: float-wobble 120s infinite linear;
+
+			> * {
+				max-width: 40ch;
+			}
+		}
+
+	}
+
+}
+@keyframes float-wobble {
+  0% { transform: rotate(0deg) translateX(1.8%) rotate(0deg); }
+  25%   { transform: rotate(360deg) translateX(2.4%) rotate(-358deg); }
+  55%   { transform: rotate(720deg) translateX(1.2%) rotate(-722deg); }
+  80%   { transform: rotate(1080deg) translateX(2.0%) rotate(-1078.5deg); }
+  100%   { transform: rotate(1440deg) translateX(1.8%) rotate(-1440deg); }
 }
