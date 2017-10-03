@@ -592,6 +592,14 @@ a.btn {
   100% {
     transform: rotate(1440deg) translateX(1.8%) rotate(-1440deg); } }
 
+.social-link {
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 20px; }
+  .social-link:hover #Oval,
+  .social-link:hover #Fill-1 {
+    fill: #B1A0A0; }
+
 .book-overview {
   font-size: 1.1em; }
 
