@@ -12,6 +12,7 @@
 		display: flex;
 		align-items: center;
 		position: relative;
+		z-index: -1;
 
 		@media screen and (min-width: $bp-md) {
 			height: 50vh;
@@ -45,6 +46,7 @@
 		top:0;
 		left:0;
 		pointer-events: none;
+		z-index: 0;
 	}
 	#al-a1 {
 		left:70.4%;
