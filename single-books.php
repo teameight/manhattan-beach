@@ -50,7 +50,7 @@ get_header(); ?>
 					// Query this book's reviews
 					$args = array(
 						'post_type' 			=> 'reviews',
-						'posts_per_page' 	=> 3,
+						'posts_per_page' 	=> -1,
 						'tax_query' 			=> array(
 							array(
 								'taxonomy' 	=> 'reviewed-book',
@@ -86,7 +86,7 @@ get_header(); ?>
 					// Query this book's interviews
 					$args = array(
 						'post_type' 			=> 'interviews',
-						'posts_per_page' 	=> 3,
+						'posts_per_page' 	=> -1,
 						'tax_query' 			=> array(
 							array(
 								'taxonomy' 	=> 'interviewed-book',
