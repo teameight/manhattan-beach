@@ -1,0 +1,12 @@
+.social-link {
+	text-decoration: none;
+	display: inline-block;
+	margin-right: 20px;
+
+	&:hover {
+		#Oval,
+		#Fill-1 {
+			fill: $color-link-hover;
+		}
+	}
+}
