@@ -422,10 +422,6 @@ a.btn {
 .cta-link {
   font-family: "Cera", san-serif; }
 
-a.social-link {
-  text-decoration: none;
-  margin-right: 1em; }
-
 @keyframes distance-wobble {
   0% {
     transform: rotate(0deg) translateX(5px) rotate(0deg);
