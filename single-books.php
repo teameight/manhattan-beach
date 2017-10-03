@@ -20,13 +20,61 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php $slug = $post->post_name; ?>
+				<?php 
+
+					$slug = $post->post_name; 
+
+					// Query this book's reviews
+					$args = array(
+						'post_type' 			=> 'reviews',
+						'posts_per_page' 	=> -1,
+						'tax_query' 			=> array(
+							array(
+								'taxonomy' 	=> 'reviewed-book',
+								'field'			=> 'slug',
+								'terms'			=> $slug
+							)
+						),
+						'meta_query'	=> array(
+							array(
+								'key'	 	=> 'featured',
+								'value'	  	=> true,
+							)
+						)
+					);
+					$reviews_query = new WP_Query($args);
+
+					// Query this book's interviews
+					$args = array(
+						'post_type' 			=> 'interviews',
+						'posts_per_page' 	=> -1,
+						'tax_query' 			=> array(
+							array(
+								'taxonomy' 	=> 'interviewed-book',
+								'field'			=> 'slug',
+								'terms'			=> $slug
+							)
+						),
+						'meta_query'	=> array(
+							array(
+								'key'	 	=> 'featured',
+								'value'	  	=> true,
+							)
+						)
+					);
+					$interviews_query = new WP_Query($args);
+
+				?>
 
 				<header class="book-header">
 					<h1 class="entry-title"><?php the_title(); ?></h1>
 					<ul class="book-nav" style="">
+						<?php if ( $reviews_query->have_posts() ) { ?>
     				<li><a href="#reviews">Reviews</a></li>
+    				<?php } ?>
+    				<?php if ( $interviews_query->have_posts() ) { ?>
     				<li><a href="#interviews">Interviews</a></li>
+    				<?php } ?>
     				<?php if ( $guide = get_field('reading_guide') ) : ?>
 							<li><a href="<?php echo $guide; ?>">Reading Guide</a></li>
 						<?php endif; ?>
@@ -47,32 +95,13 @@ get_header(); ?>
 			<?php endif; ?>
 
 				<?php
-					// Query this book's reviews
-					$args = array(
-						'post_type' 			=> 'reviews',
-						'posts_per_page' 	=> -1,
-						'tax_query' 			=> array(
-							array(
-								'taxonomy' 	=> 'reviewed-book',
-								'field'			=> 'slug',
-								'terms'			=> $slug
-							)
-						),
-						'meta_query'	=> array(
-							array(
-								'key'	 	=> 'featured',
-								'value'	  	=> true,
-							)
-						)
-					);
-					$query = new WP_Query($args);
 
-				if ( $query->have_posts() ) { ?>
+				if ( $reviews_query->have_posts() ) { ?>
 					<section class="book-interviews">
 						<a name="reviews"></a>
 						<h2>Reviews</h2>
 					<?php
-					while ( $query->have_posts() ) : $query->the_post(); ?>
+					while ( $reviews_query->have_posts() ) : $reviews_query->the_post(); ?>
 						<article class="book-review">
 							<div class="book-review-content"><?php the_content(); ?></div>
 						</article>
@@ -81,34 +110,14 @@ get_header(); ?>
 					<a href="<?php echo home_url(); ?>/reviewed-book/<?php echo $slug; ?>" class="btn">See all reviews</a>
 					</section>
 				<?php	wp_reset_postdata();
-					}
+				}
 
-					// Query this book's interviews
-					$args = array(
-						'post_type' 			=> 'interviews',
-						'posts_per_page' 	=> -1,
-						'tax_query' 			=> array(
-							array(
-								'taxonomy' 	=> 'interviewed-book',
-								'field'			=> 'slug',
-								'terms'			=> $slug
-							)
-						),
-						'meta_query'	=> array(
-							array(
-								'key'	 	=> 'featured',
-								'value'	  	=> true,
-							)
-						)
-					);
-					$query = new WP_Query($args);
-
-				if ( $query->have_posts() ) { ?>
+				if ( $interviews_query->have_posts() ) { ?>
 					<section class="book-interviews">
 						<a name="interviews"></a>
 						<h2>Interviews</h2>
 					<?php
-					while ( $query->have_posts() ) : $query->the_post(); ?>
+					while ( $interviews_query->have_posts() ) : $interviews_query->the_post(); ?>
 						<article class="book-interview">
 							<div class="book-interview-content"><?php the_content(); ?></div>
 						</article>
@@ -117,6 +126,7 @@ get_header(); ?>
 					</section>
 				<?php wp_reset_postdata();
 					}
+					
 				?>
 
 		</main><!-- #main -->
