@@ -149,8 +149,17 @@
 }
 
 .nav-links {
-	display: flex;
-	justify-content: space-between;
 	margin-bottom: 2em;
 	font-family: $title-font;
+
+	div {
+		display: inline-block;
+		margin-right: 1em;
+
+		+ div {
+			border-left: 1px solid $blue-grey;
+			padding-left: 1em;
+		}
+	}
 }
+

@@ -397,10 +397,14 @@ h4,
       padding: 0 !important; }
 
 .nav-links {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 2em;
   font-family: "Cera", san-serif; }
+  .nav-links div {
+    display: inline-block;
+    margin-right: 1em; }
+    .nav-links div + div {
+      border-left: 1px solid #6C8094;
+      padding-left: 1em; }
 
 .wp-caption-text {
   font-family: "Cera", san-serif; }

@@ -35,10 +35,15 @@ get_header(); ?>
 
 		else :
 
-			get_template_part( 'template-parts/content', 'none' );
+			echo '<p>No interviews yet.</p>';
 
-		endif; ?>
+		endif;
 
+			$term_slug = get_queried_object()->slug;
+
+			echo '<a href="'.home_url().'/reviewed-book/'.$term_slug.'" class="btn">Read the reviews</a>';
+
+		?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

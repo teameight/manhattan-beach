@@ -435,10 +435,22 @@ function my_theme_archive_title( $title ) {
     } elseif ( is_tax() ) {
         $title = single_term_title( '', false );
     }
-  
+
     return $title;
 }
- 
+
 add_filter( 'get_the_archive_title', 'my_theme_archive_title' );
 
+// only show reviews that have custom field data
+function filter_empty_events($query) {
+	if ( !is_admin() && $query->is_main_query() && is_category('engagements') ) {
+		$query->set('meta_key', 'event_date');
+		$query->set('meta_value', date( "Ymd", strtotime('yesterday') ) );
+		$query->set('meta_compare', '>=');
+		$query->set('orderby', 'meta_value_num');
+		$query->set('order', 'ASC');
+	}
+}
+
+add_filter( 'pre_get_posts', 'filter_empty_events' );
 

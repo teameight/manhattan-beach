@@ -9,26 +9,25 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area two-column two-column-wide">
-		<?php if (!is_paged()) : ?>
-		<aside class="sidebar calendar-sidebar">
-			<h3 class="sidebar-title">Calendar</h3>
+	<div id="primary" class="content-area single-column">
+		<main id="main" class="site-main">
+
+		<?php
+		if ( have_posts() ) : ?>
+
+			<header class="page-header">
+				<h1 class="extra-margin-heading">Events</h1>
+			</header><!-- .page-header -->
+
 			<?php
-				date_default_timezone_set('America/New_York');
+			/* Start the Loop */
+			while ( have_posts() ) : the_post();
 
-				$args = array(
-					'category_name' => 'engagements',
-					'meta_key'     => 'event_date',
-					'meta_value'   => date( "Ymd", strtotime('yesterday') ), // change to how "event date" is stored
-					'meta_compare' => '>=',
-					'orderby'			=> 'meta_value_num',
-					'order'					=> 'ASC'
-				);
-
-				$query = new WP_Query($args);
-
-				if ( $query->have_posts() ) {
-					while ( $query->have_posts() ) : $query->the_post();
+				/*
+				 * Include the Post-Format-specific template for the content.
+				 * If you want to override this in a child theme, then include a file
+				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+				 */
 						$eDate = get_field('event_date');
 						$eTitle = get_field('event_title');
 						$eTime = get_field('event_time');
@@ -55,37 +54,7 @@ get_header(); ?>
 						<?php
 						endif;
 
-					endwhile;
-					wp_reset_postdata();
-
-				} else {
-					echo 'no upcoming events';
-				}
-			?>
-			<a class="btn" href="<?php echo home_url(); ?>/category/engagements">See all events</a>
-		</aside>
-	<?php endif; ?>
-
-		<main id="main" class="site-main">
-
-		<?php
-		if ( have_posts() ) : ?>
-
-			<header class="page-header extra-margin-heading">
-				<h1 class="entry-title news-heading">News &amp; Events</h1>
-				<?php the_archive_description( '<div class="archive-description">', '</div>' ); ?>
-			</header><!-- .page-header -->
-
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) : the_post(); ?>
-
-				<article class="news-post">
-					<h3 class="news-post-title"><?php the_title(); ?></h3>
-					<?php the_content(); ?>
-				</article>
-
-			<?php endwhile;
+			endwhile;
 
 			the_posts_navigation(array('prev_text' => 'Older', 'next_text' => 'Newer'));
 
@@ -96,8 +65,6 @@ get_header(); ?>
 		endif; ?>
 
 		</main><!-- #main -->
-
-
 	</div><!-- #primary -->
 
 <?php
