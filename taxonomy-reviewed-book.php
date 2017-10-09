@@ -41,7 +41,7 @@ get_header(); ?>
 
 			$term_slug = get_queried_object()->slug;
 
-			echo '<a href="'.home_url().'/reviewed-book/'.$term_slug.'" class="btn">Read the reviews</a>';
+			echo '<a href="'.home_url().'/interviewed-book/'.$term_slug.'" class="btn">Read the interviews</a>';
 
 		?>
 		</main><!-- #main -->
