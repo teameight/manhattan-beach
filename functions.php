@@ -440,9 +440,10 @@ add_filter( 'get_the_archive_title', 'my_theme_archive_title' );
 function filter_empty_events($query) {
 	if ( !is_admin() && $query->is_main_query() && is_category('engagements') ) {
 		$query->set('meta_key', 'event_date');
-		$query->set('meta_value', '');
-		$query->set('meta_compare', '!=');
+		$query->set('meta_value', date( "Ymd", strtotime('yesterday') ) );
+		$query->set('meta_compare', '>=');
 		$query->set('orderby', 'meta_value_num');
+		$query->set('order', 'ASC');
 	}
 }
 
