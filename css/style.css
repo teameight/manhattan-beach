@@ -683,11 +683,13 @@ a.btn {
   justify-content: center;
   box-sizing: border-box;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  /*
+  .above & {
+    visibility: hidden;
+  }*/ }
   .node-wrapper.nw-0 {
     margin-top: 50vh; }
-  .above .node-wrapper {
-    visibility: hidden; }
   .node-wrapper .camera {
     transform-style: preserve-3d;
     transition: transform 2000ms ease;
@@ -720,6 +722,7 @@ a.btn {
   transform: translateZ(-100vw) scale(2.25); }
   .node .inner {
     transform-style: preserve-3d;
+    animation: float-wobble 55s infinite linear;
     transition: opacity 2000ms ease; }
   .node .camera .object {
     position: absolute; }
@@ -762,9 +765,10 @@ a.btn {
         -webkit-backface-visibility: hidden; }
       .node .object .inner > * {
         transition: opacity 2000ms ease;
-        opacity: 1; }
-        .above .node .object .inner > * {
-          opacity: 0 !important; }
+        opacity: 1;
+        /*.above & {
+          opacity:0!important;
+        }*/ }
       .node .object .inner > div img, .node .object .inner > div p, .node .object .inner p {
         width: 100%;
         user-drag: none;

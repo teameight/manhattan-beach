@@ -14,10 +14,10 @@
     margin-top:50vh;
   }
   
-
+/*
   .above & {
     visibility: hidden;
-  }
+  }*/
 
   .camera {
     transform-style: preserve-3d;
@@ -74,7 +74,7 @@
   
   .inner {
     transform-style: preserve-3d;
-    //animation: float-wobble 24s infinite linear;
+    animation: float-wobble 55s infinite linear;
     transition: opacity $cycleLength ease;
   }
   .camera .object {
@@ -143,9 +143,9 @@
 
         opacity:1;
 
-        .above & {
+        /*.above & {
           opacity:0!important;
-        }
+        }*/
       }
 
       > div img, > div p, p {
