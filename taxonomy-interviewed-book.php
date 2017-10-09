@@ -33,16 +33,17 @@ get_header(); ?>
 
 			the_posts_navigation(array('prev_text' => 'Older', 'next_text' => 'Newer'));
 
+		else :
+
+			echo '<p>No interviews yet.</p>';
+
+		endif;
+
 			$term_slug = get_queried_object()->slug;
 
 			echo '<a href="'.home_url().'/reviewed-book/'.$term_slug.'" class="btn">Read the reviews</a>';
 
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif; ?>
-
+		?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

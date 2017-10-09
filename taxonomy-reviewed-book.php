@@ -33,16 +33,17 @@ get_header(); ?>
 
 			the_posts_navigation(array('prev_text' => 'Older', 'next_text' => 'Newer'));
 
-			$term_slug = get_queried_object()->slug;
-
-			echo '<a href="'.home_url().'/interviewed-book/'.$term_slug.'" class="btn">Read the interviews</a>';
-
 		else :
 
-			get_template_part( 'template-parts/content', 'none' );
+			echo '<p>No reviews yet.</p>';
 
-		endif; ?>
+		endif;
 
+			$term_slug = get_queried_object()->slug;
+
+			echo '<a href="'.home_url().'/reviewed-book/'.$term_slug.'" class="btn">Read the reviews</a>';
+
+		?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
