@@ -1,5 +1,4 @@
 (function( $ ) {
-	console.log(0);
 	$.fn.audioSlideshow = function( options ) {
 			console.log(1);
 			console.log(options);

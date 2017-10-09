@@ -7,6 +7,8 @@
  * @package Manhattan_Beach
  */
 
+$version = 2.1;
+
 if ( ! function_exists( 'manhattan_beach_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -89,11 +91,14 @@ add_action( 'after_setup_theme', 'manhattan_beach_setup' );
 include_once 'functions/slideshow-shortcode.php';
 
 function slideshow_register_scripts() {
-    wp_enqueue_style( 'audioslide-style', get_template_directory_uri() . '/css/vendor/audioslide-style.css?v=1.4', false );
+    wp_enqueue_style( 'audioslide-style', get_template_directory_uri() . '/css/vendor/audioslide-style.css?v=' . $version, false );
     wp_enqueue_script( 'jquery' );
-    wp_enqueue_script( 'wave-position', get_template_directory_uri() . '/js/wave-position.js?v=1.4', array('jquery') );
+    wp_enqueue_script( 'jquery-mobile', get_template_directory_uri() . '/js/vendor/jquery-mobile.js?v=' . $version, array('jquery') );
+    wp_enqueue_script( 'uwNodes', get_template_directory_uri() . '/js/uwNodes.js?v=' . $version, array('jquery') );
+    wp_enqueue_script( 'wave-position', get_template_directory_uri() . '/js/wave-position.js?v=' . $version, array('jquery') );
+    //wp_enqueue_script( 'underwater', get_template_directory_uri() . '/js/underwater.js?v=' . $version, array('jquery') );
     wp_register_script( 'jplayer', get_template_directory_uri() . '/js/vendor/jplayer/jquery.jplayer.js', array('jquery'), true );
-    wp_register_script( 'audioslideshow', get_template_directory_uri() . '/js/vendor/jquery.audioslideshow.js?v=1.1', array('jquery', 'jplayer'), true );
+    wp_register_script( 'audioslideshow', get_template_directory_uri() . '/js/vendor/jquery.audioslideshow.js?v=' . $version, array('jquery', 'jplayer'), true );
     wp_register_script( 'screenfull', get_template_directory_uri() . '/js/vendor/screenfull.min.js', array('jquery'), true );
     wp_enqueue_script( 'jplayer' );
     wp_enqueue_script( 'audioslideshow' );

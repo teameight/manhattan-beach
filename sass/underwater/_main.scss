@@ -1,0 +1,96 @@
+.underwater {
+
+  position:relative;
+  // border-top:3px magenta solid;
+  width:100vw;
+  transform-origin: top center;
+  padding-bottom: 300vh;
+  background: linear-gradient(2deg, $under-mid 0%, $under-mid 40%, $under-dark 85%, $under-black 92%, $under-black 100%);
+
+  padding-top: 1px;
+  -webkit-transform-style:preserve-3d;
+  transform-style: preserve-3d;
+
+  &:after {
+    //content: '';
+    width: 16px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    background-image: linear-gradient(white 2px, transparent 2px), linear-gradient(90deg, white 2px, transparent 2px), linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+  }
+}
+
+
+
+.canvas-wrap {
+	position:fixed;
+	padding:10%;
+    margin: auto;
+    top: 0%;
+    left: 0%;
+	height:100%;
+	width:100%;
+	box-sizing:border-box;
+	pointer-events:none;
+
+  opacity:1;
+  transition: opacity 3s ease;
+
+  .above & {
+    /*opacity:0;*/
+  }
+}
+
+#detritus-canvas {
+  
+	position: fixed;  
+/* 	position: relative; */
+    margin: auto;
+    top: -5%;
+    left: -5%;
+	height:110%;
+	width:110%;
+	border:1px solid yellow;
+
+	/*background: blue;*/
+}
+
+.bg-detritus {
+	top: 0;
+  left: 0;
+  height: 300vw;
+  right: 0;
+  box-sizing: border-box;
+  pointer-events: none;
+  transform: translateZ(0vw);
+  transform-style: preserve-3d;
+  z-index: 3;
+
+	 > div {
+	  //background-image: url(http://team-eight.com/open-dev/jegan/assets/ground-dk-1.png);
+	  content: "";
+	  left: -50%;
+	  position: absolute;
+	  top: -50%;
+	  width: 200%;
+	  height: 200%;
+	}
+
+}
+
+.bg-d-1 {
+  opacity: 0.1;
+  background-image: url(http://team-eight.com/open-dev/jegan/assets/white-grit.png);
+  background-size:1600px;
+  transform: translateZ(-10vw) scale(1.1);
+}
+.bg-d-2 {
+  background-image: url(http://team-eight.com/open-dev/jegan/assets/white-grit-2.png); 
+  opacity: 0.15;
+  transform: translateZ(-100vw) scale(3);
+}

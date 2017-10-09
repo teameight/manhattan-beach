@@ -18,6 +18,10 @@
 @import 'components/animations';
 @import 'components/waves';
 
+@import "underwater/main";
+@import "underwater/objects";
+@import "underwater/background";
+
 /* TEMPLATE STYLES */
 
 @import 'pages/home';
