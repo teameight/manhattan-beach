@@ -241,8 +241,8 @@ var unit = 30,
 
 	wavestrokeWidth = wWidth*.002,
 	parameters={
-			freq: 1,
-			amp: 55,
+			freq: 1.7,
+			amp: 58,
 			type: "sin",
 			rand: getRandomArbitrary(0, Math.PI)
 		};
@@ -289,7 +289,7 @@ waveDraw = function () {
     
     // Update the time and waveDraw again
 		
-		waveDraw.seconds = waveDraw.seconds - 0.004;
+		waveDraw.seconds = waveDraw.seconds - 0.008;
     waveDraw.t = waveDraw.seconds*Math.PI;
 
 		requestAnimFrame(waveDraw);
@@ -568,6 +568,12 @@ function drawWave(t) {
 			var elem = $( this );
 		  		posz = 0 - elem.find('.here').data('posz');
 					setDistance(elem, posz);
+		});
+
+		$( ".underwater" ).on( "click", ".camera .object.closed", function() {
+
+			$(this).removeClass('closed');
+
 		});
 
 		$( ".underwater" ).on( "click", ".camera .object:not(.spin)", function() {
@@ -858,7 +864,7 @@ function drawWave(t) {
 					 
 		    },
 				dDraw:function() {
-					if(uWScrollDiff + windowW*.2 > 0){
+					if(uWScrollDiff + windowW*.22 > 0){
 						if(windowH - this.dotPosition.y - windowW*.2 < uWScrollDiff){	
 							var dopacity = this.dotOpacity;
 							dCtx.fillStyle = 'rgba(255,255,255,'+ dopacity +')';

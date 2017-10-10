@@ -12,7 +12,7 @@
   @include preserve3d;
 
   &.nw-0{
-    margin-top:50vh;
+    margin-top:80vh;
   }
   
 /*
@@ -91,7 +91,7 @@
     transition: transform 1s ease;
     -webkit-backface-visibility: hidden;
 
-    &.scrollbar .inner {
+    &.scrollbar:not(.closed) .inner {
       height: 80vh;
       overflow-y: scroll;
 
@@ -109,7 +109,16 @@
         background-color: rgba(255,255,255,0.1);
       }
 
+      .open-handle {
+        display:none;
+      }
 
+    }
+
+    &.scrollbar.closed .inner {
+      p:not(:first-child) {
+        display: none;
+      }
     }
     
     .inner {

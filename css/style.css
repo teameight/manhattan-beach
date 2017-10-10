@@ -489,6 +489,8 @@ a.btn {
   perspective: 80vw;
   perspective-origin: center -12vw;
   background: #e1ecff; }
+  .below #body {
+    background: #0a0f14; }
 
 .below #body {
   /*perspective-origin: center 45vh;*/
@@ -712,7 +714,7 @@ a.btn {
     visibility: hidden;
   }*/ }
   .node-wrapper.nw-0 {
-    margin-top: 50vh; }
+    margin-top: 80vh; }
   .node-wrapper .camera {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -762,17 +764,21 @@ a.btn {
     cursor: pointer;
     transition: transform 1s ease;
     -webkit-backface-visibility: hidden; }
-    .node .object.scrollbar .inner {
+    .node .object.scrollbar:not(.closed) .inner {
       height: 80vh;
       overflow-y: scroll; }
-      .node .object.scrollbar .inner::-webkit-scrollbar {
+      .node .object.scrollbar:not(.closed) .inner::-webkit-scrollbar {
         width: 6px;
         background-color: rgba(255, 255, 255, 0.1); }
-      .node .object.scrollbar .inner::-webkit-scrollbar-thumb {
+      .node .object.scrollbar:not(.closed) .inner::-webkit-scrollbar-thumb {
         background-color: rgba(255, 255, 255, 0.5); }
-      .node .object.scrollbar .inner::-webkit-scrollbar-track {
+      .node .object.scrollbar:not(.closed) .inner::-webkit-scrollbar-track {
         -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
         background-color: rgba(255, 255, 255, 0.1); }
+      .node .object.scrollbar:not(.closed) .inner .open-handle {
+        display: none; }
+    .node .object.scrollbar.closed .inner p:not(:first-child) {
+      display: none; }
     .node .object .inner {
       color: #bdccd4;
       line-height: 1.4;
@@ -816,22 +822,28 @@ a.btn {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vw;
+  height: 150vh;
   background: linear-gradient(0deg, rgba(63, 98, 111, 0) 0%, #3f626f 30%, #3f626f 100%);
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
-  pointer-events: none; }
+  pointer-events: none;
+  /*  img {
+    width:100%;
+    height:100%;
+    overflow: hidden;
+  }*/ }
 
 .background {
   position: absolute;
   bottom: 0;
   left: 0;
   transition: transform 1s ease;
-  overflow: hidden;
   width: 100vw;
   height: 100%;
   pointer-events: none;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
   opacity: 1; }
   .above .background {
     opacity: 0 !important; }
@@ -842,17 +854,17 @@ a.btn {
     bottom: 0;
     left: 0;
     transition: opacity 2s ease;
-    opacity: .8; }
+    opacity: .6;
+    transform-origin: center bottom; }
     .above .background .structure {
       opacity: 0 !important; }
   .background .st-0 {
-    transform: translateZ(-1600vw) scale(21.6);
-    bottom: -1120vw; }
+    transform: translateZ(-1600vw) scale(21.6); }
     .background .st-0 img {
       width: 100vw;
       /*border: 1px solid yellow;*/ }
   .background .st-1 {
-    transform: translateX(-40vw) translateZ(-600vw) scale(70) rotate3d(0, 1, 1, -30deg); }
+    transform: translateX(-40vw) translateZ(-600vw) scale(70) rotate3d(0, 1, 0, -30deg); }
     .background .st-1 img {
       width: 15vw; }
 
