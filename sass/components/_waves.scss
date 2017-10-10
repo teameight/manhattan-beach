@@ -29,10 +29,28 @@ $v_o_factor: $v_o_seed * $persp; //this number increases as $persp-o increases
   /*background: linear-gradient(2deg, $under-mid 0%, $under-mid 40%, $under-dark 85%, $under-black 92%, $under-black 100%);*/
 }
 
+.b-bg {
+  width: 100%;
+  height:100%;
+  pointer-events: none;
+  position: absolute;
+  top:0;
+  left: 0;
+  right:0;
+  bottom:0;
+  /*overflow: hidden;*/
+  .below & {
+    background: linear-gradient(2deg, $under-mid 0%, $under-mid 40%, $under-dark 85%, $under-black 92%, $under-black 100%);
+  }
+
+}
 .b-inner {
   width: 100%;
   height:auto;
+  pointer-events: none;
+  @include preserve3d;
   /*overflow: hidden;*/
+
 }
 
 .lastwave.wave-seg {
@@ -43,8 +61,7 @@ $v_o_factor: $v_o_seed * $persp; //this number increases as $persp-o increases
   width: 100vw;
   position: relative;
   top: 0; 
-  -webkit-transform-style:preserve-3d;
-  transform-style: preserve-3d;
+  @include preserve3d;
   /*overflow: hidden;*/
 
   .below & {
@@ -97,6 +114,10 @@ $v_o_factor: $v_o_seed * $persp; //this number increases as $persp-o increases
   transform-origin: top center;
   
   /*border-top:1px solid red;*/
+
+  .below &:not(.wave-l-8){
+    visibility: hidden;
+  }
 
   img {
     display: block;
@@ -183,8 +204,7 @@ $scale: ( $persp - $translate_z ) / $persp;
 .wave-l-8 {
   transform:translateZ( $translate_z * 1vw ) scale( $scale ); 
   height: auto;
-  -webkit-transform-style:preserve-3d;
-  transform-style: preserve-3d;
+  @include preserve3d;
 }
 
 #canvas-container {

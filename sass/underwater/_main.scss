@@ -5,11 +5,11 @@
   width:100vw;
   transform-origin: top center;
   padding-bottom: 300vh;
-  background: linear-gradient(2deg, $under-mid 0%, $under-mid 40%, $under-dark 85%, $under-black 92%, $under-black 100%);
+  /*background: linear-gradient(2deg, $under-mid 0%, $under-mid 40%, $under-dark 85%, $under-black 92%, $under-black 100%);*/
 
   padding-top: 1px;
-  -webkit-transform-style:preserve-3d;
-  transform-style: preserve-3d;
+  margin-top: -2px;
+  @include preserve3d;
 
   &:after {
     //content: '';
@@ -68,7 +68,7 @@
   box-sizing: border-box;
   pointer-events: none;
   transform: translateZ(0vw);
-  transform-style: preserve-3d;
+  @include preserve3d;
   z-index: 3;
 
 	 > div {

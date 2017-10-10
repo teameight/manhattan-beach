@@ -4,11 +4,11 @@
  */
 
 var canvas, ctx, container,
-	height, width, wrapH,
-	xAxis, yAxis,
-  draw, scale, strokeWidth
+	airheight, airwidth, wrapH,
+	airxAxis, airyAxis,
+  drawLines, airscale, strokeWidth
 
- 	linesstrokecolor='rgba(0,0,0,1)',
+ 	linestrokecolor='rgba(0,0,0,1)',
 
 	linesParameters = [
 			{
@@ -106,14 +106,14 @@ function airLinesInit() {
     ctx = canvas.getContext("2d");
     ctx.lineJoin = 'round';
 
-		width = canvas.width;
-    height = canvas.height;
+		airwidth = canvas.width;
+    airheight = canvas.height;
     wrapH = container.offsetHeight;
-    strokeWidth = width * 0.0055;
-    xAxis = 0;
-    yAxis = Math.floor(width/2);
+    strokeWidth = airwidth * 0.0055;
+    airxAxis = 0;
+    airyAxis = Math.floor(airwidth/2);
 
-		scale={x: .5, y: width/4};
+		airscale={x: .5, y: airwidth/4};
 
     ctx.save();
     drawLines();
@@ -127,7 +127,7 @@ function airLinesInit() {
  */
 drawLines = function () {
     // Clear the canvas
-    ctx.clearRect(0, 0, width, height);
+    ctx.clearRect(0, 0, airwidth, airheight);
 
     drawAirLines(drawLines.t);
 
@@ -164,23 +164,23 @@ function drawAirLines(t) {
 		var prevX = 0;
 		var stopCheck = false;
     // Loop to draw segments
-   	for (i = xAxis; i <= (height+(height/30)); i += (height/80)) {
+   	for (i = airxAxis; i <= (airheight+(airheight/30)); i += (airheight/80)) {
 
       y = i;
 			var currentX = 0;
 
-			var val=Math.sin((p.newFreq*i-xAxis)/scale.y);
-			var addToX = val*p.newAmp*scale.x*amp;
-			var swing = (0-amp)*(i/(height/80))*p.amp*.075;
+			var val=Math.sin((p.newFreq*i-airxAxis)/airscale.y);
+			var addToX = val*p.newAmp*airscale.x*amp;
+			var swing = (0-amp)*(i/(airheight/80))*p.amp*.075;
 			currentX+=addToX;
 			currentX+=swing;
 
 			prevX = currentX;
 
 			if(p.letter === 'he'){
-      	if(i > p.height*wrapH){
+      	if(i > p.airheight*wrapH){
 	      	if(!stopCheck){
-						cpath.push({x:currentX,y:p.height*wrapH});
+						cpath.push({x:currentX,y:p.airheight*wrapH});
 						stopCheck = true;
 					}
 	      }else{
@@ -192,10 +192,10 @@ function drawAirLines(t) {
 
     }
 
-		var left = p.left*width,
+		var left = p.left*airwidth,
 				top = p.top*wrapH;
 
-		var gradient = ctx.createLinearGradient(width/2, 0, width/2, height*.9);
+		var gradient = ctx.createLinearGradient(airwidth/2, 0, airwidth/2, airheight*.9);
     gradient.addColorStop(0.00, linestrokecolor);
     gradient.addColorStop(0.20, 'rgba(0,0,0,0.3)');
     gradient.addColorStop(0.90, 'rgba(0,0,0,0.15)');
@@ -376,7 +376,7 @@ function drawWave(t) {
 		var windowW = $( window ).width();
 		var isUnderWater = false,
 				$underwater = $('.underwater');
-		var uwTop = $underwater.offset().top;
+		var uwTop = $('.uw-segway').offset().top;
 		// console.log('onload ' + uwTop);
 		
 		var maxRange = 500; //range of visibility, in z-space
@@ -458,7 +458,7 @@ function drawWave(t) {
 
 			}
 
-			uwTop = $underwater.offset().top;
+			uwTop = $('.uw-segway').offset().top;
 			// console.log(uwTop);
 			waveInit();
 			initDCanvas();
@@ -473,6 +473,9 @@ function drawWave(t) {
 			requestAnimFrame(dLoop); 
 
 			$bodyDiv.addClass('loaded');
+			var bInnerH = $('.b-inner').height();
+			console.log(bInnerH);
+			$('.b-bg').height(bInnerH);
 
 		}
 

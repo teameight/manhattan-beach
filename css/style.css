@@ -77,7 +77,8 @@ body {
   padding-bottom: 0;
   transform: translateZ(0vw);
   background: linear-gradient(0deg, rgba(225, 236, 255, 0) 5%, #e1ecff 40%, white 100%);
-  margin-bottom: -25vw; }
+  margin-bottom: -25vw;
+  pointer-events: initial; }
 
 .no-scroll {
   overflow-y: hidden;
@@ -493,9 +494,25 @@ a.btn {
   /*perspective-origin: center 45vh;*/
   /*background: linear-gradient(2deg, $under-mid 0%, $under-mid 40%, $under-dark 85%, $under-black 92%, $under-black 100%);*/ }
 
+.b-bg {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /*overflow: hidden;*/ }
+  .below .b-bg {
+    background: linear-gradient(2deg, #0a0f14 0%, #0a0f14 40%, #324650 85%, #3f626f 92%, #3f626f 100%); }
+
 .b-inner {
   width: 100%;
   height: auto;
+  pointer-events: none;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
   /*overflow: hidden;*/ }
 
 .lastwave.wave-seg {
@@ -542,6 +559,8 @@ a.btn {
   z-index: 0;
   transform-origin: top center;
   /*border-top:1px solid red;*/ }
+  .below .wave-seg:not(.wave-l-8) {
+    visibility: hidden; }
   .wave-seg img {
     display: block;
     width: 100%;
@@ -604,8 +623,9 @@ a.btn {
   width: 100vw;
   transform-origin: top center;
   padding-bottom: 300vh;
-  background: linear-gradient(2deg, #0a0f14 0%, #0a0f14 40%, #324650 85%, #3f626f 92%, #3f626f 100%);
+  /*background: linear-gradient(2deg, $under-mid 0%, $under-mid 40%, $under-dark 85%, $under-black 92%, $under-black 100%);*/
   padding-top: 1px;
+  margin-top: -2px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d; }
   .underwater:after {
@@ -653,6 +673,7 @@ a.btn {
   box-sizing: border-box;
   pointer-events: none;
   transform: translateZ(0vw);
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   z-index: 3; }
   .bg-detritus > div {
@@ -684,6 +705,8 @@ a.btn {
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
   /*
   .above & {
     visibility: hidden;
@@ -691,6 +714,7 @@ a.btn {
   .node-wrapper.nw-0 {
     margin-top: 50vh; }
   .node-wrapper .camera {
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     transition: transform 2000ms ease;
     width: 100%;
@@ -718,17 +742,21 @@ a.btn {
 .node {
   height: 70%;
   width: 100%;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   transform: translateZ(-100vw) scale(2.25); }
   .node .inner {
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     animation: float-wobble 55s infinite linear;
     transition: opacity 2000ms ease; }
   .node .camera .object {
-    position: absolute; }
+    position: absolute;
+    pointer-events: initial; }
   .node .object {
     position: relative;
     width: 100%;
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     transform: rotateY(30deg) rotateX(5deg);
     cursor: pointer;
@@ -783,6 +811,18 @@ a.btn {
     .text .node .object, .node .object.text {
       width: 100%; }
 
+.uw-segway {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vw;
+  background: linear-gradient(0deg, rgba(63, 98, 111, 0) 0%, #3f626f 30%, #3f626f 100%);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  pointer-events: none; }
+
 .background {
   position: absolute;
   bottom: 0;
@@ -796,6 +836,7 @@ a.btn {
   .above .background {
     opacity: 0 !important; }
   .background .structure {
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     position: absolute;
     bottom: 0;

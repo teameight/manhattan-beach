@@ -1,5 +1,5 @@
 var zInterval = -200,
-		imgRoot = '\/\/localhost\/htdocs\/egan-wp\/wp-content\/themes\/manhattan-beach';
+		imgRoot = '\/\/staging.jenniferegan.com\/wp-content\/themes\/manhattan-beach';
 
 var uwNodes = [
 	{

@@ -34,6 +34,7 @@ body {
 	transform: translateZ(0vw);
 	background: linear-gradient(0deg, rgba(225, 236, 257, 0) 5%, rgba(225, 236, 257, 1) 40%, rgba(255, 255, 255, 1) 100%);
 	margin-bottom: -25vw;
+	pointer-events: initial;
 }
 
 .no-scroll {

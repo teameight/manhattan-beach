@@ -46,14 +46,15 @@
 			<div id="canvas-container">
 			  <canvas id="waveCanvas"></canvas>
 			</div>
+			<div class="uw-segway"></div>
 			<section id="underwater" class="underwater">
 				<div class="background">
-					<div class="structure st-0">
+					<!-- <div class="structure st-0">
 						<img alt="" src="./img/bg-texture.png">
 					</div>
 					<div class="structure st-1">
 						<img alt="" src="./img/nyscraper.png">
-					</div>
+					</div> -->
 				</div>
 				<div class="node-wrapper nw-template">
 			    <div class="node">
@@ -64,8 +65,7 @@
 			    </div>
 			  </div>
 			</section>
-		</div>
-	</div><!-- wave-wrap -->
+		</div><!-- wave-wrap -->
 	</div><!-- #b-inner -->
 </div><!-- #body -->
 <div class="canvas-wrap">

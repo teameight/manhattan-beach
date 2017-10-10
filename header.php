@@ -39,6 +39,7 @@
 	<!-- End Google Tag Manager (noscript) -->
 
 	<div id="body">
+		<div class="b-bg"></div>
 		<div class="b-inner">
 		<div id="page-wrap">
 			<div id="page" class="container site">

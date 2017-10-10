@@ -41,3 +41,14 @@ $bp-xl: 1200px;
 
 
 $cycleLength : 2000ms;
+
+@mixin preserve3d {
+  -webkit-transform-style:preserve-3d;
+  transform-style: preserve-3d;
+}
+
+@mixin backfacehidden {
+  -webkit-backface-visibility: hidden;
+-moz-backface-visibility:    hidden;
+-ms-backface-visibility:     hidden;
+}

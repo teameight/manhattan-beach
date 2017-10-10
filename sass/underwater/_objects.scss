@@ -9,6 +9,7 @@
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
+  @include preserve3d;
 
   &.nw-0{
     margin-top:50vh;
@@ -20,7 +21,7 @@
   }*/
 
   .camera {
-    transform-style: preserve-3d;
+    @include preserve3d;
     transition:transform $cycleLength ease;
     width:100%;
     height:100%;
@@ -69,21 +70,22 @@
   
   height: 70%;
   width: 100%;
-  transform-style: preserve-3d;
+  @include preserve3d;
   transform: translateZ(-100vw) scale(2.25);
   
   .inner {
-    transform-style: preserve-3d;
+    @include preserve3d;
     animation: float-wobble 55s infinite linear;
     transition: opacity $cycleLength ease;
   }
   .camera .object {
     position: absolute;
+    pointer-events: initial;
   }
   .object {
     position: relative;
     width:100%;
-    transform-style: preserve-3d;
+    @include preserve3d;
     transform:rotateY(30deg) rotateX(5deg);
     cursor:pointer;
     transition: transform 1s ease;
