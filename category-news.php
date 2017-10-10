@@ -22,7 +22,8 @@ get_header(); ?>
 					'meta_value'   => date( "Ymd", strtotime('yesterday') ), // change to how "event date" is stored
 					'meta_compare' => '>=',
 					'orderby'			=> 'meta_value_num',
-					'order'					=> 'ASC'
+					'order'					=> 'ASC',
+					'posts_per_page' => 5
 				);
 
 				$query = new WP_Query($args);
