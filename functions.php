@@ -7,9 +7,10 @@
  * @package Manhattan_Beach
  */
 
-$version = 2.2;
 
 if ( ! function_exists( 'manhattan_beach_setup' ) ) :
+
+
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -91,11 +92,14 @@ add_action( 'after_setup_theme', 'manhattan_beach_setup' );
 include_once 'functions/slideshow-shortcode.php';
 
 function slideshow_register_scripts() {
+	global $post;
+		$version = '2.2';
+
     wp_enqueue_style( 'audioslide-style', get_template_directory_uri() . '/css/vendor/audioslide-style.css?v=' . $version, false );
     wp_enqueue_script( 'jquery' );
     //wp_enqueue_script( 'jquery-mobile', get_template_directory_uri() . '/js/vendor/jquery-mobile.js?v=' . $version, array('jquery') );
-    wp_enqueue_script( 'uwNodes', get_template_directory_uri() . '/js/uwNodes.js?v=' . $version, array('jquery') );
-    wp_enqueue_script( 'wave-position', get_template_directory_uri() . '/js/wave-position.js?v=' . $version, array('jquery') );
+    wp_enqueue_script( 'uwNodes', get_template_directory_uri() . '/js/uwNodes.js?v=' . $version, array('jquery'), true );
+    wp_enqueue_script( 'wave-position', get_template_directory_uri() . '/js/wave-position.js?v=' . $version, array('jquery'), true );
     //wp_enqueue_script( 'underwater', get_template_directory_uri() . '/js/underwater.js?v=' . $version, array('jquery') );
     wp_register_script( 'jplayer', get_template_directory_uri() . '/js/vendor/jplayer/jquery.jplayer.js', array('jquery'), true );
     wp_register_script( 'audioslideshow', get_template_directory_uri() . '/js/vendor/jquery.audioslideshow.js?v=' . $version, array('jquery', 'jplayer'), true );
@@ -103,6 +107,23 @@ function slideshow_register_scripts() {
     wp_enqueue_script( 'jplayer' );
     wp_enqueue_script( 'audioslideshow' );
     wp_enqueue_script( 'screenfull' );
+
+		if ( is_page() ) {
+			// Get the queried object and sanitize it
+			$current_page = sanitize_post( $GLOBALS['wp_the_query']->get_queried_object() );
+			// Get the page slug
+			$slug = $current_page->post_name;
+		} elseif ( is_category() ) {
+			$slug = get_query_var('category_name');
+		} elseif ( is_singular( 'books') ) {
+			$slug = 'books/' . get_query_var('name');
+		} elseif ( is_archive() ) {
+			$slug = get_query_var('post_type');
+		} else {
+			$slug = '';
+		}
+
+    wp_localize_script('wave-position', 'current_slug', array('slug' => $slug));
 
 }
 

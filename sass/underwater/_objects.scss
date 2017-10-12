@@ -14,7 +14,7 @@
   &.nw-0{
     margin-top:50vh;
   }
-  
+
 /*
   .above & {
     visibility: hidden;
@@ -67,21 +67,22 @@
 
 }
 .node {
-  
   height: 70%;
   width: 100%;
   @include preserve3d;
   transform: translateZ(-100vw) scale(2.25);
-  
+
   .inner {
     @include preserve3d;
     animation: float-wobble 55s infinite linear;
     transition: opacity $cycleLength ease;
   }
+
   .camera .object {
     position: absolute;
     pointer-events: initial;
   }
+
   .object {
     position: relative;
     width:100%;
@@ -111,7 +112,11 @@
 
 
     }
-    
+
+    &.gear img {
+      width: auto;
+    }
+
     .inner {
       color: $lt-blue;
       line-height:1.4;
@@ -136,7 +141,6 @@
         left:0;
         width:100%;
         transition: opacity $cycleLength/2 ease;
-        
         -webkit-backface-visibility: hidden;
       }
 
@@ -168,7 +172,6 @@
 
     .text &, &.text {
       width: 100%;
-      
     }
   }
 }
