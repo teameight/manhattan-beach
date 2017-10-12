@@ -23,6 +23,10 @@ $v_o_factor: $v_o_seed * $persp; //this number increases as $persp-o increases
     perspective: $persp * 1vw;
     perspective-origin: center $persp-o*1vw;
     background: rgba(225, 236, 257, 1); 
+
+    .below & {
+      background: $under-mid;
+    }
 }
 .below #body {
   /*perspective-origin: center 45vh;*/
