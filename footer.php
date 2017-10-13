@@ -16,7 +16,16 @@
 			</div><!-- #page -->
 		</div><!-- #page-wrap -->
 		<?php // create array of pages not to include waves and underwater ?>
-		<div class="wave-wrap">
+
+		<?php 
+
+		global $wave_slug;
+
+		if($wave_slug){
+
+		?>
+
+		<div class="wave-wrap<?php echo ' ' . $wave_slug; ?>">
 	<!-- 		<div class="wave-back wave-seg"></div> -->
 			<img class="wave-l-1 wave-seg" src="<?php echo get_template_directory_uri(); ?>/img/waves/wave-1.jpg" alt"waves" />
 			<div class="wave-l-2 wave-seg">
@@ -83,6 +92,9 @@
 <div class="canvas-wrap">
 	<canvas id="detritus-canvas"></canvas>
 </div>
+
+	<?php } ?>
+
 <div class="uw-hud">
 	<a class="totop" href="#page"><img alt="Back to Top" title="Back to top" src="<?php echo get_template_directory_uri(); ?>/img/btotop.png"></a>
 	<nav id="uw-site-navigation" class="main-navigation">

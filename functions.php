@@ -93,7 +93,7 @@ add_action( 'after_setup_theme', 'manhattan_beach_setup' );
 include_once 'functions/slideshow-shortcode.php';
 
 function slideshow_register_scripts() {
-	global $post;
+	global $post, $wave_slug;
 		$version = '2.2';
 
     wp_enqueue_style( 'audioslide-style', get_template_directory_uri() . '/css/vendor/audioslide-style.css?v=' . $version, false );
@@ -109,7 +109,9 @@ function slideshow_register_scripts() {
     wp_enqueue_script( 'audioslideshow' );
     wp_enqueue_script( 'screenfull' );
 
-		if ( is_page() ) {
+    $slug = false;
+
+    if ( is_page() ) {
 			// Get the queried object and sanitize it
 			$current_page = sanitize_post( $GLOBALS['wp_the_query']->get_queried_object() );
 			// Get the page slug
@@ -120,9 +122,28 @@ function slideshow_register_scripts() {
 			$slug = 'books/' . get_query_var('name');
 		} elseif ( is_archive() ) {
 			$slug = get_query_var('post_type');
-		} else {
-			$slug = '';
+		}else{
+			$slug = 'nowater4u';
 		}
+
+		$wavesPages = array(
+			'home',
+			'books/manhattan-beach',
+			'books/a-visit-from-the-goon-squad',
+			'books/the-keep',
+			'books/look-at-me',
+			'books/the-invisible-circus',
+			'books/emerald-city-and-other-stories',
+			'non-fiction',
+			'category/news',
+			'about',
+			'contact'
+		);
+
+		if(!in_array($slug, $wavesPages)) $slug = false;
+
+		//echo 'slug: ' . $slug;
+		$wave_slug = $slug;
 
     wp_localize_script('wave-position', 'current_slug', array('slug' => $slug));
 
