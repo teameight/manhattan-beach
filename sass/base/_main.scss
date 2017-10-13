@@ -23,8 +23,77 @@ body {
 #body {
   width: 100%;
   height: 100%;
+
+  .loading {
+		background: $yellow-grey;
+		height:100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity:0;
+		transition: opacity 1s ease;
+		pointer-events: none;
+	}
+
+  &.not-loaded {
+  	overflow: hidden;
+
+  	.loading {
+  		opacity:1;
+  		pointer-events: initial;
+  	
+	  	.preloader {
+			  position: absolute;
+			  left: 50%;
+			  top: 50%;
+			  span {
+			    height: 1em;
+			    width: 1em;
+			    display: block;
+			    position: absolute;
+			    left: 0;
+			    top: 0;
+			    border-radius: 50%;
+			    background: #fafafa;
+			    animation: wave 2s ease-in-out infinite;
+			    &:nth-child(1) {
+			      left: -4.5em;  
+			      animation-delay: 0s;
+			    }
+			    &:nth-child(2) {
+			      left: -1.5em; 
+			      animation-delay: 0.1s;
+			    }
+			    &:nth-child(3) {
+			      left: 1.5em;   
+			      animation-delay: 0.2s;
+			    }
+			    &:nth-child(4) {
+			      left: 4.5em; 
+			      animation-delay: 0.3s;
+			    }
+			  }
+			}
+		}
+  }
+}
+@keyframes wave {
+  0%, 75%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  25% {
+    transform: translateY(1.5em);
+  }
+  50% {
+    transform: translateY(-1.5em) scale(1.1);
+  }
 }
 
+#page:focus {
+    border: none;
+    outline: none;
+}
 #page-wrap {
   position: relative;
   z-index: 5;
@@ -37,7 +106,7 @@ body {
 	pointer-events: initial;
 }
 
-.no-scroll {
+#body.no-scroll {
 	overflow-y: hidden;
 	position: fixed;
 	width: 100%;

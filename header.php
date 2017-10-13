@@ -38,10 +38,11 @@
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
 	<!-- End Google Tag Manager (noscript) -->
 
-	<div id="body">
+	<div id="body" class="not-loaded">
 		<div class="b-bg"></div>
 		<div class="b-inner">
-		<div id="page-wrap">
+		<div id="page-wrap" data-ajax="false">
+			<a name="page" tabindex="-1"></a>
 			<div id="page" class="container site">
 				<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'manhattan-beach' ); ?></a>
 
