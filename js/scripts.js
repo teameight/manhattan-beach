@@ -32,6 +32,10 @@
 				$( ".main-navigation" ).removeClass( "toggled" );
 				$('#body').removeClass('no-scroll');
 		  }
+		  if (!$(event.target).closest('.menu-item-has-children').length) {
+		  	console.log('klsdfgjhslkjhfa;dsjklhd');
+		    $('.menu-item-has-children').removeClass('active').find('.sub-menu').slideUp();
+		  }
 		});
 
 

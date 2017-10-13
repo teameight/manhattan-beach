@@ -30,17 +30,36 @@
 	</script>
 	<?php wp_head(); ?>
 </head>
+<?php 
 
-<body <?php body_class('above'); ?>>
+	global $wave_slug;
+	if($wave_slug){
 
+?>
+<body <?php body_class('above water'); ?>>
 	<!-- Google Tag Manager (noscript) -->
 <!-- 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCRDVJP"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
 	<!-- End Google Tag Manager (noscript) -->
 
-	<div id="body" class="not-loaded">
+	<div id="body" class="not-loaded water">
 		<div class="b-bg"></div>
 		<div class="b-inner">
+
+<?php 
+		}else{
+?>
+
+<body <?php body_class('above'); ?>>
+	<!-- Google Tag Manager (noscript) -->
+<!-- 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCRDVJP"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
+	<!-- End Google Tag Manager (noscript) -->
+
+<?php 
+		}
+?>
+
 		<div id="page-wrap" data-ajax="false">
 			<a name="page" tabindex="-1"></a>
 			<div id="page" class="container site">

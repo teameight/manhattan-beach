@@ -432,6 +432,34 @@ function drawWave(t) {
 
 		var $airlines = $('#airlinesCanvas');
 
+		if(current_slug.slug !== ''){
+
+			var resizeTimer;
+
+			resizeTimer = setTimeout(function() {
+
+			    setWaterHeight();
+
+			  }, 300);
+
+			$(window).on('resize', function(e) {
+
+			  clearTimeout(resizeTimer);
+			  resizeTimer = setTimeout(function() {
+
+			    setWaterHeight();
+
+			  }, 300);
+
+			});
+			
+			buildNodes();
+
+		}else{
+			$('#body').removeClass('not-loaded').addClass('loaded');
+		} // end if current_slug
+
+
 		function setWaterHeight() {
 			// var waterline = $('.waterline');
 
@@ -525,32 +553,12 @@ function drawWave(t) {
 
 			$bodyDiv.removeClass('not-loaded').addClass('loaded');
 			var bInnerH = $('.b-inner').height();
-			console.log(bInnerH);
+			//console.log(bInnerH);
 
 			var bgoffsett = offset*1 + windowH*1;
 			$('.b-bg').height(bInnerH - offset - windowH).css({'top': bgoffsett + 'px'});
 
 		}
-
-		var resizeTimer;
-
-		resizeTimer = setTimeout(function() {
-
-		    setWaterHeight();
-
-		  }, 300);
-
-		$(window).on('resize', function(e) {
-
-		  clearTimeout(resizeTimer);
-		  resizeTimer = setTimeout(function() {
-
-		    setWaterHeight();
-
-		  }, 300);
-
-		});
-
 
 		$bodyDiv.scroll(function() {
 			newScrollTop = $bodyDiv.scrollTop();
@@ -583,7 +591,7 @@ function drawWave(t) {
 
 		function buildNodes(){
 
-			console.log(current_slug.slug);
+			// console.log(current_slug.slug);
 
 			var nodeTemplate = $('.nw-template');
 			var zOffset = -400;
@@ -651,8 +659,6 @@ function drawWave(t) {
 
 		  nodeTemplate.remove();
 		}
-
-		buildNodes();
 
 
 		// Node Swim
