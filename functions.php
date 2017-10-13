@@ -7,7 +7,7 @@
  * @package Manhattan_Beach
  */
 
-$version = 2.2;
+$version = '2.3';
 
 if ( ! function_exists( 'manhattan_beach_setup' ) ) :
 	/**
@@ -93,7 +93,8 @@ include_once 'functions/slideshow-shortcode.php';
 function slideshow_register_scripts() {
     wp_enqueue_style( 'audioslide-style', get_template_directory_uri() . '/css/vendor/audioslide-style.css?v=' . $version, false );
     wp_enqueue_script( 'jquery' );
-    //wp_enqueue_script( 'jquery-mobile', get_template_directory_uri() . '/js/vendor/jquery-mobile.js?v=' . $version, array('jquery') );
+    // wp_enqueue_script( 'jquery-mobile', 'https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js', array('jquery') );
+    wp_enqueue_script( 'jquery-touch-events', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-touch-events/1.0.5/jquery.mobile-events.js', array('jquery') );
     wp_enqueue_script( 'uwNodes', get_template_directory_uri() . '/js/uwNodes.js?v=' . $version, array('jquery') );
     wp_enqueue_script( 'wave-position', get_template_directory_uri() . '/js/wave-position.js?v=' . $version, array('jquery') );
     //wp_enqueue_script( 'underwater', get_template_directory_uri() . '/js/underwater.js?v=' . $version, array('jquery') );

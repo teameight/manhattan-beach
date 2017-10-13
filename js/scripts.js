@@ -9,6 +9,32 @@
 		});
 
 
+		//menu toggle
+		$('.main-navigation .menu-toggle').click(function(event){
+			event.preventDefault();
+			$mainnav = $(this).parent('.main-navigation');
+			$(this).toggleClass('tcon-transform');
+			$mainnav.toggleClass( "toggled" );
+			$('#body').toggleClass('no-scroll');
+			if($mainnav.hasClass('toggled')){
+				$(this).attr( 'aria-expanded', 'true' );
+				$mainnav.find('.menu').attr( 'aria-expanded', 'true' );
+			}else{
+				$(this).attr( 'aria-expanded', 'false' );
+				$mainnav.find('.menu').attr( 'aria-expanded', 'false' );
+			}
+		});
+
+
+		$(document).on('click', function(event) {
+			if (!$(event.target).closest('.main-navigation').length) {
+		    $('.menu-toggle').removeClass('tcon-transform');
+				$( ".main-navigation" ).removeClass( "toggled" );
+				$('#body').removeClass('no-scroll');
+		  }
+		});
+
+
 		// Select all links with hashes
 		$('a[href*="#"]')
 	  // Remove links that don't actually link to anything
@@ -25,11 +51,12 @@
 	      var target = $(this.hash);
 	      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 
+	    	
 	      // Does a scroll target exist?
 	      if (target.length) {
 	        // Only prevent default if animation is actually gonna happen
 	        event.preventDefault();
-	        $('html, body').animate({
+	        $('html, #body').animate({
 	          scrollTop: target.offset().top
 	        }, 1000, function() {
 	          // Callback after animation

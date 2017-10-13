@@ -235,7 +235,7 @@ var unit = 30,
   scale={x: 100,y: .8},
 
   waveGrdStop1='rgba(50, 70, 80, 1)',
-  waveGrdStop2='rgba(53, 74, 85, 1)',
+  waveGrdStop2='rgba(63, 98, 111, 1)',
   wavestrokecolor="rgba(255,255,255, 1)",
 	wavecolor="#5b7b7b",
 
@@ -370,13 +370,11 @@ function drawWave(t) {
 
 	$(window).on("load", function() {
 		var uWScrollDiff = 0,
-				newScrollTop = 0,
-				isSwimming = false;
+				newScrollTop = 0;
 
 		var windowH = $( window ).height();
 		var windowW = $( window ).width();
 		var isUnderWater = false,
-				showFootMenu = false,
 				$underwater = $('.underwater');
 		var uwTop = $('.uw-segway').offset().top;
 		// console.log('onload ' + uwTop);
@@ -397,15 +395,7 @@ function drawWave(t) {
 			windowW = $( window ).width();
 			windowH = $( window ).height();
 			var screenHvw = windowH/windowW,
-				pageHvw = offset/windowW;
-
-				console.log(screenHvw);
-				console.log(pageHvw);
-
-				if(pageHvw < screenHvw){
-					pageHvw = screenHvw;
-				}
-
+					pageHvw = offset/windowW;
 
 			var ratioH = screenHvw/pageHvw;
 
@@ -415,13 +405,14 @@ function drawWave(t) {
 
 			var ratioMult = screenHvw > 1 ? 1 : screenHvw;
 
-			var $wave_offset = (pageHvw - screenHvw) * ((300 * ratioH) - (60 * ratioMult)); // this also sets the speed of the wave parallax compared to scroll. higher = slower.
+			var $wave_offset = (pageHvw - screenHvw) * (120 - 60 * ratioMult); // this also sets the speed of the wave parallax compared to scroll. higher = slower.
 				//it also controls at which point in the scroll the last slide goes off the top of the screen
 
-			console.log(ratioH);
+				console.log(screenHvw);
 
+			
 
-			$wave_reveal = 25.118 * ratioMult - (10 * ratioH);
+			$wave_reveal = 25.118 * ratioMult;
 
 
 			var	$v_o_factor = ($wave_reveal / $persp_o);//($wave_reveal / $persp_o); //this number increases as $persp-o increases
@@ -444,7 +435,7 @@ function drawWave(t) {
 
 			if($airlines.length){
 				$airlines.css({
-					'height': ( $page_offset + (screenHvw * 5) + 300 ) + 'vw'
+					'height': ( $page_offset + (screenHvw * 5) + 100 ) + 'vw'
 				});
 				airLinesInit();
 			}	    
@@ -482,9 +473,7 @@ function drawWave(t) {
 			$bodyDiv.removeClass('not-loaded').addClass('loaded');
 			var bInnerH = $('.b-inner').height();
 			console.log(bInnerH);
-
-			var bgoffsett = offset*1 + windowH*1;
-			$('.b-bg').height(bInnerH - offset - windowH).css({'top': bgoffsett + 'px'});
+			$('.b-bg').height(bInnerH);
 
 		}
 
@@ -511,30 +500,21 @@ function drawWave(t) {
 		$bodyDiv.scroll(function() {
 			newScrollTop = $bodyDiv.scrollTop();
 			uWScrollDiff = newScrollTop - (uwTop - windowH);
+			// console.log(uWScrollDiff);
 			if(newScrollTop > uwTop){ // + windowH/2
+				//showDetritus = true;
 				if(!isUnderWater){
 					isUnderWater = true;
 					$('body').removeClass('above').addClass('below');
 				}
+				// console.log('showDetritus');
 			}else{
+				//showDetritus = false;
 				if(isUnderWater){
 					isUnderWater = false;
 					$('body').removeClass('below').addClass('above');
 				}
 			}
-
-			if(newScrollTop > windowH*2){
-				if(!showFootMenu){
-					showFootMenu = true;
-					$('.uw-hud').addClass('show');
-				}
-			}else{
-				if(showFootMenu){
-					showFootMenu = false;
-					$('.uw-hud').removeClass('show');
-				}
-			}
-
 		});
 
 		function buildNodes(){
@@ -597,14 +577,27 @@ function drawWave(t) {
 		$( ".underwater" ).on( "click", ".camera .object:not(.spin)", function() {
 		  
 		  if( $(this).hasClass('here') ){
+
 		  	if( $(this).next().length ){
+
 					var elem = $( this ).next();
+					// console.log('next');
+
 				} else {
+
 					var elem = $( this ).siblings(':first-child');
+					// console.log('first');
+
 				}
+
 		  } else {
+
 		  	var elem = $( this );
+					// console.log('this');
+
 		  }
+
+		  // console.log(elem.attr("class"));
 
 		  var rotx = 0 - elem.data('rotx'),
 		  		roty = 0 - elem.data('roty'),
@@ -618,7 +611,9 @@ function drawWave(t) {
 		  		posy = posy || 0;
 		  		posz = posz || 0;
 
-	
+		  // console.log('translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw) rotateX(' + rotx + 'deg) rotateY(' + roty + 'deg)');
+		  
+		  //$('.camera')		
 		  elem.parent().css('transform', 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)').find('.here').removeClass('here');
 			$('.background').css('transform', 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)').find('.here').removeClass('here');
 		  // elem.parent().find('.object').each( function(){
@@ -631,25 +626,9 @@ function drawWave(t) {
 		  // });
 		  setDistance(elem.parent(), posz);
 
-		  swimDetritus();
-
 		  elem.addClass('here');
 
 		});
-		var swimTimer, 
-				swimCount = 0;
-
-		function swimDetritus() {
-			isSwimming = true;
-			clearTimeout(swimTimer);
-			swimCount = 0;
-
-		  swimTimer = setTimeout(function() {
-
-		    isSwimming=false;
-
-		  }, 800);
-		}
 
 		function setDistance(elem, posz) {
 
@@ -677,17 +656,17 @@ function drawWave(t) {
 			startY = 30,
 			startX = 5,
 			trigger;
-		$('.node-wrapper').on('tapstart', '.spin.here', function (e, touch) {
-					trigger = touch.offset.x - wrapper_offset.left;
-	      	// console.log(touch);
+		$('.node-wrapper').on('vmousedown', '.spin.here', function (e) {
+					trigger = e.pageX - wrapper_offset.left;
+	      // console.log('md');
 	    })
-	    .on('tapend', '.spin.here', function() {
+	    .on('vmouseup mouseleave', '.spin.here', function() {
 	        startY = offsetY;
 					startX = offsetX;
 					trigger = null;
 					// console.log('mu');
 	    })
-	    .on('tapmove', '.spin.here', function (e, touch) {
+	    .on('vmousemove', '.spin.here', function (e) {
 	  
 					// console.log('mm');
 					// console.log('offset'+offsetY);
@@ -702,10 +681,7 @@ function drawWave(t) {
 			  		posy = posy || 0;
 			  		posz = posz || 0;
 						
-						offset_percent = (((touch.offset.x - wrapper_offset.left)-trigger)/wrapper_width); // 60 degree range
-
-						console.log(offset_percent);
-
+						offset_percent = (((e.pageX - wrapper_offset.left)-trigger)/wrapper_width); // 60 degree range
 						var offsettemp = startY + (offset_percent)*60;
 						
 						if(offsettemp > -31 && offsettemp < 31 ){
@@ -719,6 +695,7 @@ function drawWave(t) {
 							}
 							
 							object.css('transform', 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw) rotateY(' + offsetY + 'deg) rotateX(' + offsetX + 'deg)');
+						//	elem.style['transform'] = 'rotateY(' + offsetY + 'deg) rotateX(' + offsetX + 'deg)';
 
 						}
 	        }
@@ -799,9 +776,6 @@ function drawWave(t) {
 		}
 
 		function dLoop() {
-			if(isSwimming){
-				swimCount++;
-			}
 			update();
 			dDraw();
 		  requestAnimFrame(dLoop);
@@ -891,14 +865,6 @@ function drawWave(t) {
 					if(uWScrollDiff + windowW*.22 > 0){
 						if(windowH - this.dotPosition.y - windowW*.2 < uWScrollDiff){	
 							var dopacity = this.dotOpacity;
-							if(isSwimming){
-								dopacity = this.dotOpacity = this.ogDotOpacity - (swimCount*.02);
-							}else{
-							 	if(dopacity < this.ogDotOpacity){
-									dopacity = this.dotOpacity = this.dotOpacity + (.01);
-								}
-							}
-							//console.log(dotOpacity +" < "+ this.ogDotOpacity)
 							dCtx.fillStyle = 'rgba(255,255,255,'+ dopacity +')';
 							fillCircle(this.dotPosition.x, this.dotPosition.y, this.dotRadius * 2);
 						}
