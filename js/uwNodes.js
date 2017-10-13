@@ -1,7 +1,7 @@
 var zInterval = -200,
 
-		imgRoot = '\/\/localhost/htdocs/egan-img';
-		//imgRoot = '\/\/staging.jenniferegan.com\/wp-content\/themes\/manhattan-beach';
+		// imgRoot = '\/\/localhost/htdocs/egan-img';
+		imgRoot = '\/\/staging.jenniferegan.com\/wp-content\/themes\/manhattan-beach\/egan-img';
 
 var uwNodes = [
 	{ 'tier': 1,
@@ -379,7 +379,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>Intro text for 1Exterior<\/p>'
+						'content':'<p>HOME Intro text for 1Exterior<\/p>'
 					},
 					{
 						'class':'image',
@@ -407,7 +407,6 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/3Gangway-to-JOB.png" \/><p>Gangway<\/p>'
-			
 					},
 					{
 						'class':'image',
@@ -448,7 +447,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>Intro text for 2Deck photos<\/p>'
+						'content':'<p>MANHATTAN BEACH Intro text for 2Deck photos<\/p>'
 					},
 					{
 						'class':'image',
@@ -476,7 +475,6 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/3Mast-and-Vent.png" \/><p>Mast and Vent<\/p>'
-			
 					},
 					{
 						'class':'image',
@@ -604,7 +602,6 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/3FirstMateStateroom.png" \/><p>First Mate Stateroom<\/p>'
-			
 					},
 					{
 						'class':'image',
@@ -732,7 +729,6 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/4.png"<\/p>'
-			
 					},
 					{
 						'class':'image',
@@ -837,7 +833,6 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/5BoatsandRafts\/3Boat-and-Falls.png"\/><p>Boat and Falls<\/p>'
-			
 					},
 					{
 						'class':'image',
@@ -870,7 +865,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>Intro text for 6Equipment<\/p>'
+						'content':'<p>NON FICTION Intro text for 6Equipment<\/p>'
 					},
 					{
 						'class':'image',
@@ -898,7 +893,6 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/3Hawspipe.png"\/><p>Hawspipe<\/p>'
-			
 					},
 					{
 						'class':'image',
@@ -958,7 +952,6 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/8.png"<\/p>'
-			
 					},
 					{
 						'class':'image',
@@ -977,7 +970,6 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/10Voice-Activated-Telephone.png" \/><p>Voice Activated Telephone<\/p>'
-					
 					},
 					{
 						'class':'image',
@@ -1029,7 +1021,6 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/3Liberty-Deck-Plan.png"\/><p>Liberty Deck Plan<\/p>'
-			
 					},
 					{
 						'class':'image',
@@ -1107,7 +1098,21 @@ var uwNodes = [
 	{ 'tier': 3,
 		'nodes': [
 			{
-				'slug':'non-fiction',
+				'slug':'home',
+				'objects': [
+					{
+						'class':'skull spin',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'content':'<div class="layer-1"><img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/skull-comp\/skull-1.png"><\/div><div class="layer-2"><img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/skull-comp\/skull-2.png"><\/div><div class="layer-3"><img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/skull-comp\/skull-3.png"><\/div><div class="layer-4"><img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/skull-comp\/skull-4.png"><\/div>'
+					}
+				]
+			},
+			{
+				'slug':'books/manhattan-beach',
 				'objects': [
 
 					{
@@ -1117,7 +1122,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>NON-FICTION NODE. Anna watched the sea. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
+						'content':'<p>NON FICTION NODE. Anna watched the sea. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
 					},
 					{
 						'class':'',
@@ -1140,7 +1145,7 @@ var uwNodes = [
 				]
 			},
 			{
-				'slug':'home',
+				'slug':'books/a-visit-from-the-goon-squad',
 				'objects': [
 					{
 						'class':'text home',
@@ -1190,7 +1195,7 @@ var uwNodes = [
 				]
 			},
 			{
-				'slug':'category/news',
+				'slug':'books/the-keep',
 				'objects': [
 					{
 						'class':'image',
@@ -1213,7 +1218,7 @@ var uwNodes = [
 				]
 			},
 			{
-				'slug':'about',
+				'slug':'books/look-at-me',
 				'objects': [
 					{
 						'class':'',
@@ -1254,7 +1259,7 @@ var uwNodes = [
 				]
 			},
 			{
-				'slug':'contact',
+				'slug':'books/the-invisible-circus',
 				'objects': [
 					{
 						'class':'scrollbar',
@@ -1268,30 +1273,7 @@ var uwNodes = [
 				]
 			},
 			{
-				'slug':'books/manhattan-beach',
-				'objects': [
-					{
-						'class':'gear',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'content':'<img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/gear-3.png">'
-					},
-					{
-						'class':'skull spin',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'content':'<div class="layer-1"><img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/skull-comp\/skull-1.png"><\/div><div class="layer-2"><img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/skull-comp\/skull-2.png"><\/div><div class="layer-3"><img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/skull-comp\/skull-3.png"><\/div><div class="layer-4"><img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/skull-comp\/skull-4.png"><\/div>'
-					}
-				]
-			},
-			{
-				'slug':'books/a-visit-from-the-goon-squad',
+				'slug':'books/emerald-city-and-other-stories',
 				'objects': [
 
 					{
@@ -1301,7 +1283,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>NON FICTION NODE. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
+						'content':'<p>Goon Squad. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
 					},
 					{
 						'class':'',

@@ -715,6 +715,7 @@ function drawWave(t) {
 
 
 		  if ( hereSlug != nextSlug ) {
+		  	console.log(currentWrapper);
 		  	$('.node-wrapper').not(currentWrapper).each(function() {
 		  		var firstNodeInPage = $(this).find('.object[data-slug="'+nextSlug+'"]').first();
 		  		elem = firstNodeInPage;
@@ -732,7 +733,7 @@ function drawWave(t) {
 		  		posz = posz || 0;
 
 				  elem.parent().css('transform', 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)');
-
+				  setDistance(elem.parent(), posz);
 		  	});
 		  } else {
 		  	console.log('same');
@@ -746,7 +747,6 @@ function drawWave(t) {
 
 
 		  // });
-		  setDistance(elem.parent(), posz);
 
 		  swimDetritus();
 
