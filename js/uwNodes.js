@@ -2,10 +2,10 @@ var zInterval = -200,
 		imgRoot = '\/\/staging.jenniferegan.com\/wp-content\/themes\/manhattan-beach';
 
 var uwNodes = [
-	{ 'slug': 'home',
+	{ 'tier': 1,
 		'nodes': [
 		{
-			'class':'text',
+			'slug':'home',
 			'objects': [
 
 				{
@@ -15,7 +15,7 @@ var uwNodes = [
 					'posz':0,
 					'roty':-3,
 					'rotx':5,
-					'content':'<p>asdfasdf Anna watched the sea. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
+					'content':'<p>HOME NODE. Anna watched the sea. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
 				},
 				{
 					'class':'',
@@ -38,10 +38,10 @@ var uwNodes = [
 			]
 		},
 		{
-			'class':'',
+			'slug':'non-fiction',
 			'objects': [
 				{
-					'class':'text',
+					'class':'text home',
 					'posx':-4,
 					'posy':0,
 					'posz':0,
@@ -88,7 +88,7 @@ var uwNodes = [
 			]
 		},
 		{
-			'class':'',
+			'slug':'category/news',
 			'objects': [
 				{
 					'class':'image',
@@ -111,7 +111,7 @@ var uwNodes = [
 			]
 		},
 		{
-			'class':'text',
+			'slug':'about',
 			'objects': [
 				{
 					'class':'',
@@ -152,7 +152,7 @@ var uwNodes = [
 			]
 		},
 		{
-			'class':'text',
+			'slug':'contact',
 			'objects': [
 				{
 					'class':'scrollbar',
@@ -166,7 +166,7 @@ var uwNodes = [
 			]
 		},
 		{
-			'class':'',
+			'slug':'books/manhattan-beach',
 			'objects': [
 				{
 					'class':'gear',
@@ -187,44 +187,40 @@ var uwNodes = [
 					'content':'<div class="layer-1"><img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/skull-comp\/skull-1.png"><\/div><div class="layer-2"><img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/skull-comp\/skull-2.png"><\/div><div class="layer-3"><img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/skull-comp\/skull-3.png"><\/div><div class="layer-4"><img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/skull-comp\/skull-4.png"><\/div>'
 				}
 			]
-		}
-	]},
-	{
-		'slug':'non-fiction',
-		'nodes': [
-			{
-				'class':'text',
-				'objects': [
+		},
+		{
+			'slug':'books/a-visit-from-the-goon-squad',
+			'objects': [
 
-					{
-						'class':'',
-						'posx':0,
-						'posy':-5,
-						'posz':0,
-						'roty':-3,
-						'rotx':5,
-						'content':'<p>NON FICTION NODE. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
-					},
-					{
-						'class':'',
-						'posx':15,
-						'posy':8,
-						'posz':zInterval,
-						'roty':0,
-						'rotx':0,
-						'content':'<p>A landscape of lost objects: sunken ships, hidden treasure, gold and gems and the charm bracelet that had fallen from her wrist into a storm drain.<\/p>'
-					},
-					{
-						'class':'',
-						'posx':3,
-						'posy':14,
-						'posz':zInterval*2,
-						'roty':0,
-						'rotx':0,
-						'content':'<p>Dead bodies, her father always added, with a laugh. To him, the ocean was a wasteland.<\/p>',
-					}
-				]
-			}
+				{
+					'class':'',
+					'posx':0,
+					'posy':10,
+					'posz':0,
+					'roty':-3,
+					'rotx':5,
+					'content':'<p>NON FICTION NODE. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
+				},
+				{
+					'class':'',
+					'posx':15,
+					'posy':20,
+					'posz':zInterval,
+					'roty':0,
+					'rotx':0,
+					'content':'<p>A landscape of lost objects: sunken ships, hidden treasure, gold and gems and the charm bracelet that had fallen from her wrist into a storm drain.<\/p>'
+				},
+				{
+					'class':'',
+					'posx':3,
+					'posy':-14,
+					'posz':zInterval*2,
+					'roty':0,
+					'rotx':0,
+					'content':'<p>Dead bodies, her father always added, with a laugh. To him, the ocean was a wasteland.<\/p>',
+				}
+			]
+		}
 		]
 	}
 ];

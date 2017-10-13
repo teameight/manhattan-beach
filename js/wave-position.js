@@ -241,42 +241,42 @@ var unit = 30,
 
 	wavestrokeWidth = wWidth*.002,
 	parameters={
-			freq: 1.7,
-			amp: 58,
+			freq: 1,
+			amp: 55,
 			type: "sin",
 			rand: getRandomArbitrary(0, Math.PI)
 		};
 
 /**
  * Init function.
- * 
+ *
  * Initialize variables and begin the animation.
  */
 function waveInit() {
-    
+
     waveCanvas = document.getElementById("waveCanvas");
-    
+
     waveCanvas.width = waveCanvas.offsetWidth;
     waveCanvas.height = waveCanvas.offsetHeight;
-	 
+
     waveCtx = waveCanvas.getContext("2d");
     waveCtx.lineJoin = 'round';
-    
+
 		width = waveCanvas.width;
     height = waveCanvas.height;
-	
+
     xAxis = Math.floor(height*.333);
     yAxis = 0;
-	
+
 		scale={x: width/4,y: .25};
-    
+
     waveCtx.save();
     waveDraw();
 }
 
 /**
  * Draw animation function.
- * 
+ *
  * This function draws one frame of the animation, waits 20ms, and then calls
  * itself again.
  */
@@ -286,10 +286,10 @@ waveDraw = function () {
     waveCtx.clearRect(0, 0, width, height);
 
     drawWave(waveDraw.t);
-    
+
     // Update the time and waveDraw again
-		
-		waveDraw.seconds = waveDraw.seconds - 0.008;
+
+		waveDraw.seconds = waveDraw.seconds - 0.004;
     waveDraw.t = waveDraw.seconds*Math.PI;
 
 		requestAnimFrame(waveDraw);
@@ -299,29 +299,29 @@ waveDraw.seconds = 0;
 waveDraw.t = 0;
 /**
  * Function to draw sine
- * 
- * The sine curve is drawn in segments starting at the origin. 
+ *
+ * The sine curve is drawn in segments starting at the origin.
  */
-	
+
 function drawWave(t) {
 // Set the initial x and y, starting at 0,0 and translating to the origin on the canvas.
     var x = t;
-	
+
     var y = Math.sin(0);
 		var amp = Math.sin(t);
 		var py = amp*y+xAxis;
-		
+
 		var cpath = [];
 
-		var p=parameters;		
-		
+		var p=parameters;
+
 		p.newFreq = p.freq + (p.freq*Math.cos( p.rand + t ))/15;
 		p.newAmp = p.amp + (p.amp*Math.cos( p.rand + t ))/2;
-			
+
 		var prevY = 0;
     // Loop to draw segments
    	for (i = yAxis; i <= (width+(width/10)); i += (width/80)) {
-      
+
       x = i;
 			var currentY = 0;
 
@@ -333,20 +333,20 @@ function drawWave(t) {
 			var xPos = i - (scale.x/7) + (scale.x/8 * Math.sin(t));
 
 			cpath.push({x:xPos,y:currentY});
-			
+
     }
 		waveCtx.lineWidth = wavestrokeWidth;
-	
-// MAIN WAVEFILL	
+
+// MAIN WAVEFILL
 		waveCtx.beginPath();
 		waveCtx.moveTo(cpath[0].x, cpath[0].y+xAxis);
 
-		for(var i=1; i<cpath.length; i++){  
+		for(var i=1; i<cpath.length; i++){
 				var p = cpath[i];
 
 				waveCtx.lineTo(p.x, p.y+xAxis);
 		}
-	
+
 		waveCtx.lineTo(width, height+20);
 		waveCtx.lineTo(yAxis, height+20);
 
@@ -357,10 +357,10 @@ function drawWave(t) {
 		grd.addColorStop(.7, waveGrdStop2);
     waveCtx.fillStyle = grd;
     waveCtx.fill();
-	
+
 		waveCtx.strokeStyle=wavestrokecolor;
 		waveCtx.stroke();
-		
+
 	}
 
 
@@ -378,7 +378,7 @@ function drawWave(t) {
 				$underwater = $('.underwater');
 		var uwTop = $('.uw-segway').offset().top;
 		// console.log('onload ' + uwTop);
-		
+
 		var maxRange = 500; //range of visibility, in z-space
 				// scrollRun = false,
 				// scrollqueue = false;
@@ -390,7 +390,7 @@ function drawWave(t) {
 			// var waterline = $('.waterline');
 
 			// waterline.css('top', offset + 'px');
-		
+
 			var offset = $('#page-wrap').outerHeight(true);
 			windowW = $( window ).width();
 			windowH = $( window ).height();
@@ -443,7 +443,7 @@ function drawWave(t) {
 					'height': ( $page_offset + (screenHvw * 5) + 100 ) + 'vw'
 				});
 				airLinesInit();
-			}	    
+			}
 
 			for (var i = 8; i >= 1; i--) {
 
@@ -470,7 +470,7 @@ function drawWave(t) {
 			// createCircleArray(.6, .8, .4);
 			update();
 			dDraw();
-			requestAnimFrame(dLoop); 
+			requestAnimFrame(dLoop);
 
 			$bodyDiv.addClass('loaded');
 			var bInnerH = $('.b-inner').height();
@@ -521,41 +521,58 @@ function drawWave(t) {
 
 		function buildNodes(){
 
+			console.log(current_slug.slug);
+
 			var nodeTemplate = $('.nw-template');
-	  
-		  for(var i = 0; i < uwNodes.length; i++) {
-		    var node = uwNodes[i];
+			zOffset = -300;
 
-		    nodeTemplate.clone()
-		      .removeClass('nw-template')
-		      .addClass('nw-'+ i + ' ' + node.class)
-		      .appendTo( $underwater );
-		    
-		    var objTemplate = $('.nw-'+ i + ' .obj-template');
-		    
-		    for(var n = 0; n < node.objects.length; n++) {
-		      var obj = node.objects[n];  
+			// console.log(uwNodes);
 
-		      objTemplate.clone()
-		        .removeClass('obj-template')
-		        .addClass('object-'+ n + ' ' + obj.class)
-		        .css('transform', 'translate3d(' + obj.posx + 'vw, ' + obj.posy + 'vw, ' + obj.posz + 'vw) rotateX('+ obj.rotx +'deg) rotateY('+  obj.roty +'deg)')
-		        .data( "posx", obj.posx )
-		        .data( "posy", obj.posy )
-		        .data( "posz", obj.posz )
-		        .data( "rotx", obj.rotx )
-		        .data( "roty", obj.roty )
-		        .html('<div class="inner">'+obj.content+'</div>')
-		        .appendTo( '.nw-' + i + ' .camera');
+			uwNodes.forEach(function(tier, t) {
+				console.log(tier.tier);
 
-		    }
+			    nodeTemplate.clone()
+			      .removeClass('nw-template')
+			      .addClass('nw-'+ t)
+			      .appendTo( $underwater );
 
-		    objTemplate.remove();
-		    $objFirst = $('.nw-' + i + ' .object:first-child').addClass('here');
-		    
-		    
-		  }
-		  
+		      var o = 0;
+
+				  tier.nodes.forEach(function(node, n) {
+				    var node = tier.nodes[n];
+				    // console.log(i);
+
+				    var objTemplate = $('.nw-'+ t + ' .obj-template');
+
+				    	for (var i = 0; i < node.objects.length; i++) {
+
+				      var obj = node.objects[i];
+				      console.log(obj);
+
+				      objTemplate.clone()
+				        .removeClass('obj-template')
+				        .addClass('object-'+ i + ' ' + obj.class)
+				        .css('transform', 'translate3d(' + obj.posx + 'vw, ' + obj.posy + 'vw, ' + zOffset*o + 'vw) rotateX('+ obj.rotx +'deg) rotateY('+  obj.roty +'deg)')
+				        .data( "posx", obj.posx )
+				        .data( "posy", obj.posy )
+				        .data( "posz", zOffset*o )
+				        .data( "rotx", obj.rotx )
+				        .data( "roty", obj.roty )
+				        .html('<div class="inner">'+obj.content+'</div>')
+				        .appendTo( '.nw-' + t + ' .camera');
+
+				      o++;
+
+				    }
+
+
+				    // objTemplate.remove();
+				    $objFirst = $('.nw-' + t + ' .object:first-child').addClass('here');
+				  });
+
+			});
+
+
 		  nodeTemplate.remove();
 		}
 
@@ -570,14 +587,8 @@ function drawWave(t) {
 					setDistance(elem, posz);
 		});
 
-		$( ".underwater" ).on( "click", ".camera .object.closed", function() {
-
-			$(this).removeClass('closed');
-
-		});
-
 		$( ".underwater" ).on( "click", ".camera .object:not(.spin)", function() {
-		  
+
 		  if( $(this).hasClass('here') ){
 
 		  	if( $(this).next().length ){
@@ -587,7 +598,7 @@ function drawWave(t) {
 
 				} else {
 
-					var elem = $( this ).siblings(':first-child');
+					// var elem = $( this ).siblings(':first-child');
 					// console.log('first');
 
 				}
@@ -614,8 +625,8 @@ function drawWave(t) {
 		  		posz = posz || 0;
 
 		  // console.log('translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw) rotateX(' + rotx + 'deg) rotateY(' + roty + 'deg)');
-		  
-		  //$('.camera')		
+
+		  //$('.camera')
 		  elem.parent().css('transform', 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)').find('.here').removeClass('here');
 			$('.background').css('transform', 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)').find('.here').removeClass('here');
 		  // elem.parent().find('.object').each( function(){
@@ -648,8 +659,8 @@ function drawWave(t) {
 
 		// End Node Swim
 
-	  
-	 // 	BEGIN SKULL GRAB AND ROTATE 
+
+	 // 	BEGIN SKULL GRAB AND ROTATE
 	  var offsetY = 0,
 			offsetX = 0,
 			offset_percent = 0,
@@ -669,7 +680,7 @@ function drawWave(t) {
 					// console.log('mu');
 	    })
 	    .on('vmousemove', '.spin.here', function (e) {
-	  
+
 					// console.log('mm');
 					// console.log('offset'+offsetY);
 	        if(trigger) {
@@ -682,20 +693,20 @@ function drawWave(t) {
 			  		posx = posx || 0;
 			  		posy = posy || 0;
 			  		posz = posz || 0;
-						
+
 						offset_percent = (((e.pageX - wrapper_offset.left)-trigger)/wrapper_width); // 60 degree range
 						var offsettemp = startY + (offset_percent)*60;
-						
+
 						if(offsettemp > -31 && offsettemp < 31 ){
-						
+
 							offsetX = startX + (offset_percent)*10;
-							
+
 							offsetY = startY + (offset_percent)*60;
 							if(offsetY > -8 && offsetY < 8){
 								offsetY = 0;
 								offsetX = 0;
 							}
-							
+
 							object.css('transform', 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw) rotateY(' + offsetY + 'deg) rotateX(' + offsetX + 'deg)');
 						//	elem.style['transform'] = 'rotateY(' + offsetY + 'deg) rotateX(' + offsetX + 'deg)';
 
@@ -730,12 +741,12 @@ function drawWave(t) {
 		var cId = 0;
 
 		function initDCanvas() {
-			
+
 					dCanvas.w = dCanvas.width = window.innerWidth
 					dCanvas.h = dCanvas.height = window.innerHeight;
 
 					center.x = dCanvas.w / 2;
-					center.y = dCanvas.h / 2; 
+					center.y = dCanvas.h / 2;
 
 					dCtx = dCanvas.getContext('2d');
 
@@ -745,7 +756,7 @@ function drawWave(t) {
 		function createCircleArray(dotSize, speed, circSizeFactor) {
 				var halfCircle = circleSize/2;
 				for (var x = halfCircle; x < dCanvas.w-halfCircle; x += circleSize) {
-						for (var y = halfCircle; y < dCanvas.h-halfCircle; y += circleSize) { 
+						for (var y = halfCircle; y < dCanvas.h-halfCircle; y += circleSize) {
 
 							var randX = Math.abs( getRandomInt(0, dCanvas.w) ),
 								randY = Math.abs( getRandomInt(0, dCanvas.h) );
@@ -769,12 +780,12 @@ function drawWave(t) {
 
 		function update() {
 		     var o;
-		 
+
 		     for (var i = 0; i < circles.length; i++) {
 		          o = circles[i];
 		          o.update();
 		     }
-		     
+
 		}
 
 		function dLoop() {
@@ -788,10 +799,10 @@ function drawWave(t) {
 		}
 
 		function Circle(x, y, dotSize, speed, angle, circSizeFactor, cId) {
-					
+
 					this.cId = cId;
 
-					// dot placement	
+					// dot placement
 					this.dotPosition = new Point(x, y);
 					this.pathSize = circSizeFactor*circleSize || .8*circleSize;
 					this.sizeFactor = circSizeFactor || 1;
@@ -807,24 +818,21 @@ function drawWave(t) {
 					this.speed = speed || 2;
 					this.originalDotRadius = this.dotRadius = dotSize || .5;
 					this.responseTime = getRandomArbitrary(50, dCanvas.w * (1-circSizeFactor));
-					
+
 					// tracking vars
 					this.xloop1 = this.scrollTop = this.traveling = this.outSide = this.outVert = 0;
-					
 		}
 
 		Circle.prototype = {
 		    update:function() {
-		      this.angle += this.speed;	
-				 	
-					
+		      this.angle += this.speed;
+
 					// 	ATTRACT
-					var dx = this.responseTime;						
+					var dx = this.responseTime;
 					var dy = this.originalY - this.centerY - ((newScrollTop*this.sizeFactor)-this.scrollTop);
 					// sizeFactor creates parallax
 					// scrollTop saves where you end up in a traveling anim if it interupts.
 
-					
 					if(this.tdone){	// checks if we just wrapped up the traveling animation
 						this.tdone = 0;
 
@@ -834,7 +842,7 @@ function drawWave(t) {
 						}
 
 					}
-					
+
 					var distance = calcDistance(dx, dy);
 					this.centerY += dy * Math.abs((dy/300)/distance);
 					// (dy/x): greater x = slower detritus scrolling
@@ -844,28 +852,28 @@ function drawWave(t) {
 					this.storeY = this.oldY = this.centerY;
 
 					this.centerY += velocityY;
-			 		
+
 					if(this.centerY < 0){
 						this.centerY += dCanvas.h;
 						this.storeY += dCanvas.h;
 						this.oldY += dCanvas.h;
 						this.originalY += dCanvas.h;
-					}	
+					}
 					if(this.centerY > dCanvas.h){
 						this.centerY -= dCanvas.h;
 						this.storeY -= dCanvas.h;
 						this.oldY -= dCanvas.h;
 						this.originalY -= dCanvas.h;
-					}	
-					
+					}
+
 					var circRad = (this.pathSize - this.dotRadius*4);
 					this.dotPosition.x = circRad * Math.cos(this.angle * Math.PI / dotSpeedX) + this.centerX;
-					this.dotPosition.y = circRad * Math.sin(this.angle * Math.PI / dotSpeedY) + this.centerY;	 
-					 
+					this.dotPosition.y = circRad * Math.sin(this.angle * Math.PI / dotSpeedY) + this.centerY;
+
 		    },
 				dDraw:function() {
-					if(uWScrollDiff + windowW*.22 > 0){
-						if(windowH - this.dotPosition.y - windowW*.2 < uWScrollDiff){	
+					if(uWScrollDiff + windowW*.2 > 0){
+						if(windowH - this.dotPosition.y - windowW*.2 < uWScrollDiff){
 							var dopacity = this.dotOpacity;
 							dCtx.fillStyle = 'rgba(255,255,255,'+ dopacity +')';
 							fillCircle(this.dotPosition.x, this.dotPosition.y, this.dotRadius * 2);

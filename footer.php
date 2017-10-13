@@ -15,6 +15,7 @@
 
 			</div><!-- #page -->
 		</div><!-- #page-wrap -->
+		<?php // create array of pages not to include waves and underwater ?>
 		<div class="wave-wrap">
 	<!-- 		<div class="wave-back wave-seg"></div> -->
 			<img class="wave-l-1 wave-seg" src="<?php echo get_template_directory_uri(); ?>/img/waves/wave-1.jpg" alt"waves" />

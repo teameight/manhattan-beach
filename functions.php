@@ -114,7 +114,7 @@ function slideshow_register_scripts() {
 			// Get the page slug
 			$slug = $current_page->post_name;
 		} elseif ( is_category() ) {
-			$slug = get_query_var('category_name');
+			$slug = 'category/' . get_query_var('category_name');
 		} elseif ( is_singular( 'books') ) {
 			$slug = 'books/' . get_query_var('name');
 		} elseif ( is_archive() ) {
