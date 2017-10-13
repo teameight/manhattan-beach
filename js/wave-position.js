@@ -1,3 +1,48 @@
+// https://tc39.github.io/ecma262/#sec-array.prototype.findIndex
+if (!Array.prototype.findIndex) {
+  Object.defineProperty(Array.prototype, 'findIndex', {
+    value: function(predicate) {
+     // 1. Let O be ? ToObject(this value).
+      if (this == null) {
+        throw new TypeError('"this" is null or not defined');
+      }
+
+      var o = Object(this);
+
+      // 2. Let len be ? ToLength(? Get(O, "length")).
+      var len = o.length >>> 0;
+
+      // 3. If IsCallable(predicate) is false, throw a TypeError exception.
+      if (typeof predicate !== 'function') {
+        throw new TypeError('predicate must be a function');
+      }
+
+      // 4. If thisArg was supplied, let T be thisArg; else let T be undefined.
+      var thisArg = arguments[1];
+
+      // 5. Let k be 0.
+      var k = 0;
+
+      // 6. Repeat, while k < len
+      while (k < len) {
+        // a. Let Pk be ! ToString(k).
+        // b. Let kValue be ? Get(O, Pk).
+        // c. Let testResult be ToBoolean(? Call(predicate, T, « kValue, k, O »)).
+        // d. If testResult is true, return k.
+        var kValue = o[k];
+        if (predicate.call(thisArg, kValue, k, o)) {
+          return k;
+        }
+        // e. Increase k by 1.
+        k++;
+      }
+
+      // 7. Return -1.
+      return -1;
+    }
+  });
+}
+
 /**
  *
  * Air lines on Home page
@@ -541,7 +586,8 @@ function drawWave(t) {
 			console.log(current_slug.slug);
 
 			var nodeTemplate = $('.nw-template');
-			zOffset = -300;
+			var zOffset = -400;
+			var currSlug = current_slug.slug;
 
 			// console.log(uwNodes);
 
@@ -555,20 +601,33 @@ function drawWave(t) {
 
 		      var o = 0;
 
+		      function isCurrentSlug(node) {
+						return node.slug === currSlug;
+		      }
+
+		      var nodeStartIndex = tier.nodes.findIndex(isCurrentSlug);
+
+		      if ( nodeStartIndex !== 0 ) {
+			      var firstHalf = tier.nodes.slice(0, nodeStartIndex);
+			      var secondHalf = tier.nodes.slice(nodeStartIndex);
+			      tier.nodes = secondHalf.concat(firstHalf);
+		      }
+		      // console.log('node list', tier.nodes);
+
 				  tier.nodes.forEach(function(node, n) {
 				    var node = tier.nodes[n];
-				    // console.log(i);
-
+				    var thisSlug = node.slug;
 				    var objTemplate = $('.nw-'+ t + ' .obj-template');
 
 				    	for (var i = 0; i < node.objects.length; i++) {
 
 				      var obj = node.objects[i];
-				      console.log(obj);
+				      // console.log(obj);
 
 				      objTemplate.clone()
 				        .removeClass('obj-template')
 				        .addClass('object-'+ i + ' ' + obj.class)
+				        .attr('data-slug', thisSlug)
 				        .css('transform', 'translate3d(' + obj.posx + 'vw, ' + obj.posy + 'vw, ' + zOffset*o + 'vw) rotateX('+ obj.rotx +'deg) rotateY('+  obj.roty +'deg)')
 				        .data( "posx", obj.posx )
 				        .data( "posy", obj.posy )
@@ -584,7 +643,7 @@ function drawWave(t) {
 
 
 				    // objTemplate.remove();
-				    $objFirst = $('.nw-' + t + ' .object:first-child').addClass('here');
+				    $objFirst = $('.nw-' + t + ' .object').not('.obj-template').first().addClass('here');
 				  });
 
 			});
@@ -606,9 +665,19 @@ function drawWave(t) {
 
 		$( ".underwater" ).on( "click", ".camera .object:not(.spin)", function() {
 
-		  if( $(this).hasClass('here') ){
-		  	if( $(this).next().length ){
+			var currentWrapper = $(this).closest('.node-wrapper');
+
+			var hereSlug = $(this).data('slug'),
+					nextSlug;
+
+		  if( $(this).hasClass('here') ) {
+
+		  	if( $(this).next().length ) {
+					// get the next element in line
 					var elem = $( this ).next();
+					// get the next element's slug
+					nextSlug = elem.data('slug');
+
 				} else {
 
 					// var elem = $( this ).siblings(':first-child');
@@ -617,7 +686,10 @@ function drawWave(t) {
 				}
 		  } else {
 		  	var elem = $( this );
+		  	nextSlug = elem.data('slug');
 		  }
+
+		  // console.log('here', hereSlug, 'next', nextSlug);
 
 		  var rotx = 0 - elem.data('rotx'),
 		  		roty = 0 - elem.data('roty'),
@@ -631,8 +703,33 @@ function drawWave(t) {
 		  		posy = posy || 0;
 		  		posz = posz || 0;
 
-		  elem.parent().css('transform', 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)').find('.here').removeClass('here');
-			$('.background').css('transform', 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)').find('.here').removeClass('here');
+		  elem.addClass('here').siblings('.here').removeClass('here').parent().css('transform', 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)');
+
+
+		  if ( hereSlug != nextSlug ) {
+		  	$('.node-wrapper').not(currentWrapper).each(function() {
+		  		var firstNodeInPage = $(this).find('.object[data-slug="'+nextSlug+'"]').first();
+		  		elem = firstNodeInPage;
+
+					rotx = 0 - elem.data('rotx'),
+		  		roty = 0 - elem.data('roty'),
+		  		posx = 0 - elem.data('posx'),
+		  		posy = 0 - elem.data('posy'),
+		  		posz = 0 - elem.data('posz');
+
+		  		rotx = rotx || 0;
+		  		roty = roty || 0;
+		  		posx = posx || 0;
+		  		posy = posy || 0;
+		  		posz = posz || 0;
+
+				  elem.parent().css('transform', 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)');
+
+		  	});
+		  } else {
+		  	console.log('same');
+		  }
+			// $('.background').css('transform', 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)').find('.here').removeClass('here');
 		  // elem.parent().find('.object').each( function(){
 
 		  // 	var distz = ( Math.abs( -1*posz - $( this ).data('posz') ) ) / maxRange;
@@ -648,7 +745,7 @@ function drawWave(t) {
 		  elem.addClass('here');
 
 		});
-		var swimTimer, 
+		var swimTimer,
 				swimCount = 0;
 
 		function swimDetritus() {
