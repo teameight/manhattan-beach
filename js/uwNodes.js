@@ -613,7 +613,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/GunnersBunks.png" \/><p>Gunners Bunks<\/p>'
+						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/4GunnersBunks.png" \/><p>Gunners Bunks<\/p>'
 					},
 					{
 						'class':'image',
@@ -827,7 +827,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/5BoatsandRafts\/32Port-Side-Lifeboats.png"\/><p>Port Side Lifeboats<\/p>'
+						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/5BoatsandRafts\/2Port-Side-Lifeboats.png"\/><p>Port Side Lifeboats<\/p>'
 					},
 					{
 						'class':'image',
