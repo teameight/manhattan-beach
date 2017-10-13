@@ -711,6 +711,8 @@ function drawWave(t) {
 
 		  elem.addClass('here').siblings('.here').removeClass('here').parent().css('transform', 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)');
 
+		  setDistance(elem.parent(), posz);
+
 
 		  if ( hereSlug != nextSlug ) {
 		  	$('.node-wrapper').not(currentWrapper).each(function() {
