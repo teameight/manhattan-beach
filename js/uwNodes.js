@@ -915,7 +915,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>Intro text for 6Equipment photos (part 2)<\/p>'
+						'content':'<p>NEWS Intro text for 6Equipment photos (part 2)<\/p>'
 					},
 					{
 						'class':'image',
@@ -993,7 +993,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>Intro text for 7Maps and diagrams<\/p>'
+						'content':'<p>ABOUT Intro text for 7Maps and diagrams<\/p>'
 					},
 					{
 						'class':'image',
@@ -1071,7 +1071,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>NEWS NODE. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
+						'content':'<p>CONTACT NODE. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
 					},
 					{
 						'class':'',
@@ -1283,7 +1283,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>Goon Squad. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
+						'content':'<p>EMERALD CITY There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
 					},
 					{
 						'class':'',

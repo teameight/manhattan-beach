@@ -594,7 +594,7 @@ function drawWave(t) {
 			// console.log(current_slug.slug);
 
 			var nodeTemplate = $('.nw-template');
-			var zOffset = -400;
+			var zOffset = -500;
 			var currSlug = current_slug.slug;
 
 			// console.log(uwNodes);
@@ -623,6 +623,9 @@ function drawWave(t) {
 		      // console.log('node list', tier.nodes);
 
 				  tier.nodes.forEach(function(node, n) {
+				  	// if ( n > 0 ) {
+							// o = o+1;
+				  	// }
 				    var node = tier.nodes[n];
 				    var thisSlug = node.slug;
 				    var objTemplate = $('.nw-'+ t + ' .obj-template');
@@ -676,6 +679,8 @@ function drawWave(t) {
 			var hereSlug = $(this).data('slug'),
 					nextSlug;
 
+	  	var currz = $('.here').data('posz');
+
 		  if( $(this).hasClass('here') ) {
 
 		  	if( $(this).next().length ) {
@@ -709,7 +714,9 @@ function drawWave(t) {
 		  		posy = posy || 0;
 		  		posz = posz || 0;
 
-		  elem.addClass('here').siblings('.here').removeClass('here').parent().css('transform', 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)');
+  		console.log((posz + currz)*5);
+
+		  elem.addClass('here').siblings('.here').removeClass('here').parent().css({'transform': 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)' }); //, 'transition' : 'transform ' + (posz + currz)*5 + 'ms ease'
 
 		  setDistance(elem.parent(), posz);
 
