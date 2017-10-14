@@ -728,7 +728,6 @@ function drawWave(t) {
 		  		posy = posy || 0;
 		  		posz = posz || 0;
 
-  		console.log((posz + currz)*5);
 
 		  elem.addClass('here').siblings('.here').removeClass('here').parent().css({'transform': 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)' }); //, 'transition' : 'transform ' + (posz + currz)*5 + 'ms ease'
 
@@ -736,7 +735,6 @@ function drawWave(t) {
 
 
 		  if ( hereSlug != nextSlug ) {
-		  	console.log(currentWrapper);
 		  	$('.node-wrapper').not(currentWrapper).each(function() {
 		  		var firstNodeInPage = $(this).find('.object[data-slug="'+nextSlug+'"]').first();
 		  		elem = firstNodeInPage;
@@ -768,12 +766,9 @@ function drawWave(t) {
 				  thisGroupInc = thisGroupInc.split('-')[0];
 				  
 				  var afterSlug = $(this).find('.object-' + (thisGroupInc * 1 + 1) + '-0').data('slug');
-				  console.log(afterSlug);
 				  $(this).find('.object[data-slug="'+afterSlug+'"]').each(function() {
 
 				  		var bgimg = $(this).data('bgimg');
-
-				  		console.log(bgimg);
 
 				  		if( bgimg ){
 
@@ -787,7 +782,7 @@ function drawWave(t) {
 
 		  	});
 		  } else {
-		  	console.log('same');
+		  	// console.log('same');
 		  }
 			// $('.background').css('transform', 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)').find('.here').removeClass('here');
 		  // elem.parent().find('.object').each( function(){
