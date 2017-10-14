@@ -425,7 +425,7 @@ function drawWave(t) {
 				$underwater = $('.underwater');
 		var uwTop = $('.uw-segway').offset().top;
 		// console.log('onload ' + uwTop);
-		var maxRange = 620; //range of visibility, in z-space
+		var maxRange = 250; //range of visibility, in z-space
 				// scrollRun = false,
 				// scrollqueue = false;
 		var $bodyDiv = $('#body');
@@ -452,7 +452,7 @@ function drawWave(t) {
 			  }, 300);
 
 			});
-			
+
 			buildNodes();
 
 		}else{
@@ -594,7 +594,7 @@ function drawWave(t) {
 			// console.log(current_slug.slug);
 
 			var nodeTemplate = $('.nw-template');
-			var zOffset = -500;
+			var zOffset = -200;
 			var currSlug = current_slug.slug;
 
 			// console.log(uwNodes);
@@ -623,14 +623,21 @@ function drawWave(t) {
 		      // console.log('node list', tier.nodes);
 
 				  tier.nodes.forEach(function(node, n) {
-				  	// if ( n > 0 ) {
-							// o = o+1;
-				  	// }
+				  	if ( n > 0 ) {
+							o = o+1.5;
+				  	}
 				    var node = tier.nodes[n];
 				    var thisSlug = node.slug;
 				    var objTemplate = $('.nw-'+ t + ' .obj-template');
+				    var firstObjectInNode = true;
 
 				    	for (var i = 0; i < node.objects.length; i++) {
+
+				    	if (firstObjectInNode) {
+				    		var nodeTransition = '1000000ms';
+				    	} else {
+				    		var nodeTransition = '2000ms';
+				    	}
 
 				      var obj = node.objects[i],
 				      		bgimg = '',
@@ -646,7 +653,7 @@ function drawWave(t) {
 				        .removeClass('obj-template')
 				        .addClass('object-' + n + '-' + i + ' ' + obj.class)
 				        .attr('data-slug', thisSlug)
-				        .css('transform', 'translate3d(' + obj.posx + 'vw, ' + obj.posy + 'vw, ' + zOffset*o + 'vw) rotateX('+ obj.rotx +'deg) rotateY('+  obj.roty +'deg)')
+				        .css({'transform': 'translate3d(' + obj.posx + 'vw, ' + obj.posy + 'vw, ' + zOffset*o + 'vw) rotateX('+ obj.rotx +'deg) rotateY('+  obj.roty +'deg)'})
 				        .data( "posx", obj.posx )
 				        .data( "posy", obj.posy )
 				        .data( "posz", zOffset*o )
@@ -666,12 +673,13 @@ function drawWave(t) {
 				        }
 
 				      o++;
+				      firstObjectInNode = false;
 
 				    }
 
 
 				    // objTemplate.remove();
-				    $objFirst = $('.nw-' + t + ' .object').not('.obj-template').first().addClass('here');
+				    $('.nw-' + t + ' .object').not('.obj-template').first().addClass('here');
 				  });
 
 			});
@@ -693,10 +701,9 @@ function drawWave(t) {
 
 			var currentWrapper = $(this).closest('.node-wrapper');
 
-			var hereSlug = $(this).data('slug'),
-					nextSlug;
-
-	  	var currz = $('.here').data('posz');
+			var currz = currentWrapper.find('.here').data('posz'),
+					hereSlug = currentWrapper.find('.here').data('slug'),
+	  			nextSlug;
 
 		  if( $(this).hasClass('here') ) {
 
@@ -733,7 +740,7 @@ function drawWave(t) {
 
   		console.log((posz + currz)*5);
 
-		  elem.addClass('here').siblings('.here').removeClass('here').parent().css({'transform': 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)' }); //, 'transition' : 'transform ' + (posz + currz)*5 + 'ms ease'
+		  elem.addClass('here').siblings('.here').removeClass('here').parent().css({'transform': 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)', 'transition' : 'transform ' + (posz + currz)*10 + 'ms ease'  }); //
 
 		  setDistance(elem.parent(), posz);
 
