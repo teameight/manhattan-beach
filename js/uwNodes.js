@@ -388,7 +388,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/1The-Jeremiah-OBrien-From-Pier-39.png" \/><p>The Jeremiah O&rsquo;Brien From Pier 39<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/1The-Jeremiah-OBrien-From-Pier-39.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/1The-Jeremiah-OBrien-From-Pier-39-sm.png',
+						'content':'<div class="imgbox"><\/div><p>The Jeremiah O&rsquo;Brien From Pier 39<\/p>'
 					},
 					{
 						'class':'image',
@@ -397,7 +399,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/2JOB-Bow.png" \/><p>Bow<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/2JOB-Bow.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/2JOB-Bow-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Bow<\/p>'
 					},
 					{
 						'class':'image',
@@ -406,7 +410,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/3Gangway-to-JOB.png" \/><p>Gangway<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/3Gangway-to-JOB.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/3Gangway-to-JOB-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Gangway<\/p>'
 					},
 					{
 						'class':'image',
@@ -415,7 +421,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/4Booms-and-Raft.png" \/><p>Booms and Raft<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/4Booms-and-Raft.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/4Booms-and-Raft-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Booms and Raft<\/p>'
 					},
 					{
 						'class':'image',
@@ -424,7 +432,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/5Alley.png" \/><p>Alley<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/5Alley.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/5Alley-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Alley<\/p>'
 					},
 					{
 						'class':'image',
@@ -433,7 +443,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/6.png"<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/6.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/6-sm.png',
+						'content':'<div class="imgbox"><\/div>'
 					}
 				]
 			},
@@ -456,7 +468,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/1Main-Deck.png" \/><p>Main Deck<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/1Main-Deck.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/1Main-Deck-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Main Deck<\/p>'
 					},
 					{
 						'class':'image',
@@ -465,7 +479,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/2.png"\/><p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/2.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/2-sm.png',
+						'content':'<div class="imgbox"><\/div>'
 					},
 					{
 						'class':'image',
@@ -474,7 +490,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/3Mast-and-Vent.png" \/><p>Mast and Vent<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/3Mast-and-Vent.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/3Mast-and-Vent-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Mast and Vent<\/p>'
 					},
 					{
 						'class':'image',
@@ -483,7 +501,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/4Boom-Cables.png" \/><p>Boom Cables<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/4Boom-Cables.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/4Boom-Cables-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Boom Cables<\/p>'
 					},
 					{
 						'class':'image',
@@ -492,7 +512,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/5Stack.png" \/><p>Stack<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/5Stack.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/5Stack-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Stack<\/p>'
 					},
 					{
 						'class':'image',
@@ -501,7 +523,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/6Stack-With-Smoke.png" \/><p>Stack With Smoke<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/6Stack-With-Smoke.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/6Stack-With-Smoke-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Stack With Smoke<\/p>'
 					},
 					{
 						'class':'image',
@@ -510,7 +534,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/7View-Forward-From-Flying-Bridge.png" \/><p>View Forward From Flying Bridge<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/7View-Forward-From-Flying-Bridge.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/7View-Forward-From-Flying-Bridge-sm.png',
+						'content':'<div class="imgbox"><\/div><p>View Forward From Flying Bridge<\/p>'
 					}
 				]
 			},
@@ -533,7 +559,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/8View-Aft-From-Flying-Bridge.png" \/><p>View Aft From Flying Bridge<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/8View-Aft-From-Flying-Bridge.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/8View-Aft-From-Flying-Bridge-sm.png',
+						'content':'<div class="imgbox"><\/div><p>View Aft From Flying Bridge<\/p>'
 						},
 					{
 						'class':'image',
@@ -542,7 +570,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/9Rear-Gun-Tub.png" \/><p>Rear Gun Tub<\/p>'		
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/9Rear-Gun-Tub.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/9Rear-Gun-Tub-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Rear Gun Tub<\/p>'		
 					},
 					{
 						'class':'image',
@@ -551,7 +581,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/10Gun-On-Flying-Bridge.png" \/><p>Gun On Flying Bridge<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/10Gun-On-Flying-Bridge.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/10Gun-On-Flying-Bridge-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Gun On Flying Bridge<\/p>'
 					},
 					{
 						'class':'image',
@@ -560,7 +592,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/11Gun-Sight.png" \/><p>Gun Sight<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/11Gun-Sight.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/11Gun-Sight-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Gun Sight<\/p>'
 					}
 				]
 			},
@@ -583,7 +617,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/1Porthole.png" \/><p>Porthole<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/1Porthole.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/1Porthole-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Porthole<\/p>'
 					},
 					{
 						'class':'image',
@@ -592,7 +628,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/2SeamanQuarters.png"\/><p>Seaman Quarters<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/2SeamanQuarters.png"\/><p>Seaman Quarters<\/p>'
 					},
 					{
 						'class':'image',
@@ -601,7 +637,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/3FirstMateStateroom.png" \/><p>First Mate Stateroom<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/3FirstMateStateroom.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/3FirstMateStateroom-sm.png',
+						'content':'<div class="imgbox"><\/div><p>First Mate Stateroom<\/p>'
 					},
 					{
 						'class':'image',
@@ -610,7 +648,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/4GunnersBunks.png" \/><p>Gunners Bunks<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/4GunnersBunks.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/4GunnersBunks-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Gunners Bunks<\/p>'
 					},
 					{
 						'class':'image',
@@ -619,7 +659,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/5MessHall.png" \/><p>Mess Hall<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/5MessHall.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/5MessHall-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Mess Hall<\/p>'
 					}
 				]
 			},
@@ -642,7 +684,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/6NavigationChartRoom.png" \/><p>Navigation Chart Room<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/6NavigationChartRoom.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/6NavigationChartRoom-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Navigation Chart Room<\/p>'
 					},
 					{
 						'class':'image',
@@ -651,7 +695,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/7MastersOffice.png" \/><p>Master&rsquo;s Office<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/7MastersOffice.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/7MastersOffice-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Master&rsquo;s Office<\/p>'
 					},
 					{
 						'class':'image',
@@ -660,7 +706,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/8OfficersSaloon.png" \/><p> Officers&rsquo; Saloon<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/8OfficersSaloon.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/8OfficersSaloon-sm.png',
+						'content':'<div class="imgbox"><\/div><p> Officers&rsquo; Saloon<\/p>'
 						},
 					{
 						'class':'image',
@@ -669,7 +717,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/9RadioShack.png" \/><p>Radio Shack<\/p>'		
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/9RadioShack.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/9RadioShack-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Radio Shack<\/p>'		
 					},
 					{
 						'class':'image',
@@ -678,7 +728,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/10SparksStateroom.png" \/><p>Sparks&rsquo; Stateroom<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/10SparksStateroom.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/10SparksStateroom-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Sparks&rsquo; Stateroom<\/p>'
 					},
 					{
 						'class':'image',
@@ -687,7 +739,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/11ThirdMateStateroom.png" \/><p>Third Mate Stateroom<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/11ThirdMateStateroom.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/11ThirdMateStateroom-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Third Mate Stateroom<\/p>'
 					}
 				]
 			},
@@ -710,7 +764,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/2View-Down-Into-Engine-Room.png" \/><p>View Down Into Engine Room<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/2View-Down-Into-Engine-Room.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/2View-Down-Into-Engine-Room-sm.png',
+						'content':'<div class="imgbox"><\/div><p>View Down Into Engine Room<\/p>'
 					},
 					{
 						'class':'image',
@@ -719,7 +775,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/3Midway-Down.png"\/><p>Midway Down<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/3Midway-Down.png"\/><p>Midway Down<\/p>'
 					},
 					{
 						'class':'image',
@@ -728,7 +784,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/4.png"<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/4.png"<\/p>'
 					},
 					{
 						'class':'image',
@@ -737,7 +793,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/5.png"<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/5.png"<\/p>'
 					},
 					{
 						'class':'image',
@@ -746,7 +802,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/6ER-Wrenches.png" \/><p>Wrenches<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/6ER-Wrenches.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/6ER-Wrenches-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Wrenches<\/p>'
 					},
 					{
 						'class':'image',
@@ -755,7 +813,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/7Beam-Pumps.png" \/><p>Beam Pumps<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/7Beam-Pumps.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/7Beam-Pumps-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Beam Pumps<\/p>'
 					},
 					{
 						'class':'image',
@@ -764,7 +824,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/8Washing-Machine.png" \/><p>Washing Machine<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/8Washing-Machine.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/8Washing-Machine-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Washing Machine<\/p>'
 					},
 					{
 						'class':'image',
@@ -782,7 +844,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/10Pistons.png" \/><p>Pistons<\/p>'		
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/10Pistons.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/10Pistons-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Pistons<\/p>'		
 					},
 					{
 						'class':'image',
@@ -791,7 +855,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/12Speaking-Tubes.png" \/><p>Speaking Tubes<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/12Speaking-Tubes.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/12Speaking-Tubes-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Speaking Tubes<\/p>'
 					}
 				]
 			},
@@ -814,7 +880,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/5BoatsandRafts\/1Starboard-Lifeboats.png" \/><p>Starboard Lifeboats<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/5BoatsandRafts\/1Starboard-Lifeboats.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/5BoatsandRafts\/1Starboard-Lifeboats-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Starboard Lifeboats<\/p>'
 					},
 					{
 						'class':'image',
@@ -823,7 +891,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/5BoatsandRafts\/2Port-Side-Lifeboats.png"\/><p>Port Side Lifeboats<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/5BoatsandRafts\/2Port-Side-Lifeboats.png"\/><p>Port Side Lifeboats<\/p>'
 					},
 					{
 						'class':'image',
@@ -832,7 +900,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/5BoatsandRafts\/3Boat-and-Falls.png"\/><p>Boat and Falls<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/5BoatsandRafts\/3Boat-and-Falls.png"\/><p>Boat and Falls<\/p>'
 					},
 					{
 						'class':'image',
@@ -841,7 +909,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/5BoatsandRafts\/4Lifeboat-Number-1.png" \/><p>Lifeboat Number 1<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/5BoatsandRafts\/4Lifeboat-Number-1.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/5BoatsandRafts\/4Lifeboat-Number-1-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Lifeboat Number 1<\/p>'
 					},
 					{
 						'class':'image',
@@ -850,7 +920,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/5BoatsandRafts\/5Life-Raft.png" \/><p>Life Raft<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/5BoatsandRafts\/5Life-Raft.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/5BoatsandRafts\/5Life-Raft-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Life Raft<\/p>'
 					}
 				]
 			},
@@ -874,7 +946,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/1Flying-Bridge-Compass.png" \/><p>Flying Bridge Compass<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/1Flying-Bridge-Compass.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/1Flying-Bridge-Compass-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Flying Bridge Compass<\/p>'
 					},
 					{
 						'class':'image',
@@ -883,7 +957,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/2Flying-Bridge-Wheel.png"\/><p>Flying Bridge Wheel<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/2Flying-Bridge-Wheel.png"\/><p>Flying Bridge Wheel<\/p>'
 					},
 					{
 						'class':'image',
@@ -892,7 +966,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/3Hawspipe.png"\/><p>Hawspipe<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/3Hawspipe.png"\/><p>Hawspipe<\/p>'
 					},
 					{
 						'class':'image',
@@ -901,7 +975,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/4Flying-Bridge-Engine-Room-Telegraph.png" \/><p>Flying Bridge Engine Room Telegraph<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/4Flying-Bridge-Engine-Room-Telegraph.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/4Flying-Bridge-Engine-Room-Telegraph-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Flying Bridge Engine Room Telegraph<\/p>'
 					}
 				]
 			},
@@ -924,7 +1000,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/5General-Alarm.png" \/><p>General Alarm<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/5General-Alarm.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/5General-Alarm-sm.png',
+						'content':'<div class="imgbox"><\/div><p>General Alarm<\/p>'
 								},
 					{
 						'class':'image',
@@ -933,7 +1011,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/6Fire-Axe.png" \/><p>Fire Axe<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/6Fire-Axe.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/6Fire-Axe-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Fire Axe<\/p>'
 					},
 					{
 						'class':'image',
@@ -942,7 +1022,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/7View-Down-to-Steering-Engine.png"\/><p>View Down to Steering Engine<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/7View-Down-to-Steering-Engine.png"\/><p>View Down to Steering Engine<\/p>'
 					},
 					{
 						'class':'image',
@@ -951,7 +1031,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/8.png"<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/8.png"<\/p>'
 					},
 					{
 						'class':'image',
@@ -960,7 +1040,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/9Wheel-House-Speaking-Tubes.png" \/><p>Wheel House Speaking Tubes<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/9Wheel-House-Speaking-Tubes.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/9Wheel-House-Speaking-Tubes-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Wheel House Speaking Tubes<\/p>'
 					},
 					{
 						'class':'image',
@@ -969,7 +1051,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/10Voice-Activated-Telephone.png" \/><p>Voice Activated Telephone<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/10Voice-Activated-Telephone.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/10Voice-Activated-Telephone-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Voice Activated Telephone<\/p>'
 					},
 					{
 						'class':'image',
@@ -978,7 +1062,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/11Stored-Signal-Flags.png" \/><p>Stored Signal Flags<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/11Stored-Signal-Flags.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/11Stored-Signal-Flags-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Stored Signal Flags<\/p>'
 					}
 				]
 			},
@@ -1002,7 +1088,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/1JOB-Stats.png" \/><p>Jeremiah O&rsquo;Brien Stats<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/1JOB-Stats.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/1JOB-Stats-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Jeremiah O&rsquo;Brien Stats<\/p>'
 					},
 					{
 						'class':'image',
@@ -1011,7 +1099,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/2Liberty-Ship-Diagram.png"\/><p>Liberty Ship Diagram<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/2Liberty-Ship-Diagram.png"\/><p>Liberty Ship Diagram<\/p>'
 					},
 					{
 						'class':'image',
@@ -1020,7 +1108,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/3Liberty-Deck-Plan.png"\/><p>Liberty Deck Plan<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/3Liberty-Deck-Plan.png"\/><p>Liberty Deck Plan<\/p>'
 					},
 					{
 						'class':'image',
@@ -1029,7 +1117,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/4Convoy-Diagram.png" \/><p>Convoy Diagram<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/4Convoy-Diagram.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/4Convoy-Diagram-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Convoy Diagram<\/p>'
 					},
 					{
 						'class':'image',
@@ -1038,7 +1128,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/5Engine-Room-Diagram.png" \/><p>Engine Room Diagram<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/5Engine-Room-Diagram.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/5Engine-Room-Diagram-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Engine Room Diagram<\/p>'
 								},
 					{
 						'class':'image',
@@ -1047,7 +1139,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/5Piston-Diagram.png" \/><p>Piston Diagram<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/5Piston-Diagram.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/5Piston-Diagram-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Piston Diagram<\/p>'
 					},
 					{
 						'class':'image',
@@ -1056,7 +1150,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/6Knots.png"\/><p>Knots<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/6Knots.png"\/><p>Knots<\/p>'
 					}
 				]
 			},
@@ -1163,7 +1257,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/Porthole.png" \/>'
+						'image': imgRoot + '\/Porthole.png" \/>'
 					},
 					{
 						'class':'image',
@@ -1172,7 +1266,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/ChartRoom.png" \/><p>Anna watched the sea. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. <\/p>'
+						'image': imgRoot + '\/ChartRoom.png',
+						'imageSm': imgRoot + '\/ChartRoom-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Anna watched the sea. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. <\/p>'
 					},
 					{
 						'class':'image',
@@ -1190,7 +1286,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<img alt="" src="' + imgRoot + '\/convoy-3.png" \/><p>[This could be an image caption giving the explorer some context and adding to the overall narrative of this path.]<\/p>'
+						'image': imgRoot + '\/convoy-3.png',
+						'imageSm': imgRoot + '\/convoy-3-sm.png',
+						'content':'<div class="imgbox"><\/div><p>[This could be an image caption giving the explorer some context and adding to the overall narrative of this path.]<\/p>'
 					}
 				]
 			},

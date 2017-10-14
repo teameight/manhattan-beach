@@ -632,12 +632,19 @@ function drawWave(t) {
 
 				    	for (var i = 0; i < node.objects.length; i++) {
 
-				      var obj = node.objects[i];
+				      var obj = node.objects[i],
+				      		bgimg = '',
+				      		bgimgsm = '';
 				      // console.log(obj);
+
+				      if(obj.image){
+				      	bgimg = obj.image;
+				      	bgimgsm = obj.imageSm;
+				      }
 
 				      objTemplate.clone()
 				        .removeClass('obj-template')
-				        .addClass('object-'+ i + ' ' + obj.class)
+				        .addClass('object-' + n + '-' + i + ' ' + obj.class)
 				        .attr('data-slug', thisSlug)
 				        .css('transform', 'translate3d(' + obj.posx + 'vw, ' + obj.posy + 'vw, ' + zOffset*o + 'vw) rotateX('+ obj.rotx +'deg) rotateY('+  obj.roty +'deg)')
 				        .data( "posx", obj.posx )
@@ -645,8 +652,18 @@ function drawWave(t) {
 				        .data( "posz", zOffset*o )
 				        .data( "rotx", obj.rotx )
 				        .data( "roty", obj.roty )
+				        .data( "bgimg", bgimg )
+				        .data( "bgimgsm", bgimgsm )
 				        .html('<div class="inner">'+obj.content+'</div>')
 				        .appendTo( '.nw-' + t + ' .camera');
+
+				        //load the images as backgrounds, to start, just for the first two slide groups in each tier
+				        if(obj.image && n < 2){
+
+				        	$('.nw-'+ t +' .object-' + n + '-' + i + ' .imgbox').css({
+				        		'background-image': 'url(' + bgimg + ')'
+				        	})
+				        }
 
 				      o++;
 

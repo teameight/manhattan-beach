@@ -129,12 +129,13 @@ body {
   padding-top: 1px;
   padding-bottom: 0;
   transform: translateZ(0vw);
-  background: linear-gradient(0deg, #e1ecff 5%, white 100%);
+  background: linear-gradient(0deg, rgba(225, 236, 255, 0) 5%, #e1ecff 40%, white 100%);
   margin-bottom: -25vw;
   pointer-events: initial; }
   body:not(.water) #page-wrap {
     padding-bottom: 20vh;
-    min-height: 100vh; }
+    min-height: 100vh;
+    background: linear-gradient(0deg, #e1ecff 5%, white 100%); }
 
 #body.no-scroll {
   overflow-y: hidden;
@@ -913,18 +914,17 @@ a.btn {
       text-align: center; }
       .node .object .inner p {
         text-align: left; }
+      .node .object .inner .imgbox {
+        background-size: contain;
+        width: 100%;
+        height: 80vh;
+        background-repeat: no-repeat;
+        background-position: center center; }
       .node .object .inner img {
         max-width: 100%;
         height: auto; }
       .node .object .inner img + p {
         padding: 0 4em 0 1em; }
-      .node .object .inner > div {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        transition: opacity 1000ms ease;
-        -webkit-backface-visibility: hidden; }
       .node .object .inner > * {
         transition: opacity 2000ms ease;
         opacity: 1;
@@ -944,6 +944,14 @@ a.btn {
         margin-right: auto; }
     .text .node .object, .node .object.text {
       width: 100%; }
+
+.object.spin .inner > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 1000ms ease;
+  -webkit-backface-visibility: hidden; }
 
 a.open-handle {
   display: block;

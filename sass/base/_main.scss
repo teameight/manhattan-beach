@@ -101,13 +101,14 @@ body {
 	padding-top: 1px;
 	padding-bottom: 0;
 	transform: translateZ(0vw);
-	background: linear-gradient(0deg, rgba(225, 236, 257, 1) 5%, rgba(255, 255, 255, 1) 100%);
+	background: linear-gradient(0deg, rgba(225, 236, 257, 0) 5%, rgba(225, 236, 257, 1) 40%, rgba(255, 255, 255, 1) 100%);
 	margin-bottom: -25vw;
 	pointer-events: initial;
 
 	body:not(.water) & {
 		padding-bottom: 20vh;
-		min-height: 100vh;
+		min-height: 100vh;background: linear-gradient(0deg, rgba(225, 236, 257, 1) 5%, rgba(255, 255, 255, 1) 100%);
+	
 	}
 }
 
