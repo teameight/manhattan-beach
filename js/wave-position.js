@@ -654,7 +654,7 @@ function drawWave(t) {
 					        .data( "roty", obj.roty )
 					        .data( "bgimg", bgimg )
 					        .data( "bgimgsm", bgimgsm )
-					        .html('<div class="inner">'+obj.content+'</div>')
+					        .html('<div class="inner">'+obj.content+'<div class="prevnext"><a class="prev"><span></span></a><a class="next"><span></span></a></div></div>')
 					        .appendTo( '.nw-' + t + ' .camera');
 
 					        //load the images as backgrounds, to start, just for the first two slide groups in each tier

@@ -23,7 +23,7 @@ get_header(); ?>
 					'meta_compare' => '>=',
 					'orderby'			=> 'meta_value_num',
 					'order'					=> 'ASC',
-					'posts_per_page' => 5
+					'posts_per_page' => 10
 				);
 
 				$query = new WP_Query($args);

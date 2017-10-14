@@ -967,7 +967,7 @@ a.btn {
   display: block;
   position: absolute;
   bottom: -40px;
-  right: 0; }
+  left: 0; }
   .node .object .inner .prevnext a {
     height: 40px;
     width: 40px;

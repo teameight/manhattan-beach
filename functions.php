@@ -7,7 +7,6 @@
  * @package Manhattan_Beach
  */
 
-$version = '2.3';
 
 if ( ! function_exists( 'manhattan_beach_setup' ) ) :
 
@@ -94,7 +93,7 @@ include_once 'functions/slideshow-shortcode.php';
 
 function slideshow_register_scripts() {
 	global $post, $wave_slug;
-		$version = '2.2';
+		$version = '2.4';
 
     wp_enqueue_style( 'audioslide-style', get_template_directory_uri() . '/css/vendor/audioslide-style.css?v=' . $version, false );
     wp_enqueue_script( 'jquery' );
