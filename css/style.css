@@ -953,6 +953,24 @@ a.btn {
   transition: opacity 1000ms ease;
   -webkit-backface-visibility: hidden; }
 
+.node .object.image .inner p {
+  padding: .5em 0 1em;
+  font-size: 0.8em;
+  letter-spacing: 1.18px;
+  font-family: "Cera", san-serif;
+  text-align: center;
+  margin-top: 0; }
+
+.node .object .inner .prevnext {
+  height: 40px;
+  width: 40px;
+  border: 1px white solid;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
 a.open-handle {
   display: block;
   text-align: right;

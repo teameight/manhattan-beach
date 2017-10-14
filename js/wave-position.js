@@ -664,11 +664,8 @@ function drawWave(t) {
 				        		'background-image': 'url(' + bgimg + ')'
 				        	})
 				        }
-
 				      o++;
-
 				    }
-
 
 				    // objTemplate.remove();
 				    $objFirst = $('.nw-' + t + ' .object').not('.obj-template').first().addClass('here');
@@ -758,6 +755,36 @@ function drawWave(t) {
 
 				  elem.parent().css('transform', 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)');
 				  setDistance(elem.parent(), posz);
+
+		  	});
+
+		  	//load the next groups images for all tiers
+		  	$('.node-wrapper').each(function() {
+		  		var firstNodeInPage = $(this).find('.object[data-slug="'+nextSlug+'"]').first();
+		  		elem = firstNodeInPage;
+
+				  thisGroupClass = elem.attr("class");
+				  thisGroupInc = thisGroupClass.split('object-')[1];
+				  thisGroupInc = thisGroupInc.split('-')[0];
+				  
+				  var afterSlug = $(this).find('.object-' + (thisGroupInc * 1 + 1) + '-0').data('slug');
+				  console.log(afterSlug);
+				  $(this).find('.object[data-slug="'+afterSlug+'"]').each(function() {
+
+				  		var bgimg = $(this).data('bgimg');
+
+				  		console.log(bgimg);
+
+				  		if( bgimg ){
+
+			        	$(this).find('.imgbox').css({
+			        		'background-image': 'url(' + bgimg + ')'
+			        	});
+
+			        }
+
+				  });
+
 		  	});
 		  } else {
 		  	console.log('same');
