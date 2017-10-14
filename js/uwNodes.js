@@ -628,7 +628,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/2SeamanQuarters.png"\/><p>Seaman Quarters<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/2SeamanQuarters.png"\/>',
+						'content':'<div class="imgbox"><\/div><p>Seaman Quarters<\/p>'
 					},
 					{
 						'class':'image',

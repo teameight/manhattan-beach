@@ -629,54 +629,43 @@ function drawWave(t) {
 				    var node = tier.nodes[n];
 				    var thisSlug = node.slug;
 				    var objTemplate = $('.nw-'+ t + ' .obj-template');
-				    var firstObjectInNode = true;
 
 				    	for (var i = 0; i < node.objects.length; i++) {
 
-				    	if (firstObjectInNode) {
-				    		var nodeTransition = '1000000ms';
-				    	} else {
-				    		var nodeTransition = '2000ms';
-				    	}
+					      var obj = node.objects[i],
+					      		bgimg = '',
+					      		bgimgsm = '';
+					      // console.log(obj);
 
-				      var obj = node.objects[i],
-				      		bgimg = '',
-				      		bgimgsm = '';
-				      // console.log(obj);
+					      if(obj.image){
+					      	bgimg = obj.image;
+					      	bgimgsm = obj.imageSm;
+					      }
 
-				      if(obj.image){
-				      	bgimg = obj.image;
-				      	bgimgsm = obj.imageSm;
-				      }
+					      objTemplate.clone()
+					        .removeClass('obj-template')
+					        .addClass('object-' + n + '-' + i + ' ' + obj.class)
+					        .attr('data-slug', thisSlug)
+					        .css({'transform': 'translate3d(' + obj.posx + 'vw, ' + obj.posy + 'vw, ' + zOffset*o + 'vw) rotateX('+ obj.rotx +'deg) rotateY('+  obj.roty +'deg)'})
+					        .data( "posx", obj.posx )
+					        .data( "posy", obj.posy )
+					        .data( "posz", zOffset*o )
+					        .data( "rotx", obj.rotx )
+					        .data( "roty", obj.roty )
+					        .data( "bgimg", bgimg )
+					        .data( "bgimgsm", bgimgsm )
+					        .html('<div class="inner">'+obj.content+'</div>')
+					        .appendTo( '.nw-' + t + ' .camera');
 
-				      objTemplate.clone()
-				        .removeClass('obj-template')
-				        .addClass('object-' + n + '-' + i + ' ' + obj.class)
-				        .attr('data-slug', thisSlug)
-				        .css({'transform': 'translate3d(' + obj.posx + 'vw, ' + obj.posy + 'vw, ' + zOffset*o + 'vw) rotateX('+ obj.rotx +'deg) rotateY('+  obj.roty +'deg)'})
-				        .data( "posx", obj.posx )
-				        .data( "posy", obj.posy )
-				        .data( "posz", zOffset*o )
-				        .data( "rotx", obj.rotx )
-				        .data( "roty", obj.roty )
-				        .data( "bgimg", bgimg )
-				        .data( "bgimgsm", bgimgsm )
-				        .html('<div class="inner">'+obj.content+'</div>')
-				        .appendTo( '.nw-' + t + ' .camera');
+					        //load the images as backgrounds, to start, just for the first two slide groups in each tier
+					        if(obj.image && n < 2){
 
-				        //load the images as backgrounds, to start, just for the first two slide groups in each tier
-				        if(obj.image && n < 2){
-
-				        	$('.nw-'+ t +' .object-' + n + '-' + i + ' .imgbox').css({
-				        		'background-image': 'url(' + bgimg + ')'
-				        	})
-				        }
-
-				      o++;
-				      firstObjectInNode = false;
-
-				    }
-
+					        	$('.nw-'+ t +' .object-' + n + '-' + i + ' .imgbox').css({
+					        		'background-image': 'url(' + bgimg + ')'
+					        	})
+					        }
+					      o++;
+					    }
 
 				    // objTemplate.remove();
 				    $('.nw-' + t + ' .object').not('.obj-template').first().addClass('here');
@@ -765,6 +754,36 @@ function drawWave(t) {
 
 				  elem.parent().css('transform', 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)');
 				  setDistance(elem.parent(), posz);
+
+		  	});
+
+		  	//load the next groups images for all tiers
+		  	$('.node-wrapper').each(function() {
+		  		var firstNodeInPage = $(this).find('.object[data-slug="'+nextSlug+'"]').first();
+		  		elem = firstNodeInPage;
+
+				  thisGroupClass = elem.attr("class");
+				  thisGroupInc = thisGroupClass.split('object-')[1];
+				  thisGroupInc = thisGroupInc.split('-')[0];
+				  
+				  var afterSlug = $(this).find('.object-' + (thisGroupInc * 1 + 1) + '-0').data('slug');
+				  console.log(afterSlug);
+				  $(this).find('.object[data-slug="'+afterSlug+'"]').each(function() {
+
+				  		var bgimg = $(this).data('bgimg');
+
+				  		console.log(bgimg);
+
+				  		if( bgimg ){
+
+			        	$(this).find('.imgbox').css({
+			        		'background-image': 'url(' + bgimg + ')'
+			        	});
+
+			        }
+
+				  });
+
 		  	});
 		  } else {
 		  	console.log('same');

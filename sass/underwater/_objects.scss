@@ -185,14 +185,33 @@
 }
 
 .object.spin .inner > div {
-        position:absolute;
-        top:0;
-        left:0;
-        width:100%;
-        transition: opacity $cycleLength/2 ease;
-        -webkit-backface-visibility: hidden;
-      }
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  transition: opacity $cycleLength/2 ease;
+  -webkit-backface-visibility: hidden;
+}
 
+.node .object.image .inner p {
+  padding: .5em 0 1em;
+  font-size: 0.8em;
+  letter-spacing: 1.18px;
+  font-family: $title-font;
+  text-align: center;
+  margin-top: 0;
+}
+
+.node .object .inner .prevnext {
+    height: 40px;
+    width: 40px;
+    border: 1px white solid;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 
 a.open-handle {
     display: block;
