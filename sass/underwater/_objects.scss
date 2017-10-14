@@ -204,13 +204,52 @@
 
 .node .object .inner .prevnext {
     height: 40px;
-    width: 40px;
-    border: 1px white solid;
-    border-radius: 50%;
+    width: 90px;
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: -40px;
     right: 0;
+
+    a {
+      height: 40px;
+      width: 40px;
+      display: inline-block;
+      position: relative;
+
+      span {
+        display: block;
+        position:relative;
+        height: 40px;
+        width:1px;
+        position: relative;
+        background: #8ea9bd;
+        transform: rotateX(65deg);
+        left: 20px;
+
+        &::after {
+          content: '';
+          height: 15px;
+          width: 15px;
+          border-top: 2px #8ea9bd solid;
+          display: block;
+          position: absolute;
+          top: 0;
+          left: -7.5px;
+          transform: rotateZ(45deg);
+          border-left: 2px #8ea9bd solid;
+
+        }
+
+      }
+      &.prev span::after {
+        top:auto;
+        bottom: 0;
+        border-bottom: 2px #8ea9bd solid;
+        border-right: 2px #8ea9bd solid;
+        border-top: none;
+        border-left: none;
+      }
+    }
 }
 
 a.open-handle {
