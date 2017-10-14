@@ -16,7 +16,8 @@ get_header(); ?>
 		while ( have_posts() ) : the_post();
 
 			if ( is_singular('excerpt') ) { ?>
-				<a class="cta-link back-to-book-link" href="#" onclick="window.history.back(); return false;">Back to the book</a>
+				<?php $slug = '/books/' . get_query_var('name'); ?>
+				<a class="cta-link back-to-book-link" href="<?php echo home_url() . $slug; ?>">Back to the book</a>
 			<?php }
 
 			get_template_part( 'template-parts/content', get_post_type() );
