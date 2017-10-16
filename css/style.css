@@ -891,6 +891,8 @@ a.btn {
     cursor: pointer;
     transition: transform 1s ease;
     -webkit-backface-visibility: hidden; }
+    .node .object.inactive {
+      pointer-events: none; }
     .node .object.scrollbar:not(.closed) .inner {
       height: 80vh;
       overflow-y: scroll; }
@@ -961,13 +963,18 @@ a.btn {
   text-align: center;
   margin-top: 0; }
 
+.node .object.here .inner .prevnext {
+  opacity: 1;
+  pointer-events: initial; }
+
 .node .object .inner .prevnext {
   height: 40px;
   width: 90px;
   display: block;
   position: absolute;
   bottom: -40px;
-  left: 0; }
+  left: 0;
+  pointer-events: none; }
   .node .object .inner .prevnext a {
     height: 40px;
     width: 40px;
@@ -981,7 +988,9 @@ a.btn {
       position: relative;
       background: #8ea9bd;
       transform: rotateX(65deg);
-      left: 20px; }
+      left: 20px;
+      opacity: 0;
+      transition: opacity 500ms ease; }
       .node .object .inner .prevnext a span::after {
         content: '';
         height: 15px;
@@ -1000,6 +1009,10 @@ a.btn {
       border-right: 2px #8ea9bd solid;
       border-top: none;
       border-left: none; }
+
+.node .object.here .inner .prevnext span {
+  opacity: 1;
+  transition: opacity 4000ms ease; }
 
 a.open-handle {
   display: block;

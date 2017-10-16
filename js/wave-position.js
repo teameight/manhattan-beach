@@ -516,7 +516,7 @@ function drawWave(t) {
 
 			if($airlines.length){
 				$airlines.css({
-					'height': ( $page_offset + (screenHvw * 5) + 300 ) + 'vw'
+					'height': ( $page_offset + (screenHvw * 3) + 180 ) + 'vw'
 				});
 				airLinesInit();
 			}
@@ -686,7 +686,15 @@ function drawWave(t) {
 					setDistance(elem, posz);
 		});
 
-		$( ".underwater" ).on( "click", ".camera .object:not(.spin)", function() {
+		$( ".underwater" ).on( "click", ".camera .object:not(.spin)", function(event) {
+			event.preventDefault();
+
+			var previous = false;
+
+			if ($(event.target).closest('.prev').length) {
+				console.log('prev');
+				previous = true;
+			}
 
 			var currentWrapper = $(this).closest('.node-wrapper');
 
@@ -696,18 +704,25 @@ function drawWave(t) {
 
 		  if( $(this).hasClass('here') ) {
 
-		  	if( $(this).next().length ) {
-					// get the next element in line
-					var elem = $( this ).next();
-					// get the next element's slug
-					nextSlug = elem.data('slug');
-
-				} else {
-
-					// var elem = $( this ).siblings(':first-child');
-					// console.log('first');
-
+				// get the next element in line
+				if(previous){
+					if( $(this).prev().length ) {
+						var elem = $( this ).prev();
+					}
+				}else{
+					if( $(this).next().length ) {
+						var elem = $( this ).next();
+					}
 				}
+				
+				// get the next element's slug
+				nextSlug = elem.data('slug');
+
+				// } else {
+				// 	// var elem = $( this ).siblings(':first-child');
+				// 	// console.log('first');
+				// }
+
 		  } else {
 		  	var elem = $( this );
 		  	nextSlug = elem.data('slug');
@@ -727,15 +742,21 @@ function drawWave(t) {
 		  		posy = posy || 0;
 		  		posz = posz || 0;
 
-  		console.log((posz + currz)*5);
+  		// console.log((posz + currz)*5);
 
-		  elem.addClass('here').siblings('.here').removeClass('here').parent().css({'transform': 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)', 'transition' : 'transform ' + (posz + currz)*10 + 'ms ease'  }); //
+		  elem.addClass('here').siblings('.here').removeClass('here').addClass('inactive').parent().css({'transform': 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)', 'transition' : 'transform ' + Math.abs(posz + currz)*10 + 'ms ease'  }); //
+
+		  setTimeout(
+			  function() 
+			  {
+			    $('.inactive').removeClass('inactive');
+			  }, 1000);
 
 		  setDistance(elem.parent(), posz);
 
 
 		  if ( hereSlug != nextSlug ) {
-		  	console.log(currentWrapper);
+		  	// console.log(currentWrapper);
 		  	$('.node-wrapper').not(currentWrapper).each(function() {
 		  		var firstNodeInPage = $(this).find('.object[data-slug="'+nextSlug+'"]').first();
 		  		elem = firstNodeInPage;
@@ -825,7 +846,7 @@ function drawWave(t) {
 			  	var distz = ( Math.abs( -1*posz - $( this ).data('posz') ) ) / maxRange;
 					if(distz > 1){ distz = 1; }
 
-			  	$( this ).find('.inner').children().css('opacity', 1 - distz);
+			  	$( this ).find('.inner').children().not('.prevnext').css('opacity', 1 - distz);
 
 
 			  });

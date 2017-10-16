@@ -92,6 +92,10 @@
     transition: transform 1s ease;
     -webkit-backface-visibility: hidden;
 
+    &.inactive {
+      pointer-events: none;
+    }
+
     &.scrollbar:not(.closed) .inner {
       height: 80vh;
       overflow-y: scroll;
@@ -202,6 +206,11 @@
   margin-top: 0;
 }
 
+.node .object.here .inner .prevnext {
+  opacity:1;
+  pointer-events: initial;
+}
+
 .node .object .inner .prevnext {
     height: 40px;
     width: 90px;
@@ -209,6 +218,7 @@
     position: absolute;
     bottom: -40px;
     left: 0;
+    pointer-events: none;
 
     a {
       height: 40px;
@@ -225,6 +235,8 @@
         background: #8ea9bd;
         transform: rotateX(65deg);
         left: 20px;
+        opacity:0;
+        transition: opacity $cycleLength/4 ease;
 
         &::after {
           content: '';
@@ -250,6 +262,10 @@
         border-left: none;
       }
     }
+}
+.node .object.here .inner .prevnext span {
+  opacity:1;
+  transition: opacity $cycleLength*2 ease;
 }
 
 a.open-handle {

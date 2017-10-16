@@ -17,7 +17,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>HOME NODE. Anna watched the sea. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
+						'content':'<p>Anna watched the sea. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
 					},
 					{
 						'class':'',
@@ -49,7 +49,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>books-manhattan-beach NODE. Anna watched the sea. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
+						'content':'<p>He&rsquo;d been about to get back in his car when he found himself staring into the dark of the Upper Bay, where boats and waterfront were blacked out.<\/p>'
 					},
 					{
 						'class':'',
@@ -58,7 +58,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>A landscape of lost objects: sunken ships, hidden treasure, gold and gems and the charm bracelet that had fallen from her wrist into a storm drain.<\/p>'
+						'content':'<p>He&rsquo;d perceived a new, dynamic density in the darkness. All at once his eyes had organized the mystery and he&rsquo;d seen it.<\/p>'
 					},
 					{
 						'class':'',
@@ -67,7 +67,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>Dead bodies, her father always added, with a laugh. To him, the ocean was a wasteland.<\/p>',
+						'content':'<p>A procession of immense ships slipping from the harbor at regular intervals like beasts or ghosts. A convoy headed out to sea. There was something profound, unearthly, even, in its muted passage.<\/p>',
 					}
 				]
 			},
@@ -82,7 +82,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>Goon Squad NODE. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
+						'content':'<p>Anna leaned her head against her sister&rsquo;s and watched a long wave form, stretching until it achieved translucence, then somersaulting forward and collapsing into creamy suds that eked toward them over the sand. <\/p>'
 					},
 					{
 						'class':'',
@@ -91,7 +91,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>A landscape of lost objects: sunken ships, hidden treasure, gold and gems and the charm bracelet that had fallen from her wrist into a storm drain.<\/p>'
+						'content':'<p>Then another wave gathered, reaching, stretching, a streak of silver dashing along its surface where the weak sunlight touched it. The strange, violent, beautiful sea. this was what she had wanted Lydia to see.<\/p>'
 					},
 					{
 						'class':'',
@@ -100,7 +100,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>Dead bodies, her father always added, with a laugh. To him, the ocean was a wasteland.<\/p>',
+						'content':'<p>It touched every part of the world, a glittering curtain drawn across a mystery.<\/p>',
 					}
 				]
 			},
@@ -108,31 +108,15 @@ var uwNodes = [
 				'slug':'books/the-keep',
 				'objects': [
 					{
-						'class':'',
+						'class':'image',
 						'posx':0,
 						'posy':0,
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>The Keep NODE. Anna watched the sea. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
-					},
-					{
-						'class':'',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'content':'<p>A landscape of lost objects: sunken ships, hidden treasure, gold and gems and the charm bracelet that had fallen from her wrist into a storm drain.<\/p>'
-					},
-					{
-						'class':'',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'content':'<p>Dead bodies, her father always added, with a laugh. To him, the ocean was a wasteland.<\/p>',
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/1The-Jeremiah-OBrien-From-Pier-39.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/1The-Jeremiah-OBrien-From-Pier-39-sm.png',
+						'content':'<div class="imgbox"><\/div><p>PLACEHOLDER: something from shipyard<\/p>'
 					}
 				]
 			},
@@ -146,7 +130,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>LOOK AT ME NODE. Anna watched the sea. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
+						'content':'<p>He&rsquo;d looked out and noticed the sea as if it were entirely new. An infinite hypnotic expanse that could look like scales, wax, hammered silver, wrinkled flesh. It had structure and layers you couldn&rsquo;t see from land.<\/p>'
 					},
 					{
 						'class':'',
@@ -155,7 +139,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>A landscape of lost objects: sunken ships, hidden treasure, gold and gems and the charm bracelet that had fallen from her wrist into a storm drain.<\/p>'
+						'content':'<p>Fixing his eyes upon this unfamiliar sea, he&rsquo;d learned to float in a semi-conscious state, alert but not fully awake.<\/p>',
 					},
 					{
 						'class':'',
@@ -164,7 +148,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>Dead bodies, her father always added, with a laugh. To him, the ocean was a wasteland.<\/p>',
+						'content':'<p>Blood broke in golden flashes against his eyeballs. A humming emptiness filled his mind. Not to think, not to feel—simply to be, without pain.<\/p>',
 					}
 				]
 			},
@@ -172,38 +156,21 @@ var uwNodes = [
 				'slug':'books/the-invisible-circus',
 				'objects': [
 					{
-						'class':'',
+						'class':'image',
 						'posx':0,
 						'posy':0,
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>THE INVISIBLE CIRCUS NODE. Anna watched the sea. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
-					},
-					{
-						'class':'',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'content':'<p>A landscape of lost objects: sunken ships, hidden treasure, gold and gems and the charm bracelet that had fallen from her wrist into a storm drain.<\/p>'
-					},
-					{
-						'class':'',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'content':'<p>Dead bodies, her father always added, with a laugh. To him, the ocean was a wasteland.<\/p>',
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/1The-Jeremiah-OBrien-From-Pier-39.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/1The-Jeremiah-OBrien-From-Pier-39-sm.png',
+						'content':'<div class="imgbox"><\/div><p>PLACEHOLDER: something from shipyard<\/p>'
 					}
 				]
 			},
 			{
 				'slug':'books/emerald-city-and-other-stories',
 				'objects': [
-
 					{
 						'class':'',
 						'posx':0,
@@ -211,7 +178,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>EMERALD NODE. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
+						'content':'<p>She descended the ladder backward, then held the descending line and let the harbor swallow her.<\/p>'
 					},
 					{
 						'class':'',
@@ -220,7 +187,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>A landscape of lost objects: sunken ships, hidden treasure, gold and gems and the charm bracelet that had fallen from her wrist into a storm drain.<\/p>'
+						'content':'<p>The current was tremendous, a pull with the force of the ocean behind it. Here, there was no difference between opening her eyes and closing them.<\/p>'
 					},
 					{
 						'class':'',
@@ -229,14 +196,31 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>Dead bodies, her father always added, with a laugh. To him, the ocean was a wasteland.<\/p>',
+						'content':'<p>This made for an eerie dislocation, as if she were sliding toward nothing or floating in a void.<\/p>',
+					},
+					{
+						'class':'',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'content':'<p>When at last she reached the bottom, she clutched the line and blinked into the dark, wondering if she&rsquo;d come down too quickly.<\/p>',
+					},
+					{
+						'class':'',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'content':'<p>Anna shut her eyes and immediately felt calmer. Here was a blindness she could tolerate.<\/p>',
 					}
 				]
 			},
 			{
 				'slug':'non-fiction',
 				'objects': [
-
 					{
 						'class':'',
 						'posx':0,
@@ -244,7 +228,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>NON FICTION NODE. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
+						'content':'<p>He was alone at the bottom of the sea. The extremity of his position mesmerized him.<\/p>'
 					},
 					{
 						'class':'',
@@ -253,7 +237,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>A landscape of lost objects: sunken ships, hidden treasure, gold and gems and the charm bracelet that had fallen from her wrist into a storm drain.<\/p>'
+						'content':'<p>He&rsquo;d always liked the dark, but night was the only version of it he&rsquo;d known until now. This was the primeval dark of nightmares. It covered secrets too atrocious to be exposed. drowned children, sunken ships.<\/p>'
 					},
 					{
 						'class':'',
@@ -262,47 +246,29 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>Dead bodies, her father always added, with a laugh. To him, the ocean was a wasteland.<\/p>',
+						'content':'<p>He let go the line and took a few steps away, imagining himself cut off and alone in this forsaken place. Something long and smooth slid along the envelope of his diving suit—an eel. A fish. He felt the possibility of panic.<\/p>',
 					}
 				]
 			},
 			{
 				'slug':'category/news',
 				'objects': [
-
 					{
-						'class':'',
+						'class':'image',
 						'posx':0,
 						'posy':0,
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>NEWS NODE. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
-					},
-					{
-						'class':'',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'content':'<p>A landscape of lost objects: sunken ships, hidden treasure, gold and gems and the charm bracelet that had fallen from her wrist into a storm drain.<\/p>'
-					},
-					{
-						'class':'',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'content':'<p>Dead bodies, her father always added, with a laugh. To him, the ocean was a wasteland.<\/p>',
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/1The-Jeremiah-OBrien-From-Pier-39.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/1The-Jeremiah-OBrien-From-Pier-39-sm.png',
+						'content':'<div class="imgbox"><\/div><p>PLACEHOLDER: something from shipyard<\/p>'
 					}
 				]
 			},
 			{
 				'slug':'about',
 				'objects': [
-
 					{
 						'class':'',
 						'posx':0,
@@ -310,7 +276,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>ABOUT NODE. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
+						'content':'<p>The night was cool and clear, a rolling sea just visible under a paring of moon.<\/p>'
 					},
 					{
 						'class':'',
@@ -319,7 +285,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>A landscape of lost objects: sunken ships, hidden treasure, gold and gems and the charm bracelet that had fallen from her wrist into a storm drain.<\/p>'
+						'content':'<p>He couldn&rsquo;t see the ships around them, but he perceived their density, five hundred feet away fore and aft, a thousand feet abeam, all nosing together through the swells like a spectral herd.<\/p>'
 					},
 					{
 						'class':'',
@@ -328,14 +294,13 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>Dead bodies, her father always added, with a laugh. To him, the ocean was a wasteland.<\/p>'
+						'content':'<p>The Southern Cross hung near the horizon. He preferred the southern sky; it was brighter, denser with planets.<\/p>',
 					}
 				]
 			},
 			{
 				'slug':'contact',
 				'objects': [
-
 					{
 						'class':'',
 						'posx':0,
@@ -343,7 +308,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>Contact NODE. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
+						'content':'<p>In their new life, the wind was high, the water heavy and black. There was no buffer from the elements—wind, sun, and rain groped and clawed them at will.<\/p>'
 					},
 					{
 						'class':'',
@@ -352,16 +317,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>A landscape of lost objects: sunken ships, hidden treasure, gold and gems and the charm bracelet that had fallen from her wrist into a storm drain.<\/p>'
-					},
-					{
-						'class':'',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'content':'<p>Dead bodies, her father always added, with a laugh. To him, the ocean was a wasteland.<\/p>'
+						'content':'<p>The stars and moon seemed proximate and unguarded, like bits of shell or sparkling rock that he could crawl among when he chose. They saw night rainbows.<\/p>'
 					}
 				]
 			}
@@ -379,7 +335,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>HOME Intro text for 1Exterior<\/p>'
+						'content':'<p>The Jeremiah O&rsquo;Brien, berthed at Pier 45 in San Francisco, is one of two functional Liberty ships that remain in use in the United States. She participated in D-Day, and is structurally unaltered and historically accurate. Among her treasures are the Mariner docents who volunteer their time and memories to those who visit. These photos were taken over several visits and one short cruise.<\/p>'
 					},
 					{
 						'class':'image',
@@ -452,15 +408,6 @@ var uwNodes = [
 			{
 				'slug':'books/manhattan-beach',
 				'objects': [
-					{
-						'class':'text',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'content':'<p>MANHATTAN BEACH Intro text for 2Deck photos<\/p>'
-					},
 					{
 						'class':'image',
 						'posx':0,
@@ -544,15 +491,6 @@ var uwNodes = [
 				'slug':'books/a-visit-from-the-goon-squad',
 				'objects': [
 					{
-						'class':'text',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'content':'<p>Intro text for 2Deck photos (part 2)<\/p>'
-					},
-					{
 						'class':'image',
 						'posx':0,
 						'posy':0,
@@ -602,15 +540,6 @@ var uwNodes = [
 				'slug':'books/the-keep',
 				'objects': [
 					{
-						'class':'text',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'content':'<p>Intro text for 3Offices&Cabins<\/p>'
-					},
-					{
 						'class':'image',
 						'posx':0,
 						'posy':0,
@@ -628,7 +557,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/2SeamanQuarters.png"\/>',
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/2SeamanQuarters.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/2SeamanQuarters-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Seaman Quarters<\/p>'
 					},
 					{
@@ -669,15 +599,6 @@ var uwNodes = [
 			{
 				'slug':'books/look-at-me',
 				'objects': [
-					{
-						'class':'text',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'content':'<p>Intro text for 3Offices&Cabins photos (part 2)<\/p>'
-					},
 					{
 						'class':'image',
 						'posx':0,
@@ -750,13 +671,13 @@ var uwNodes = [
 				'slug':'books/the-invisible-circus',
 				'objects': [
 					{
-						'class':'text',
+						'class':'video',
 						'posx':0,
 						'posy':0,
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>Intro text for 4Engine Room<\/p>'
+						'content':'<p>Pkacholder for video: 1Engine Model Movie<\/p>'
 					},
 					{
 						'class':'image',
@@ -776,7 +697,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/3Midway-Down.png"\/><p>Midway Down<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/3Midway-Down.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/3Midway-Down-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Midway Down<\/p>'
 					},
 					{
 						'class':'image',
@@ -785,7 +708,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/4.png"<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/4.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/4-sm.png',
+						'content':'<div class="imgbox"><\/div>'
 					},
 					{
 						'class':'image',
@@ -794,7 +719,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/5.png"<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/5.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/5-sm.png',
+						'content':'<div class="imgbox"><\/div>'
 					},
 					{
 						'class':'image',
@@ -866,15 +793,6 @@ var uwNodes = [
 				'slug':'books/emerald-city-and-other-stories',
 				'objects': [
 					{
-						'class':'text',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'content':'<p>Intro text for 5Boats and Rafts<\/p>'
-					},
-					{
 						'class':'image',
 						'posx':0,
 						'posy':0,
@@ -892,7 +810,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/5BoatsandRafts\/2Port-Side-Lifeboats.png"\/><p>Port Side Lifeboats<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/5BoatsandRafts\/2Port-Side-Lifeboats.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/5BoatsandRafts\/2Port-Side-Lifeboats-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Port Side Lifeboats<\/p>'
 					},
 					{
 						'class':'image',
@@ -901,7 +821,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/5BoatsandRafts\/3Boat-and-Falls.png"\/><p>Boat and Falls<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/5BoatsandRafts\/3Boat-and-Falls.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/5BoatsandRafts\/3Boat-and-Falls-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Boat and Falls<\/p>'
 					},
 					{
 						'class':'image',
@@ -930,16 +852,6 @@ var uwNodes = [
 			{
 				'slug':'non-fiction',
 				'objects': [
-
-					{
-						'class':'text',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'content':'<p>NON FICTION Intro text for 6Equipment<\/p>'
-					},
 					{
 						'class':'image',
 						'posx':0,
@@ -958,7 +870,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/2Flying-Bridge-Wheel.png"\/><p>Flying Bridge Wheel<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/2Flying-Bridge-Wheel.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/2Flying-Bridge-Wheel-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Flying Bridge Wheel<\/p>'
 					},
 					{
 						'class':'image',
@@ -967,7 +881,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/3Hawspipe.png"\/><p>Hawspipe<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/3Hawspipe.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/3Hawspipe-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Hawspipe<\/p>'
 					},
 					{
 						'class':'image',
@@ -985,15 +901,6 @@ var uwNodes = [
 			{
 				'slug':'category/news',
 				'objects': [
-					{
-						'class':'text',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'content':'<p>NEWS Intro text for 6Equipment photos (part 2)<\/p>'
-					},
 					{
 						'class':'image',
 						'posx':0,
@@ -1023,7 +930,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/7View-Down-to-Steering-Engine.png"\/><p>View Down to Steering Engine<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/7View-Down-to-Steering-Engine.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/7View-Down-to-Steering-Engine-sm.png',
+						'content':'<div class="imgbox"><\/div><p>View Down to Steering Engine<\/p>'
 					},
 					{
 						'class':'image',
@@ -1032,7 +941,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/8.png"<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/8.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/8-sm.png',
+						'content':'<div class="imgbox"><\/div>'
 					},
 					{
 						'class':'image',
@@ -1072,16 +983,6 @@ var uwNodes = [
 			{
 				'slug':'about',
 				'objects': [
-
-					{
-						'class':'text',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'content':'<p>ABOUT Intro text for 7Maps and diagrams<\/p>'
-					},
 					{
 						'class':'image',
 						'posx':0,
@@ -1100,7 +1001,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/2Liberty-Ship-Diagram.png"\/><p>Liberty Ship Diagram<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/2Liberty-Ship-Diagram.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/2Liberty-Ship-Diagram-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Liberty Ship Diagram<\/p>'
 					},
 					{
 						'class':'image',
@@ -1109,7 +1012,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/3Liberty-Deck-Plan.png"\/><p>Liberty Deck Plan<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/3Liberty-Deck-Plan.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/3Liberty-Deck-Plan-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Liberty Deck Plan<\/p>'
 					},
 					{
 						'class':'image',
@@ -1151,23 +1056,15 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/6Knots.png"\/><p>Knots<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/6Knots.png',
+						'imageSm': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/6Knots-sm.png',
+						'content':'<div class="imgbox"><\/div><p>Knots<\/p>'
 					}
 				]
 			},
 			{
 				'slug':'contact',
 				'objects': [
-
-					{
-						'class':'',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'content':'<p>CONTACT NODE. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
-					},
 					{
 						'class':'',
 						'posx':0,
@@ -1250,26 +1147,6 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'content':'<p>HOME NODE. This text could introduce or set the tone for the following items in this path. In the following slides, the images could appear alone, with a caption or no image, just text.<\/p>'
-					},
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'image': imgRoot + '\/Porthole.png" \/>'
-					},
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'image': imgRoot + '\/ChartRoom.png',
-						'imageSm': imgRoot + '\/ChartRoom-sm.png',
-						'content':'<div class="imgbox"><\/div><p>Anna watched the sea. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. <\/p>'
 					},
 					{
 						'class':'image',
