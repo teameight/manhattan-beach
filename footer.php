@@ -17,7 +17,7 @@
 		</div><!-- #page-wrap -->
 		<?php // create array of pages not to include waves and underwater ?>
 
-		<?php 
+		<?php
 
 		global $wave_slug;
 

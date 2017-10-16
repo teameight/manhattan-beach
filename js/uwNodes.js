@@ -2,6 +2,7 @@ var zInterval = -200,
 
 		// imgRoot = '\/\/localhost/htdocs/egan-img';
 		imgRoot = '\/\/staging.jenniferegan.com\/wp-content\/themes\/manhattan-beach\/egan-img';
+		bgImgRoot = '\/\/staging.jenniferegan.com\/wp-content\/themes\/manhattan-beach\/egan-img\/background';
 
 var uwNodes = [
 	{ 'tier': 1,
@@ -2857,4 +2858,106 @@ var uwNodes = [
 			}
 		]
 	}
+];
+
+var uwBackgrounds = [
+ {
+ 	'slug': 'home',
+ 	'posx': 0,
+ 	'posy': 0,
+ 	'posz': 0,
+ 	'roty': 0,
+ 	'rotx': 0,
+ 	'content': bgImgRoot + '/nyscraper.png'
+ },
+ {
+ 	'slug': 'books/manhattan-beach',
+ 	'posx': 10,
+ 	'posy': 100,
+ 	'posz': 0,
+ 	'roty': 0,
+ 	'rotx': 0,
+ 	'content': bgImgRoot + '/nyscraper.png'
+ },
+ {
+ 	'slug': 'books/a-visit-from-the-goon-squad',
+ 	'posx': 20,
+ 	'posy': 300,
+ 	'posz': 0,
+ 	'roty': 0,
+ 	'rotx': 0,
+ 	'content': bgImgRoot + '/nyscraper.png'
+ },
+ {
+ 	'slug': 'books/the-keep',
+ 	'posx': 30,
+ 	'posy': 0,
+ 	'posz': 0,
+ 	'roty': 0,
+ 	'rotx': 0,
+ 	'content': bgImgRoot + '/nyscraper.png'
+ },
+ {
+ 	'slug': 'books/look-at-me',
+ 	'posx': 40,
+ 	'posy': 0,
+ 	'posz': 0,
+ 	'roty': 0,
+ 	'rotx': 0,
+ 	'content': bgImgRoot + '/nyscraper.png'
+ },
+ {
+ 	'slug': 'books/the-invisible-circus',
+ 	'posx': -40,
+ 	'posy': 200,
+ 	'posz': 0,
+ 	'roty': 0,
+ 	'rotx': 0,
+ 	'content': bgImgRoot + '/nyscraper.png'
+ },
+ {
+ 	'slug': 'books/emerald-city-and-other-stories',
+ 	'posx': -30,
+ 	'posy': 400,
+ 	'posz': 0,
+ 	'roty': 0,
+ 	'rotx': 0,
+ 	'content': bgImgRoot + '/nyscraper.png'
+ },
+ {
+ 	'slug': 'non-fiction',
+ 	'posx': -20,
+ 	'posy': 100,
+ 	'posz': 0,
+ 	'roty': 0,
+ 	'rotx': 0,
+ 	'content': bgImgRoot + '/nyscraper.png'
+ },
+ {
+ 	'slug': 'category/news',
+ 	'posx': -10,
+ 	'posy': 100,
+ 	'posz': 0,
+ 	'roty': 0,
+ 	'rotx': 0,
+ 	'content': bgImgRoot + '/nyscraper.png'
+ },
+ {
+ 	'slug': 'about',
+ 	'posx': 0,
+ 	'posy': 0,
+ 	'posz': 0,
+ 	'roty': 0,
+ 	'rotx': 0,
+ 	'content': bgImgRoot + '/nyscraper.png'
+ },
+ {
+ 	'slug': 'contact',
+ 	'posx': 30,
+ 	'posy': 300,
+ 	'posz': 0,
+ 	'roty': 0,
+ 	'rotx': 0,
+ 	'content': bgImgRoot + '/nyscraper.png'
+ }
 ];
