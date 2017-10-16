@@ -1103,8 +1103,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/1Building 77\/1Bldg77.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/1Building 77\/1Bldg77-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/1Bldg77.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/1Bldg77-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Building 77<\/p>'
 					},
 					{
@@ -1114,8 +1114,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/1Building 77\/2Railroad-Terminal-Map-Bldg-77.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/1Building 77\/2Railroad-Terminal-Map-Bldg-77-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/2Railroad-Terminal-Map-Bldg-77.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/2Railroad-Terminal-Map-Bldg-77-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Railroad Terminal Map Bldg 77<\/p>'
 					},
 					{
@@ -1125,8 +1125,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/1Building 77\/3Ghost-Maps.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/1Building 77\/3Ghost-Maps-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/3Ghost-Maps.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/3Ghost-Maps-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Ghost Maps<\/p>'
 					},
 					{
@@ -1136,8 +1136,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/1Building 77\/4Ghost-Maps2.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/1Building 77\/4Ghost-Maps2-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/4Ghost-Maps2.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/4Ghost-Maps2-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Ghost Maps2<\/p>'
 					},
 					{
@@ -1147,8 +1147,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/1Building 77\/5Ceiling.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/1Building 77\/5Ceiling-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/5Ceiling.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/5Ceiling-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Ceiling<\/p>'
 					},
 				]
@@ -1163,8 +1163,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/1Building 77\/6Peeling-Walls.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/1Building 77\/6Peeling-Walls-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/6Peeling-Walls.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/6Peeling-Walls-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Peeling Walls<\/p>'
 					},
 					{
@@ -1174,8 +1174,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/1Building 77\/7Peeling-Walls2.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/1Building 77\/7Peeling-Walls2-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/7Peeling-Walls2.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/7Peeling-Walls2-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Peeling Walls2<\/p>'
 					},
 					{
@@ -1185,8 +1185,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/1Building 77\/8Mail-Room.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/1Building 77\/8Mail-Room-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/8Mail-Room.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/8Mail-Room-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Mail Room<\/p>'
 					},
 					{
@@ -1196,8 +1196,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/1Building 77\/9Old-Safe.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/1Building 77\/9Old-Safe-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/9Old-Safe.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/9Old-Safe-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Old Safe<\/p>'
 					},
 					{
@@ -1207,8 +1207,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/1Building 77\/11Clock-Guide.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/1Building 77\/11Clock-Guide-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/11Clock-Guide.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/11Clock-Guide-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Clock Guide<\/p>'
 					},
 				]
@@ -1223,8 +1223,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/2Outdoor Views\/1Sands-Street-Gates.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/2Outdoor Views\/1Sands-Street-Gates-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/2OutdoorViews\/1Sands-Street-Gates.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/2bny2005\/2OutdoorViews\/1Sands-Street-Gates-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Sands Street Gates<\/p>'
 					},
 					{
@@ -1234,8 +1234,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/2Outdoor Views\/2Sands-Street-Gate-Detail.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/2Outdoor Views\/2Sands-Street-Gate-Detail-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/2OutdoorViews\/2Sands-Street-Gate-Detail.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/2bny2005\/2OutdoorViews\/2Sands-Street-Gate-Detail-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Sands Street Gate Detail<\/p>'
 					},
 					{
@@ -1245,8 +1245,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/2Outdoor Views\/3View-From-Bldg-77.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/2Outdoor Views\/3View-From-Bldg-77-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/2OutdoorViews\/3View-From-Bldg-77.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/2bny2005\/2OutdoorViews\/3View-From-Bldg-77-sm.png',
 						'content':'<div class="imgbox"><\/div><p>View From Bldg 77<\/p>'
 					},
 					{
@@ -1256,8 +1256,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/2Outdoor Views\/4View-From-Bldg-772.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/2Outdoor Views\/4View-From-Bldg-772-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/2OutdoorViews\/4View-From-Bldg-772.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/2bny2005\/2OutdoorViews\/4View-From-Bldg-772-sm.png',
 						'content':'<div class="imgbox"><\/div><p>View From Bldg 772<\/p>'
 					},
 					{
@@ -1267,8 +1267,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/2Outdoor Views\/5Cranes.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/2Outdoor Views\/5Cranes-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/2OutdoorViews\/5Cranes.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/2bny2005\/2OutdoorViews\/5Cranes-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Cranes<\/p>'
 					},
 				]
@@ -1283,8 +1283,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/3Artifacts\/1Washroom.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/3Artifacts\/1Washroom-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/3Artifacts\/1Washroom.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/2bny2005\/3Artifacts\/1Washroom-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Washroom<\/p>'
 					},
 					{
@@ -1294,8 +1294,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/3Artifacts\/2Sink.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/3Artifacts\/2Sink-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/3Artifacts\/2Sink.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/2bny2005\/3Artifacts\/2Sink-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Sink<\/p>'
 					},
 					{
@@ -1305,8 +1305,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/3Artifacts\/3Wooden-Molds.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/3Artifacts\/3Wooden-Molds-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/3Artifacts\/3Wooden-Molds.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/2bny2005\/3Artifacts\/3Wooden-Molds-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Wooden Molds<\/p>'
 					},
 					{
@@ -1316,8 +1316,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/3Artifacts\/4Molds.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/2bny 2005\/3Artifacts\/4Molds-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/3Artifacts\/4Molds.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/2bny2005\/3Artifacts\/4Molds-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Molds<\/p>'
 					}
 				]
@@ -1332,8 +1332,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1BNY 2015\/1Railroad-Transom.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1BNY 2015\/1Railroad-Transom-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1BNY2015\/1Railroad-Transom.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1BNY2015\/1Railroad-Transom-sm.png',
 						'content':'<div class="imgbox"><\/div><p>[placeholder for floating version of buttons in grid]<\/p>'
 					}
 				]
@@ -1357,8 +1357,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/1JennyinDress\/thumb_100_2467_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/1JennyinDress\/thumb_100_2467_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/1JennyinDress\/thumb_100_2467_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/1JennyinDress\/thumb_100_2467_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1368,8 +1368,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/1JennyinDress\/thumb_100_2468_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/1JennyinDress\/thumb_100_2468_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/1JennyinDress\/thumb_100_2468_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/1JennyinDress\/thumb_100_2468_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1379,8 +1379,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/1JennyinDress\/thumb_100_2469_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/1JennyinDress\/thumb_100_2469_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/1JennyinDress\/thumb_100_2469_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/1JennyinDress\/thumb_100_2469_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1390,8 +1390,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/1JennyinDress\/thumb_100_2470_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/1JennyinDress\/thumb_100_2470_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/1JennyinDress\/thumb_100_2470_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/1JennyinDress\/thumb_100_2470_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1401,8 +1401,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/1JennyinDress\/thumb_100_2471_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/1JennyinDress\/thumb_100_2471_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/1JennyinDress\/thumb_100_2471_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/1JennyinDress\/thumb_100_2471_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1412,8 +1412,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/1JennyinDress\/thumb_100_2472_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/1JennyinDress\/thumb_100_2472_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/1JennyinDress\/thumb_100_2472_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/1JennyinDress\/thumb_100_2472_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1423,8 +1423,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/1JennyinDress\/thumb_100_2474_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/1JennyinDress\/thumb_100_2474_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/1JennyinDress\/thumb_100_2474_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/1JennyinDress\/thumb_100_2474_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1434,8 +1434,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/1JennyinDress\/thumb_100_2475_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/1JennyinDress\/thumb_100_2475_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/1JennyinDress\/thumb_100_2475_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/1JennyinDress\/thumb_100_2475_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1445,8 +1445,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/1JennyinDress\/thumb_100_2477_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/1JennyinDress\/thumb_100_2477_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/1JennyinDress\/thumb_100_2477_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/1JennyinDress\/thumb_100_2477_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1456,8 +1456,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/1JennyinDress\/thumb_100_2478_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/1JennyinDress\/thumb_100_2478_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/1JennyinDress\/thumb_100_2478_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/1JennyinDress\/thumb_100_2478_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1467,8 +1467,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/1JennyinDress\/thumb_100_2479_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/1JennyinDress\/thumb_100_2479_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/1JennyinDress\/thumb_100_2479_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/1JennyinDress\/thumb_100_2479_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1478,8 +1478,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/1JennyinDress\/thumb_100_2480_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/1JennyinDress\/thumb_100_2480_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/1JennyinDress\/thumb_100_2480_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/1JennyinDress\/thumb_100_2480_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1489,8 +1489,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/1JennyinDress\/thumb_100_2481_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/1JennyinDress\/thumb_100_2481_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/1JennyinDress\/thumb_100_2481_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/1JennyinDress\/thumb_100_2481_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					}
 				]
@@ -1505,8 +1505,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/2JennyinDress\/thumb_100_2482_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/2JennyinDress\/thumb_100_2482_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/2JennyinDress\/thumb_100_2482_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/2JennyinDress\/thumb_100_2482_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1516,8 +1516,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/2JennyinDress\/thumb_100_2483_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/2JennyinDress\/thumb_100_2483_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/2JennyinDress\/thumb_100_2483_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/2JennyinDress\/thumb_100_2483_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1527,8 +1527,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/2JennyinDress\/thumb_100_2484_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/2JennyinDress\/thumb_100_2484_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/2JennyinDress\/thumb_100_2484_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/2JennyinDress\/thumb_100_2484_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1538,8 +1538,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/2JennyinDress\/thumb_100_2485_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/2JennyinDress\/thumb_100_2485_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/2JennyinDress\/thumb_100_2485_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/2JennyinDress\/thumb_100_2485_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1549,8 +1549,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/2JennyinDress\/thumb_100_2486_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/2JennyinDress\/thumb_100_2486_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/2JennyinDress\/thumb_100_2486_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/2JennyinDress\/thumb_100_2486_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1560,8 +1560,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/2JennyinDress\/thumb_100_2487_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/2JennyinDress\/thumb_100_2487_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/2JennyinDress\/thumb_100_2487_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/2JennyinDress\/thumb_100_2487_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1571,8 +1571,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/2JennyinDress\/thumb_100_2488_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/2JennyinDress\/thumb_100_2488_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/2JennyinDress\/thumb_100_2488_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/2JennyinDress\/thumb_100_2488_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1582,8 +1582,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/2JennyinDress\/thumb_100_2489_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/2JennyinDress\/thumb_100_2489_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/2JennyinDress\/thumb_100_2489_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/2JennyinDress\/thumb_100_2489_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1593,8 +1593,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/2JennyinDress\/thumb_100_2490_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/2JennyinDress\/thumb_100_2490_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/2JennyinDress\/thumb_100_2490_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/2JennyinDress\/thumb_100_2490_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1604,8 +1604,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/2JennyinDress\/thumb_100_2491_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/2JennyinDress\/thumb_100_2491_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/2JennyinDress\/thumb_100_2491_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/2JennyinDress\/thumb_100_2491_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1615,8 +1615,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/2JennyinDress\/thumb_100_2492_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/2JennyinDress\/thumb_100_2492_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/2JennyinDress\/thumb_100_2492_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/2JennyinDress\/thumb_100_2492_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					}
 				]
@@ -1631,8 +1631,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/3JennyInHat\/thumb_100_2493_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/3JennyInHat\/thumb_100_2493_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/3JennyInHat\/thumb_100_2493_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/3JennyInHat\/thumb_100_2493_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1642,8 +1642,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/3JennyInHat\/thumb_100_2494_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/3JennyInHat\/thumb_100_2494_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/3JennyInHat\/thumb_100_2494_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/3JennyInHat\/thumb_100_2494_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1653,8 +1653,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/3JennyInHat\/thumb_100_2496_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/3JennyInHat\/thumb_100_2496_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/3JennyInHat\/thumb_100_2496_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/3JennyInHat\/thumb_100_2496_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1664,8 +1664,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/3JennyInHat\/thumb_100_2497_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/3JennyInHat\/thumb_100_2497_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/3JennyInHat\/thumb_100_2497_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/3JennyInHat\/thumb_100_2497_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1675,8 +1675,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/3JennyInHat\/thumb_100_2499_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/3JennyInHat\/thumb_100_2499_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/3JennyInHat\/thumb_100_2499_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/3JennyInHat\/thumb_100_2499_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1686,8 +1686,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/3JennyInHat\/thumb_100_2499_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/3JennyInHat\/thumb_100_2499_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/3JennyInHat\/thumb_100_2499_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/3JennyInHat\/thumb_100_2499_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1697,8 +1697,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/3JennyInHat\/thumb_100_2501_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/3JennyInHat\/thumb_100_2501_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/3JennyInHat\/thumb_100_2501_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/3JennyInHat\/thumb_100_2501_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1708,8 +1708,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/3JennyInHat\/thumb_100_2502_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/3JennyInHat\/thumb_100_2502_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/3JennyInHat\/thumb_100_2502_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/3JennyInHat\/thumb_100_2502_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1719,8 +1719,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/3JennyInHat\/thumb_100_2504_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/3JennyInHat\/thumb_100_2504_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/3JennyInHat\/thumb_100_2504_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/3JennyInHat\/thumb_100_2504_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1730,8 +1730,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/3JennyInHat\/thumb_100_2505_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/3JennyInHat\/thumb_100_2505_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/3JennyInHat\/thumb_100_2505_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/3JennyInHat\/thumb_100_2505_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1741,8 +1741,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/3JennyInHat\/thumb_100_2506_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/3JennyInHat\/thumb_100_2506_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/3JennyInHat\/thumb_100_2506_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/3JennyInHat\/thumb_100_2506_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1752,8 +1752,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/3JennyInHat\/thumb_100_2507_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/3JennyInHat\/thumb_100_2507_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/3JennyInHat\/thumb_100_2507_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/3JennyInHat\/thumb_100_2507_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					}
 				]
@@ -1768,8 +1768,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/4JennyDisrobing\/thumb_100_2512_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/4JennyDisrobing\/thumb_100_2512_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/4JennyDisrobing\/thumb_100_2512_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/4JennyDisrobing\/thumb_100_2512_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1779,8 +1779,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/4JennyDisrobing\/thumb_100_2513_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/4JennyDisrobing\/thumb_100_2513_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/4JennyDisrobing\/thumb_100_2513_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/4JennyDisrobing\/thumb_100_2513_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1790,8 +1790,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/4JennyDisrobing\/thumb_100_2514_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/4JennyDisrobing\/thumb_100_2514_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/4JennyDisrobing\/thumb_100_2514_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/4JennyDisrobing\/thumb_100_2514_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1801,8 +1801,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/4JennyDisrobing\/thumb_100_2515_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/4JennyDisrobing\/thumb_100_2515_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/4JennyDisrobing\/thumb_100_2515_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/4JennyDisrobing\/thumb_100_2515_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1812,8 +1812,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/4JennyDisrobing\/thumb_100_2516_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/4JennyDisrobing\/thumb_100_2516_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/4JennyDisrobing\/thumb_100_2516_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/4JennyDisrobing\/thumb_100_2516_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1823,8 +1823,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/4JennyDisrobing\/thumb_100_2517_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/4JennyDisrobing\/thumb_100_2517_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/4JennyDisrobing\/thumb_100_2517_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/4JennyDisrobing\/thumb_100_2517_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					}
 				]
@@ -1839,8 +1839,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/5ArmyDiversinTank\/thumb_100_2509_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/5ArmyDiversinTank\/thumb_100_2509_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/5ArmyDiversinTank\/thumb_100_2509_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/5ArmyDiversinTank\/thumb_100_2509_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1850,8 +1850,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/5ArmyDiversinTank\/thumb_100_2510_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/5ArmyDiversinTank\/thumb_100_2510_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/5ArmyDiversinTank\/thumb_100_2510_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/5ArmyDiversinTank\/thumb_100_2510_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1861,8 +1861,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/5ArmyDiversinTank\/thumb_100_2511_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/5ArmyDiversinTank\/thumb_100_2511_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/5ArmyDiversinTank\/thumb_100_2511_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/5ArmyDiversinTank\/thumb_100_2511_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1872,8 +1872,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/5ArmyDiversinTank\/thumb_100_2518_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/5ArmyDiversinTank\/thumb_100_2518_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/5ArmyDiversinTank\/thumb_100_2518_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/5ArmyDiversinTank\/thumb_100_2518_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1883,8 +1883,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/5ArmyDiversinTank\/thumb_100_2519_1024.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/5ArmyDiversinTank\/thumb_100_2519_1024-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/5ArmyDiversinTank\/thumb_100_2519_1024.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/5ArmyDiversinTank\/thumb_100_2519_1024-sm.png',
 						'content':'<div class="imgbox"><\/div>'
 					}
 				]
@@ -1899,8 +1899,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/6NewEquipment\/1Air Control Console and Air Distribution Panel.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/6NewEquipment\/1Air Control Console and Air Distribution Panel-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/6NewEquipment\/1Air Control Console and Air Distribution Panel.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/6NewEquipment\/1Air Control Console and Air Distribution Panel-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Air Control Console and Air Distribution Panel<\/p>'
 					},
 					{
@@ -1910,8 +1910,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/6NewEquipment\/2Air Control Console.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/6NewEquipment\/2Air Control Console-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/6NewEquipment\/2Air Control Console.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/6NewEquipment\/2Air Control Console-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Air Control Console<\/p>'
 					},
 					{
@@ -1921,8 +1921,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/6NewEquipment\/3Communication Box.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/6NewEquipment\/3Communication Box-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/6NewEquipment\/3Communication Box.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/6NewEquipment\/3Communication Box-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Communication Box<\/p>'
 					},
 					{
@@ -1932,8 +1932,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/6NewEquipment\/4Air Distribution Panel.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/6NewEquipment\/4Air Distribution Panel-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/6NewEquipment\/4Air Distribution Panel.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/6NewEquipment\/4Air Distribution Panel-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Air Distribution Panel<\/p>'
 					},
 					{
@@ -1943,8 +1943,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/6NewEquipment\/5Pneumo gauges.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/6NewEquipment\/5Pneumo gauges-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/6NewEquipment\/5Pneumo gauges.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/6NewEquipment\/5Pneumo gauges-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Pneumo gauges<\/p>'
 					},
 					{
@@ -1954,8 +1954,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Mark V--Present-Day\/6NewEquipment\/6Tender at Panel.png',
-						'imageSm': imgRoot + '\/Mark V--Present-Day\/6NewEquipment\/6Tender at Panel-sm.png',
+						'image': imgRoot + '\/MarkV--Present-Day\/6NewEquipment\/6Tender at Panel.png',
+						'imageSm': imgRoot + '\/MarkV--Present-Day\/6NewEquipment\/6Tender at Panel-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Tender at Panel<\/p>'
 					}
 				]
@@ -1974,8 +1974,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1BNY 2015\/1Railroad-Transom.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1BNY 2015\/1Railroad-Transom-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1BNY2015\/1Railroad-Transom.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1BNY2015\/1Railroad-Transom-sm.png',
 						'content':'<div class="imgbox"><\/div><p>[placeholder for floating version of buttons in grid]<\/p>'
 					}
 				]
@@ -1999,8 +1999,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/1Views From Above\/1BNY-WWII-Aerial-View.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/1Views From Above\/1BNY-WWII-Aerial-View-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/1BNY-WWII-Aerial-View.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/1BNY-WWII-Aerial-View-sm.png',
 						'content':'<div class="imgbox"><\/div><p>BNY WWII Aerial View<\/p>'
 					},
 					{
@@ -2010,8 +2010,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/1Views From Above\/2Bldg-77-View-From,-Jan-6,-1941.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/1Views From Above\/2Bldg-77-View-From,-Jan-6,-1941-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/2Bldg-77-View-From,-Jan-6,-1941.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/2Bldg-77-View-From,-Jan-6,-1941-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Bldg 77 View From, Jan 6, 1941<\/p>'
 					},
 					{
@@ -2021,8 +2021,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/1Views From Above\/3Bldg-77-View-From,-Sept-3,-1941.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/1Views From Above\/3Bldg-77-View-From,-Sept-3,-1941-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/3Bldg-77-View-From,-Sept-3,-1941.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/3Bldg-77-View-From,-Sept-3,-1941-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Bldg 77 View From, Sept 3, 1941<\/p>'
 					},
 					{
@@ -2032,8 +2032,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/1Views From Above\/4Bldg-77-View-North-Sept-29,-1941.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/1Views From Above\/4Bldg-77-View-North-Sept-29,-1941-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/4Bldg-77-View-North-Sept-29,-1941.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/4Bldg-77-View-North-Sept-29,-1941-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Bldg 77 View North Sept 29, 1941<\/p>'
 					},
 					{
@@ -2043,8 +2043,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/1Views From Above\/5Bldg-77-View-North-from-Oct-18,-1941.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/1Views From Above\/5Bldg-77-View-North-from-Oct-18,-1941-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/5Bldg-77-View-North-from-Oct-18,-1941.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/5Bldg-77-View-North-from-Oct-18,-1941-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Bldg 77 View North from Oct 18, 1941<\/p>'
 					},
 					{
@@ -2054,8 +2054,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/1Views From Above\/6Bldg-77-View-North,-Oct.-1941.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/1Views From Above\/6Bldg-77-View-North,-Oct.-1941-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/6Bldg-77-View-North,-Oct.-1941.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/6Bldg-77-View-North,-Oct.-1941-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Bldg 77 View North, Oct. 1941<\/p>'
 					}
 				]
@@ -2070,8 +2070,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/1Views From Above\/7Night-View-from-Bldg-77,-1942.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/1Views From Above\/7Night-View-from-Bldg-77,-1942-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/7Night-View-from-Bldg-77,-1942.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/7Night-View-from-Bldg-77,-1942-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Night View from Bldg 77, 1942<\/p>'
 					},
 					{
@@ -2081,8 +2081,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/1Views From Above\/8Night-View-2.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/1Views From Above\/8Night-View-2-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/8Night-View-2.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/8Night-View-2-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Night View 2<\/p>'
 					},
 					{
@@ -2092,8 +2092,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/1Views From Above\/9Barracks-April-3,-1941.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/1Views From Above\/9Barracks-April-3,-1941-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/9Barracks-April-3,-1941.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/9Barracks-April-3,-1941-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Barracks April 3, 1941<\/p>'
 					},
 					{
@@ -2103,8 +2103,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/1Views From Above\/10Barracks-May-18,-1941.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/1Views From Above\/10Barracks-May-18,-1941-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/10Barracks-May-18,-1941.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/10Barracks-May-18,-1941-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Barracks May 18, 1941<\/p>'
 					},
 					{
@@ -2114,8 +2114,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/1Views From Above\/11Barracks-June-10,-1941-2.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/1Views From Above\/11Barracks-June-10,-1941-2-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/11Barracks-June-10,-1941-2.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/11Barracks-June-10,-1941-2-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Barracks June 10, 1941 2<\/p>'
 					},
 					{
@@ -2125,8 +2125,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/1Views From Above\/12Barracks-Nov.-15,-1941.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/1Views From Above\/12Barracks-Nov.-15,-1941-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/12Barracks-Nov.-15,-1941.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/12Barracks-Nov.-15,-1941-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Barracks Nov. 15, 1941<\/p>'
 					}
 				]
@@ -2141,8 +2141,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/2Buildings\/1Bldg-4,-the-Structural-Shop,-1937.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/2Buildings\/1Bldg-4,-the-Structural-Shop,-1937-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/2Buildings\/1Bldg-4,-the-Structural-Shop,-1937.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/2Buildings\/1Bldg-4,-the-Structural-Shop,-1937-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Bldg 4, the Structural Shop, 1937<\/p>'
 					},
 					{
@@ -2152,8 +2152,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/2Buildings\/2Bldg-128,-the-Machine-Shop,-Exterior.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/2Buildings\/2Bldg-128,-the-Machine-Shop,-Exterior-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/2Buildings\/2Bldg-128,-the-Machine-Shop,-Exterior.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/2Buildings\/2Bldg-128,-the-Machine-Shop,-Exterior-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Bldg 128, the Machine Shop, Exterior<\/p>'
 					},
 					{
@@ -2163,8 +2163,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/2Buildings\/3Bldg-128-Entrance.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/2Buildings\/3Bldg-128-Entrance-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/2Buildings\/3Bldg-128-Entrance.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/2Buildings\/3Bldg-128-Entrance-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Bldg 128 Entrance<\/p>'
 					},
 					{
@@ -2174,8 +2174,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/2Buildings\/4Bldg-128-Machine-Shop-1942.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/2Buildings\/4Bldg-128-Machine-Shop-1942-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/2Buildings\/4Bldg-128-Machine-Shop-1942.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/2Buildings\/4Bldg-128-Machine-Shop-1942-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Bldg 128 Machine Shop 1942<\/p>'
 					}
 				]
@@ -2190,8 +2190,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/2Buildings\/5Bldg-128.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/2Buildings\/5Bldg-128-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/2Buildings\/5Bldg-128.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/2Buildings\/5Bldg-128-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Bldg 128<\/p>'
 					},
 					{
@@ -2201,8 +2201,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/2Buildings\/6Bldg-128.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/2Buildings\/6Bldg-128-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/2Buildings\/6Bldg-128.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/2Buildings\/6Bldg-128-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Bldg 128<\/p>'
 					},
 					{
@@ -2212,8 +2212,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/2Buildings\/7Bldg-128.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/2Buildings\/7Bldg-128-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/2Buildings\/7Bldg-128.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/2Buildings\/7Bldg-128-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Bldg 128<\/p>'
 					},
 					{
@@ -2223,8 +2223,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/2Buildings\/8Cell-Block-in-Receiving-Barracks.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/2Buildings\/8Cell-Block-in-Receiving-Barracks-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/2Buildings\/8Cell-Block-in-Receiving-Barracks.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/2Buildings\/8Cell-Block-in-Receiving-Barracks-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Cell Block in Receiving Barracks<\/p>'
 					},
 				]
@@ -2239,8 +2239,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/3Outdoor Views\/1Sands Street Gate 1937.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/3Outdoor Views\/1Sands Street Gate 1937-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/1Sands Street Gate 1937.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/1Sands Street Gate 1937-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Sands Street Gate 1937<\/p>'
 					},
 					{
@@ -2250,8 +2250,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/3Outdoor Views\/2Building-Ways-in-Distance.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/3Outdoor Views\/2Building-Ways-in-Distance-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/2Building-Ways-in-Distance.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/2Building-Ways-in-Distance-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Building Ways in Distance<\/p>'
 					},
 					{
@@ -2261,8 +2261,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/3Outdoor Views\/3Building-Ways.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/3Outdoor Views\/3Building-Ways-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/3Building-Ways.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/3Building-Ways-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Building Ways<\/p>'
 					},
 					{
@@ -2272,8 +2272,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/3Outdoor Views\/4Building-Ways-1930.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/3Outdoor Views\/4Building-Ways-1930-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/4Building-Ways-1930.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/4Building-Ways-1930-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Building Ways 1930<\/p>'
 					},
 					{
@@ -2283,8 +2283,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/3Outdoor Views\/5BuildingWays2.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/3Outdoor Views\/5BuildingWays2-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/5BuildingWays2.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/5BuildingWays2-sm.png',
 						'content':'<div class="imgbox"><\/div><p>BuildingWays2<\/p>'
 					}
 				]
@@ -2299,8 +2299,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/3Outdoor Views\/6CocoaFactoryFlushing-Avenue.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/3Outdoor Views\/6CocoaFactoryFlushing-Avenue-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/6CocoaFactoryFlushing-Avenue.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/6CocoaFactoryFlushing-Avenue-sm.png',
 						'content':'<div class="imgbox"><\/div><p>CocoaFactoryFlushing Avenue<\/p>'
 					},
 					{
@@ -2310,8 +2310,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/3Outdoor Views\/7CommandantsHouse-2.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/3Outdoor Views\/7CommandantsHouse-2-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/7CommandantsHouse-2.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/7CommandantsHouse-2-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Commandant&rsquo;sHouse 2<\/p>'
 					},
 					{
@@ -2321,8 +2321,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/3Outdoor Views\/8CommandantsHouse.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/3Outdoor Views\/8CommandantsHouse-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/8CommandantsHouse.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/8CommandantsHouse-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Commandant&rsquo;sHouse<\/p>'
 					},
 					{
@@ -2332,8 +2332,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/3Outdoor Views\/9CommandantsHouse1936.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/3Outdoor Views\/9CommandantsHouse1936-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/9CommandantsHouse1936.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/9CommandantsHouse1936-sm.png',
 						'content':'<div class="imgbox"><\/div><p>CommandantsHouse1936<\/p>'
 					}
 				]
@@ -2348,8 +2348,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/3Outdoor Views\/10Dredging-Barge1941.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/3Outdoor Views\/10Dredging-Barge1941-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/10Dredging-Barge1941.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/10Dredging-Barge1941-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Dredging Barge1941<\/p>'
 					},
 					{
@@ -2359,8 +2359,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/3Outdoor Views\/11DryDock1.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/3Outdoor Views\/11DryDock1-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/11DryDock1.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/11DryDock1-sm.png',
 						'content':'<div class="imgbox"><\/div><p>DryDock1<\/p>'
 					},
 					{
@@ -2370,8 +2370,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/3Outdoor Views\/12Hammerhead-CraneinDistance.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/3Outdoor Views\/12Hammerhead-CraneinDistance-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/12Hammerhead-CraneinDistance.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/12Hammerhead-CraneinDistance-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Hammerhead CraneinDistance<\/p>'
 					},
 					{
@@ -2381,8 +2381,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/3Outdoor Views\/13HammerheadCrane.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/3Outdoor Views\/13HammerheadCrane-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/13HammerheadCrane.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/13HammerheadCrane-sm.png',
 						'content':'<div class="imgbox"><\/div><p>HammerheadCrane<\/p>'
 					},
 					{
@@ -2392,8 +2392,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/3Outdoor Views\/14NewCumberlandGateWPA.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/3Outdoor Views\/14NewCumberlandGateWPA-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/14NewCumberlandGateWPA.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/14NewCumberlandGateWPA-sm.png',
 						'content':'<div class="imgbox"><\/div><p>NewCumberlandGateWPA<\/p>'
 					}
 				]
@@ -2408,8 +2408,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/4Repairs and Construction\/1Bricklayers.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/4Repairs and Construction\/1Bricklayers-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/1Bricklayers.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/1Bricklayers-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Bricklayers<\/p>'
 					},
 					{
@@ -2419,8 +2419,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/4Repairs and Construction\/2Bricklayers-.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/4Repairs and Construction\/2Bricklayers--sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/2Bricklayers-.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/2Bricklayers--sm.png',
 						'content':'<div class="imgbox"><\/div><p>Bricklayers <\/p>'
 					},
 					{
@@ -2430,8 +2430,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/4Repairs and Construction\/3The-Halloran-Dolly-&-Crew,-1931.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/4Repairs and Construction\/3The-Halloran-Dolly-&-Crew,-1931-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/3The-Halloran-Dolly-&-Crew,-1931.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/3The-Halloran-Dolly-&-Crew,-1931-sm.png',
 						'content':'<div class="imgbox"><\/div><p>The Halloran Dolly & Crew, 1931<\/p>'
 					},
 					{
@@ -2441,8 +2441,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/4Repairs and Construction\/4Construction-beside-ship-1941.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/4Repairs and Construction\/4Construction-beside-ship-1941-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/4Construction-beside-ship-1941.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/4Construction-beside-ship-1941-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Construction beside ship 1941<\/p>'
 					},
 					{
@@ -2452,8 +2452,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/4Repairs and Construction\/5Dry-Docks-5-&-6-Construction,-1941.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/4Repairs and Construction\/5Dry-Docks-5-&-6-Construction,-1941-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/5Dry-Docks-5-&-6-Construction,-1941.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/5Dry-Docks-5-&-6-Construction,-1941-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Dry Docks 5 & 6 Construction, 1941<\/p>'
 					}
 				]
@@ -2468,8 +2468,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/4Repairs and Construction\/6Dry-Docks-5&6-Construction-and-View-of-Wmsburg-Bank-Bldg.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/4Repairs and Construction\/6Dry-Docks-5&6-Construction-and-View-of-Wmsburg-Bank-Bldg-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/6Dry-Docks-5&6-Construction-and-View-of-Wmsburg-Bank-Bldg.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/6Dry-Docks-5&6-Construction-and-View-of-Wmsburg-Bank-Bldg-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Dry Docks 5&6 Construction and View of Wmsburg Bank Bldg<\/p>'
 					},
 					{
@@ -2479,8 +2479,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/4Repairs and Construction\/7Dry-Docks-5&6-Construction,-1941.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/4Repairs and Construction\/7Dry-Docks-5&6-Construction,-1941-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/7Dry-Docks-5&6-Construction,-1941.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/7Dry-Docks-5&6-Construction,-1941-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Dry Docks 5&6 Construction, 1941<\/p>'
 					},
 					{
@@ -2490,8 +2490,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/4Repairs and Construction\/8Repairs-to-Dry-Dock-3,-1930.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/4Repairs and Construction\/8Repairs-to-Dry-Dock-3,-1930-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/8Repairs-to-Dry-Dock-3,-1930.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/8Repairs-to-Dry-Dock-3,-1930-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Repairs to Dry Dock 3, 1930<\/p>'
 					},
 					{
@@ -2501,8 +2501,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/4Repairs and Construction\/9Repairs-To-Dry-Dock-3.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/4Repairs and Construction\/9Repairs-To-Dry-Dock-3-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/9Repairs-To-Dry-Dock-3.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/9Repairs-To-Dry-Dock-3-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Repairs To Dry Dock 3<\/p>'
 					},
 				]
@@ -2517,8 +2517,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/5Artifacts\/1Ticket-to-Launch.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/5Artifacts\/1Ticket-to-Launch-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/5Artifacts\/1Ticket-to-Launch.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/5Artifacts\/1Ticket-to-Launch-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Ticket to Launch<\/p>'
 					},
 					{
@@ -2528,8 +2528,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/5Artifacts\/2Ticket-to-Officers-Mess.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/5Artifacts\/2Ticket-to-Officers-Mess-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/5Artifacts\/2Ticket-to-Officers-Mess.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/5Artifacts\/2Ticket-to-Officers-Mess-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Ticket to Officers Mess<\/p>'
 					},
 					{
@@ -2539,8 +2539,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/5Artifacts\/3Urinals-and-Sinks.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1bny 1930s and 1940s\/5Artifacts\/3Urinals-and-Sinks-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/5Artifacts\/3Urinals-and-Sinks.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/5Artifacts\/3Urinals-and-Sinks-sm.png',
 						'content':'<div class="imgbox"><\/div><p>Urinals and Sinks<\/p>'
 					},
 				]
@@ -3044,8 +3044,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1BNY 2015\/1Railroad-Transom.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1BNY 2015\/1Railroad-Transom-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1BNY2015\/1Railroad-Transom.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1BNY2015\/1Railroad-Transom-sm.png',
 						'content':'<div class="imgbox"><\/div><p>[placeholder for floating version of HAT]<\/p>'
 					}
 				]
@@ -3060,8 +3060,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/Brooklyn Navy Yard\/1BNY 2015\/1Railroad-Transom.png',
-						'imageSm': imgRoot + '\/Brooklyn Navy Yard\/1BNY 2015\/1Railroad-Transom-sm.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1BNY2015\/1Railroad-Transom.png',
+						'imageSm': imgRoot + '\/BrooklynNavyYard\/1BNY2015\/1Railroad-Transom-sm.png',
 						'content':'<div class="imgbox"><\/div><p>[placeholder for Jenny Portrait]<\/p>'
 					}
 				]
