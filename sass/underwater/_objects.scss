@@ -1,7 +1,7 @@
 .node-wrapper {
 
   position: relative;
-  margin-top: 1000vh;
+  margin-top: 280vh;
   width: 80vw;
   max-width: 98vh;
   display: flex;
@@ -10,9 +10,15 @@
   margin-left: auto;
   margin-right: auto;
   @include preserve3d;
+  height: 120vw;
 
   &.nw-0{
     margin-top:80vh;
+  }
+
+  h3 {
+    text-align: left;
+    color:$lt-blue;
   }
 
 /*
@@ -48,7 +54,6 @@
     }
     .layer-4 {
       transform:scale(1.24) translateZ(-20vw);
-      //border: 1px solid red;
     }
   }
   &.column {
@@ -58,7 +63,6 @@
   }
   &.text {
     .inner {
-      //animation: float-wobble 124s infinite linear;
       padding: 0 4vw;
       opacity:.6;
 
@@ -121,7 +125,7 @@
     }
 
     &.scrollbar.closed .inner {
-      p:not(:first-child) {
+      p:not(:first-of-type) {
         display: none;
       }
     }
@@ -166,7 +170,7 @@
         }*/
       }
 
-      > div img, > div p, p {
+      > div img, > div p, p, h3 {
         width:100%;
         user-drag: none; 
         user-select: none;
@@ -177,9 +181,9 @@
         max-width: 36ch;
         margin-left: auto;
         margin-right:auto;
-        //animation: float-wobble 25s infinite;
 
       }
+
     }
 
     .text &, &.text {
@@ -204,68 +208,6 @@
   font-family: $title-font;
   text-align: center;
   margin-top: 0;
-}
-
-.node .object.here .inner .prevnext {
-  opacity:1;
-  pointer-events: initial;
-}
-
-.node .object .inner .prevnext {
-    height: 40px;
-    width: 90px;
-    display: block;
-    position: absolute;
-    bottom: -40px;
-    left: 0;
-    pointer-events: none;
-
-    a {
-      height: 40px;
-      width: 40px;
-      display: inline-block;
-      position: relative;
-
-      span {
-        display: block;
-        position:relative;
-        height: 40px;
-        width:1px;
-        position: relative;
-        background: #8ea9bd;
-        transform: rotateX(65deg);
-        left: 20px;
-        opacity:0;
-        transition: opacity $cycleLength/4 ease;
-
-        &::after {
-          content: '';
-          height: 15px;
-          width: 15px;
-          border-top: 2px #8ea9bd solid;
-          display: block;
-          position: absolute;
-          top: 0;
-          left: -7.5px;
-          transform: rotateZ(45deg);
-          border-left: 2px #8ea9bd solid;
-
-        }
-
-      }
-      &.prev span::after {
-        top:auto;
-        bottom: 0;
-        border-bottom: 2px #8ea9bd solid;
-        border-right: 2px #8ea9bd solid;
-        border-top: none;
-        border-left: none;
-      }
-    }
-}
-.node .object.here .inner .prevnext span {
-  opacity:1;
-  transition: opacity $cycleLength*2 ease;
 }
 
 a.open-handle {

@@ -96,6 +96,7 @@
 	<?php } ?>
 
 <div class="uw-hud">
+	<div class="prevnext"><a class="prev"><span></span></a><a class="next"><span></span></a></div>
 	<a class="totop" href="#page"><img alt="Back to Top" title="Back to top" src="<?php echo get_template_directory_uri(); ?>/img/btotop.png"></a>
 	<nav id="uw-site-navigation" class="main-navigation">
 		<button type="button" class=" menu-toggle tcon tcon-menu--xcross" aria-label="toggle menu">

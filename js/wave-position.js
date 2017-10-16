@@ -654,7 +654,7 @@ function drawWave(t) {
 					        .data( "roty", obj.roty )
 					        .data( "bgimg", bgimg )
 					        .data( "bgimgsm", bgimgsm )
-					        .html('<div class="inner">'+obj.content+'<div class="prevnext"><a class="prev"><span></span></a><a class="next"><span></span></a></div></div>')
+					        .html('<div class="inner">'+obj.content+'</div>')
 					        .appendTo( '.nw-' + t + ' .camera');
 
 					        //load the images as backgrounds, to start, just for the first two slide groups in each tier
@@ -686,13 +686,17 @@ function drawWave(t) {
 					setDistance(elem, posz);
 		});
 
-		$( ".underwater" ).on( "click", ".camera .object:not(.spin)", function(event) {
+		$( ".underwater" ).on( "click", ".camera .object.closed", function(event) {
+			$(this).removeClass('closed no-click');
+		});
+
+		$( ".underwater" ).on( "click", ".camera .object:not(.no-click)", function(event) {
 			event.preventDefault();
 
 			var previous = false;
 
 			if ($(event.target).closest('.prev').length) {
-				console.log('prev');
+				//console.log('prev');
 				previous = true;
 			}
 
