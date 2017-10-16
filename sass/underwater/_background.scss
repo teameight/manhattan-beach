@@ -32,13 +32,12 @@
   height: 100%;
   pointer-events:none;
   @include preserve3d;
-  
+
   opacity:1;
 
   .above & {
     opacity:0!important;
   }
-      
 
   .structure {
     @include preserve3d;

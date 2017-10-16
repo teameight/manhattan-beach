@@ -455,6 +455,8 @@ function drawWave(t) {
 
 			buildNodes();
 
+			buildBackground();
+
 		}else{
 			$('#body').removeClass('not-loaded').addClass('loaded');
 		} // end if current_slug
@@ -597,7 +599,7 @@ function drawWave(t) {
 			var zOffset = -200;
 			var currSlug = current_slug.slug;
 
-			// console.log(uwNodes);
+			console.log(uwNodes);
 
 			uwNodes.forEach(function(tier, t) {
 				console.log(tier.tier);
@@ -677,6 +679,20 @@ function drawWave(t) {
 		  nodeTemplate.remove();
 		}
 
+		function buildBackground() {
+			var bgWrap = $('.st-1');
+			var bgImg = $('.st-1 img');
+			console.log(uwBackgrounds);
+
+			uwBackgrounds.forEach(function(bg, index) {
+				if ( bg.slug === current_slug.slug ) {
+					bgImg.attr('src', bg.content);
+
+					bgWrap.css('transform', 'translateX(' + bg.posx + 'vw) translateZ(-600vw) scale(70) rotate3d(0, 1, 0, -30deg)');
+				}
+			});
+		}
+
 
 		// Node Swim
 
@@ -714,7 +730,7 @@ function drawWave(t) {
 						var elem = $( this ).next();
 					}
 				}
-				
+
 				// get the next element's slug
 				nextSlug = elem.data('slug');
 
@@ -744,10 +760,10 @@ function drawWave(t) {
 
   		// console.log((posz + currz)*5);
 
-		  elem.addClass('here').siblings('.here').removeClass('here').addClass('inactive').parent().css({'transform': 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)', 'transition' : 'transform ' + Math.abs(posz + currz)*10 + 'ms ease'  }); //
+		  elem.addClass('here').siblings('.here').removeClass('here').addClass('inactive').parent().css({'transform': 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)', 'transition' : 'transform ' + Math.abs(posz + currz)*10 + 'ms ease, opacity ' +  Math.abs(posz + currz)*10 + 'ms ease' }); //
 
 		  setTimeout(
-			  function() 
+			  function()
 			  {
 			    $('.inactive').removeClass('inactive');
 			  }, 1000);
@@ -756,10 +772,26 @@ function drawWave(t) {
 
 
 		  if ( hereSlug != nextSlug ) {
-		  	// console.log(currentWrapper);
+
+		  	// swap background image
+
+				var bgWrap = $('.st-1');
+				var bgImg = $('.st-1 img');
+
+		  	uwBackgrounds.forEach(function(bg, index) {
+		  		if ( bg.slug === nextSlug ) {
+				  	bgImg.attr('src', bg.content);
+
+				  	bgWrap.css('transform', 'translateX(' + bg.posx + 'vw) translateZ(-600vw) scale(70) rotate3d(0, 1, 0, -30deg)');
+		  		}
+		  	});
+
+
+		  	// find all other node-wrappers and pull the nextSlug nodes into view
 		  	$('.node-wrapper').not(currentWrapper).each(function() {
 		  		var firstNodeInPage = $(this).find('.object[data-slug="'+nextSlug+'"]').first();
 		  		elem = firstNodeInPage;
+		  		console.log('firstnode', firstNodeInPage);
 
 					rotx = 0 - elem.data('rotx'),
 		  		roty = 0 - elem.data('roty'),
@@ -782,11 +814,12 @@ function drawWave(t) {
 		  	$('.node-wrapper').each(function() {
 		  		var firstNodeInPage = $(this).find('.object[data-slug="'+nextSlug+'"]').first();
 		  		elem = firstNodeInPage;
+		  		console.log('elem', elem);
 
 				  thisGroupClass = elem.attr("class");
 				  thisGroupInc = thisGroupClass.split('object-')[1];
 				  thisGroupInc = thisGroupInc.split('-')[0];
-				  
+
 				  var afterSlug = $(this).find('.object-' + (thisGroupInc * 1 + 1) + '-0').data('slug');
 				  console.log(afterSlug);
 				  $(this).find('.object[data-slug="'+afterSlug+'"]').each(function() {
