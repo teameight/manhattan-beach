@@ -693,6 +693,22 @@ function drawWave(t) {
 			});
 		}
 
+		function forwardSlideLoop(currentWrapper, hereSlug) {
+	  	var lastNode = currentWrapper.find('.object').last();
+	  	var lastZ = lastNode.data('posz');
+	  	console.log('last', lastZ);
+	  	var firstNode = currentWrapper.find('.object').not('.obj-template').first();
+	  	var firstSlug = firstNode.data('slug');
+	  	console.log('firstslug', firstSlug, 'firstnode', firstNode);
+			var oldNodes = currentWrapper.find('.object[data-slug="'+firstSlug+'"]').not('.obj-template').detach();
+			oldNodes.each(function(index) {
+				var newZ = ((lastZ - 200) - (200*index));
+				$(this).data('posz', newZ).css('transform', 'translate3d(0vw, 0vw, '+ newZ +'vw');
+			});
+			console.log(oldNodes);
+			currentWrapper.find('.camera').append(oldNodes);
+		}
+
 
 		// Node Swim
 
@@ -702,8 +718,12 @@ function drawWave(t) {
 					setDistance(elem, posz);
 		});
 
+		var clickCount = 0;
+
 		$( ".underwater" ).on( "click", ".camera .object:not(.spin)", function(event) {
 			event.preventDefault();
+
+			clickCount++;
 
 			var previous = false;
 
@@ -759,7 +779,7 @@ function drawWave(t) {
 		  		posz = posz || 0;
 
   		// console.log((posz + currz)*5);
-			elem.find('.inner :first-child').css('transition', 'opacity ' +  Math.abs(posz + currz)*15 + 'ms ease');
+			elem.find('.inner :first-child').css('transition', 'opacity ' +  Math.abs(posz + currz)*14 + 'ms ease');
 		  elem.addClass('here').siblings('.here').removeClass('here').addClass('inactive').parent().css({'transform': 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)', 'transition' : 'transform ' + Math.abs(posz + currz)*10 + 'ms ease' }); //
 
 		  setTimeout(
@@ -785,6 +805,13 @@ function drawWave(t) {
 				  	bgWrap.css('transform', 'translateX(' + bg.posx + 'vw) translateZ(-600vw) scale(70) rotate3d(0, 1, 0, -30deg)');
 		  		}
 		  	});
+
+		  	console.log(elem);
+
+				// Loop forward
+				if ( clickCount > 10 ) {
+			  	forwardSlideLoop(currentWrapper, hereSlug);
+				}
 
 
 		  	// find all other node-wrappers and pull the nextSlug nodes into view
@@ -814,19 +841,19 @@ function drawWave(t) {
 		  	$('.node-wrapper').each(function() {
 		  		var firstNodeInPage = $(this).find('.object[data-slug="'+nextSlug+'"]').first();
 		  		elem = firstNodeInPage;
-		  		console.log('elem', elem);
+		  		// console.log('elem', elem);
 
 				  thisGroupClass = elem.attr("class");
 				  thisGroupInc = thisGroupClass.split('object-')[1];
 				  thisGroupInc = thisGroupInc.split('-')[0];
 
 				  var afterSlug = $(this).find('.object-' + (thisGroupInc * 1 + 1) + '-0').data('slug');
-				  console.log(afterSlug);
+				  // console.log(afterSlug);
 				  $(this).find('.object[data-slug="'+afterSlug+'"]').each(function() {
 
 				  		var bgimg = $(this).data('bgimg');
 
-				  		console.log(bgimg);
+				  		// console.log(bgimg);
 
 				  		if( bgimg ){
 
