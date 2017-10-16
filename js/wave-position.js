@@ -759,8 +759,8 @@ function drawWave(t) {
 		  		posz = posz || 0;
 
   		// console.log((posz + currz)*5);
-
-		  elem.addClass('here').siblings('.here').removeClass('here').addClass('inactive').parent().css({'transform': 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)', 'transition' : 'transform ' + Math.abs(posz + currz)*10 + 'ms ease, opacity ' +  Math.abs(posz + currz)*10 + 'ms ease' }); //
+			elem.find('.inner :first-child').css('transition', 'opacity ' +  Math.abs(posz + currz)*15 + 'ms ease');
+		  elem.addClass('here').siblings('.here').removeClass('here').addClass('inactive').parent().css({'transform': 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)', 'transition' : 'transform ' + Math.abs(posz + currz)*10 + 'ms ease' }); //
 
 		  setTimeout(
 			  function()
@@ -789,9 +789,9 @@ function drawWave(t) {
 
 		  	// find all other node-wrappers and pull the nextSlug nodes into view
 		  	$('.node-wrapper').not(currentWrapper).each(function() {
-		  		var firstNodeInPage = $(this).find('.object[data-slug="'+nextSlug+'"]').first();
+		  		$(this).find('.here').removeClass('here');
+		  		var firstNodeInPage = $(this).find('.object[data-slug="'+nextSlug+'"]').first().addClass('here');
 		  		elem = firstNodeInPage;
-		  		console.log('firstnode', firstNodeInPage);
 
 					rotx = 0 - elem.data('rotx'),
 		  		roty = 0 - elem.data('roty'),

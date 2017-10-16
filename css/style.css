@@ -971,15 +971,13 @@ a.btn {
   height: 40px;
   width: 90px;
   display: block;
-  position: absolute;
   bottom: -40px;
   left: 0;
   pointer-events: none; }
   .node .object .inner .prevnext a {
     height: 40px;
     width: 40px;
-    display: inline-block;
-    position: relative; }
+    display: inline-block; }
     .node .object .inner .prevnext a span {
       display: block;
       position: relative;
