@@ -591,6 +591,8 @@ function drawWave(t) {
 
 		});
 
+		var currentWrapper;
+
 		function buildNodes(){
 
 			// console.log(current_slug.slug);
@@ -599,7 +601,7 @@ function drawWave(t) {
 			var zOffset = -200;
 			var currSlug = current_slug.slug;
 
-			console.log(uwNodes);
+			//console.log(uwNodes);
 
 			uwNodes.forEach(function(tier, t) {
 				console.log(tier.tier);
@@ -716,22 +718,46 @@ function drawWave(t) {
 				previous = true;
 			}
 
-			var currentWrapper = $(this).closest('.node-wrapper');
+			currentWrapper = $(this).closest('.node-wrapper');
+
+			swimAround($(this), previous);
+
+		});
+
+		$( ".uw-hud" ).on( "click", ".prev", function(event) {
+			event.preventDefault();
+
+			var hereObj = currentWrapper.find('.here');
+			var previous = true;
+			swimAround(hereObj, previous);
+		});
+
+		$( ".uw-hud" ).on( "click", ".next", function(event) {
+			event.preventDefault();
+
+			var hereObj = currentWrapper.find('.here');
+			var previous = false;
+			swimAround(hereObj, previous);
+		});
+
+		function swimAround(nodeObj, previous) {
+
+			console.log(currentWrapper);
 
 			var currz = currentWrapper.find('.here').data('posz'),
 					hereSlug = currentWrapper.find('.here').data('slug'),
 	  			nextSlug;
 
-		  if( $(this).hasClass('here') ) {
+		  if( nodeObj.hasClass('here') ) {
 
 				// get the next element in line
 				if(previous){
-					if( $(this).prev().length ) {
-						var elem = $( this ).prev();
+					if( nodeObj.prev().length ) {
+						var elem = nodeObj.prev();
 					}
 				}else{
-					if( $(this).next().length ) {
-						var elem = $( this ).next();
+					if( nodeObj.next().length ) {
+						var elem = nodeObj.next();
 					}
 				}
 
@@ -744,7 +770,7 @@ function drawWave(t) {
 				// }
 
 		  } else {
-		  	var elem = $( this );
+		  	var elem = nodeObj;
 		  	nextSlug = elem.data('slug');
 		  }
 
@@ -818,19 +844,19 @@ function drawWave(t) {
 		  	$('.node-wrapper').each(function() {
 		  		var firstNodeInPage = $(this).find('.object[data-slug="'+nextSlug+'"]').first();
 		  		elem = firstNodeInPage;
-		  		console.log('elem', elem);
+		  		//console.log('elem', elem);
 
 				  thisGroupClass = elem.attr("class");
 				  thisGroupInc = thisGroupClass.split('object-')[1];
 				  thisGroupInc = thisGroupInc.split('-')[0];
 
 				  var afterSlug = $(this).find('.object-' + (thisGroupInc * 1 + 1) + '-0').data('slug');
-				  console.log(afterSlug);
+				  //console.log(afterSlug);
 				  $(this).find('.object[data-slug="'+afterSlug+'"]').each(function() {
 
 				  		var bgimg = $(this).data('bgimg');
 
-				  		console.log(bgimg);
+				  		//console.log(bgimg);
 
 				  		if( bgimg ){
 
@@ -860,7 +886,9 @@ function drawWave(t) {
 
 		  elem.addClass('here');
 
-		});
+
+		}
+
 		var swimTimer,
 				swimCount = 0;
 
