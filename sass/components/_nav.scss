@@ -180,7 +180,7 @@
 .uw-hud {
 	pointer-events: initial;
 	text-align:right;
-	width:140px;
+	width:270px;
 	list-style-type: none;
   margin: 0;
   padding: 10px 0;
@@ -197,6 +197,7 @@
 	pointer-events: none;
 	opacity:0;
 	transition: opacity 2s ease;
+
 
 	&.show {
 		opacity:.85;
@@ -215,6 +216,57 @@
 			height: auto;
 		}
 	}
+
+	.prevnext {
+		    height: 40px;
+		    width: 90px;
+		    display: block;
+		    perspective-origin: -10vw top;
+    		perspective: 80vw;
+
+		    a {
+		      height: 40px;
+		      width: 40px;
+		      display: inline-block;
+		      position: relative;
+		      cursor: pointer;
+
+		      span {
+		        display: block;
+		        position:relative;
+		        height: 40px;
+		        width:1px;
+		        position: relative;
+		        background: #8ea9bd;
+		        transform: rotateX(65deg);
+		        left: 20px;
+		        transition: opacity $cycleLength/4 ease;
+
+		        &::after {
+		          content: '';
+		          height: 15px;
+		          width: 15px;
+		          border-top: 2px #8ea9bd solid;
+		          display: block;
+		          position: absolute;
+		          top: 0;
+		          left: -7.5px;
+		          transform: rotateZ(45deg);
+		          border-left: 2px #8ea9bd solid;
+
+		        }
+
+		      }
+		      &.prev span::after {
+		        top:auto;
+		        bottom: 0;
+		        border-bottom: 2px #8ea9bd solid;
+		        border-right: 2px #8ea9bd solid;
+		        border-top: none;
+		        border-left: none;
+		      }
+		    }
+		}
 
 	#uw-site-navigation{
 		height:40px;

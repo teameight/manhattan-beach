@@ -656,7 +656,7 @@ function drawWave(t) {
 					        .data( "roty", obj.roty )
 					        .data( "bgimg", bgimg )
 					        .data( "bgimgsm", bgimgsm )
-					        .html('<div class="inner">'+obj.content+'<div class="prevnext"><a class="prev"><span></span></a><a class="next"><span></span></a></div></div>')
+					        .html('<div class="inner">'+obj.content+'</div>')
 					        .appendTo( '.nw-' + t + ' .camera');
 
 					        //load the images as backgrounds, to start, just for the first two slide groups in each tier
@@ -696,17 +696,27 @@ function drawWave(t) {
 		function forwardSlideLoop(currentWrapper, hereSlug) {
 	  	var lastNode = currentWrapper.find('.object').last();
 	  	var lastZ = lastNode.data('posz');
-	  	console.log('last', lastZ);
 	  	var firstNode = currentWrapper.find('.object').not('.obj-template').first();
 	  	var firstSlug = firstNode.data('slug');
-	  	console.log('firstslug', firstSlug, 'firstnode', firstNode);
 			var oldNodes = currentWrapper.find('.object[data-slug="'+firstSlug+'"]').not('.obj-template').detach();
 			oldNodes.each(function(index) {
 				var newZ = ((lastZ - 200) - (200*index));
 				$(this).data('posz', newZ).css('transform', 'translate3d(0vw, 0vw, '+ newZ +'vw');
 			});
-			console.log(oldNodes);
 			currentWrapper.find('.camera').append(oldNodes);
+
+			$('.node-wrapper').not(currentWrapper).each(function(index) {
+				var lastNode = $(this).find('.object').last();
+				var lastZ = lastNode.data('posz');
+				var firstNode = $(this).find('.object').not('.obj-template').first();
+				var firstSlug = firstNode.data('slug');
+				var oldNodes = $(this).find('.object[data-slug="'+firstSlug+'"]').not('.obj-template').detach();
+				oldNodes.each(function(i) {
+					var newZ = ((lastZ - 200) - (200*i));
+					$(this).data('posz', newZ).css('transform', 'translate3d(0vw, 0vw, '+ newZ +'vw');
+				});
+				$(this).find('.camera').append(oldNodes);
+			});
 		}
 
 
@@ -720,7 +730,11 @@ function drawWave(t) {
 
 		var clickCount = 0;
 
-		$( ".underwater" ).on( "click", ".camera .object:not(.spin)", function(event) {
+		$( ".underwater" ).on( "click", ".camera .object.closed", function(event) {
+			$(this).removeClass('closed no-click');
+		});
+
+		$( ".underwater" ).on( "click", ".camera .object:not(.no-click)", function(event) {
 			event.preventDefault();
 
 			clickCount++;
@@ -728,7 +742,7 @@ function drawWave(t) {
 			var previous = false;
 
 			if ($(event.target).closest('.prev').length) {
-				console.log('prev');
+				//console.log('prev');
 				previous = true;
 			}
 

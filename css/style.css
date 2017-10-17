@@ -473,7 +473,7 @@ h4,
 .uw-hud {
   pointer-events: initial;
   text-align: right;
-  width: 140px;
+  width: 270px;
   list-style-type: none;
   margin: 0;
   padding: 10px 0;
@@ -501,6 +501,46 @@ h4,
     .uw-hud .totop img {
       width: 100%;
       height: auto; }
+  .uw-hud .prevnext {
+    height: 40px;
+    width: 90px;
+    display: block;
+    perspective-origin: -10vw top;
+    perspective: 80vw; }
+    .uw-hud .prevnext a {
+      height: 40px;
+      width: 40px;
+      display: inline-block;
+      position: relative;
+      cursor: pointer; }
+      .uw-hud .prevnext a span {
+        display: block;
+        position: relative;
+        height: 40px;
+        width: 1px;
+        position: relative;
+        background: #8ea9bd;
+        transform: rotateX(65deg);
+        left: 20px;
+        transition: opacity 500ms ease; }
+        .uw-hud .prevnext a span::after {
+          content: '';
+          height: 15px;
+          width: 15px;
+          border-top: 2px #8ea9bd solid;
+          display: block;
+          position: absolute;
+          top: 0;
+          left: -7.5px;
+          transform: rotateZ(45deg);
+          border-left: 2px #8ea9bd solid; }
+      .uw-hud .prevnext a.prev span::after {
+        top: auto;
+        bottom: 0;
+        border-bottom: 2px #8ea9bd solid;
+        border-right: 2px #8ea9bd solid;
+        border-top: none;
+        border-left: none; }
   .uw-hud #uw-site-navigation {
     height: 40px; }
     .uw-hud #uw-site-navigation.toggled .menu-uw {
@@ -826,7 +866,7 @@ a.btn {
 
 .node-wrapper {
   position: relative;
-  margin-top: 1000vh;
+  margin-top: 280vh;
   width: 80vw;
   max-width: 98vh;
   display: flex;
@@ -836,12 +876,16 @@ a.btn {
   margin-right: auto;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  height: 120vw;
   /*
   .above & {
     visibility: hidden;
   }*/ }
   .node-wrapper.nw-0 {
     margin-top: 80vh; }
+  .node-wrapper h3 {
+    text-align: left;
+    color: #bdccd4; }
   .node-wrapper .camera {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -906,7 +950,7 @@ a.btn {
         background-color: rgba(255, 255, 255, 0.1); }
       .node .object.scrollbar:not(.closed) .inner .open-handle {
         display: none; }
-    .node .object.scrollbar.closed .inner p:not(:first-child) {
+    .node .object.scrollbar.closed .inner p:not(:first-of-type) {
       display: none; }
     .node .object.gear img {
       width: auto; }
@@ -933,7 +977,7 @@ a.btn {
         /*.above & {
           opacity:0!important;
         }*/ }
-      .node .object .inner > div img, .node .object .inner > div p, .node .object .inner p {
+      .node .object .inner > div img, .node .object .inner > div p, .node .object .inner p, .node .object .inner h3 {
         width: 100%;
         user-drag: none;
         user-select: none;
@@ -962,55 +1006,6 @@ a.btn {
   font-family: "Cera", san-serif;
   text-align: center;
   margin-top: 0; }
-
-.node .object.here .inner .prevnext {
-  opacity: 1;
-  pointer-events: initial; }
-
-.node .object .inner .prevnext {
-  height: 40px;
-  width: 90px;
-  display: block;
-  bottom: -40px;
-  left: 0;
-  pointer-events: none; }
-  .node .object .inner .prevnext a {
-    height: 40px;
-    width: 40px;
-    display: inline-block; }
-    .node .object .inner .prevnext a span {
-      display: block;
-      position: relative;
-      height: 40px;
-      width: 1px;
-      position: relative;
-      background: #8ea9bd;
-      transform: rotateX(65deg);
-      left: 20px;
-      opacity: 0;
-      transition: opacity 500ms ease; }
-      .node .object .inner .prevnext a span::after {
-        content: '';
-        height: 15px;
-        width: 15px;
-        border-top: 2px #8ea9bd solid;
-        display: block;
-        position: absolute;
-        top: 0;
-        left: -7.5px;
-        transform: rotateZ(45deg);
-        border-left: 2px #8ea9bd solid; }
-    .node .object .inner .prevnext a.prev span::after {
-      top: auto;
-      bottom: 0;
-      border-bottom: 2px #8ea9bd solid;
-      border-right: 2px #8ea9bd solid;
-      border-top: none;
-      border-left: none; }
-
-.node .object.here .inner .prevnext span {
-  opacity: 1;
-  transition: opacity 4000ms ease; }
 
 a.open-handle {
   display: block;
