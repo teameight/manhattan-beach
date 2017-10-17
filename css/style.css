@@ -1067,12 +1067,12 @@ a.open-handle {
     .above .background .structure {
       opacity: 0 !important; }
   .background .st-0 {
-    transform: translateZ(-1600vw) scale(21.6); }
+    transform: translateZ(-3000vw) scale(40); }
     .background .st-0 img {
       width: 100vw;
       /*border: 1px solid yellow;*/ }
   .background .st-1 {
-    transform: translateX(-40vw) translateZ(-600vw) scale(70) rotate3d(0, 1, 0, -30deg); }
+    transition: transform 2000ms ease-in-out; }
     .background .st-1 img {
       width: 15vw; }
 

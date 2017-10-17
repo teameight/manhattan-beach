@@ -689,8 +689,15 @@ function drawWave(t) {
 			uwBackgrounds.forEach(function(bg, index) {
 				if ( bg.slug === current_slug.slug ) {
 					bgImg.attr('src', bg.content);
+					// console.log('bg', bg);
 
-					bgWrap.css('transform', 'translateX(' + bg.posx + 'vw) translateZ(-600vw) scale(70) rotate3d(0, 1, 0, -30deg)');
+					bgWrap
+						.data('posy', bg.posy)
+						.data('posx', bg.posx)
+						.data('posz', bg.posz)
+						.data('scale', bg.scale);
+
+					bgWrap.css('transform', 'translate3d(' + bg.posx + 'vw, ' + bg.posy + 'vh, ' + bg.posz + 'vw) scale(' + bg.scale + ')');
 				}
 			});
 		}
@@ -721,6 +728,34 @@ function drawWave(t) {
 			});
 		}
 
+		function backwardSlideLoop(currentWrapper, hereSlug) {
+			// reverse
+		}
+
+		function nudgeBackground(previous) {
+			if ( previous ) {
+				var interval = -50;
+			} else {
+				var interval = 50;
+			}
+			console.log(interval)
+			var bg = $('.st-1');
+			var bgImg = bg.find('img');
+			var posx = bg.data('posx');
+			var posy = bg.data('posy');
+			var posz = bg.data('posz') + interval;
+			var scale = bg.data('scale');
+
+			console.log(posz);
+
+
+			bg.css({'transform': 'translate3d('+posx+'vw, ' +posy+ 'vh, ' +posz+'vw) scale('+scale+')', 'transition': 'transform 2000ms ease-in-out'});
+
+			bg.data('posz', posz);
+
+			console.log('after nudge', bg.data('posz'));
+		}
+
 
 		// Node Swim
 
@@ -748,6 +783,8 @@ function drawWave(t) {
 				previous = true;
 			}
 
+			nudgeBackground(previous);
+
 			currentWrapper = $(this).closest('.node-wrapper');
 
 			swimAround($(this), previous);
@@ -760,6 +797,7 @@ function drawWave(t) {
 			var hereObj = currentWrapper.find('.here');
 			var previous = true;
 			swimAround(hereObj, previous);
+			nudgeBackground(previous);
 		});
 
 		$( ".uw-hud" ).on( "click", ".next", function(event) {
@@ -772,7 +810,7 @@ function drawWave(t) {
 
 		function swimAround(nodeObj, previous) {
 
-			console.log(currentWrapper);
+			// console.log(currentWrapper);
 
 			var currz = currentWrapper.find('.here').data('posz'),
 					hereSlug = currentWrapper.find('.here').data('slug'),
@@ -840,9 +878,19 @@ function drawWave(t) {
 
 		  	uwBackgrounds.forEach(function(bg, index) {
 		  		if ( bg.slug === nextSlug ) {
-				  	bgImg.attr('src', bg.content);
 
-				  	bgWrap.css('transform', 'translateX(' + bg.posx + 'vw) translateZ(-600vw) scale(70) rotate3d(0, 1, 0, -30deg)');
+
+					bgWrap
+						.data('posy', bg.posy)
+						.data('posx', bg.posx)
+						.data('posz', bg.posz)
+						.data('scale', bg.scale);
+
+		  			bgImg.fadeOut(1000, function() {
+					  	bgWrap.css({'transform': 'translate3d(' + bg.posx + 'vw, ' + bg.posy + 'vh, ' + bg.posz + 'vw) scale(' + bg.scale + ')', 'transition': 'none'});
+					  	$(this).clone().attr('src', bg.content).hide().appendTo(bgWrap).fadeIn('slow');
+		  				$(this).remove();
+		  			});
 		  		}
 		  	});
 

@@ -54,7 +54,7 @@
   }
 
   .st-0 {
-    transform: translateZ(-1600vw) scale(21.6);
+    transform: translateZ(-3000vw) scale(40);
 
     img {
       width:100vw;
@@ -62,7 +62,8 @@
     }
   }
   .st-1 {
-    transform: translateX(-40vw) translateZ(-600vw) scale(70) rotate3d(0, 1, 0, -30deg);
+    // transform: translateX(-40vw) translateZ(-600vw) scale(70) rotate3d(0, 1, 0, -30deg);
+    transition: transform 2000ms ease-in-out;
 
     img {
       width:15vw;
