@@ -2,7 +2,7 @@ var zInterval = -200,
 
 		// imgRoot = '\/\/localhost/htdocs/egan-img';
 		imgRoot = '\/\/staging.jenniferegan.com\/wp-content\/themes\/manhattan-beach\/egan-img';
-		bgImgRoot = '\/\/staging.jenniferegan.com\/wp-content\/themes\/manhattan-beach\/egan-img\/background';
+		bgImgRoot = '\/\/res.cloudinary.com\/egan\/image\/upload';
 
 var uwNodes = [
 	{ 'tier': 1,
@@ -493,7 +493,7 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/9Rear-Gun-Tub.png',
-						'content':'<div class="imgbox"><\/div><p>Rear Gun Tub<\/p>'		
+						'content':'<div class="imgbox"><\/div><p>Rear Gun Tub<\/p>'
 					},
 					{
 						'class':'image',
@@ -613,7 +613,7 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/9RadioShack.png',
-						'content':'<div class="imgbox"><\/div><p>Radio Shack<\/p>'		
+						'content':'<div class="imgbox"><\/div><p>Radio Shack<\/p>'
 					},
 					{
 						'class':'image',
@@ -738,7 +738,7 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/10Pistons.png',
-						'content':'<div class="imgbox"><\/div><p>Pistons<\/p>'		
+						'content':'<div class="imgbox"><\/div><p>Pistons<\/p>'
 					},
 					{
 						'class':'image',
@@ -2955,101 +2955,90 @@ var uwNodes = [
 var uwBackgrounds = [
  {
  	'slug': 'home',
- 	'posx': 0,
+ 	'posx': 400,
  	'posy': 0,
- 	'posz': 0,
- 	'roty': 0,
- 	'rotx': 0,
- 	'content': bgImgRoot + '/nyscraper.png'
+ 	'posz': -1600,
+ 	'scale': 70,
+ 	'content': bgImgRoot + '/v1508258060/background/nyscraper.png'
  },
  {
  	'slug': 'books/manhattan-beach',
- 	'posx': 10,
+ 	'posx': -120,
  	'posy': 100,
- 	'posz': 0,
- 	'roty': 0,
- 	'rotx': 0,
- 	'content': bgImgRoot + '/nyscraper.png'
+ 	'posz': -1000,
+ 	'scale': 70,
+ 	'content': bgImgRoot + '/v1508261787/background/small-ship_xjfipu.png'
  },
  {
  	'slug': 'books/a-visit-from-the-goon-squad',
- 	'posx': 20,
- 	'posy': 300,
- 	'posz': 0,
- 	'roty': 0,
- 	'rotx': 0,
- 	'content': bgImgRoot + '/nyscraper.png'
+ 	'posx': 350,
+ 	'posy': 1500,
+ 	'posz': -1600,
+ 	'scale': 100,
+ 	'content': bgImgRoot + '/v1508268539/background/side-mountain.png'
  },
  {
  	'slug': 'books/the-keep',
- 	'posx': 30,
- 	'posy': 0,
- 	'posz': 0,
- 	'roty': 0,
- 	'rotx': 0,
- 	'content': bgImgRoot + '/nyscraper.png'
+ 	'posx': 0,
+ 	'posy': 1000,
+ 	'posz': -1000,
+ 	'scale': 100,
+ 	'content': bgImgRoot + '/v1508271060/background/mountain.png'
  },
  {
  	'slug': 'books/look-at-me',
- 	'posx': 40,
- 	'posy': 0,
- 	'posz': 0,
- 	'roty': 0,
- 	'rotx': 0,
- 	'content': bgImgRoot + '/nyscraper.png'
+ 	'posx': 800,
+ 	'posy': 1000,
+ 	'posz': -2000,
+ 	'scale': 80,
+ 	'content': bgImgRoot + '/v1508270508/background/big-ship.png'
  },
  {
  	'slug': 'books/the-invisible-circus',
- 	'posx': -40,
- 	'posy': 200,
- 	'posz': 0,
- 	'roty': 0,
- 	'rotx': 0,
- 	'content': bgImgRoot + '/nyscraper.png'
+ 	'posx': 400,
+ 	'posy': 0,
+ 	'posz': -1600,
+ 	'scale': 70,
+ 	'content': bgImgRoot + '/v1508258060/background/nyscraper.png'
  },
  {
  	'slug': 'books/emerald-city-and-other-stories',
- 	'posx': -30,
- 	'posy': 400,
- 	'posz': 0,
- 	'roty': 0,
- 	'rotx': 0,
- 	'content': bgImgRoot + '/nyscraper.png'
+ 	'posx': 350,
+ 	'posy': 1500,
+ 	'posz': -1600,
+ 	'scale': 100,
+ 	'content': bgImgRoot + '/v1508268539/background/side-mountain.png'
  },
  {
  	'slug': 'non-fiction',
- 	'posx': -20,
+ 	'posx': -120,
  	'posy': 100,
- 	'posz': 0,
- 	'roty': 0,
- 	'rotx': 0,
- 	'content': bgImgRoot + '/nyscraper.png'
+ 	'posz': -1000,
+ 	'scale': 70,
+ 	'content': bgImgRoot + '/v1508261787/background/small-ship_xjfipu.png'
  },
  {
  	'slug': 'category/news',
  	'posx': -10,
  	'posy': 100,
  	'posz': 0,
- 	'roty': 0,
- 	'rotx': 0,
- 	'content': bgImgRoot + '/nyscraper.png'
+ 	'scale': 0,
+ 	'content': bgImgRoot + '/v1508271060/background/mountain.png'
  },
  {
  	'slug': 'about',
- 	'posx': 0,
- 	'posy': 0,
- 	'posz': 0,
- 	'roty': 0,
- 	'rotx': 0,
- 	'content': bgImgRoot + '/nyscraper.png'
+ 	'posx': 800,
+ 	'posy': 1000,
+ 	'posz': -2000,
+ 	'scale': 80,
+ 	'content': bgImgRoot + '/v1508270508/background/big-ship.png'
  },
  {
  	'slug': 'contact',
- 	'posx': 30,
- 	'posy': 300,
- 	'posz': 0,
- 	'roty': 0,
- 	'rotx': 0,
- 	'content': bgImgRoot + '/nyscraper.png'
+ 	'posx': 350,
+ 	'posy': 1500,
+ 	'posz': -1600,
+ 	'scale': 100,
+ 	'content': bgImgRoot + '/v1508268539/background/side-mountain.png'
  }
 ];
