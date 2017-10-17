@@ -749,7 +749,7 @@ function drawWave(t) {
 			console.log(posz);
 
 
-			bg.css('transform', 'translate3d('+posx+'vw, ' +posy+ 'vh, ' +posz+'vw) scale('+scale+')');
+			bg.css({'transform': 'translate3d('+posx+'vw, ' +posy+ 'vh, ' +posz+'vw) scale('+scale+')', 'transition': 'transform 2000ms ease-in-out'});
 
 			bg.data('posz', posz);
 
@@ -886,8 +886,8 @@ function drawWave(t) {
 						.data('posz', bg.posz)
 						.data('scale', bg.scale);
 
-		  			bgImg.fadeOut('slow', function() {
-					  	bgWrap.css('transform', 'translate3d(' + bg.posx + 'vw, ' + bg.posy + 'vh, ' + bg.posz + 'vw) scale(' + bg.scale + ')');
+		  			bgImg.fadeOut(1000, function() {
+					  	bgWrap.css({'transform': 'translate3d(' + bg.posx + 'vw, ' + bg.posy + 'vh, ' + bg.posz + 'vw) scale(' + bg.scale + ')', 'transition': 'none'});
 					  	$(this).clone().attr('src', bg.content).hide().appendTo(bgWrap).fadeIn('slow');
 		  				$(this).remove();
 		  			});
