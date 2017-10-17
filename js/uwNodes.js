@@ -1250,7 +1250,117 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/1Railroad-Transom.png',
-						'content':'<div class="imgbox"><\/div><p>[placeholder for floating version of buttons in grid]<\/p>'
+						'content':'<div class="imgbox"><\/div><p>Naval Yard Railroad Transom, 2015<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/2Railroad-Transom-4.png',
+						'content':'<div class="imgbox"><\/div><p>Railroad Transom 4<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/3Old-Tracks.png',
+						'content':'<div class="imgbox"><\/div><p>Old Tracks<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/4Ruined-Tracks-and-Pier-Bricks.png',
+						'content':'<div class="imgbox"><\/div><p>Ruined Tracks and Pier Bricks<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/5Hospital-Columns.png',
+						'content':'<div class="imgbox"><\/div><p>Hospital Columns<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/6Hospital-Columns2.png',
+						'content':'<div class="imgbox"><\/div><p>Hospital Columns2<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/7Hospital-Monument.png',
+						'content':'<div class="imgbox"><\/div><p>Hospital Monument<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/8Surgeons-Residence.png',
+						'content':'<div class="imgbox"><\/div><p>Surgeon&rsquo;s Residence<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/9The-Splendid-Daniella-Romano.png',
+						'content':'<div class="imgbox"><\/div><p>The Splendid Daniella Romano<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/10Submerging-Pier.png',
+						'content':'<div class="imgbox"><\/div><p>Submerging Pier<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/11Goose-Crossing2.png',
+						'content':'<div class="imgbox"><\/div><p>Goose Crossing2<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/12Old-Cannon.png',
+						'content':'<div class="imgbox"><\/div><p>Old Cannon<\/p>'
 					}
 				]
 			},
@@ -2375,7 +2485,9 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<div class="layer-1"><img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/skull-comp\/skull-1.png"><\/div><div class="layer-2"><img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/skull-comp\/skull-2.png"><\/div><div class="layer-3"><img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/skull-comp\/skull-3.png"><\/div><div class="layer-4"><img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/skull-comp\/skull-4.png"><\/div>'
+						'image': imgRoot + '\/noah_scalin\/skull-placeholder.png',
+						'content':'<div class="imgbox"><\/div><p>[placeholder for Skull]<\/p>',
+						'content-old':'<div class="layer-1"><img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/skull-comp\/skull-1.png"><\/div><div class="layer-2"><img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/skull-comp\/skull-2.png"><\/div><div class="layer-3"><img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/skull-comp\/skull-3.png"><\/div><div class="layer-4"><img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/skull-comp\/skull-4.png"><\/div>'
 					}
 				]
 			},
@@ -2817,7 +2929,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/1Railroad-Transom.png',
+						'image': imgRoot + '\/noah_scalin\/jenny-placeholder.png',
 						'content':'<div class="imgbox"><\/div><p>[placeholder for Jenny Portrait]<\/p>'
 					}
 				]
