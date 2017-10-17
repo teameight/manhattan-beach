@@ -814,7 +814,8 @@ function drawWave(t) {
 
 		  	uwBackgrounds.forEach(function(bg, index) {
 		  		if ( bg.slug === nextSlug ) {
-				  	bgImg.attr('src', bg.content);
+		  			bgImg.fadeOut();
+				  	bgImg.clone().appendTo(bgWrap);
 
 				  	bgWrap.css('transform', 'translateX(' + bg.posx + 'vw) translateZ(-600vw) scale(70) rotate3d(0, 1, 0, -30deg)');
 		  		}
