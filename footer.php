@@ -96,21 +96,26 @@
 	<?php } ?>
 
 <div class="uw-hud">
-	<div class="prevnext"><a class="prev"><span></span></a><a class="next"><span></span></a></div>
-	<a class="totop" href="#page"><img alt="Back to Top" title="Back to top" src="<?php echo get_template_directory_uri(); ?>/img/btotop.png"></a>
-	<nav id="uw-site-navigation" class="main-navigation">
-		<button type="button" class=" menu-toggle tcon tcon-menu--xcross" aria-label="toggle menu">
-		  <span class="tcon-menu__lines" aria-hidden="true"></span>
-		  <span class="tcon-visuallyhidden">Primary menu</span>
-		</button>
-		<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-				'container_class' => 'menu-uw'
-			) );
-		?>
-	</nav><!-- #site-navigation -->
+	<div class="node-label">
+		<span class="node-label-text">Initial Label</span>
+	</div>
+	<div class="hud-controls">
+		<div class="prevnext"><a class="prev"><span></span></a><a class="next"><span></span></a></div>
+		<a class="totop" href="#page"><img alt="Back to Top" title="Back to top" src="<?php echo get_template_directory_uri(); ?>/img/btotop.png"></a>
+		<nav id="uw-site-navigation" class="main-navigation">
+			<button type="button" class=" menu-toggle tcon tcon-menu--xcross" aria-label="toggle menu">
+			  <span class="tcon-menu__lines" aria-hidden="true"></span>
+			  <span class="tcon-visuallyhidden">Primary menu</span>
+			</button>
+			<?php
+				wp_nav_menu( array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary-menu',
+					'container_class' => 'menu-uw'
+				) );
+			?>
+		</nav><!-- #site-navigation -->
+	</div>
 </div><!-- #masthead -->
 </div>
 

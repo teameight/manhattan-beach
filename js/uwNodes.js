@@ -9,6 +9,7 @@ var uwNodes = [
 		'nodes': [
 			{
 				'slug':'home',
+				'label': 'Quotes',
 				'objects': [
 
 					{
@@ -42,6 +43,7 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/manhattan-beach',
+				'label': 'Quotes 2',
 				'objects': [
 					{
 						'class':'',
@@ -74,6 +76,7 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/a-visit-from-the-goon-squad',
+				'label': 'Quotes 3',
 				'objects': [
 
 					{
@@ -107,6 +110,7 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/the-keep',
+				'label': 'Phone',
 				'objects': [
 					{
 						'class':'image floating',
@@ -122,6 +126,7 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/look-at-me',
+				'label': 'Quotes 4',
 				'objects': [
 					{
 						'class':'',
@@ -154,6 +159,7 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/the-invisible-circus',
+				'label': 'Quotes 5',
 				'objects': [
 					{
 						'class':'image floating',
@@ -169,6 +175,7 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/emerald-city-and-other-stories',
+				'label': 'needs label',
 				'objects': [
 					{
 						'class':'',
@@ -219,6 +226,7 @@ var uwNodes = [
 			},
 			{
 				'slug':'non-fiction',
+				'label': 'needs label',
 				'objects': [
 					{
 						'class':'',
@@ -251,6 +259,7 @@ var uwNodes = [
 			},
 			{
 				'slug':'category/news',
+				'label': 'needs label',
 				'objects': [
 					{
 						'class':'image',
@@ -266,7 +275,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'about',
-				'objects': [
+				'label': 'needs label',
+					'objects': [
 					{
 						'class':'',
 						'posx':0,
@@ -298,7 +308,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'contact',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'',
 						'posx':0,
@@ -325,7 +336,8 @@ var uwNodes = [
 		'nodes': [
 			{
 				'slug':'home',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'text',
 						'posx':0,
@@ -399,7 +411,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/manhattan-beach',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -444,7 +457,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/a-visit-from-the-goon-squad',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -479,7 +493,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/the-keep',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -534,7 +549,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/look-at-me',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -589,7 +605,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/the-invisible-circus',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'video',
 						'posx':0,
@@ -648,7 +665,7 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/9engineroomtelegraph.png',
-						'content':'<div class="imgbox"><\/div><p>Engine Room Telegraph<\/p>'		
+						'content':'<div class="imgbox"><\/div><p>Engine Room Telegraph<\/p>'
 					},
 					{
 						'class':'image',
@@ -658,7 +675,7 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/10Pistons.png',
-						'content':'<div class="imgbox"><\/div><p>Connecting Rod<\/p>'		
+						'content':'<div class="imgbox"><\/div><p>Connecting Rod<\/p>'
 					},
 					{
 						'class':'image',
@@ -674,7 +691,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/emerald-city-and-other-stories',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -729,7 +747,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'non-fiction',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -764,7 +783,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'category/news',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -799,7 +819,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'about',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -834,7 +855,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'contact',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'',
 						'posx':0,
@@ -861,7 +883,8 @@ var uwNodes = [
 		'nodes': [
 			{
 				'slug':'home',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'',
 						'posx':0,
@@ -915,7 +938,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/manhattan-beach',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -950,7 +974,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/a-visit-from-the-goon-squad',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -965,7 +990,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/the-keep',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -990,7 +1016,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/look-at-me',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1115,7 +1142,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/the-invisible-circus',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'text',
 						'posx':0,
@@ -1229,7 +1257,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/emerald-city-and-other-stories',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1324,7 +1353,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'non-fiction',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1419,7 +1449,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'category/news',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1464,7 +1495,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'about',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1509,7 +1541,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'contact',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1528,7 +1561,8 @@ var uwNodes = [
 		'nodes': [
 			{
 				'slug':'home',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1543,7 +1577,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/manhattan-beach',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'text',
 						'posx':0,
@@ -1587,7 +1622,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/a-visit-from-the-goon-squad',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1612,7 +1648,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/the-keep',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1637,7 +1674,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/look-at-me',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1662,7 +1700,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/the-invisible-circus',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1707,7 +1746,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/emerald-city-and-other-stories',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1742,7 +1782,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'non-fiction',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1777,7 +1818,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'category/news',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1802,7 +1844,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'about',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1817,7 +1860,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'contact',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1856,7 +1900,8 @@ var uwNodes = [
 		'nodes': [
 			{
 				'slug':'home',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'skull spin no-click',
 						'posx':0,
@@ -1872,7 +1917,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/manhattan-beach',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'text',
 						'posx':0,
@@ -1916,7 +1962,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/a-visit-from-the-goon-squad',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1991,7 +2038,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/the-keep',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -2036,7 +2084,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/look-at-me',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -2121,7 +2170,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/the-invisible-circus',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -2186,7 +2236,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/emerald-city-and-other-stories',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -2261,7 +2312,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'non-fiction',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -2285,7 +2337,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'category/news',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'image floating',
 						'posx':0,
@@ -2300,7 +2353,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'about',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'jenny spin no-click',
 						'posx':0,
@@ -2314,7 +2368,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'contact',
-				'objects': [
+				'label': 'needs label',
+'objects': [
 					{
 						'class':'scrollbar closed no-click',
 						'posx':0,
@@ -2337,7 +2392,7 @@ var uwBackgrounds = [
  	'posy': 0,
  	'posz': -1600,
  	'scale': 70,
- 	'content': bgImgRoot + '/v1508258060/background/nyscraper.png'
+ 	'content': bgImgRoot + '/background/nyscraper.png'
  },
  {
  	'slug': 'books/manhattan-beach',
@@ -2345,7 +2400,7 @@ var uwBackgrounds = [
  	'posy': 100,
  	'posz': -1000,
  	'scale': 70,
- 	'content': bgImgRoot + '/v1508261787/background/small-ship_xjfipu.png'
+ 	'content': bgImgRoot + '/background/small-ship_xjfipu.png'
  },
  {
  	'slug': 'books/a-visit-from-the-goon-squad',
@@ -2353,7 +2408,7 @@ var uwBackgrounds = [
  	'posy': 1500,
  	'posz': -1600,
  	'scale': 100,
- 	'content': bgImgRoot + '/v1508268539/background/side-mountain.png'
+ 	'content': bgImgRoot + '/background/side-mountain.png'
  },
  {
  	'slug': 'books/the-keep',
@@ -2361,7 +2416,7 @@ var uwBackgrounds = [
  	'posy': 1000,
  	'posz': -1000,
  	'scale': 100,
- 	'content': bgImgRoot + '/v1508271060/background/mountain.png'
+ 	'content': bgImgRoot + '/background/mountain.png'
  },
  {
  	'slug': 'books/look-at-me',
@@ -2369,7 +2424,7 @@ var uwBackgrounds = [
  	'posy': 1000,
  	'posz': -2000,
  	'scale': 80,
- 	'content': bgImgRoot + '/v1508270508/background/big-ship.png'
+ 	'content': bgImgRoot + '/background/big-ship.png'
  },
  {
  	'slug': 'books/the-invisible-circus',
@@ -2377,7 +2432,7 @@ var uwBackgrounds = [
  	'posy': 0,
  	'posz': -1600,
  	'scale': 70,
- 	'content': bgImgRoot + '/v1508258060/background/nyscraper.png'
+ 	'content': bgImgRoot + '/background/nyscraper.png'
  },
  {
  	'slug': 'books/emerald-city-and-other-stories',
@@ -2385,7 +2440,7 @@ var uwBackgrounds = [
  	'posy': 1500,
  	'posz': -1600,
  	'scale': 100,
- 	'content': bgImgRoot + '/v1508268539/background/side-mountain.png'
+ 	'content': bgImgRoot + '/background/side-mountain.png'
  },
  {
  	'slug': 'non-fiction',
@@ -2393,7 +2448,7 @@ var uwBackgrounds = [
  	'posy': 100,
  	'posz': -1000,
  	'scale': 70,
- 	'content': bgImgRoot + '/v1508261787/background/small-ship_xjfipu.png'
+ 	'content': bgImgRoot + '/background/small-ship_xjfipu.png'
  },
  {
  	'slug': 'category/news',
@@ -2401,7 +2456,7 @@ var uwBackgrounds = [
  	'posy': 100,
  	'posz': 0,
  	'scale': 0,
- 	'content': bgImgRoot + '/v1508271060/background/mountain.png'
+ 	'content': bgImgRoot + '/background/mountain.png'
  },
  {
  	'slug': 'about',
@@ -2409,7 +2464,7 @@ var uwBackgrounds = [
  	'posy': 1000,
  	'posz': -2000,
  	'scale': 80,
- 	'content': bgImgRoot + '/v1508270508/background/big-ship.png'
+ 	'content': bgImgRoot + '/background/big-ship.png'
  },
  {
  	'slug': 'contact',
@@ -2417,6 +2472,6 @@ var uwBackgrounds = [
  	'posy': 1500,
  	'posz': -1600,
  	'scale': 100,
- 	'content': bgImgRoot + '/v1508268539/background/side-mountain.png'
+ 	'content': bgImgRoot + '/background/side-mountain.png'
  }
 ];
