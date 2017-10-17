@@ -407,8 +407,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/7View-Forward-From-Flying-Bridge.png',
-						'content':'<div class="imgbox"><\/div><p>View of Forward Main Deck from Flying Bridge<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/1Main-Deck.png',
+						'content':'<div class="imgbox"><\/div><p>Main Deck<\/p>'
 					},
 					{
 						'class':'image',
@@ -417,8 +417,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/8View-Aft-From-Flying-Bridge.png',
-						'content':'<div class="imgbox"><\/div><p>View Aft From Flying Bridge<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/2.png',
+						'content':'<div class="imgbox"><\/div>'
 					},
 					{
 						'class':'image',
@@ -439,6 +439,36 @@ var uwNodes = [
 						'rotx':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/4Boom-Cables.png',
 						'content':'<div class="imgbox"><\/div><p>Boom Cables<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/5Stack.png',
+						'content':'<div class="imgbox"><\/div><p>Stack<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/6Stack-With-Smoke.png',
+						'content':'<div class="imgbox"><\/div><p>Stack With Smoke<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/7View-Forward-From-Flying-Bridge.png',
+						'content':'<div class="imgbox"><\/div><p>View Forward From Flying Bridge<\/p>'
 					}
 				]
 			},
@@ -452,8 +482,18 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/6Stack-With-Smoke.png',
-						'content':'<div class="imgbox"><\/div><p>Stack With Smoke<\/p>'
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/8View-Aft-From-Flying-Bridge.png',
+						'content':'<div class="imgbox"><\/div><p>View Aft From Flying Bridge<\/p>'
+						},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/9Rear-Gun-Tub.png',
+						'content':'<div class="imgbox"><\/div><p>Rear Gun Tub<\/p>'		
 					},
 					{
 						'class':'image',
@@ -552,6 +592,16 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/7MastersOffice.png',
+						'content':'<div class="imgbox"><\/div><p>Master&rsquo;s Office<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/8OfficersSaloon.png',
 						'content':'<div class="imgbox"><\/div><p> Officers&rsquo; Saloon<\/p>'
 						},
@@ -617,6 +667,16 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/3Midway-Down.png',
+						'content':'<div class="imgbox"><\/div><p>Midway Down<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/4.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
@@ -629,6 +689,36 @@ var uwNodes = [
 						'rotx':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/5.png',
 						'content':'<div class="imgbox"><\/div>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/6ER-Wrenches.png',
+						'content':'<div class="imgbox"><\/div><p>Wrenches<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/7Beam-Pumps.png',
+						'content':'<div class="imgbox"><\/div><p>Beam Pumps<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/8Washing-Machine.png',
+						'content':'<div class="imgbox"><\/div><p>Washing Machine<\/p>'
 					},
 					{
 						'class':'video',
@@ -647,18 +737,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/9engineroomtelegraph.png',
-						'content':'<div class="imgbox"><\/div><p>Engine Room Telegraph<\/p>'		
-					},
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/10Pistons.png',
-						'content':'<div class="imgbox"><\/div><p>Connecting Rod<\/p>'		
+						'content':'<div class="imgbox"><\/div><p>Pistons<\/p>'		
 					},
 					{
 						'class':'image',
@@ -748,7 +828,17 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/2Flying-Bridge-Wheel.png',
-						'content':'<div class="imgbox"><\/div><p>Wheel<\/p>'
+						'content':'<div class="imgbox"><\/div><p>Flying Bridge Wheel<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/3Hawspipe.png',
+						'content':'<div class="imgbox"><\/div><p>Hawspipe<\/p>'
 					},
 					{
 						'class':'image',
@@ -758,7 +848,7 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/4Flying-Bridge-Engine-Room-Telegraph.png',
-						'content':'<div class="imgbox"><\/div><p>Engine Room Telegraph<\/p>'
+						'content':'<div class="imgbox"><\/div><p>Flying Bridge Engine Room Telegraph<\/p>'
 					}
 				]
 			},
@@ -772,8 +862,48 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/5General-Alarm.png',
+						'content':'<div class="imgbox"><\/div><p>General Alarm<\/p>'
+								},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/6Fire-Axe.png',
+						'content':'<div class="imgbox"><\/div><p>Fire Axe<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/7View-Down-to-Steering-Engine.png',
+						'content':'<div class="imgbox"><\/div><p>View Down to Steering Engine<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/8.png',
-						'content':'<div class="imgbox"><\/div><p>Steering Engine<\/p>'
+						'content':'<div class="imgbox"><\/div>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/9Wheel-House-Speaking-Tubes.png',
+						'content':'<div class="imgbox"><\/div><p>Wheel House Speaking Tubes<\/p>'
 					},
 					{
 						'class':'image',
@@ -807,6 +937,36 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/1JOB-Stats.png',
+						'content':'<div class="imgbox"><\/div><p>Jeremiah O&rsquo;Brien Stats<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/2Liberty-Ship-Diagram.png',
+						'content':'<div class="imgbox"><\/div><p>Liberty Ship Diagram<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/3Liberty-Deck-Plan.png',
+						'content':'<div class="imgbox"><\/div><p>Liberty Deck Plan<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/4Convoy-Diagram.png',
 						'content':'<div class="imgbox"><\/div><p>Convoy Diagram<\/p>'
 					},
@@ -819,6 +979,16 @@ var uwNodes = [
 						'rotx':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/5Engine-Room-Diagram.png',
 						'content':'<div class="imgbox"><\/div><p>Engine Room Diagram<\/p>'
+								},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/5Piston-Diagram.png',
+						'content':'<div class="imgbox"><\/div><p>Piston Diagram<\/p>'
 					},
 					{
 						'class':'image',
@@ -863,15 +1033,6 @@ var uwNodes = [
 				'slug':'home',
 				'objects': [
 					{
-						'class':'',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'content':'<p>The Brooklyn Navy Yard was the largest builder and repairer of Allied ships during WWII. It built 17 battleships and repaired 5000.<\/p>'
-					},
-					{
 						'class':'image',
 						'posx':0,
 						'posy':0,
@@ -879,7 +1040,7 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/1Bldg77.png',
-						'content':'<div class="imgbox"><\/div><p>Building 77 is where the Captain of the Yard&rsquo;s office was located. These images, taken in 2005, show Bldg 77 untouched since the War. It has since been fully renovated and is now in industrial use.<\/p>'
+						'content':'<div class="imgbox"><\/div><p>Building 77<\/p>'
 					},
 					{
 						'class':'image',
@@ -910,7 +1071,17 @@ var uwNodes = [
 						'rotx':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/4Ghost-Maps2.png',
 						'content':'<div class="imgbox"><\/div><p>Ghost Maps2<\/p>'
-					}
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/5Ceiling.png',
+						'content':'<div class="imgbox"><\/div><p>Ceiling<\/p>'
+					},
 				]
 			},
 			{
@@ -923,8 +1094,28 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/6Peeling-Walls.png',
+						'content':'<div class="imgbox"><\/div><p>Peeling Walls<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/7Peeling-Walls2.png',
+						'content':'<div class="imgbox"><\/div><p>Peeling Walls2<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/8Mail-Room.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgbox"><\/div><p>Mail Room<\/p>'
 					},
 					{
 						'class':'image',
@@ -958,9 +1149,49 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/2OutdoorViews\/1Sands-Street-Gates.png',
+						'content':'<div class="imgbox"><\/div><p>Sands Street Gates<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/2OutdoorViews\/2Sands-Street-Gate-Detail.png',
+						'content':'<div class="imgbox"><\/div><p>Sands Street Gate Detail<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/2OutdoorViews\/3View-From-Bldg-77.png',
+						'content':'<div class="imgbox"><\/div><p>View From Bldg 77<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/2OutdoorViews\/4View-From-Bldg-772.png',
-						'content':'<div class="imgbox"><\/div><p>View from Bldg 77, 2005<\/p>'
-					}
+						'content':'<div class="imgbox"><\/div><p>View From Bldg 772<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/2OutdoorViews\/5Cranes.png',
+						'content':'<div class="imgbox"><\/div><p>Cranes<\/p>'
+					},
 				]
 			},
 			{
@@ -974,7 +1205,27 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/3Artifacts\/1Washroom.png',
-						'content':'<div class="imgbox"><\/div><p>Artifacts of WWII: washroom<\/p>'
+						'content':'<div class="imgbox"><\/div><p>Washroom<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/3Artifacts\/2Sink.png',
+						'content':'<div class="imgbox"><\/div><p>Sink<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/3Artifacts\/3Wooden-Molds.png',
+						'content':'<div class="imgbox"><\/div><p>Wooden Molds<\/p>'
 					},
 					{
 						'class':'image',
@@ -984,7 +1235,7 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/3Artifacts\/4Molds.png',
-						'content':'<div class="imgbox"><\/div><p>Wood shipfitting molds<\/p>'
+						'content':'<div class="imgbox"><\/div><p>Molds<\/p>'
 					}
 				]
 			},
@@ -1172,7 +1423,27 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
+						'image': imgRoot + '\/MarkV-Present-Day\/1JennyinDress\/thumb_100_2471_1024.png',
+						'content':'<div class="imgbox"><\/div>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/1JennyinDress\/thumb_100_2472_1024.png',
+						'content':'<div class="imgbox"><\/div>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/MarkV-Present-Day\/1JennyinDress\/thumb_100_2474_1024.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1193,6 +1464,16 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/1JennyinDress\/thumb_100_2477_1024.png',
+						'content':'<div class="imgbox"><\/div>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/MarkV-Present-Day\/1JennyinDress\/thumb_100_2478_1024.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1247,6 +1528,16 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
+						'image': imgRoot + '\/MarkV-Present-Day\/2JennyInDress\/thumb_100_2483_1024.png',
+						'content':'<div class="imgbox"><\/div>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/2JennyInDress\/thumb_100_2484_1024.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
@@ -1278,6 +1569,16 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/2JennyInDress\/thumb_100_2487_1024.png',
+						'content':'<div class="imgbox"><\/div>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/MarkV-Present-Day\/2JennyInDress\/thumb_100_2488_1024.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1352,7 +1653,27 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
+						'image': imgRoot + '\/MarkV-Present-Day\/3JennyInHat\/thumb_100_2496_1024.png',
+						'content':'<div class="imgbox"><\/div>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/3JennyInHat\/thumb_100_2497_1024.png',
+						'content':'<div class="imgbox"><\/div>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/MarkV-Present-Day\/3JennyInHat\/thumb_100_2499_1024.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1414,12 +1735,32 @@ var uwNodes = [
 						'rotx':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/3JennyInHat\/thumb_100_2506_1024.png',
 						'content':'<div class="imgbox"><\/div>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/MarkV-Present-Day\/3JennyInHat\/thumb_100_2507_1024.png',
+						'content':'<div class="imgbox"><\/div>'
 					}
 				]
 			},
 			{
 				'slug':'category/news',
 				'objects': [
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/MarkV-Present-Day\/4JennyDisrobing\/thumb_100_2512_1024.png',
+						'content':'<div class="imgbox"><\/div>'
+					},
 					{
 						'class':'image',
 						'posx':0,
@@ -1459,6 +1800,16 @@ var uwNodes = [
 						'rotx':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/4JennyDisrobing\/thumb_100_2516_1024.png',
 						'content':'<div class="imgbox"><\/div>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/MarkV-Present-Day\/4JennyDisrobing\/thumb_100_2517_1024.png',
+						'content':'<div class="imgbox"><\/div>'
 					}
 				]
 			},
@@ -1473,7 +1824,7 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/5ArmyDiversinTank\/thumb_100_2509_1024.png',
-						'content':'<div class="imgbox"><\/div><p>Present-Day Divers Using in the old Mark V Dress<\/p>'
+						'content':'<div class="imgbox"><\/div>'
 					},
 					{
 						'class':'image',
@@ -1483,6 +1834,16 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/5ArmyDiversinTank\/thumb_100_2510_1024.png',
+						'content':'<div class="imgbox"><\/div>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/MarkV-Present-Day\/5ArmyDiversinTank\/thumb_100_2511_1024.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
@@ -1518,7 +1879,57 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/6NewEquipment\/1Air Control Console and Air Distribution Panel.png',
-						'content':'<div class="imgbox"><\/div><p>Placeholder for something<\/p>'
+						'content':'<div class="imgbox"><\/div><p>Air Control Console and Air Distribution Panel<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/MarkV-Present-Day\/6NewEquipment\/2Air Control Console.png',
+						'content':'<div class="imgbox"><\/div><p>Air Control Console<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/MarkV-Present-Day\/6NewEquipment\/3Communication Box.png',
+						'content':'<div class="imgbox"><\/div><p>Communication Box<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/MarkV-Present-Day\/6NewEquipment\/4Air Distribution Panel.png',
+						'content':'<div class="imgbox"><\/div><p>Air Distribution Panel<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/MarkV-Present-Day\/6NewEquipment\/5Pneumo gauges.png',
+						'content':'<div class="imgbox"><\/div><p>Pneumo gauges<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/MarkV-Present-Day\/6NewEquipment\/6Tender at Panel.png',
+						'content':'<div class="imgbox"><\/div><p>Tender at Panel<\/p>'
 					}
 				]
 			}
@@ -1551,7 +1962,17 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<p>These photos of the Brooklyn Navy Yard in the 1930s and 1940s were taken of images at the National Archives.<\/p>'
+						'content':'<p>These photos were taken of photographs at the National Archives in the Old Custom House in lower Manhattan<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/1BNY-WWII-Aerial-View.png',
+						'content':'<div class="imgbox"><\/div><p>BNY WWII Aerial View<\/p>'
 					},
 					{
 						'class':'image',
@@ -1562,6 +1983,16 @@ var uwNodes = [
 						'rotx':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/2Bldg-77-View-From-Jan-6-1941.png',
 						'content':'<div class="imgbox"><\/div><p>Bldg 77 View From, Jan 6, 1941<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/3Bldg-77-View-From-Sept-3-1941.png',
+						'content':'<div class="imgbox"><\/div><p>Bldg 77 View From, Sept 3, 1941<\/p>'
 					},
 					{
 						'class':'image',
@@ -1582,6 +2013,16 @@ var uwNodes = [
 						'rotx':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/5Bldg-77-View-North-from-Oct-18-1941.png',
 						'content':'<div class="imgbox"><\/div><p>Bldg 77 View North from Oct 18, 1941<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/6Bldg-77-View-North-Oct-1941.png',
+						'content':'<div class="imgbox"><\/div><p>Bldg 77 View North, Oct. 1941<\/p>'
 					}
 				]
 			},
@@ -1606,7 +2047,47 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/8Night-View-2.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgbox"><\/div><p>Night View 2<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/9Barracks-April-3-1941.png',
+						'content':'<div class="imgbox"><\/div><p>Barracks April 3, 1941<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/10Barracks-May-18-1941.png',
+						'content':'<div class="imgbox"><\/div><p>Barracks May 18, 1941<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/11Barracks-June-10-1941-2.png',
+						'content':'<div class="imgbox"><\/div><p>Barracks June 10, 1941 2<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/12Barracks-Nov-15-1941.png',
+						'content':'<div class="imgbox"><\/div><p>Barracks Nov. 15, 1941<\/p>'
 					}
 				]
 			},
@@ -1630,14 +2111,44 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/2Buildings\/2Bldg-128-the-Machine-Shop-Exterior.png',
+						'content':'<div class="imgbox"><\/div><p>Bldg 128, the Machine Shop, Exterior<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/2Buildings\/3Bldg-128-Entrance.png',
-						'content':'<div class="imgbox"><\/div><p>Bldg 128, the Machine Shop<\/p>'
+						'content':'<div class="imgbox"><\/div><p>Bldg 128 Entrance<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/2Buildings\/4Bldg-128-Machine-Shop-1942.png',
+						'content':'<div class="imgbox"><\/div><p>Bldg 128 Machine Shop 1942<\/p>'
 					}
 				]
 			},
 			{
 				'slug':'books/look-at-me',
 				'objects': [
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/2Buildings\/5Bldg-128.png',
+						'content':'<div class="imgbox"><\/div><p>Bldg 128<\/p>'
+					},
 					{
 						'class':'image',
 						'posx':0,
@@ -1657,7 +2168,17 @@ var uwNodes = [
 						'rotx':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/2Buildings\/7Bldg-128.png',
 						'content':'<div class="imgbox"><\/div><p>Bldg 128<\/p>'
-					}
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/2Buildings\/8Cell-Block-in-Receiving-Barracks.png',
+						'content':'<div class="imgbox"><\/div><p>Cell Block in Receiving Barracks<\/p>'
+					},
 				]
 			},
 			{
@@ -1670,7 +2191,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/1SandsStreetGate1937.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/1Sands Street Gate 1937.png',
 						'content':'<div class="imgbox"><\/div><p>Sands Street Gate 1937<\/p>'
 					},
 					{
@@ -1690,6 +2211,16 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/3Building-Ways.png',
+						'content':'<div class="imgbox"><\/div><p>Building Ways<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/4Building-Ways-1930.png',
 						'content':'<div class="imgbox"><\/div><p>Building Ways 1930<\/p>'
 					},
@@ -1701,7 +2232,7 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/5BuildingWays2.png',
-						'content':'<div class="imgbox"><\/div><p>Building Ways<\/p>'
+						'content':'<div class="imgbox"><\/div><p>BuildingWays2<\/p>'
 					}
 				]
 			},
@@ -1735,6 +2266,16 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/8CommandantsHouse.png',
+						'content':'<div class="imgbox"><\/div><p>Commandant&rsquo;sHouse<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/9CommandantsHouse1936.png',
 						'content':'<div class="imgbox"><\/div><p>CommandantsHouse1936<\/p>'
 					}
@@ -1760,6 +2301,16 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/11DryDock1.png',
+						'content':'<div class="imgbox"><\/div><p>DryDock1<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/12Hammerhead-CraneinDistance.png',
 						'content':'<div class="imgbox"><\/div><p>Hammerhead CraneinDistance<\/p>'
 					},
@@ -1772,6 +2323,16 @@ var uwNodes = [
 						'rotx':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/13HammerheadCrane.png',
 						'content':'<div class="imgbox"><\/div><p>HammerheadCrane<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/14NewCumberlandGateWPA.png',
+						'content':'<div class="imgbox"><\/div><p>NewCumberlandGateWPA<\/p>'
 					}
 				]
 			},
@@ -1795,6 +2356,36 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/2Bricklayers-.png',
+						'content':'<div class="imgbox"><\/div><p>Bricklayers <\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/3The-Halloran-Dolly-&-Crew-1931.png',
+						'content':'<div class="imgbox"><\/div><p>The Halloran Dolly & Crew, 1931<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/4Construction-beside-ship-1941.png',
+						'content':'<div class="imgbox"><\/div><p>Construction beside ship 1941<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/5Dry-Docks-5-&-6-Construction-1941.png',
 						'content':'<div class="imgbox"><\/div><p>Dry Docks 5 & 6 Construction, 1941<\/p>'
 					}
@@ -1810,9 +2401,39 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/7Dry-Docks-5-6-Construction-1941.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/6Dry-Docks-5&6-Construction-and-View-of-Wmsburg-Bank-Bldg.png',
+						'content':'<div class="imgbox"><\/div><p>Dry Docks 5&6 Construction and View of Wmsburg Bank Bldg<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/7Dry-Docks-5&6-Construction-1941.png',
 						'content':'<div class="imgbox"><\/div><p>Dry Docks 5&6 Construction, 1941<\/p>'
-					}
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/8Repairs-to-Dry-Dock-3-1930.png',
+						'content':'<div class="imgbox"><\/div><p>Repairs to Dry Dock 3, 1930<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/9Repairs-To-Dry-Dock-3.png',
+						'content':'<div class="imgbox"><\/div><p>Repairs To Dry Dock 3<\/p>'
+					},
 				]
 			},
 			{
