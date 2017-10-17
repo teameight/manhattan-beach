@@ -897,6 +897,7 @@ a.btn {
     cursor: -webkit-grab;
     width: 100%;
     height: 100%;
+    transform: rotateY(30deg) rotateX(5deg);
     /*animation: float-wobble 84s infinite linear;*/ }
   .node-wrapper .spin .layer-1 {
     transform: translateZ(20vw); }
@@ -931,7 +932,6 @@ a.btn {
     width: 100%;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    transform: rotateY(30deg) rotateX(5deg);
     cursor: pointer;
     transition: transform 1s ease;
     -webkit-backface-visibility: hidden; }

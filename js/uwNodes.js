@@ -2923,14 +2923,13 @@ var uwNodes = [
 				'slug':'about',
 				'objects': [
 					{
-						'class':'image',
+						'class':'jenny spin no-click',
 						'posx':0,
 						'posy':0,
 						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'image': imgRoot + '\/noah_scalin\/jenny-placeholder.png',
-						'content':'<div class="imgbox"><\/div><p>[placeholder for Jenny Portrait]<\/p>'
+						'roty':30,
+						'rotx':5,
+						'content':'<div class="layer-1"><img alt="" src="' + imgRoot + '\/noah_scalin\/jenny-1.png"><\/div><div class="layer-2"><img alt="" src="' + imgRoot + '\/noah_scalin\/jenny-2.png"><\/div><div class="layer-3"><img alt="" src="' + imgRoot + '\/noah_scalin\/jenny-3.png"><\/div><div class="layer-4"><img alt="" src="' + imgRoot + '\/noah_scalin\/jenny-4.png"><\/div>'
 					}
 				]
 			},

@@ -1037,7 +1037,7 @@ function drawWave(t) {
 			  		posz = posz || 0;
 						offset_percent = (((touch.offset.x - wrapper_offset.left)-trigger)/wrapper_width); // 60 degree range
 
-						console.log(offset_percent);
+						// console.log(offset_percent);
 
 						var offsettemp = startY + (offset_percent)*60;
 
@@ -1051,7 +1051,7 @@ function drawWave(t) {
 								offsetX = 0;
 							}
 
-							object.css('transform', 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw) rotateY(' + offsetY + 'deg) rotateX(' + offsetX + 'deg)');
+							object.css('transform', 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw) rotateX(' + offsetX + 'deg) rotateY(' + offsetY + 'deg)');
 
 						}
 	        }
