@@ -473,8 +473,8 @@ function drawWave(t) {
 			var screenHvw = windowH/windowW,
 				pageHvw = offset/windowW;
 
-				console.log(screenHvw);
-				console.log(pageHvw);
+				// console.log(screenHvw);
+				// console.log(pageHvw);
 
 				if(pageHvw < screenHvw){
 					pageHvw = screenHvw;
@@ -492,7 +492,7 @@ function drawWave(t) {
 			var $wave_offset = (pageHvw - screenHvw) * ((300 * ratioH) - (60 * ratioMult)); // this also sets the speed of the wave parallax compared to scroll. higher = slower.
 				//it also controls at which point in the scroll the last slide goes off the top of the screen
 
-			console.log(ratioH);
+			// console.log(ratioH);
 
 
 			$wave_reveal = 25.118 * ratioMult - (10 * ratioH);
@@ -595,7 +595,7 @@ function drawWave(t) {
 
 		function buildNodes(){
 
-			// console.log(current_slug.slug);
+			// console.log(windowW);
 
 			var nodeTemplate = $('.nw-template');
 			var zOffset = -200;
@@ -604,7 +604,7 @@ function drawWave(t) {
 			//console.log(uwNodes);
 
 			uwNodes.forEach(function(tier, t) {
-				console.log(tier.tier);
+				// console.log(tier.tier);
 
 			    nodeTemplate.clone()
 			      .removeClass('nw-template')
@@ -639,12 +639,13 @@ function drawWave(t) {
 					      var obj = node.objects[i],
 					      		bgimg = '',
 					      		bgimgsm = '';
-					      // console.log(obj);
 
 					      if(obj.image){
 					      	bgimg = obj.image;
-					      	bgimgsm = obj.imageSm;
+					      	bgimgsm = bgimg.replace('upload\/', 'upload\/mobile\/');
+					      //	console.log(bgimgsm);
 					      }
+
 
 					      objTemplate.clone()
 					        .removeClass('obj-template')
@@ -662,10 +663,14 @@ function drawWave(t) {
 					        .appendTo( '.nw-' + t + ' .camera');
 
 					        //load the images as backgrounds, to start, just for the first two slide groups in each tier
+					        var imgSize = bgimg;
+					        if(windowW < 900){
+					        	imgSize = bgimgsm;
+					        }
 					        if(obj.image && n < 2){
 
 					        	$('.nw-'+ t +' .object-' + n + '-' + i + ' .imgbox').css({
-					        		'background-image': 'url(' + bgimg + ')'
+					        		'background-image': 'url(' + imgSize + ')'
 					        	})
 					        }
 					      o++;
@@ -684,7 +689,7 @@ function drawWave(t) {
 		function buildBackground() {
 			var bgWrap = $('.st-1');
 			var bgImg = $('.st-1 img');
-			console.log(uwBackgrounds);
+			// console.log(uwBackgrounds);
 
 			uwBackgrounds.forEach(function(bg, index) {
 				if ( bg.slug === current_slug.slug ) {
@@ -738,7 +743,7 @@ function drawWave(t) {
 			} else {
 				var interval = 50;
 			}
-			console.log(interval)
+			// console.log(interval)
 			var bg = $('.st-1');
 			var bgImg = bg.find('img');
 			var posx = bg.data('posx');
@@ -746,14 +751,14 @@ function drawWave(t) {
 			var posz = bg.data('posz') + interval;
 			var scale = bg.data('scale');
 
-			console.log(posz);
+			// console.log(posz);
 
 
 			bg.css({'transform': 'translate3d('+posx+'vw, ' +posy+ 'vh, ' +posz+'vw) scale('+scale+')', 'transition': 'transform 2000ms ease-in-out'});
 
 			bg.data('posz', posz);
 
-			console.log('after nudge', bg.data('posz'));
+			// console.log('after nudge', bg.data('posz'));
 		}
 
 
@@ -939,6 +944,9 @@ function drawWave(t) {
 				  $(this).find('.object[data-slug="'+afterSlug+'"]').each(function() {
 
 				  		var bgimg = $(this).data('bgimg');
+			        if(windowW < 900){
+			        	bgimg = $(this).data('bgimgsm');
+			        }
 
 				  		if( bgimg ){
 

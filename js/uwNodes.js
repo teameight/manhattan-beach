@@ -1,7 +1,7 @@
 var zInterval = -200,
 
 		// imgRoot = '\/\/localhost/htdocs/egan-img';
-		imgRoot = '\/\/staging.jenniferegan.com\/wp-content\/themes\/manhattan-beach\/egan-img';
+		imgRoot = '\/\/res.cloudinary.com\/egan\/image\/upload';
 		bgImgRoot = '\/\/res.cloudinary.com\/egan\/image\/upload';
 
 var uwNodes = [
@@ -487,7 +487,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/1Porthole.png',
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3OfficesCabins\/1Porthole.png',
 						'content':'<div class="imgbox"><\/div><p>Porthole<\/p>'
 					},
 					{
@@ -497,7 +497,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/2SeamanQuarters.png',
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3OfficesCabins\/2SeamanQuarters.png',
 						'content':'<div class="imgbox"><\/div><p>Seaman Quarters<\/p>'
 					},
 					{
@@ -507,7 +507,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/3FirstMateStateroom.png',
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3OfficesCabins\/3FirstMateStateroom.png',
 						'content':'<div class="imgbox"><\/div><p>First Mate Stateroom<\/p>'
 					},
 					{
@@ -517,7 +517,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/4GunnersBunks.png',
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3OfficesCabins\/4GunnersBunks.png',
 						'content':'<div class="imgbox"><\/div><p>Gunners Bunks<\/p>'
 					},
 					{
@@ -527,7 +527,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/5MessHall.png',
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3OfficesCabins\/5MessHall.png',
 						'content':'<div class="imgbox"><\/div><p>Mess Hall<\/p>'
 					}
 				]
@@ -542,7 +542,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/6NavigationChartRoom.png',
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3OfficesCabins\/6NavigationChartRoom.png',
 						'content':'<div class="imgbox"><\/div><p>Navigation Chart Room<\/p>'
 					},
 					{
@@ -552,7 +552,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/8OfficersSaloon.png',
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3OfficesCabins\/8OfficersSaloon.png',
 						'content':'<div class="imgbox"><\/div><p> Officers&rsquo; Saloon<\/p>'
 						},
 					{
@@ -562,7 +562,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/9RadioShack.png',
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3OfficesCabins\/9RadioShack.png',
 						'content':'<div class="imgbox"><\/div><p>Radio Shack<\/p>'		
 					},
 					{
@@ -572,7 +572,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/10SparksStateroom.png',
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3OfficesCabins\/10SparksStateroom.png',
 						'content':'<div class="imgbox"><\/div><p>Sparks&rsquo; Stateroom<\/p>'
 					},
 					{
@@ -582,7 +582,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3Offices&Cabins\/11ThirdMateStateroom.png',
+						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3OfficesCabins\/11ThirdMateStateroom.png',
 						'content':'<div class="imgbox"><\/div><p>Third Mate Stateroom<\/p>'
 					}
 				]
@@ -1795,7 +1795,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/5Dry-Docks-5-&-6-Construction-1941.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/5Dry-Docks-5-_-6-Construction-1941.png',
 						'content':'<div class="imgbox"><\/div><p>Dry Docks 5 & 6 Construction, 1941<\/p>'
 					}
 				]
@@ -1810,7 +1810,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/7Dry-Docks-5-6-Construction-1941.png',
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/7Dry-Docks-5_6-Construction-1941.png',
 						'content':'<div class="imgbox"><\/div><p>Dry Docks 5&6 Construction, 1941<\/p>'
 					}
 				]
@@ -2094,7 +2094,7 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/DivingDressEquipment\/4Compressors\/61&2Divers.png',
+						'image': imgRoot + '\/DivingDressEquipment\/4Compressors\/61_2Divers.png',
 						'content':'<div class="imgbox"><\/div><p>1 &amp; 2 Divers<\/p>'
 					},
 					{
