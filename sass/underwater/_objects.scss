@@ -81,6 +81,10 @@
     @include preserve3d;
     animation: float-wobble 55s infinite linear;
     transition: opacity $cycleLength ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 90vh;
   }
 
   .camera .object {
