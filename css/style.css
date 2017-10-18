@@ -882,7 +882,7 @@ a.btn {
   position: relative;
   margin-top: 280vh;
   width: 80vw;
-  max-width: 98vh;
+  max-width: 70vh;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
@@ -937,11 +937,7 @@ a.btn {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     animation: float-wobble 55s infinite linear;
-    transition: opacity 2000ms ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 90vh; }
+    transition: opacity 2000ms ease; }
   .node .camera .object {
     position: absolute;
     pointer-events: initial; }
@@ -1018,7 +1014,7 @@ a.btn {
   transition: opacity 1000ms ease;
   -webkit-backface-visibility: hidden; }
 
-.node .object.image .inner p {
+.node .object:not(.text) .inner p {
   padding: .5em 0 1em;
   font-size: 0.8em;
   letter-spacing: 1.18px;
