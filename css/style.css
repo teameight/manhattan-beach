@@ -471,24 +471,26 @@ h4,
       padding-left: 1em; }
 
 .uw-hud {
-  pointer-events: initial;
   text-align: right;
-  width: 270px;
+  width: 100%;
   list-style-type: none;
   margin: 0;
-  padding: 10px 0;
-  right: 2.5vw;
+  padding: 10px 50px;
   position: fixed;
   bottom: 0;
   font-family: "Cera", san-serif;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.7);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   pointer-events: none;
   opacity: 0;
   transition: opacity 2s ease; }
+  @media screen and (min-width: 740px) {
+    .uw-hud {
+      flex-direction: row; } }
   .uw-hud.show {
     opacity: .85;
     pointer-events: initial; }
@@ -503,7 +505,7 @@ h4,
       height: auto; }
   .uw-hud .prevnext {
     height: 40px;
-    width: 90px;
+    width: 80px;
     display: block;
     perspective-origin: -10vw top;
     perspective: 80vw; }
@@ -542,7 +544,8 @@ h4,
         border-top: none;
         border-left: none; }
   .uw-hud #uw-site-navigation {
-    height: 40px; }
+    height: 40px;
+    width: 25px; }
     .uw-hud #uw-site-navigation.toggled .menu-uw {
       overflow-y: auto;
       transform: translateX(0); }
@@ -573,6 +576,14 @@ h4,
   .uw-hud .tcon-menu__lines, .uw-hud .tcon-menu__lines::before, .uw-hud .tcon-menu__lines::after {
     background: white;
     height: 1px; }
+
+.hud-controls {
+  width: 270px;
+  display: flex;
+  justify-content: space-around; }
+
+.node-label-text {
+  transition: all 500ms ease; }
 
 .wp-caption-text {
   font-family: "Cera", san-serif; }

@@ -632,6 +632,10 @@ function drawWave(t) {
 				  	}
 				    var node = tier.nodes[n];
 				    var thisSlug = node.slug;
+				    var thisLabel = node.label;
+				    if ( !thisLabel ) {
+				    	thisLabel = 'Needs label';
+				    }
 				    var objTemplate = $('.nw-'+ t + ' .obj-template');
 
 				    	for (var i = 0; i < node.objects.length; i++) {
@@ -659,6 +663,7 @@ function drawWave(t) {
 					        .data( "roty", obj.roty )
 					        .data( "bgimg", bgimg )
 					        .data( "bgimgsm", bgimgsm )
+					        .data( "label", thisLabel )
 					        .html('<div class="inner">'+obj.content+'</div>')
 					        .appendTo( '.nw-' + t + ' .camera');
 
@@ -758,7 +763,6 @@ function drawWave(t) {
 
 			bg.data('posz', posz);
 
-			// console.log('after nudge', bg.data('posz'));
 		}
 
 
@@ -778,6 +782,8 @@ function drawWave(t) {
 
 		$( ".underwater" ).on( "click", ".camera .object:not(.no-click)", function(event) {
 			event.preventDefault();
+
+			$that = $(this);
 
 			clickCount++;
 
@@ -836,6 +842,8 @@ function drawWave(t) {
 
 				// get the next element's slug
 				nextSlug = elem.data('slug');
+				// get the next element's label
+				nextLabel = elem.data('label');
 
 				// } else {
 				// 	// var elem = $( this ).siblings(':first-child');
@@ -845,7 +853,10 @@ function drawWave(t) {
 		  } else {
 		  	var elem = nodeObj;
 		  	nextSlug = elem.data('slug');
+				nextLabel = elem.data('label');
 		  }
+
+			$('.node-label-text').text(elem.data('label'));
 
 		  // console.log('here', hereSlug, 'next', nextSlug);
 
@@ -977,7 +988,7 @@ function drawWave(t) {
 		  elem.addClass('here');
 
 
-		}
+		} // end swimAround()
 
 		var swimTimer,
 				swimCount = 0;
