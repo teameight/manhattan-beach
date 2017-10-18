@@ -334,7 +334,7 @@ waveDraw = function () {
 
     // Update the time and waveDraw again
 
-		waveDraw.seconds = waveDraw.seconds - 0.004;
+		waveDraw.seconds = waveDraw.seconds - 0.012;
     waveDraw.t = waveDraw.seconds*Math.PI;
 
 		requestAnimFrame(waveDraw);
