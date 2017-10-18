@@ -856,7 +856,9 @@ function drawWave(t) {
 				nextLabel = elem.data('label');
 		  }
 
-			$('.node-label-text').text(elem.data('label'));
+			$('.node-label-text').fadeOut( 400, function() {
+    			$(this).html(elem.data('label')).fadeIn('slow');
+  		});
 
 		  // console.log('here', hereSlug, 'next', nextSlug);
 

@@ -97,7 +97,7 @@
 
 <div class="uw-hud">
 	<div class="node-label">
-		<span class="node-label-text">Initial Label</span>
+		<span class="node-label-text"></span>
 	</div>
 	<div class="hud-controls">
 		<div class="prevnext"><a class="prev"><span></span></a><a class="next"><span></span></a></div>

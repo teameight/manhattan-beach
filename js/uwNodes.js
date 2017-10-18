@@ -9,7 +9,7 @@ var uwNodes = [
 		'nodes': [
 			{
 				'slug':'home',
-				'label': 'Quotes',
+				'label': '',
 				'objects': [
 
 					{
@@ -43,7 +43,7 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/manhattan-beach',
-				'label': 'Quotes 2',
+				'label': '',
 				'objects': [
 					{
 						'class':'',
@@ -76,7 +76,7 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/a-visit-from-the-goon-squad',
-				'label': 'Quotes 3',
+				'label': '',
 				'objects': [
 
 					{
@@ -110,7 +110,7 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/the-keep',
-				'label': 'Phone',
+				'label': '',
 				'objects': [
 					{
 						'class':'image floating',
@@ -126,7 +126,7 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/look-at-me',
-				'label': 'Quotes 4',
+				'label': '',
 				'objects': [
 					{
 						'class':'',
@@ -159,7 +159,7 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/the-invisible-circus',
-				'label': 'Quotes 5',
+				'label': '',
 				'objects': [
 					{
 						'class':'image floating',
@@ -175,7 +175,7 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/emerald-city-and-other-stories',
-				'label': 'needs label',
+				'label': '',
 				'objects': [
 					{
 						'class':'',
@@ -226,7 +226,7 @@ var uwNodes = [
 			},
 			{
 				'slug':'non-fiction',
-				'label': 'needs label',
+				'label': '',
 				'objects': [
 					{
 						'class':'',
@@ -259,7 +259,7 @@ var uwNodes = [
 			},
 			{
 				'slug':'category/news',
-				'label': 'needs label',
+				'label': '',
 				'objects': [
 					{
 						'class':'image',
@@ -275,7 +275,7 @@ var uwNodes = [
 			},
 			{
 				'slug':'about',
-				'label': 'needs label',
+				'label': '',
 					'objects': [
 					{
 						'class':'',
@@ -308,8 +308,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'contact',
-				'label': 'needs label',
-'objects': [
+				'label': '',
+				'objects': [
 					{
 						'class':'',
 						'posx':0,
@@ -336,8 +336,8 @@ var uwNodes = [
 		'nodes': [
 			{
 				'slug':'home',
-				'label': 'needs label',
-'objects': [
+				'label': 'The Jeremiah O&rsquo;Brien',
+				'objects': [
 					{
 						'class':'text',
 						'posx':0,
@@ -411,8 +411,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/manhattan-beach',
-				'label': 'needs label',
-'objects': [
+				'label': 'The Jeremiah O&rsquo;Brien',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -457,8 +457,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/a-visit-from-the-goon-squad',
-				'label': 'needs label',
-'objects': [
+				'label': 'The Jeremiah O&rsquo;Brien',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -493,8 +493,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/the-keep',
-				'label': 'needs label',
-'objects': [
+				'label': 'The Jeremiah O&rsquo;Brien',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -549,8 +549,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/look-at-me',
-				'label': 'needs label',
-'objects': [
+				'label': 'The Jeremiah O&rsquo;Brien',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -605,8 +605,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/the-invisible-circus',
-				'label': 'needs label',
-'objects': [
+				'label': 'The Jeremiah O&rsquo;Brien',
+				'objects': [
 					{
 						'class':'video',
 						'posx':0,
@@ -691,8 +691,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/emerald-city-and-other-stories',
-				'label': 'needs label',
-'objects': [
+				'label': 'The Jeremiah O&rsquo;Brien',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -747,8 +747,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'non-fiction',
-				'label': 'needs label',
-'objects': [
+				'label': 'The Jeremiah O&rsquo;Brien',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -783,8 +783,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'category/news',
-				'label': 'needs label',
-'objects': [
+				'label': 'The Jeremiah O&rsquo;Brien',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -819,8 +819,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'about',
-				'label': 'needs label',
-'objects': [
+				'label': 'The Jeremiah O&rsquo;Brien',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -855,8 +855,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'contact',
-				'label': 'needs label',
-'objects': [
+				'label': 'The Jeremiah O&rsquo;Brien',
+				'objects': [
 					{
 						'class':'',
 						'posx':0,
@@ -883,8 +883,8 @@ var uwNodes = [
 		'nodes': [
 			{
 				'slug':'home',
-				'label': 'needs label',
-'objects': [
+				'label': 'The Brooklyn Navy Yard',
+				'objects': [
 					{
 						'class':'',
 						'posx':0,
@@ -938,8 +938,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/manhattan-beach',
-				'label': 'needs label',
-'objects': [
+				'label': 'The Brooklyn Navy Yard',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -974,8 +974,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/a-visit-from-the-goon-squad',
-				'label': 'needs label',
-'objects': [
+				'label': 'The Brooklyn Navy Yard',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -990,8 +990,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/the-keep',
-				'label': 'needs label',
-'objects': [
+				'label': 'The Brooklyn Navy Yard',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1016,8 +1016,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/look-at-me',
-				'label': 'needs label',
-'objects': [
+				'label': 'The Brooklyn Navy Yard',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1142,8 +1142,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/the-invisible-circus',
-				'label': 'needs label',
-'objects': [
+				'label': 'the Mark V',
+				'objects': [
 					{
 						'class':'text',
 						'posx':0,
@@ -1257,8 +1257,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/emerald-city-and-other-stories',
-				'label': 'needs label',
-'objects': [
+				'label': 'the Mark V',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1353,8 +1353,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'non-fiction',
-				'label': 'needs label',
-'objects': [
+				'label': 'the Mark V',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1449,8 +1449,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'category/news',
-				'label': 'needs label',
-'objects': [
+				'label': 'the Mark V',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1495,8 +1495,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'about',
-				'label': 'needs label',
-'objects': [
+				'label': 'the Mark V',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1541,8 +1541,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'contact',
-				'label': 'needs label',
-'objects': [
+				'label': 'the Mark V',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1561,8 +1561,8 @@ var uwNodes = [
 		'nodes': [
 			{
 				'slug':'home',
-				'label': 'needs label',
-'objects': [
+				'label': '',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1577,8 +1577,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/manhattan-beach',
-				'label': 'needs label',
-'objects': [
+				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
+				'objects': [
 					{
 						'class':'text',
 						'posx':0,
@@ -1622,8 +1622,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/a-visit-from-the-goon-squad',
-				'label': 'needs label',
-'objects': [
+				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1648,8 +1648,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/the-keep',
-				'label': 'needs label',
-'objects': [
+				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1674,8 +1674,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/look-at-me',
-				'label': 'needs label',
-'objects': [
+				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1700,8 +1700,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/the-invisible-circus',
-				'label': 'needs label',
-'objects': [
+				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1746,8 +1746,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/emerald-city-and-other-stories',
-				'label': 'needs label',
-'objects': [
+				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1782,8 +1782,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'non-fiction',
-				'label': 'needs label',
-'objects': [
+				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1818,8 +1818,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'category/news',
-				'label': 'needs label',
-'objects': [
+				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1844,8 +1844,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'about',
-				'label': 'needs label',
-'objects': [
+				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1860,8 +1860,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'contact',
-				'label': 'needs label',
-'objects': [
+				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1900,8 +1900,8 @@ var uwNodes = [
 		'nodes': [
 			{
 				'slug':'home',
-				'label': 'needs label',
-'objects': [
+				'label': 'drag to reveal',
+				'objects': [
 					{
 						'class':'skull spin no-click',
 						'posx':0,
@@ -1917,8 +1917,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/manhattan-beach',
-				'label': 'needs label',
-'objects': [
+				'label': 'Diving Dress &amp; Equipment',
+				'objects': [
 					{
 						'class':'text',
 						'posx':0,
@@ -1962,8 +1962,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/a-visit-from-the-goon-squad',
-				'label': 'needs label',
-'objects': [
+				'label': 'Diving Dress &amp; Equipment',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -2038,8 +2038,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/the-keep',
-				'label': 'needs label',
-'objects': [
+				'label': 'Diving Dress &amp; Equipment',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -2084,8 +2084,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/look-at-me',
-				'label': 'needs label',
-'objects': [
+				'label': 'Diving Dress &amp; Equipment',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -2170,8 +2170,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/the-invisible-circus',
-				'label': 'needs label',
-'objects': [
+				'label': 'Diving Dress &amp; Equipment',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -2236,8 +2236,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/emerald-city-and-other-stories',
-				'label': 'needs label',
-'objects': [
+				'label': 'Diving Dress &amp; Equipment',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -2312,8 +2312,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'non-fiction',
-				'label': 'needs label',
-'objects': [
+				'label': 'Reading Lucy',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -2337,8 +2337,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'category/news',
-				'label': 'needs label',
-'objects': [
+				'label': '',
+				'objects': [
 					{
 						'class':'image floating',
 						'posx':0,
@@ -2353,8 +2353,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'about',
-				'label': 'needs label',
-'objects': [
+				'label': 'drag to reveal',
+				'objects': [
 					{
 						'class':'jenny spin no-click',
 						'posx':0,
@@ -2368,8 +2368,8 @@ var uwNodes = [
 			},
 			{
 				'slug':'contact',
-				'label': 'needs label',
-'objects': [
+				'label': 'Mr. Gratzky',
+				'objects': [
 					{
 						'class':'scrollbar closed no-click',
 						'posx':0,
