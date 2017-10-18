@@ -416,6 +416,7 @@ function drawWave(t) {
 	$(window).on("load", function() {
 		var uWScrollDiff = 0,
 				newScrollTop = 0,
+				nodeWrappersHeight = {},
 				isSwimming = false;
 
 		var windowH = $( window ).height();
@@ -438,7 +439,7 @@ function drawWave(t) {
 
 			resizeTimer = setTimeout(function() {
 
-			    setWaterHeight();
+			    nodeWrappersHeight = setWaterHeight();
 
 			  }, 300);
 
@@ -447,13 +448,11 @@ function drawWave(t) {
 			  clearTimeout(resizeTimer);
 			  resizeTimer = setTimeout(function() {
 
-			    setWaterHeight();
+			    nodeWrappersHeight = setWaterHeight();
 
 			  }, 300);
 
 			});
-
-			buildNodes();
 
 			buildBackground();
 
@@ -560,6 +559,9 @@ function drawWave(t) {
 			var bgoffsett = offset*1 + windowH*1;
 			$('.b-bg').height(bInnerH - offset - windowH).css({'top': bgoffsett + 'px'});
 
+			nodeWrappersHeight = buildNodes();
+
+			return nodeWrappersHeight;
 		}
 
 		$bodyDiv.scroll(function() {
@@ -589,6 +591,16 @@ function drawWave(t) {
 				}
 			}
 
+			for ( var key in nodeWrappersHeight ) {
+				var top = nodeWrappersHeight[key].top;
+				var margin = parseInt(nodeWrappersHeight[key].margin);
+				var height = nodeWrappersHeight[key].height;
+				console.log(key, 'scroll:', newScrollTop, 'uwTop:', uwTop, 'windowH:', windowH, 'top:', top, 'margin:', margin, 'height:', height);
+				if ( ( newScrollTop > ( top - ( height*2.25 ) ) ) && ( newScrollTop < (top + (height*2.25) + 2500 ) ) ) {
+					// console.log(key);
+				}
+			}
+
 		});
 
 		var currentWrapper;
@@ -602,6 +614,8 @@ function drawWave(t) {
 			var currSlug = current_slug.slug;
 
 			//console.log(uwNodes);
+
+			var nodeWrapperOffsets = {};
 
 			uwNodes.forEach(function(tier, t) {
 				// console.log(tier.tier);
@@ -685,10 +699,19 @@ function drawWave(t) {
 				    $('.nw-' + t + ' .object').not('.obj-template').first().addClass('here');
 				  });
 
+				  nodeWrapperOffsets['nw-' + t] = {top: $('.nw-'+t).offset().top, margin: $('.nw-'+t).css('margin-top'), height: $('.nw-'+t+ ' .node').outerHeight()};
+
 			});
 
-
 		  nodeTemplate.remove();
+
+			$('.camera').each(function(){
+				var elem = $( this );
+			  		posz = 0 - elem.find('.here').data('posz');
+						setDistance(elem, posz);
+			});
+
+		  return nodeWrapperOffsets;
 		}
 
 		function buildBackground() {
@@ -767,13 +790,6 @@ function drawWave(t) {
 
 
 		// Node Swim
-
-		$('.camera').each(function(){
-			var elem = $( this );
-		  		posz = 0 - elem.find('.here').data('posz');
-					setDistance(elem, posz);
-		});
-
 		var clickCount = 0;
 
 		$( ".underwater" ).on( "click", ".camera .object.closed", function(event) {

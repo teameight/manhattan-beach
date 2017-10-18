@@ -937,7 +937,11 @@ a.btn {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     animation: float-wobble 55s infinite linear;
-    transition: opacity 2000ms ease; }
+    transition: opacity 2000ms ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 90vh; }
   .node .camera .object {
     position: absolute;
     pointer-events: initial; }
