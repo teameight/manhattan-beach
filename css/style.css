@@ -884,8 +884,8 @@ a.btn {
 .node-wrapper {
   position: relative;
   margin-top: 280vh;
-  width: 80vw;
-  max-width: 70vh;
+  width: 70vw;
+  max-width: 60vh;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
@@ -946,6 +946,12 @@ a.btn {
   .node .camera .object {
     position: absolute;
     pointer-events: initial; }
+  .node .object.text:not(.scrollbar) .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    min-height: 60vh; }
   .node .object {
     position: relative;
     width: 100%;
