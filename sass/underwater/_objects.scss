@@ -239,6 +239,16 @@ a.open-handle {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 0px 1000px black;
+  display: none;
+
+  &.portrait {
+    max-width: 400px;
+
+    .video-holder {
+      padding-bottom: 162.1%;
+    }
+  }
 
   .video-holder {
     overflow:hidden;
@@ -253,6 +263,36 @@ a.open-handle {
     height:100%;
     width:100%;
     position:absolute;
+  }
+
+  button {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+
+    .tcon-menu__lines {
+      transform: scale3d(0.8, 0.8, 0.8);
+      background: transparent;
+      height: 1px;
+
+      &:before {
+        transform: rotate3d(0, 0, 1, 45deg);
+        transform-origin: 50% 50%;
+        top: 0;
+        width: 2em;
+        height: 1px;
+        background-color: white;
+      }
+
+      &:after {
+        transform: rotate3d(0, 0, 1, -45deg);
+        transform-origin: 50% 50%;
+        top: 0;
+        width: 2em;
+        height: 1px;
+        background-color: white;
+      }
+    }
   }
 }
 

@@ -39,7 +39,7 @@
 <body <?php body_class('above water'); ?>>
 <div class="underwater-video-modal">
 	<div class="video-holder"></div>
-	<button type="button" class="video-modal-close tcon tcon-menu--xcross" aria-label="toggle menu">
+	<button type="button" class="video-modal-close tcon tcon-menu--xcross" aria-label="close video">
 	  <span class="tcon-menu__lines" aria-hidden="true"></span>
 	  <span class="tcon-visuallyhidden">Close</span>
 	</button>
@@ -59,7 +59,13 @@
 ?>
 
 <body <?php body_class('above'); ?>>
-<div class="underwater-video-modal"></div>
+<div class="underwater-video-modal">
+	<div class="video-holder"></div>
+	<button type="button" class="video-modal-close tcon tcon-menu--xcross" aria-label="close video">
+	  <span class="tcon-menu__lines" aria-hidden="true"></span>
+	  <span class="tcon-visuallyhidden">Close</span>
+	</button>
+</div>
 
 	<!-- Google Tag Manager (noscript) -->
 <!-- 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCRDVJP"

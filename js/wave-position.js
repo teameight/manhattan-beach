@@ -709,7 +709,7 @@ function drawWave(t) {
 				    $('.nw-' + t + ' .object').not('.obj-template').first().addClass('here');
 				  });
 
-				  
+
 
 			});
 
@@ -819,7 +819,29 @@ function drawWave(t) {
 
 		$( ".underwater" ).on( "click", ".camera .object.video", function(event) {
 			event.preventDefault();
-			$('.video-holder').html($(this).data('video'));
+			var uwbody = $('#body');
+			console.log(body);
+			var modal = $('.underwater-video-modal');
+			var videoHolder = $('.video-holder');
+			if ( $(this).data('orientation') === 'portrait' ) {
+				modal.addClass('portrait');
+			} else {
+				modal.removeClass('portrait');
+			}
+			videoHolder.html($(this).data('video'));
+			modal.fadeIn(500);
+			uwbody.addClass('no-scroll');
+		});
+
+		$('.video-modal-close').on('click', function() {
+			var body = $('#body');
+			var modal = $('.underwater-video-modal');
+			var videoHolder = $('.video-holder');
+			modal.fadeOut(500, function() {
+				$(this).removeClass('portrait');
+				videoHolder.empty();
+			});
+			body.removeClass('no-scroll');
 		});
 
 		$( ".underwater" ).on( "click", ".camera .object:not(.no-click, .video)", function(event) {

@@ -27,7 +27,8 @@
 
 
 		$(document).on('click', function(event) {
-			if (!$(event.target).closest('.main-navigation').length) {
+			if (!$(event.target).closest('.main-navigation').length && !$(event.target).closest('.video').length ) {
+				console.log($(event.target).closest('.video').length);
 		    $('.menu-toggle').removeClass('tcon-transform');
 				$( ".main-navigation" ).removeClass( "toggled" );
 				$('#body').removeClass('no-scroll');
