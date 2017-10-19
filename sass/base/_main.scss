@@ -112,10 +112,13 @@ body {
 	margin-bottom: -25vw;
 	pointer-events: initial;
 
+	&.static-wave {
+		background: linear-gradient(0deg, rgba(225, 236, 255, 0) 5%, #e1ecff 40%, white 100%);
+	}
+
 	body:not(.water) & {
 		padding-bottom: 20vh;
 		min-height: 100vh;background: linear-gradient(0deg, rgba(225, 236, 257, 1) 5%, rgba(255, 255, 255, 1) 100%);
-	
 	}
 }
 

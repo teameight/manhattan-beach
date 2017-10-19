@@ -30,7 +30,12 @@
 	</script>
 	<?php wp_head(); ?>
 </head>
-<?php 
+<?php
+
+	require 'vendor/autoload.php';
+
+	$result = new WhichBrowser\Parser($_SERVER['HTTP_USER_AGENT']);
+	if ($result->isBrowser('Internet Explorer') || $result->isBrowser('Edge') || $result->isBrowser('Firefox') ) { $static_wave = true; } else { $static_wave = false; }
 
 	global $wave_slug;
 	if($wave_slug){
@@ -50,9 +55,14 @@
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
 	<!-- End Google Tag Manager (noscript) -->
 
+
+<?php if ( $static_wave ) { ?>
+
+<?php } else { ?>
 	<div id="body" class="not-loaded water">
 		<div class="b-bg"></div>
-		<div class="b-inner">
+<?php } ?>
+		<div class="b-inner<?php if ( $static_wave ) echo ' static-wave'; ?>">
 
 <?php
 		}else{
@@ -76,7 +86,7 @@
 		}
 ?>
 
-		<div id="page-wrap" data-ajax="false">
+		<div id="page-wrap" <?php if ( $static_wave ) echo 'class="static-wave"'; ?> data-ajax="false">
 			<a name="page" tabindex="-1"></a>
 			<div id="page" class="container site">
 				<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'manhattan-beach' ); ?></a>

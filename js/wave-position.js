@@ -278,7 +278,7 @@ function drawAirLines(t) {
 
 var wWidth = window.innerWidth;
 
-var unit = 30, 
+var unit = 30,
   waveCanvas, waveCtx,
   height, width, xAxis, yAxis,
   waveDraw, interval,
@@ -419,11 +419,10 @@ function drawWave(t) {
 	}
 
 
-
-
 (function($){
 
 	$(window).on("load", function() {
+		var staticWave = false;
 		var uWScrollDiff = 0,
 				newScrollTop = 0,
 				nodeWrappersHeight = {},
@@ -434,7 +433,10 @@ function drawWave(t) {
 		var isUnderWater = false,
 				showFootMenu = false,
 				$underwater = $('.underwater');
-		var uwTop = $('.uw-segway').offset().top;
+		var uwSegway = $('.uw-segway');
+		if ( uwSegway.length ) {
+			var uwTop = uwSegway.offset().top;
+		}
 		// console.log('onload ' + uwTop);
 		var maxRange = 250; //range of visibility, in z-space
 				// scrollRun = false,
@@ -443,13 +445,25 @@ function drawWave(t) {
 
 		var $airlines = $('#airlinesCanvas');
 
+		if ( $('.firefox, .msie, .edge').length ) {
+			staticWave = true;
+		}
+
+				// console.log(staticWave);
+
+
 		if(current_slug.slug !== ''){
+
+			if ( staticWave ) {
+				var $page_offset = $('#page-wrap').outerHeight();
+			} else {
 
 			var resizeTimer;
 
 			resizeTimer = setTimeout(function() {
 
 			    setWaterHeight();
+			    console.log('after resize timer');
 
 			  }, 300);
 
@@ -470,11 +484,241 @@ function drawWave(t) {
 			if ( $(window).width() > 768 ) {
 				buildBackground();
 			}
+		}
 
 		}else{
 			$('#body').removeClass('not-loaded').addClass('loaded');
 		} // end if current_slug
 
+		// console.log(staticWave);
+
+		if ( staticWave ) {
+
+
+			if($airlines.length){
+				$airlines.css({
+					'height': ( $page_offset + 100 ) + 'px'
+				});
+				airLinesInit();
+			}
+		} else {
+			$bodyDiv.scroll(function() {
+				newScrollTop = $bodyDiv.scrollTop();
+				uWScrollDiff = newScrollTop - (uwTop - windowH);
+				if(newScrollTop > uwTop){ // + windowH/2
+					if(!isUnderWater){
+						isUnderWater = true;
+						$('body').removeClass('above').addClass('below');
+					}
+				}else{
+					if(isUnderWater){
+						isUnderWater = false;
+						$('body').removeClass('below').addClass('above');
+					}
+				}
+
+				if(newScrollTop > windowH*2){
+					if(!showFootMenu){
+						showFootMenu = true;
+						$('.uw-hud').addClass('show');
+					}
+				}else{
+					if(showFootMenu){
+						showFootMenu = false;
+						$('.uw-hud').removeClass('show');
+					}
+				}
+				// console.log('nodeWrapperOffsets');
+				// console.log(nodeWrapperOffsets);
+
+				var newTierKey = false;
+
+				for ( var key in nodeWrapperOffsets ) {
+					var top = nodeWrapperOffsets[key].top;
+					var margin = parseInt(nodeWrapperOffsets[key].margin);
+					var height = nodeWrapperOffsets[key].height;
+					//console.log(key, 'scroll:', newScrollTop, 'uwTop:', uwTop, 'windowH:', windowH, 'top:', top, 'margin:', margin, 'height:', height);
+					if ( ( newScrollTop > ( top - ( height*2.25 ) ) ) && ( newScrollTop < (top + (height*2.25) + 2500 ) ) ) {
+						newTierKey = key;
+					}
+				}
+				if(tierKey !== newTierKey){
+					tierKey = newTierKey;
+					//console.log(tierKey);
+					if(tierKey){
+						tierNum = tierKey.split('-')[1];
+						tierClass = parseInt(tierNum) + 2;
+
+						// console.log(tierClass)
+
+						if( $('.nw-' + tierClass).length && !$('.nw-' + tierClass).data('loadedimg')) {
+							loadUwImages(tierClass);
+						}
+					}
+				}
+
+			});
+
+			var currentWrapper;
+
+			buildNodes();
+
+			// Node Swim
+			var clickCount = 0;
+
+			$( ".underwater" ).on( "click", ".camera .object.closed", function(event) {
+				$(this).removeClass('closed no-click');
+			});
+
+			$( ".underwater" ).on( "click", ".camera .object.video", function(event) {
+				event.preventDefault();
+				var uwbody = $('#body');
+				// console.log(body);
+				var modal = $('.underwater-video-modal');
+				var videoHolder = $('.video-holder');
+				if ( $(this).data('orientation') === 'portrait' ) {
+					modal.addClass('portrait');
+				} else {
+					modal.removeClass('portrait');
+				}
+				videoHolder.html($(this).data('video'));
+				modal.fadeIn(500);
+				uwbody.addClass('no-scroll');
+			});
+
+			$('.video-modal-close').on('click', function() {
+				var body = $('#body');
+				var modal = $('.underwater-video-modal');
+				var videoHolder = $('.video-holder');
+				modal.fadeOut(500, function() {
+					$(this).removeClass('portrait');
+					videoHolder.empty();
+				});
+				body.removeClass('no-scroll');
+			});
+
+			$( ".underwater" ).on( "click", ".camera .object:not(.no-click, .video)", function(event) {
+				event.preventDefault();
+
+				$that = $(this);
+
+				clickCount++;
+
+				var previous = false;
+
+				if ($(event.target).closest('.prev').length) {
+					//console.log('prev');
+					previous = true;
+				}
+
+				nudgeBackground(previous);
+
+				currentWrapper = $(this).closest('.node-wrapper');
+
+				swimAround($(this), previous);
+
+			});
+
+			$( ".uw-hud" ).on( "click", ".prev", function(event) {
+				event.preventDefault();
+
+				var hereObj = currentWrapper.find('.here');
+				var previous = true;
+				swimAround(hereObj, previous);
+				nudgeBackground(previous);
+			});
+
+			$( ".uw-hud" ).on( "click", ".next", function(event) {
+				event.preventDefault();
+
+				var hereObj = currentWrapper.find('.here');
+				var previous = false;
+				swimAround(hereObj, previous);
+			});
+
+			var swimTimer,
+					swimCount = 0;
+
+		 // 	BEGIN SKULL GRAB AND ROTATE
+		  var offsetY = 0,
+				offsetX = 0,
+				offset_percent = 0,
+				wrapper_offset = $('.spin').parent().offset(),
+				wrapper_width = $('.spin').parent().width(),
+				startY = -30,
+				startX = -5,
+				trigger;
+			$('.node-wrapper').on('tapstart', '.spin.here', function (e, touch) {
+						trigger = touch.offset.x - wrapper_offset.left;
+		      	// console.log(touch);
+		    })
+		    .on('tapend', '.spin.here', function() {
+		        startY = offsetY;
+						startX = offsetX;
+						trigger = null;
+						// console.log('mu');
+		    })
+		    .on('tapmove', '.spin.here', function (e, touch) {
+						// console.log('mm');
+						// console.log('offset'+offsetY);
+		        if(trigger) {
+
+		        	var object = $(this);
+		        	posx = $( this ).data('posx'),
+				  		posy = $( this ).data('posy'),
+				  		posz = $( this ).data('posz');
+
+				  		posx = posx || 0;
+				  		posy = posy || 0;
+				  		posz = posz || 0;
+							offset_percent = (((touch.offset.x - wrapper_offset.left)-trigger)/wrapper_width); // 60 degree range
+
+							// console.log(offset_percent);
+
+							var offsettemp = startY + (offset_percent)*60;
+
+							if(offsettemp > -31 && offsettemp < 31 ){
+
+								offsetX = startX + (offset_percent)*10;
+
+								offsetY = startY + (offset_percent)*60;
+								if(offsetY > -8 && offsetY < 8){
+									offsetY = 0;
+									offsetX = 0;
+								}
+
+								object.css('transform', 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw) rotateX(' + offsetX + 'deg) rotateY(' + offsetY + 'deg)');
+
+							}
+		        }
+		    });
+				// 	END SKULL GRAB AND ROTATE
+
+		// Detritus STUFF, go here to edit and troubleshoot: https://codepen.io/spencer8/pen/vJxqGV
+
+				//general
+				var dCanvas = document.getElementById('detritus-canvas'),
+				    dCtx,
+				    center = new Point(),
+				    r = 0;
+				// console.log(dCanvas);
+				var circles = [];
+				var circleSize = 100; // the space between dots, roughly, in pixels
+				var dotOpacity = 0.15;
+
+				// speed of orbit, if dotSpeedX = dotSpeedY you get a perfect circle
+				//   larger number = slower orbit
+				var dotSpeedX = 560,
+				    dotSpeedY = 560;
+
+				var placeRfactor = .8; // amount of randomization to original dot placement
+				var sizeRfactor = .9; // amount of randomization to original dot placement
+
+				var DAMPING = .934;
+
+				var cId = 0;
+
+		}
 
 		function setWaterHeight() {
 			// var waterline = $('.waterline');
@@ -559,6 +803,7 @@ function drawWave(t) {
 
 			if ( $(window).width > 768 ) {
 				initDCanvas();
+				console.log('after canvas');
 				// 	dotSize, speed, circSizeFactor
 				createCircleArray(.3, .3, .3);
 				// createCircleArray(.4, .4, .2);
@@ -578,62 +823,6 @@ function drawWave(t) {
 			$('.b-bg').height(bInnerH - offset - windowH).css({'top': bgoffsett + 'px'});
 		}
 
-		$bodyDiv.scroll(function() {
-			newScrollTop = $bodyDiv.scrollTop();
-			uWScrollDiff = newScrollTop - (uwTop - windowH);
-			if(newScrollTop > uwTop){ // + windowH/2
-				if(!isUnderWater){
-					isUnderWater = true;
-					$('body').removeClass('above').addClass('below');
-				}
-			}else{
-				if(isUnderWater){
-					isUnderWater = false;
-					$('body').removeClass('below').addClass('above');
-				}
-			}
-
-			if(newScrollTop > windowH*2){
-				if(!showFootMenu){
-					showFootMenu = true;
-					$('.uw-hud').addClass('show');
-				}
-			}else{
-				if(showFootMenu){
-					showFootMenu = false;
-					$('.uw-hud').removeClass('show');
-				}
-			}
-			// console.log('nodeWrapperOffsets');
-			// console.log(nodeWrapperOffsets);
-
-			var newTierKey = false;
-
-			for ( var key in nodeWrapperOffsets ) {
-				var top = nodeWrapperOffsets[key].top;
-				var margin = parseInt(nodeWrapperOffsets[key].margin);
-				var height = nodeWrapperOffsets[key].height;
-				//console.log(key, 'scroll:', newScrollTop, 'uwTop:', uwTop, 'windowH:', windowH, 'top:', top, 'margin:', margin, 'height:', height);
-				if ( ( newScrollTop > ( top - ( height*2.25 ) ) ) && ( newScrollTop < (top + (height*2.25) + 2500 ) ) ) {
-					newTierKey = key;
-				}
-			}
-			if(tierKey !== newTierKey){
-				tierKey = newTierKey;
-				//console.log(tierKey);
-				if(tierKey){
-					tierNum = tierKey.split('-')[1];
-					tierClass = parseInt(tierNum) + 2;
-
-					// console.log(tierClass)
-
-					if( $('.nw-' + tierClass).length && !$('.nw-' + tierClass).data('loadedimg')) {
-						loadUwImages(tierClass);
-					}
-				}
-			}
-
-		});
 
 		function loadUwImages(tierClass){
 
@@ -656,7 +845,6 @@ function drawWave(t) {
 
 		}
 
-		var currentWrapper;
 
 		function buildNodes(){
 
@@ -768,7 +956,6 @@ function drawWave(t) {
 			nodeWrapperOffsets = getNodeWrapperOffsets();
 		}
 
-		buildNodes();
 
 		function getNodeWrapperOffsets(){
 
@@ -852,80 +1039,6 @@ function drawWave(t) {
 			bg.data('posz', posz);
 
 		}
-
-
-		// Node Swim
-		var clickCount = 0;
-
-		$( ".underwater" ).on( "click", ".camera .object.closed", function(event) {
-			$(this).removeClass('closed no-click');
-		});
-
-		$( ".underwater" ).on( "click", ".camera .object.video", function(event) {
-			event.preventDefault();
-			var uwbody = $('#body');
-			// console.log(body);
-			var modal = $('.underwater-video-modal');
-			var videoHolder = $('.video-holder');
-			if ( $(this).data('orientation') === 'portrait' ) {
-				modal.addClass('portrait');
-			} else {
-				modal.removeClass('portrait');
-			}
-			videoHolder.html($(this).data('video'));
-			modal.fadeIn(500);
-			uwbody.addClass('no-scroll');
-		});
-
-		$('.video-modal-close').on('click', function() {
-			var body = $('#body');
-			var modal = $('.underwater-video-modal');
-			var videoHolder = $('.video-holder');
-			modal.fadeOut(500, function() {
-				$(this).removeClass('portrait');
-				videoHolder.empty();
-			});
-			body.removeClass('no-scroll');
-		});
-
-		$( ".underwater" ).on( "click", ".camera .object:not(.no-click, .video)", function(event) {
-			event.preventDefault();
-
-			$that = $(this);
-
-			clickCount++;
-
-			var previous = false;
-
-			if ($(event.target).closest('.prev').length) {
-				//console.log('prev');
-				previous = true;
-			}
-
-			nudgeBackground(previous);
-
-			currentWrapper = $(this).closest('.node-wrapper');
-
-			swimAround($(this), previous);
-
-		});
-
-		$( ".uw-hud" ).on( "click", ".prev", function(event) {
-			event.preventDefault();
-
-			var hereObj = currentWrapper.find('.here');
-			var previous = true;
-			swimAround(hereObj, previous);
-			nudgeBackground(previous);
-		});
-
-		$( ".uw-hud" ).on( "click", ".next", function(event) {
-			event.preventDefault();
-
-			var hereObj = currentWrapper.find('.here');
-			var previous = false;
-			swimAround(hereObj, previous);
-		});
 
 		function swimAround(nodeObj, previous) {
 
@@ -1101,11 +1214,7 @@ function drawWave(t) {
 
 		  elem.addClass('here');
 
-
 		} // end swimAround()
-
-		var swimTimer,
-				swimCount = 0;
 
 		function swimDetritus() {
 			isSwimming = true;
@@ -1134,87 +1243,6 @@ function drawWave(t) {
 		}
 
 		// End Node Swim
-
-
-	 // 	BEGIN SKULL GRAB AND ROTATE
-	  var offsetY = 0,
-			offsetX = 0,
-			offset_percent = 0,
-			wrapper_offset = $('.spin').parent().offset(),
-			wrapper_width = $('.spin').parent().width(),
-			startY = -30,
-			startX = -5,
-			trigger;
-		$('.node-wrapper').on('tapstart', '.spin.here', function (e, touch) {
-					trigger = touch.offset.x - wrapper_offset.left;
-	      	// console.log(touch);
-	    })
-	    .on('tapend', '.spin.here', function() {
-	        startY = offsetY;
-					startX = offsetX;
-					trigger = null;
-					// console.log('mu');
-	    })
-	    .on('tapmove', '.spin.here', function (e, touch) {
-					// console.log('mm');
-					// console.log('offset'+offsetY);
-	        if(trigger) {
-
-	        	var object = $(this);
-	        	posx = $( this ).data('posx'),
-			  		posy = $( this ).data('posy'),
-			  		posz = $( this ).data('posz');
-
-			  		posx = posx || 0;
-			  		posy = posy || 0;
-			  		posz = posz || 0;
-						offset_percent = (((touch.offset.x - wrapper_offset.left)-trigger)/wrapper_width); // 60 degree range
-
-						// console.log(offset_percent);
-
-						var offsettemp = startY + (offset_percent)*60;
-
-						if(offsettemp > -31 && offsettemp < 31 ){
-
-							offsetX = startX + (offset_percent)*10;
-
-							offsetY = startY + (offset_percent)*60;
-							if(offsetY > -8 && offsetY < 8){
-								offsetY = 0;
-								offsetX = 0;
-							}
-
-							object.css('transform', 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw) rotateX(' + offsetX + 'deg) rotateY(' + offsetY + 'deg)');
-
-						}
-	        }
-	    });
-			// 	END SKULL GRAB AND ROTATE
-
-
-		// Detritus STUFF, go here to edit and troubleshoot: https://codepen.io/spencer8/pen/vJxqGV
-
-		//general
-		var dCanvas = document.getElementById('detritus-canvas'),
-		    dCtx,
-		    center = new Point(),
-		    r = 0;
-		// console.log(dCanvas);
-		var circles = [];
-		var circleSize = 100; // the space between dots, roughly, in pixels
-		var dotOpacity = 0.15;
-
-		// speed of orbit, if dotSpeedX = dotSpeedY you get a perfect circle
-		//   larger number = slower orbit
-		var dotSpeedX = 560,
-		    dotSpeedY = 560;
-
-		var placeRfactor = .8; // amount of randomization to original dot placement
-		var sizeRfactor = .9; // amount of randomization to original dot placement
-
-		var DAMPING = .934;
-
-		var cId = 0;
 
 		function initDCanvas() {
 
@@ -1403,6 +1431,6 @@ function drawWave(t) {
 		}
 
 	});
-	
+
 
 })(jQuery);

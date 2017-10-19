@@ -137,6 +137,8 @@ body {
   background: linear-gradient(0deg, rgba(225, 236, 255, 0) 5%, #e1ecff 40%, white 100%);
   margin-bottom: -25vw;
   pointer-events: initial; }
+  #page-wrap.static-wave {
+    background: linear-gradient(0deg, rgba(225, 236, 255, 0) 5%, #e1ecff 40%, white 100%); }
   body:not(.water) #page-wrap {
     padding-bottom: 20vh;
     min-height: 100vh;
@@ -702,6 +704,8 @@ a.btn {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   /*overflow: hidden;*/ }
+  .b-inner.static-wave {
+    background-color: #e1ecff; }
 
 .lastwave.wave-seg {
   background: blue; }
@@ -715,6 +719,10 @@ a.btn {
   /*overflow: hidden;*/ }
   .below .wave-wrap {
     /*display:none;*/ }
+
+.wave-full.static-wave {
+  width: 100%;
+  float: left; }
 
 .waterline {
   position: absolute;
