@@ -21,7 +21,7 @@
 	})(window,document,'script','dataLayer','GTM-PCRDVJP');</script> -->
 	<!-- End Google Tag Manager -->
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<script src="https://use.typekit.net/jno4zpo.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
