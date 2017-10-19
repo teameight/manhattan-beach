@@ -3,7 +3,7 @@
   position: relative;
   margin-top: 280vh;
   width: 80vw;
-  max-width: 98vh;
+  max-width: 70vh;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
@@ -38,9 +38,11 @@
     &.object {
       cursor:grab;
       cursor:-webkit-grab;
-      width:100%;
+      width:60%;
       height:100%;
       transform:rotateY(30deg) rotateX(5deg);
+      left:20%;
+      position:relative;
       /*animation: float-wobble 84s infinite linear;*/
     }
 
@@ -81,10 +83,6 @@
     @include preserve3d;
     animation: float-wobble 55s infinite linear;
     transition: opacity $cycleLength ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 90vh;
   }
 
   .camera .object {
@@ -206,7 +204,7 @@
   -webkit-backface-visibility: hidden;
 }
 
-.node .object.image .inner p {
+.node .object:not(.text) .inner p {
   padding: .5em 0 1em;
   font-size: 0.8em;
   letter-spacing: 1.18px;

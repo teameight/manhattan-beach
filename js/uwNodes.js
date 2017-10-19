@@ -13,7 +13,7 @@ var uwNodes = [
 				'objects': [
 
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -22,7 +22,7 @@ var uwNodes = [
 						'content':'<p>Anna watched the sea. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -31,7 +31,7 @@ var uwNodes = [
 						'content':'<p>A landscape of lost objects: sunken ships, hidden treasure, gold and gems and the charm bracelet that had fallen from her wrist into a storm drain.<\/p>'
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -46,7 +46,7 @@ var uwNodes = [
 				'label': '',
 				'objects': [
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -55,7 +55,7 @@ var uwNodes = [
 						'content':'<p>He&rsquo;d been about to get back in his car when he found himself staring into the dark of the Upper Bay, where boats and waterfront were blacked out.<\/p>'
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -64,7 +64,7 @@ var uwNodes = [
 						'content':'<p>He&rsquo;d perceived a new, dynamic density in the darkness. All at once his eyes had organized the mystery and he&rsquo;d seen it.<\/p>'
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -80,7 +80,7 @@ var uwNodes = [
 				'objects': [
 
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -89,7 +89,7 @@ var uwNodes = [
 						'content':'<p>Anna leaned her head against her sister&rsquo;s and watched a long wave form, stretching until it achieved translucence, then somersaulting forward and collapsing into creamy suds that eked toward them over the sand. <\/p>'
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -98,7 +98,7 @@ var uwNodes = [
 						'content':'<p>Then another wave gathered, reaching, stretching, a streak of silver dashing along its surface where the weak sunlight touched it. The strange, violent, beautiful sea. this was what she had wanted Lydia to see.<\/p>'
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -129,7 +129,7 @@ var uwNodes = [
 				'label': '',
 				'objects': [
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -138,7 +138,7 @@ var uwNodes = [
 						'content':'<p>He&rsquo;d looked out and noticed the sea as if it were entirely new. An infinite hypnotic expanse that could look like scales, wax, hammered silver, wrinkled flesh. It had structure and layers you couldn&rsquo;t see from land.<\/p>'
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -147,7 +147,7 @@ var uwNodes = [
 						'content':'<p>Fixing his eyes upon this unfamiliar sea, he&rsquo;d learned to float in a semi-conscious state, alert but not fully awake.<\/p>',
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -169,7 +169,7 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/floating\/suit.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgbox"><\/div><p>placeholder for buttons in grid<\/p>'
 					}
 				]
 			},
@@ -178,7 +178,7 @@ var uwNodes = [
 				'label': '',
 				'objects': [
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -187,7 +187,7 @@ var uwNodes = [
 						'content':'<p>She descended the ladder backward, then held the descending line and let the harbor swallow her.<\/p>'
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -196,7 +196,7 @@ var uwNodes = [
 						'content':'<p>The current was tremendous, a pull with the force of the ocean behind it. Here, there was no difference between opening her eyes and closing them.<\/p>'
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -205,7 +205,7 @@ var uwNodes = [
 						'content':'<p>This made for an eerie dislocation, as if she were sliding toward nothing or floating in a void.<\/p>',
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -214,7 +214,7 @@ var uwNodes = [
 						'content':'<p>When at last she reached the bottom, she clutched the line and blinked into the dark, wondering if she&rsquo;d come down too quickly.<\/p>',
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -229,7 +229,7 @@ var uwNodes = [
 				'label': '',
 				'objects': [
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -238,7 +238,7 @@ var uwNodes = [
 						'content':'<p>He was alone at the bottom of the sea. The extremity of his position mesmerized him.<\/p>'
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -247,7 +247,7 @@ var uwNodes = [
 						'content':'<p>He&rsquo;d always liked the dark, but night was the only version of it he&rsquo;d known until now. This was the primeval dark of nightmares. It covered secrets too atrocious to be exposed. drowned children, sunken ships.<\/p>'
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -262,14 +262,14 @@ var uwNodes = [
 				'label': '',
 				'objects': [
 					{
-						'class':'image',
+						'class':'image floating',
 						'posx':0,
 						'posy':0,
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/1The-Jeremiah-OBrien-From-Pier-39.png',
-						'content':'<div class="imgbox"><\/div><p>PLACEHOLDER: something from shipyard<\/p>'
+						'image': imgRoot + '\/floating\/1Hat-floating.png',
+						'content':'<div class="imgbox"><\/div><p>gears?<\/p>'
 					}
 				]
 			},
@@ -278,7 +278,7 @@ var uwNodes = [
 				'label': '',
 					'objects': [
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -287,7 +287,7 @@ var uwNodes = [
 						'content':'<p>The night was cool and clear, a rolling sea just visible under a paring of moon.<\/p>'
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -296,7 +296,7 @@ var uwNodes = [
 						'content':'<p>He couldn&rsquo;t see the ships around them, but he perceived their density, five hundred feet away fore and aft, a thousand feet abeam, all nosing together through the swells like a spectral herd.<\/p>'
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -311,7 +311,7 @@ var uwNodes = [
 				'label': '',
 				'objects': [
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -320,7 +320,7 @@ var uwNodes = [
 						'content':'<p>In their new life, the wind was high, the water heavy and black. There was no buffer from the elements—wind, sun, and rain groped and clawed them at will.<\/p>'
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -579,7 +579,7 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3OfficesCabins\/9RadioShack.png',
-						'content':'<div class="imgbox"><\/div><p>Radio Shack<\/p>'		
+						'content':'<div class="imgbox"><\/div><p>Radio Shack<\/p>'
 					},
 					{
 						'class':'image',
@@ -640,16 +640,6 @@ var uwNodes = [
 						'content':'<div class="imgbox"><\/div>'
 					},
 					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/5.png',
-						'content':'<div class="imgbox"><\/div>'
-					},
-					{
 						'class':'video',
 						'posx':0,
 						'posy':0,
@@ -661,6 +651,12 @@ var uwNodes = [
 						'orientation': 'portrait',
 						'video':'<iframe src="https://player.vimeo.com/video/238235702" width="640" height="1137" frameborder="0"></iframe>'
 					},
+				]
+			},
+			{
+				'slug':'books/emerald-city-and-other-stories',
+				'label': 'The Jeremiah O&rsquo;Brien',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -694,7 +690,7 @@ var uwNodes = [
 				]
 			},
 			{
-				'slug':'books/emerald-city-and-other-stories',
+				'slug':'non-fiction',
 				'label': 'The Jeremiah O&rsquo;Brien',
 				'objects': [
 					{
@@ -706,16 +702,6 @@ var uwNodes = [
 						'rotx':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/5BoatsandRafts\/1Starboard-Lifeboats.png',
 						'content':'<div class="imgbox"><\/div><p>Starboard Lifeboats<\/p>'
-					},
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/5BoatsandRafts\/2Port-Side-Lifeboats.png',
-						'content':'<div class="imgbox"><\/div><p>Port Side Lifeboats<\/p>'
 					},
 					{
 						'class':'image',
@@ -750,7 +736,7 @@ var uwNodes = [
 				]
 			},
 			{
-				'slug':'non-fiction',
+				'slug':'category/news',
 				'label': 'The Jeremiah O&rsquo;Brien',
 				'objects': [
 					{
@@ -786,7 +772,7 @@ var uwNodes = [
 				]
 			},
 			{
-				'slug':'category/news',
+				'slug':'about',
 				'label': 'The Jeremiah O&rsquo;Brien',
 				'objects': [
 					{
@@ -822,7 +808,7 @@ var uwNodes = [
 				]
 			},
 			{
-				'slug':'about',
+				'slug':'contact',
 				'label': 'The Jeremiah O&rsquo;Brien',
 				'objects': [
 					{
@@ -842,42 +828,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/5Engine-Room-Diagram.png',
-						'content':'<div class="imgbox"><\/div><p>Engine Room Diagram<\/p>'
-					},
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/6Knots.png',
 						'content':'<div class="imgbox"><\/div><p>Knots<\/p>'
-					}
-				]
-			},
-			{
-				'slug':'contact',
-				'label': 'The Jeremiah O&rsquo;Brien',
-				'objects': [
-					{
-						'class':'',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'content':'<p>A landscape of lost objects: sunken ships, hidden treasure, gold and gems and the charm bracelet that had fallen from her wrist into a storm drain.<\/p>'
-					},
-					{
-						'class':'',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'content':'<p>Dead bodies, her father always added, with a laugh. To him, the ocean was a wasteland.<\/p>'
 					}
 				]
 			}
@@ -887,10 +839,25 @@ var uwNodes = [
 		'nodes': [
 			{
 				'slug':'home',
+				'label': 'Mr. Gratzky',
+				'objects': [
+					{
+						'class':'scrollbar text closed no-click',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'content':'<h3>Mr. Gratzky - Cut Scene</h3><p>To Anna&rsquo;s knowledge, wounded Mr. Gratzky had never emerged from his room off the kitchen. Visitors would pass the door on their way to the front room, where Mrs. Gratzky conducted her sewing business. The door was always ajar, presumably for air—rooms off the kitchen usually faced the shaft. When Anna came to deliver parcels of finished costumes and receive new pieces to bring home, she occasionally heard a cough from behind that door, a ballgame muttering faintly on a radio.</p><p>When Mrs. Gratzky wasn&rsquo;t home, visitors left their packages on the kitchen table. At these times, Anna would occasionally move closer to the door, trying to see into the gloom beyond it. Perhaps, on that day, she&rsquo;d stood even closer than usual. Perhaps she&rsquo;d crossed the threshold by some fraction of an inch. Whatever it was, he saw, or sensed, her there.</p><p>&ldquo;Who&rsquo;s that? Come in where I can see you.&rdquo;</p><p>His voice was surprisingly forceful. Heart bucking, Anna pushed open the door and stepped inside the dark room. &ldquo;Good afternoon,&rdquo; she said. &ldquo;My name is Anna Kerrigan. My mother does sewing for Mrs. Gratzky.&rdquo;</p><p>The room smelled of mothballs and old newspaper. The window facing the shaft was closed, covered with a lace curtain whose festive red trim Anna recognized from tunics her mother had worked on. The only light came from the kitchen.</p><p>&ldquo;Come closer,&rdquo; he said. &ldquo;You&rsquo;re in silhouette.&rdquo;</p><p>She was surprised by how large a man he was: long and big-shouldered, a giant column covered to the neck with blankets and a white coverlet. His head was propped nearly at a right angle to the rest of him, tilting a lean, ravaged face at the room. &ldquo;Are you sick?&rdquo; she asked.</p><p>His laugh made a sound like dice being shaken in a cup. &ldquo;Don&rsquo;t play dumb, missy. Everyone knows what&rsquo;s the matter with me.&rdquo;</p><p>Anna felt herself flush, relieved that he couldn&rsquo;t see her clearly. &ldquo;You were hurt in the war,&rdquo; she said.</p><p>&ldquo;What war?&rdquo; he shot back. &ldquo;No one remembers it.&rdquo;</p><p>&ldquo;I do.&rdquo;</p><p>&ldquo;You&rsquo;re what, ten?&rdquo;</p><p>&ldquo;Twelve,&rdquo; she said, offended. In fact, she was almost twelve; her birthday was the next week.</p><p>&ldquo;Hard to tell, lying here like a log. Now what do you remember, missy, about the Great War.&rdquo;</p><p>Lessons swirled and scattered in Anna&rsquo;s mind: the archduke, trench warfare, machine guns. &ldquo;You&rsquo;ve a hole in you that won&rsquo;t heal,&rdquo; she said at last.</p><p>&ldquo;That happens to be true,&rdquo; he said. &ldquo;They&rsquo;ve tried sewing it, taping it, grafting it—nothing sticks.&rdquo;</p><p>&ldquo;Can you stand up?&rdquo;</p><p>&ldquo;Yes, but I tire pretty fast.&rdquo;</p><p>&ldquo;Could part of you…fall out?&rdquo;</p><p>&ldquo;Now that&rsquo;s a good question,&rdquo; he said. &ldquo;A very reasonable question. But no. It turns out you can live pretty well, for a while, with a hole in you. The problem is not what might come out of the hole but what might go in. Germs, you understand. Infections. So when you have a hole, like I have—and I&rsquo;m not the only one, by the way, there are men living with holes in their heads, believe it or not, you can look right inside and see their brains…but we…people with holes…we have to be… careful.&rdquo; She could barely hear the end of the sentence.</p><p>&ldquo;And stay in bed?&rdquo;</p><p>&ldquo;…And stay in bed.&rdquo;</p><p>A spectral handsomeness haunted the wreckage of Mr. Gratzky&rsquo;s face: shelves of cheekbone, white teeth, rowdy black eyes. His body seemed nearly to overpower the bed, but in fact he occupied only half. The other half was empty, a night table and a drinking glass beside it: presumably where Mrs. Gratzky slept.</p><p>When Anna looked back at him, she found his bright gaze resting on her. &ldquo;You&rsquo;re a nosy one,&rdquo; he said. &ldquo;I can tell. You want to see it.&rdquo;</p><p>She did, of course. But she was afraid.</p><p>&ldquo;It&rsquo;s probably not as bad as you think.&rdquo;</p><p>The coverlet smelled of roses and soap. Mrs. Gratzky took impeccable care of this big man, a fact that seemed, to Anna, embarrassingly private.</p><p>&ldquo;You must promise not to scream.&rdquo;</p><p>&ldquo;I never scream,&rdquo; she said.</p><p>He pulled back the coverlet to reveal fresh striped pajamas with expensive-looking piping. He began to unbutton the top. As Anna watched his bare torso materialize, less bony than her father&rsquo;s, covered with sparse black hair that lay flat against the skin, she had a first intimation of having moved alongside him into unfamiliar territory. His large brown nipples with their fringe of black hair reminded her of the feathered pasties Aunt Brianne wore in her Vanities stills. When the pajama top was fully unbuttoned, he pulled its two halves aside. Below his ribcage on the right, lay a square of gauze stained faintly pink, as if with tomato water. It wasn&rsquo;t taped, it merely rested there. He lifted it, and she saw a hole in his flesh the size of a quarter, its edges red and wet as a baby&rsquo;s mouth. In the scant light, she could barely discern a viscous landscape within it.</p><p>&ldquo;There it is,&rdquo; he said. &ldquo;What do you say?&rdquo;</p><p>Anna brought her eye nearer the wound. It was like nothing she had seen, and the fascination she felt in its presence was almost transporting. &ldquo;Does it hurt?&rdquo; she asked.</p><p>&ldquo;When I lie like this, no. But when I stand, it aches.&rdquo;</p><p>Anna moved closer. She wanted to shine a bright light directly into the hole, to peer around its edges into Mr. Gratzky&rsquo;s interior. She wanted to put her finger inside the wound and feel it close around her. &ldquo;Where does it hurt?&rdquo; she asked. &ldquo;Right where the hole is, or somewhere else?&rdquo;</p><p>He didn&rsquo;t answer. He seemed to be thinking. Abruptly he flipped the gauze back over the wound, barely giving Anna time to withdraw her face. &ldquo;You get the picture,&rdquo; he said. &ldquo;Now scram.&rdquo; As she fumbled toward the door, he added, &ldquo;Turn up that radio, would you?&rdquo;</p><p>Anna stood, disoriented, in the kitchen. A moment later she heard heels on the stairs, followed by Pearl Gratzky&rsquo;s asthmatic breathing. Quickly she restored the door to its usual position. As Mrs. Gratzky entered, Anna curled her fingers around the string on her package as though in the act of setting it down. Mr. Gratzky must have heard his wife&rsquo;s steps, she realized now, or known the timing of her arrival. Anna followed her into the front room, where she unwrapped the parcel and applied her usual fierce scrutiny to each of thirty-two sequined bowlers. This was a tense process; Mrs. Gratzky sometimes demanded alterations on the spot, or sent things back to be redone. This time, Anna was aware of her shared intelligence with Mr. Gratzky, as if she were still beside his bed in the back room. Having a secret from Mrs. Gratzky with her husband was something she had not foreseen. It felt wrong. Yet it seemed beyond Anna&rsquo;s power, now, to undo the collusion.</p><p>By suppertime, the weight of her new secret had become uncomfortable. Anna no longer wanted to keep it, but she was afraid to tell it. Her father, she knew, would blame her for going into Mr. Gratzky&rsquo;s bedroom and being curious. Even worse was the thought of his blaming Mr. Gratzky, having a confrontation that might jeopardize her mother&rsquo;s sewing work. She was not to tell; that was part of the secret between her and Mr. Gratzky. Telling would make it more wrong, not less. But how had it become a secret in the first place?</p><a class="open-handle">&hellip;</a>'
+					}
+				]
+			},
+			{
+				'slug':'books/manhattan-beach',
 				'label': 'The Brooklyn Navy Yard',
 				'objects': [
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -928,22 +895,6 @@ var uwNodes = [
 						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/3Ghost-Maps.png',
 						'content':'<div class="imgbox"><\/div><p>Ghost Maps<\/p>'
 					},
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/4Ghost-Maps2.png',
-						'content':'<div class="imgbox"><\/div><p>Ghost Maps2<\/p>'
-					}
-				]
-			},
-			{
-				'slug':'books/manhattan-beach',
-				'label': 'The Brooklyn Navy Yard',
-				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1020,127 +971,17 @@ var uwNodes = [
 			},
 			{
 				'slug':'books/look-at-me',
-				'label': 'The Brooklyn Navy Yard',
+				'label': '',
 				'objects': [
 					{
-						'class':'image',
+						'class':'image floating',
 						'posx':0,
 						'posy':0,
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/1Railroad-Transom.png',
-						'content':'<div class="imgbox"><\/div><p>Naval Yard Railroad Transom, 2015<\/p>'
-					},
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/2Railroad-Transom-4.png',
-						'content':'<div class="imgbox"><\/div><p>Railroad Transom 4<\/p>'
-					},
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/3Old-Tracks.png',
-						'content':'<div class="imgbox"><\/div><p>Old Tracks<\/p>'
-					},
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/4Ruined-Tracks-and-Pier-Bricks.png',
-						'content':'<div class="imgbox"><\/div><p>Ruined Tracks and Pier Bricks<\/p>'
-					},
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/5Hospital-Columns.png',
-						'content':'<div class="imgbox"><\/div><p>Hospital Columns<\/p>'
-					},
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/6Hospital-Columns2.png',
-						'content':'<div class="imgbox"><\/div><p>Hospital Columns2<\/p>'
-					},
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/7Hospital-Monument.png',
-						'content':'<div class="imgbox"><\/div><p>Hospital Monument<\/p>'
-					},
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/8Surgeons-Residence.png',
-						'content':'<div class="imgbox"><\/div><p>Surgeon&rsquo;s Residence<\/p>'
-					},
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/9The-Splendid-Daniella-Romano.png',
-						'content':'<div class="imgbox"><\/div><p>The Splendid Daniella Romano<\/p>'
-					},
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/10Submerging-Pier.png',
-						'content':'<div class="imgbox"><\/div><p>Submerging Pier<\/p>'
-					},
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/11Goose-Crossing2.png',
-						'content':'<div class="imgbox"><\/div><p>Goose Crossing2<\/p>'
-					},
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/12Old-Cannon.png',
-						'content':'<div class="imgbox"><\/div><p>Old Cannon<\/p>'
+						'image': imgRoot + '\/floating\/1Hat-floating.png',
+						'content':'<div class="imgbox"><\/div><p><\/p>'
 					}
 				]
 			},
@@ -1396,16 +1237,6 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/MarkV-Present-Day\/3JennyInHat\/thumb_100_2499_1024.png',
-						'content':'<div class="imgbox"><\/div>'
-					},
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/3JennyInHat\/thumb_100_2501_1024.png',
 						'content':'<div class="imgbox"><\/div>'
 					},
@@ -1520,8 +1351,13 @@ var uwNodes = [
 						'rotx':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/5ArmyDiversinTank\/thumb_100_2510_1024.png',
 						'content':'<div class="imgbox"><\/div>'
-					},
-					{
+					}
+				]
+			},
+			{
+				'slug':'contact',
+				'label': 'the Mark V',
+				'objects': [					{
 						'class':'image',
 						'posx':0,
 						'posy':0,
@@ -1542,22 +1378,6 @@ var uwNodes = [
 						'content':'<div class="imgbox"><\/div>'
 					}
 				]
-			},
-			{
-				'slug':'contact',
-				'label': 'the Mark V',
-				'objects': [
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'image': imgRoot + '\/MarkV-Present-Day\/6NewEquipment\/1Air Control Console and Air Distribution Panel.png',
-						'content':'<div class="imgbox"><\/div><p>Placeholder for something<\/p>'
-					}
-				]
 			}
 		]
 	},
@@ -1565,22 +1385,6 @@ var uwNodes = [
 		'nodes': [
 			{
 				'slug':'home',
-				'label': '',
-				'objects': [
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/1Railroad-Transom.png',
-						'content':'<div class="imgbox"><\/div><p>[placeholder for floating version of buttons in grid]<\/p>'
-					}
-				]
-			},
-			{
-				'slug':'books/manhattan-beach',
 				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
 				'objects': [
 					{
@@ -1625,7 +1429,7 @@ var uwNodes = [
 				]
 			},
 			{
-				'slug':'books/a-visit-from-the-goon-squad',
+				'slug':'books/manhattan-beach',
 				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
 				'objects': [
 					{
@@ -1651,7 +1455,7 @@ var uwNodes = [
 				]
 			},
 			{
-				'slug':'books/the-keep',
+				'slug':'books/a-visit-from-the-goon-squad',
 				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
 				'objects': [
 					{
@@ -1673,13 +1477,7 @@ var uwNodes = [
 						'rotx':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/2Buildings\/3Bldg-128-Entrance.png',
 						'content':'<div class="imgbox"><\/div><p>Bldg 128, the Machine Shop<\/p>'
-					}
-				]
-			},
-			{
-				'slug':'books/look-at-me',
-				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
-				'objects': [
+					},
 					{
 						'class':'image',
 						'posx':0,
@@ -1703,7 +1501,7 @@ var uwNodes = [
 				]
 			},
 			{
-				'slug':'books/the-invisible-circus',
+				'slug':'books/the-keep',
 				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
 				'objects': [
 					{
@@ -1725,7 +1523,13 @@ var uwNodes = [
 						'rotx':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/2Building-Ways-in-Distance.png',
 						'content':'<div class="imgbox"><\/div><p>Building Ways in Distance<\/p>'
-					},
+					}
+				]
+			},
+			{
+				'slug':'books/look-at-me',
+				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
+				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -1745,6 +1549,42 @@ var uwNodes = [
 						'rotx':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/5BuildingWays2.png',
 						'content':'<div class="imgbox"><\/div><p>Building Ways<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/6CocoaFactoryFlushing-Avenue.png',
+						'content':'<div class="imgbox"><\/div><p>Cocoa Factory Flushing Avenue<\/p>'
+					}
+				]
+			},
+			{
+				'slug':'books/the-invisible-circus',
+				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
+				'objects': [
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/7CommandantsHouse-2.png',
+						'content':'<div class="imgbox"><\/div><p>Commandant&rsquo;s House<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/9CommandantsHouse1936.png',
+						'content':'<div class="imgbox"><\/div><p>Commandant&rsquo;s House 1936<\/p>'
 					}
 				]
 			},
@@ -1759,54 +1599,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/6CocoaFactoryFlushing-Avenue.png',
-						'content':'<div class="imgbox"><\/div><p>CocoaFactoryFlushing Avenue<\/p>'
-					},
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/7CommandantsHouse-2.png',
-						'content':'<div class="imgbox"><\/div><p>Commandant&rsquo;sHouse 2<\/p>'
-					},
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/9CommandantsHouse1936.png',
-						'content':'<div class="imgbox"><\/div><p>CommandantsHouse1936<\/p>'
-					}
-				]
-			},
-			{
-				'slug':'non-fiction',
-				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
-				'objects': [
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/10Dredging-Barge1941.png',
-						'content':'<div class="imgbox"><\/div><p>Dredging Barge1941<\/p>'
-					},
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/12Hammerhead-CraneinDistance.png',
-						'content':'<div class="imgbox"><\/div><p>Hammerhead CraneinDistance<\/p>'
+						'content':'<div class="imgbox"><\/div><p>Dredging barge and hammerhead crane in distance<\/p>'
 					},
 					{
 						'class':'image',
@@ -1816,12 +1610,12 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/13HammerheadCrane.png',
-						'content':'<div class="imgbox"><\/div><p>HammerheadCrane<\/p>'
+						'content':'<div class="imgbox"><\/div><p>Hammerhead Crane<\/p>'
 					}
 				]
 			},
 			{
-				'slug':'category/news',
+				'slug':'books/the-invisible-circus',
 				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
 				'objects': [
 					{
@@ -1843,13 +1637,7 @@ var uwNodes = [
 						'rotx':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/5Dry-Docks-5-_-6-Construction-1941.png',
 						'content':'<div class="imgbox"><\/div><p>Dry Docks 5 & 6 Construction, 1941<\/p>'
-					}
-				]
-			},
-			{
-				'slug':'about',
-				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
-				'objects': [
+					},
 					{
 						'class':'image',
 						'posx':0,
@@ -1863,7 +1651,7 @@ var uwNodes = [
 				]
 			},
 			{
-				'slug':'contact',
+				'slug':'non-fiction',
 				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
 				'objects': [
 					{
@@ -1874,7 +1662,7 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/5Artifacts\/1Ticket-to-Launch.png',
-						'content':'<div class="imgbox"><\/div><p>Ticket to Launch<\/p>'
+						'content':'<div class="imgbox"><\/div><p>Ticket to Ship Launch<\/p>'
 					},
 					{
 						'class':'image',
@@ -1894,8 +1682,146 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/5Artifacts\/Urinals-and-Sinks.png',
-						'content':'<div class="imgbox"><\/div><p>Urinals and Sinks<\/p>'
+						'content':'<div class="imgbox"><\/div><p>Washroom: Urinals and Sinks<\/p>'
+					}
+				]
+			},
+			{
+				'slug':'category/news',
+				'label': '',
+				'objects': [
+					{
+						'class':'image floating',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/floating\/suit.png',
+						'content':'<div class="imgbox"><\/div>'
+					}
+				]
+			},
+			{
+				'slug':'about',
+				'label': 'The Brooklyn Navy Yard: 2015',
+				'objects': [
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/1Railroad-Transom.png',
+						'content':'<div class="imgbox"><\/div><p>Naval Yard Railroad Transom, 2015<\/p>'
 					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/2Railroad-Transom-4.png',
+						'content':'<div class="imgbox"><\/div><p>Railroad Transom<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/3Old-Tracks.png',
+						'content':'<div class="imgbox"><\/div><p>Old Tracks<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/4Ruined-Tracks-and-Pier-Bricks.png',
+						'content':'<div class="imgbox"><\/div><p>Ruined Tracks and Pier Bricks<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/5Hospital-Columns.png',
+						'content':'<div class="imgbox"><\/div><p>Hospital Columns<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/6Hospital-Columns2.png',
+						'content':'<div class="imgbox"><\/div><p>Hospital Facade<\/p>'
+					},
+				]
+			},
+			{
+				'slug':'contact',
+				'label': 'The Brooklyn Navy Yard: 2015',
+				'objects': [
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/7Hospital-Monument.png',
+						'content':'<div class="imgbox"><\/div><p>Hospital Monument<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/8Surgeons-Residence.png',
+						'content':'<div class="imgbox"><\/div><p>Surgeon&rsquo;s Residence<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/9The-Splendid-Daniella-Romano.png',
+						'content':'<div class="imgbox"><\/div><p>The Splendid Daniella Romano<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/10Submerging-Pier.png',
+						'content':'<div class="imgbox"><\/div><p>Submerging Pier<\/p>'
+					},
+					{
+						'class':'image',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/11Goose-Crossing2.png',
+						'content':'<div class="imgbox"><\/div><p>Goose Crossing<\/p>'
+					}
 				]
 			}
 		]
@@ -1911,16 +1837,30 @@ var uwNodes = [
 						'posx':0,
 						'posy':0,
 						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'image': imgRoot + '\/noah_scalin\/skull-placeholder.png',
-						'content':'<div class="imgbox"><\/div><p>[placeholder for Skull]<\/p>',
-						'content-old':'<div class="layer-1"><img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/skull-comp\/skull-1.png"><\/div><div class="layer-2"><img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/skull-comp\/skull-2.png"><\/div><div class="layer-3"><img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/skull-comp\/skull-3.png"><\/div><div class="layer-4"><img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/skull-comp\/skull-4.png"><\/div>'
+						'roty':-30,
+						'rotx':-5,
+						'content':'<div class="layer-1"><img alt="" src="' + imgRoot + '\/noah_scalin\/skull-1.png"><\/div><div class="layer-2"><img alt="" src="' + imgRoot + '\/noah_scalin\/skull-2.png"><\/div><div class="layer-3"><img alt="" src="' + imgRoot + '\/noah_scalin\/skull-3.png"><\/div><div class="layer-4"><img alt="" src="' + imgRoot + '\/noah_scalin\/skull-4.png"><\/div>'
 					}
 				]
 			},
 			{
-				'slug':'books/manhattan-beach',
+				'slug':'manhattan-beach',
+				'label': '',
+				'objects': [
+					{
+						'class':'image floating',
+						'posx':0,
+						'posy':0,
+						'posz':0,
+						'roty':0,
+						'rotx':0,
+						'image': imgRoot + '\/floating\/1Hat-floating.png',
+						'content':'<div class="imgbox"><\/div><p>placeholder for dial<\/p>'
+					}
+				]
+			},
+			{
+				'slug':'books/a-visit-from-the-goon-squad',
 				'label': 'Diving Dress &amp; Equipment',
 				'objects': [
 					{
@@ -1965,7 +1905,7 @@ var uwNodes = [
 				]
 			},
 			{
-				'slug':'books/a-visit-from-the-goon-squad',
+				'slug':'books/the-keep',
 				'label': 'Diving Dress &amp; Equipment',
 				'objects': [
 					{
@@ -1995,18 +1935,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/DivingDressEquipment\/2Canvas\/3Straps.png',
-						'content':'<div class="imgbox"><\/div><p>Straps<\/p>'
-					},
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
 						'image': imgRoot + '\/DivingDressEquipment\/2Canvas\/4KneeDetail.png',
-						'content':'<div class="imgbox"><\/div><p>Knee Detail<\/p>'
+						'content':'<div class="imgbox"><\/div><p>Knee Patches<\/p>'
 					},
 					{
 						'class':'image',
@@ -2036,12 +1966,12 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/DivingDressEquipment\/2Canvas\/7RubberCollarDetail.png',
-						'content':'<div class="imgbox"><\/div><p>Foot Detail<\/p>'
+						'content':'<div class="imgbox"><\/div><p>Rubber Collar Detail<\/p>'
 					}
 				]
 			},
 			{
-				'slug':'books/the-keep',
+				'slug':'books/look-at-me',
 				'label': 'Diving Dress &amp; Equipment',
 				'objects': [
 					{
@@ -2071,23 +2001,13 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/DivingDressEquipment\/3Hats\/4Spitcock.png',
-						'content':'<div class="imgbox"><\/div><p>Spitcock<\/p>'
-					},
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
 						'image': imgRoot + '\/DivingDressEquipment\/3Hats\/5Vent.png',
 						'content':'<div class="imgbox"><\/div><p>Vent<\/p>'
 					}
 				]
 			},
 			{
-				'slug':'books/look-at-me',
+				'slug':'books/the-invisible-circus',
 				'label': 'Diving Dress &amp; Equipment',
 				'objects': [
 					{
@@ -2108,7 +2028,7 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/DivingDressEquipment\/4Compressors\/2Flywheel.png',
-						'content':'<div class="imgbox"><\/div><p>Flywheel<\/p>'
+						'content':'<div class="imgbox"><\/div><p>Compressor Flywheel<\/p>'
 					},
 					{
 						'class':'image',
@@ -2173,7 +2093,7 @@ var uwNodes = [
 				]
 			},
 			{
-				'slug':'books/the-invisible-circus',
+				'slug':'books/emerald-city-and-other-stories',
 				'label': 'Diving Dress &amp; Equipment',
 				'objects': [
 					{
@@ -2184,27 +2104,7 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/DivingDressEquipment\/5DressElements\/1DDCollar.png',
-						'content':'<div class="imgbox"><\/div><p>DD Collar<\/p>'
-					},
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'image': imgRoot + '\/DivingDressEquipment\/5DressElements\/2DDCollarDetail.png',
-						'content':'<div class="imgbox"><\/div><p>DD Collar Detail<\/p>'
-					},
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'image': imgRoot + '\/DivingDressEquipment\/5DressElements\/3DDCollarInside.png',
-						'content':'<div class="imgbox"><\/div><p>DD Collar Inside<\/p>'
+						'content':'<div class="imgbox"><\/div><p>Collar<\/p>'
 					},
 					{
 						'class':'image',
@@ -2214,7 +2114,7 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/DivingDressEquipment\/5DressElements\/4EganInPussyCushion.png',
-						'content':'<div class="imgbox"><\/div><p>Egan In Pussy Cushion<\/p>'
+						'content':'<div class="imgbox"><\/div><p>Pussy Cushion<\/p>'
 					},
 					{
 						'class':'image',
@@ -2224,24 +2124,8 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/DivingDressEquipment\/5DressElements\/5DDLeadBelt2.png',
-						'content':'<div class="imgbox"><\/div><p>DD Lead Belt<\/p>'
+						'content':'<div class="imgbox"><\/div><p>Lead Belt<\/p>'
 					},
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'image': imgRoot + '\/DivingDressEquipment\/5DressElements\/6DDBeltBuckle.png',
-						'content':'<div class="imgbox"><\/div><p>DD Belt Buckle<\/p>'
-					}
-				]
-			},
-			{
-				'slug':'books/emerald-city-and-other-stories',
-				'label': 'Diving Dress &amp; Equipment',
-				'objects': [
 					{
 						'class':'image',
 						'posx':0,
@@ -2259,18 +2143,8 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/DivingDressEquipment\/5DressElements\/8DDLeadBeltWithStraps2.png',
-						'content':'<div class="imgbox"><\/div><p>DD Lead Belt With Straps<\/p>'
-					},
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
 						'image': imgRoot + '\/DivingDressEquipment\/5DressElements\/9DDShoeFront2.png',
-						'content':'<div class="imgbox"><\/div><p>DD Shoe Front<\/p>'
+						'content':'<div class="imgbox"><\/div><p>Shoe Front<\/p>'
 					},
 					{
 						'class':'image',
@@ -2280,7 +2154,7 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/DivingDressEquipment\/5DressElements\/10DDShoeSide.png',
-						'content':'<div class="imgbox"><\/div><p>DD Shoe Side<\/p>'
+						'content':'<div class="imgbox"><\/div><p>Shoe Side<\/p>'
 					},
 					{
 						'class':'image',
@@ -2290,17 +2164,7 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/DivingDressEquipment\/5DressElements\/11DDShoeBottom.png',
-						'content':'<div class="imgbox"><\/div><p>DD Shoe Bottom<\/p>'
-					},
-					{
-						'class':'image',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'image': imgRoot + '\/DivingDressEquipment\/5DressElements\/12DDHoses.png',
-						'content':'<div class="imgbox"><\/div><p>DD Hoses<\/p>'
+						'content':'<div class="imgbox"><\/div><p>Shoe Bottom<\/p>'
 					},
 					{
 						'class':'image',
@@ -2310,7 +2174,7 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'image': imgRoot + '\/DivingDressEquipment\/5DressElements\/13DDAirHoseCovers.png',
-						'content':'<div class="imgbox"><\/div><p>DD Air Hose Covers<\/p>'
+						'content':'<div class="imgbox"><\/div><p>Air Hose Covers<\/p>'
 					}
 				]
 			},
@@ -2325,11 +2189,11 @@ var uwNodes = [
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/DivingDressEquipment\/5DressElements\/13DDAirHoseCovers.png',
-						'content':'<div class="imgbox"><\/div><p>[Placeholder for Reading Lucy image]<\/p>'
+						'image': imgRoot + '\/lucy.png',
+						'content':'<div class="imgbox"><\/div><p>Lucille Kolkin and pals.<\/p>'
 					},
 					{
-						'class':'scrollbar closed no-click',
+						'class':'scrollbar text closed no-click',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -2344,14 +2208,13 @@ var uwNodes = [
 				'label': '',
 				'objects': [
 					{
-						'class':'image floating',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'image': imgRoot + '\/floating\/1Hat-floating.png',
-						'content':'<div class="imgbox"><\/div><p><\/p>'
+						'content':''
 					}
 				]
 			},
@@ -2364,24 +2227,24 @@ var uwNodes = [
 						'posx':0,
 						'posy':0,
 						'posz':0,
-						'roty':30,
-						'rotx':5,
+						'roty':-30,
+						'rotx':-5,
 						'content':'<div class="layer-1"><img alt="" src="' + imgRoot + '\/noah_scalin\/jenny-1.png"><\/div><div class="layer-2"><img alt="" src="' + imgRoot + '\/noah_scalin\/jenny-2.png"><\/div><div class="layer-3"><img alt="" src="' + imgRoot + '\/noah_scalin\/jenny-3.png"><\/div><div class="layer-4"><img alt="" src="' + imgRoot + '\/noah_scalin\/jenny-4.png"><\/div>'
 					}
 				]
 			},
 			{
 				'slug':'contact',
-				'label': 'Mr. Gratzky',
+				'label': '',
 				'objects': [
 					{
-						'class':'scrollbar closed no-click',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
 						'roty':0,
 						'rotx':0,
-						'content':'<h3>Mr. Gratzky - Cut Scene</h3><p>To Anna&rsquo;s knowledge, wounded Mr. Gratzky had never emerged from his room off the kitchen. Visitors would pass the door on their way to the front room, where Mrs. Gratzky conducted her sewing business. The door was always ajar, presumably for air—rooms off the kitchen usually faced the shaft. When Anna came to deliver parcels of finished costumes and receive new pieces to bring home, she occasionally heard a cough from behind that door, a ballgame muttering faintly on a radio.</p><p>When Mrs. Gratzky wasn&rsquo;t home, visitors left their packages on the kitchen table. At these times, Anna would occasionally move closer to the door, trying to see into the gloom beyond it. Perhaps, on that day, she&rsquo;d stood even closer than usual. Perhaps she&rsquo;d crossed the threshold by some fraction of an inch. Whatever it was, he saw, or sensed, her there.</p><p>&ldquo;Who&rsquo;s that? Come in where I can see you.&rdquo;</p><p>His voice was surprisingly forceful. Heart bucking, Anna pushed open the door and stepped inside the dark room. &ldquo;Good afternoon,&rdquo; she said. &ldquo;My name is Anna Kerrigan. My mother does sewing for Mrs. Gratzky.&rdquo;</p><p>The room smelled of mothballs and old newspaper. The window facing the shaft was closed, covered with a lace curtain whose festive red trim Anna recognized from tunics her mother had worked on. The only light came from the kitchen.</p><p>&ldquo;Come closer,&rdquo; he said. &ldquo;You&rsquo;re in silhouette.&rdquo;</p><p>She was surprised by how large a man he was: long and big-shouldered, a giant column covered to the neck with blankets and a white coverlet. His head was propped nearly at a right angle to the rest of him, tilting a lean, ravaged face at the room. &ldquo;Are you sick?&rdquo; she asked.</p><p>His laugh made a sound like dice being shaken in a cup. &ldquo;Don&rsquo;t play dumb, missy. Everyone knows what&rsquo;s the matter with me.&rdquo;</p><p>Anna felt herself flush, relieved that he couldn&rsquo;t see her clearly. &ldquo;You were hurt in the war,&rdquo; she said.</p><p>&ldquo;What war?&rdquo; he shot back. &ldquo;No one remembers it.&rdquo;</p><p>&ldquo;I do.&rdquo;</p><p>&ldquo;You&rsquo;re what, ten?&rdquo;</p><p>&ldquo;Twelve,&rdquo; she said, offended. In fact, she was almost twelve; her birthday was the next week.</p><p>&ldquo;Hard to tell, lying here like a log. Now what do you remember, missy, about the Great War.&rdquo;</p><p>Lessons swirled and scattered in Anna&rsquo;s mind: the archduke, trench warfare, machine guns. &ldquo;You&rsquo;ve a hole in you that won&rsquo;t heal,&rdquo; she said at last.</p><p>&ldquo;That happens to be true,&rdquo; he said. &ldquo;They&rsquo;ve tried sewing it, taping it, grafting it—nothing sticks.&rdquo;</p><p>&ldquo;Can you stand up?&rdquo;</p><p>&ldquo;Yes, but I tire pretty fast.&rdquo;</p><p>&ldquo;Could part of you…fall out?&rdquo;</p><p>&ldquo;Now that&rsquo;s a good question,&rdquo; he said. &ldquo;A very reasonable question. But no. It turns out you can live pretty well, for a while, with a hole in you. The problem is not what might come out of the hole but what might go in. Germs, you understand. Infections. So when you have a hole, like I have—and I&rsquo;m not the only one, by the way, there are men living with holes in their heads, believe it or not, you can look right inside and see their brains…but we…people with holes…we have to be… careful.&rdquo; She could barely hear the end of the sentence.</p><p>&ldquo;And stay in bed?&rdquo;</p><p>&ldquo;…And stay in bed.&rdquo;</p><p>A spectral handsomeness haunted the wreckage of Mr. Gratzky&rsquo;s face: shelves of cheekbone, white teeth, rowdy black eyes. His body seemed nearly to overpower the bed, but in fact he occupied only half. The other half was empty, a night table and a drinking glass beside it: presumably where Mrs. Gratzky slept.</p><p>When Anna looked back at him, she found his bright gaze resting on her. &ldquo;You&rsquo;re a nosy one,&rdquo; he said. &ldquo;I can tell. You want to see it.&rdquo;</p><p>She did, of course. But she was afraid.</p><p>&ldquo;It&rsquo;s probably not as bad as you think.&rdquo;</p><p>The coverlet smelled of roses and soap. Mrs. Gratzky took impeccable care of this big man, a fact that seemed, to Anna, embarrassingly private.</p><p>&ldquo;You must promise not to scream.&rdquo;</p><p>&ldquo;I never scream,&rdquo; she said.</p><p>He pulled back the coverlet to reveal fresh striped pajamas with expensive-looking piping. He began to unbutton the top. As Anna watched his bare torso materialize, less bony than her father&rsquo;s, covered with sparse black hair that lay flat against the skin, she had a first intimation of having moved alongside him into unfamiliar territory. His large brown nipples with their fringe of black hair reminded her of the feathered pasties Aunt Brianne wore in her Vanities stills. When the pajama top was fully unbuttoned, he pulled its two halves aside. Below his ribcage on the right, lay a square of gauze stained faintly pink, as if with tomato water. It wasn&rsquo;t taped, it merely rested there. He lifted it, and she saw a hole in his flesh the size of a quarter, its edges red and wet as a baby&rsquo;s mouth. In the scant light, she could barely discern a viscous landscape within it.</p><p>&ldquo;There it is,&rdquo; he said. &ldquo;What do you say?&rdquo;</p><p>Anna brought her eye nearer the wound. It was like nothing she had seen, and the fascination she felt in its presence was almost transporting. &ldquo;Does it hurt?&rdquo; she asked.</p><p>&ldquo;When I lie like this, no. But when I stand, it aches.&rdquo;</p><p>Anna moved closer. She wanted to shine a bright light directly into the hole, to peer around its edges into Mr. Gratzky&rsquo;s interior. She wanted to put her finger inside the wound and feel it close around her. &ldquo;Where does it hurt?&rdquo; she asked. &ldquo;Right where the hole is, or somewhere else?&rdquo;</p><p>He didn&rsquo;t answer. He seemed to be thinking. Abruptly he flipped the gauze back over the wound, barely giving Anna time to withdraw her face. &ldquo;You get the picture,&rdquo; he said. &ldquo;Now scram.&rdquo; As she fumbled toward the door, he added, &ldquo;Turn up that radio, would you?&rdquo;</p><p>Anna stood, disoriented, in the kitchen. A moment later she heard heels on the stairs, followed by Pearl Gratzky&rsquo;s asthmatic breathing. Quickly she restored the door to its usual position. As Mrs. Gratzky entered, Anna curled her fingers around the string on her package as though in the act of setting it down. Mr. Gratzky must have heard his wife&rsquo;s steps, she realized now, or known the timing of her arrival. Anna followed her into the front room, where she unwrapped the parcel and applied her usual fierce scrutiny to each of thirty-two sequined bowlers. This was a tense process; Mrs. Gratzky sometimes demanded alterations on the spot, or sent things back to be redone. This time, Anna was aware of her shared intelligence with Mr. Gratzky, as if she were still beside his bed in the back room. Having a secret from Mrs. Gratzky with her husband was something she had not foreseen. It felt wrong. Yet it seemed beyond Anna&rsquo;s power, now, to undo the collusion.</p><p>By suppertime, the weight of her new secret had become uncomfortable. Anna no longer wanted to keep it, but she was afraid to tell it. Her father, she knew, would blame her for going into Mr. Gratzky&rsquo;s bedroom and being curious. Even worse was the thought of his blaming Mr. Gratzky, having a confrontation that might jeopardize her mother&rsquo;s sewing work. She was not to tell; that was part of the secret between her and Mr. Gratzky. Telling would make it more wrong, not less. But how had it become a secret in the first place?</p><a class="open-handle">&hellip;</a>'
+						'content':''
 					}
 				]
 			}
