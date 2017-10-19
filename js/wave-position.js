@@ -771,7 +771,7 @@ function drawWave(t) {
 		buildNodes();
 
 		function getNodeWrapperOffsets(){
-			
+
 			uwNodes.forEach(function(tier, t) {
 				nodeWrapperOffsets['nw-' + t] = {top: $('.nw-'+t).offset().top, margin: $('.nw-'+t).css('margin-top'), height: $('.nw-'+t+ ' .node').outerHeight()};
 			});
@@ -864,7 +864,7 @@ function drawWave(t) {
 		$( ".underwater" ).on( "click", ".camera .object.video", function(event) {
 			event.preventDefault();
 			var uwbody = $('#body');
-			console.log(body);
+			// console.log(body);
 			var modal = $('.underwater-video-modal');
 			var videoHolder = $('.video-holder');
 			if ( $(this).data('orientation') === 'portrait' ) {
@@ -999,28 +999,32 @@ function drawWave(t) {
 
 		  	// swap background image
 
-				var bgWrap = $('.st-1');
-				var bgImg = $('.st-1 img');
+		  	if ( $(window).width > 768 ) {
 
-		  	uwBackgrounds.forEach(function(bg, index) {
-		  		if ( bg.slug === nextSlug ) {
+					var bgWrap = $('.st-1');
+					var bgImg = $('.st-1 img');
+
+			  	uwBackgrounds.forEach(function(bg, index) {
+			  		if ( bg.slug === nextSlug ) {
 
 
-					bgWrap
-						.data('posy', bg.posy)
-						.data('posx', bg.posx)
-						.data('posz', bg.posz)
-						.data('scale', bg.scale);
+						bgWrap
+							.data('posy', bg.posy)
+							.data('posx', bg.posx)
+							.data('posz', bg.posz)
+							.data('scale', bg.scale);
 
-		  			bgImg.fadeOut(1000, function() {
-					  	bgWrap.css({'transform': 'translate3d(' + bg.posx + 'vw, ' + bg.posy + 'vh, ' + bg.posz + 'vw) scale(' + bg.scale + ')', 'transition': 'none'});
-					  	$(this).clone().attr('src', bg.content).hide().appendTo(bgWrap).fadeIn('slow');
-		  				$(this).remove();
-		  			});
-		  		}
-		  	});
+			  			bgImg.fadeOut(1000, function() {
+						  	bgWrap.css({'transform': 'translate3d(' + bg.posx + 'vw, ' + bg.posy + 'vh, ' + bg.posz + 'vw) scale(' + bg.scale + ')', 'transition': 'none'});
+						  	$(this).clone().attr('src', bg.content).hide().appendTo(bgWrap).fadeIn('slow');
+			  				$(this).remove();
+			  			});
+			  		}
+			  	});
 
-		  	console.log(elem);
+			  }
+
+		  	// console.log(elem);
 
 				// Loop forward
 				if ( clickCount > 10 ) {
@@ -1081,7 +1085,7 @@ function drawWave(t) {
 
 		  	});
 		  } else {
-		  	console.log('same');
+		  	// console.log('same');
 		  }
 			// $('.background').css('transform', 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)').find('.here').removeClass('here');
 		  // elem.parent().find('.object').each( function(){
