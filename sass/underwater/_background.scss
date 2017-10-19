@@ -32,6 +32,8 @@
   height: 100%;
   pointer-events:none;
   @include preserve3d;
+  // background: linear-gradient(2deg, transparent 0%, transparent 80%, $under-black 81%, $under-black 100%);
+
 
   opacity:1;
 
@@ -64,6 +66,7 @@
   .st-1 {
     // transform: translateX(-40vw) translateZ(-600vw) scale(70) rotate3d(0, 1, 0, -30deg);
     transition: transform 2000ms ease-in-out;
+    transform-origin: center bottom;
 
     img {
       width:15vw;

@@ -2456,7 +2456,7 @@ var uwBackgrounds = [
  {
  	'slug': 'books/manhattan-beach',
  	'posx': -120,
- 	'posy': 100,
+ 	'posy': 0,
  	'posz': -1000,
  	'scale': 70,
  	'content': bgImgRoot + '/background/final-small-ship.png'
@@ -2464,7 +2464,7 @@ var uwBackgrounds = [
  {
  	'slug': 'books/a-visit-from-the-goon-squad',
  	'posx': 350,
- 	'posy': 1500,
+ 	'posy': 0,
  	'posz': -1600,
  	'scale': 100,
  	'content': bgImgRoot + '/background/final-mountain.png'
@@ -2472,7 +2472,7 @@ var uwBackgrounds = [
  {
  	'slug': 'books/the-keep',
  	'posx': 0,
- 	'posy': 1000,
+ 	'posy': 0,
  	'posz': -1000,
  	'scale': 100,
  	'content': bgImgRoot + '/background/final-mountain.png'
@@ -2480,7 +2480,7 @@ var uwBackgrounds = [
  {
  	'slug': 'books/look-at-me',
  	'posx': 800,
- 	'posy': 1000,
+ 	'posy': 0,
  	'posz': -2000,
  	'scale': 80,
  	'content': bgImgRoot + '/background/final-big-ship.png'
@@ -2496,7 +2496,7 @@ var uwBackgrounds = [
  {
  	'slug': 'books/emerald-city-and-other-stories',
  	'posx': 350,
- 	'posy': 1500,
+ 	'posy': 0,
  	'posz': -1600,
  	'scale': 100,
  	'content': bgImgRoot + '/background/final-mountain.png'
@@ -2504,7 +2504,7 @@ var uwBackgrounds = [
  {
  	'slug': 'non-fiction',
  	'posx': -120,
- 	'posy': 100,
+ 	'posy': 0,
  	'posz': -1000,
  	'scale': 70,
  	'content': bgImgRoot + '/background/final-small-ship.png'
@@ -2512,7 +2512,7 @@ var uwBackgrounds = [
  {
  	'slug': 'category/news',
  	'posx': -10,
- 	'posy': 100,
+ 	'posy': 0,
  	'posz': 0,
  	'scale': 0,
  	'content': bgImgRoot + '/background/final-mountain.png'
@@ -2520,7 +2520,7 @@ var uwBackgrounds = [
  {
  	'slug': 'about',
  	'posx': 800,
- 	'posy': 1000,
+ 	'posy': 0,
  	'posz': -2000,
  	'scale': 80,
  	'content': bgImgRoot + '/background/final-big-ship.png'
@@ -2528,7 +2528,7 @@ var uwBackgrounds = [
  {
  	'slug': 'contact',
  	'posx': 350,
- 	'posy': 1500,
+ 	'posy': 0,
  	'posz': -1600,
  	'scale': 100,
  	'content': bgImgRoot + '/background/final-mountain.png'

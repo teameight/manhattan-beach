@@ -65,7 +65,7 @@
 							<img alt="" src="<?php echo get_template_directory_uri(); ?>/img/bg/bg-texture.png">
 						</div>
 						<div class="structure st-1">
-							<img alt="" src="<?php echo get_template_directory_uri(); ?>/img/bg/nyscraper.png">
+							<img alt="" src="">
 						</div>
 					</div>
 					<div class="node-wrapper nw-template">

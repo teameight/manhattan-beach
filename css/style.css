@@ -1157,7 +1157,8 @@ a.open-handle {
       width: 100vw;
       /*border: 1px solid yellow;*/ }
   .background .st-1 {
-    transition: transform 2000ms ease-in-out; }
+    transition: transform 2000ms ease-in-out;
+    transform-origin: center bottom; }
     .background .st-1 img {
       width: 15vw; }
 
