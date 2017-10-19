@@ -287,10 +287,10 @@ var unit = 30,
 
   waveGrdStop1='rgba(50, 70, 80, 1)',
   waveGrdStop2='rgba(53, 74, 85, 1)',
-  wavestrokecolor="rgba(225,236,255, 1)",
+  wavestrokecolor="rgba(255,255,255, 1)",
 	wavecolor="#5b7b7b",
 
-	wavestrokeWidth = wWidth*.0014,
+	wavestrokeWidth = wWidth*.002,
 	parameters={
 			freq: 1,
 			amp: 55,
@@ -455,22 +455,21 @@ function drawWave(t) {
 
 			$(window).on('resize', function(e) {
 
-				if(windowW != $(window).width() || windowH != $(window).height()) {
-		      location.reload();
-		      return;
-		    }
-			  // clearTimeout(resizeTimer);
-			  // resizeTimer = setTimeout(function() {
-					// console.log("RESIZING");
-					// resize = true;
-			  //   setWaterHeight();
-			  //   nodeWrapperOffsets = getNodeWrapperOffsets();
 
-			  // }, 300);
+			  clearTimeout(resizeTimer);
+			  resizeTimer = setTimeout(function() {
+					console.log("RESIZING");
+					resize = true;
+			    setWaterHeight();
+			    nodeWrapperOffsets = getNodeWrapperOffsets();
+
+			  }, 300);
 
 			});
 
-			buildBackground();
+			if ( $(window).width() > 768 ) {
+				buildBackground();
+			}
 
 		}else{
 			$('#body').removeClass('not-loaded').addClass('loaded');
@@ -557,16 +556,19 @@ function drawWave(t) {
 			uwTop = $('.uw-segway').offset().top;
 			// console.log(uwTop);
 			waveInit();
-			initDCanvas();
-			// 	dotSize, speed, circSizeFactor
-			createCircleArray(.3, .3, .3);
-			// createCircleArray(.4, .4, .2);
-			// createCircleArray(.5, .6, .35);
-			createCircleArray(.7, .7, .45);
-			// createCircleArray(.6, .8, .4);
-			update();
-			dDraw();
-			requestAnimFrame(dLoop);
+
+			if ( $(window).width > 768 ) {
+				initDCanvas();
+				// 	dotSize, speed, circSizeFactor
+				createCircleArray(.3, .3, .3);
+				// createCircleArray(.4, .4, .2);
+				// createCircleArray(.5, .6, .35);
+				createCircleArray(.7, .7, .45);
+				// createCircleArray(.6, .8, .4);
+				update();
+				dDraw();
+				requestAnimFrame(dLoop);
+			}
 
 			$bodyDiv.removeClass('not-loaded').addClass('loaded');
 			var bInnerH = $('.b-inner').height();
@@ -612,21 +614,14 @@ function drawWave(t) {
 				var margin = parseInt(nodeWrapperOffsets[key].margin);
 				var height = nodeWrapperOffsets[key].height;
 				//console.log(key, 'scroll:', newScrollTop, 'uwTop:', uwTop, 'windowH:', windowH, 'top:', top, 'margin:', margin, 'height:', height);
-				//if ( ( newScrollTop > ( top - ( height*2.25 ) ) ) && ( newScrollTop < (top + (height*2.25) + 2500 ) ) ) {
-				if ( ( newScrollTop > ( top - ( height*2.75 ) ) ) && ( newScrollTop < (top + (height*2.25) ) ) ) {
+				if ( ( newScrollTop > ( top - ( height*2.25 ) ) ) && ( newScrollTop < (top + (height*2.25) + 2500 ) ) ) {
 					newTierKey = key;
 				}
 			}
 			if(tierKey !== newTierKey){
 				tierKey = newTierKey;
-				console.log(tierKey);
-
+				//console.log(tierKey);
 				if(tierKey){
-					
-					currentWrapper = $('.' + tierKey);
-
-					updateLabel(tierKey);
-
 					tierNum = tierKey.split('-')[1];
 					tierClass = parseInt(tierNum) + 2;
 
@@ -641,7 +636,7 @@ function drawWave(t) {
 		});
 
 		function loadUwImages(tierClass){
-			
+
 			// console.log('.nw-' + tierClass);
 
 			$('.nw-' + tierClass).data('loadedimg', true).find('.object').each( function(){
@@ -659,11 +654,6 @@ function drawWave(t) {
 
     	});
 
-		}
-
-		function updateLabel(tierKey){
-			elem = $('.' + tierKey).find('.here');
-			$('.node-label-text').html(elem.data('label'));
 		}
 
 		var currentWrapper;
@@ -923,9 +913,6 @@ function drawWave(t) {
 		$( ".uw-hud" ).on( "click", ".prev", function(event) {
 			event.preventDefault();
 
-			console.log('prev');
-			console.log(currentWrapper);
-
 			var hereObj = currentWrapper.find('.here');
 			var previous = true;
 			swimAround(hereObj, previous);
@@ -934,9 +921,6 @@ function drawWave(t) {
 
 		$( ".uw-hud" ).on( "click", ".next", function(event) {
 			event.preventDefault();
-
-			console.log('next');
-			console.log(currentWrapper);
 
 			var hereObj = currentWrapper.find('.here');
 			var previous = false;
@@ -980,7 +964,9 @@ function drawWave(t) {
 				nextLabel = elem.data('label');
 		  }
 
-			$('.node-label-text').html(elem.data('label'));
+			$('.node-label-text').fadeOut( 400, function() {
+    			$(this).html(elem.data('label')).fadeIn('slow');
+  		});
 
 		  // console.log('here', hereSlug, 'next', nextSlug);
 

@@ -526,7 +526,7 @@ h4,
         height: 40px;
         width: 1px;
         position: relative;
-        background: #8ea9bd;
+        background: #fff;
         transform: rotateX(65deg);
         left: 20px;
         transition: opacity 500ms ease; }
@@ -534,18 +534,18 @@ h4,
           content: '';
           height: 15px;
           width: 15px;
-          border-top: 2px #8ea9bd solid;
+          border-top: 2px #fff solid;
           display: block;
           position: absolute;
           top: 0;
           left: -7.5px;
           transform: rotateZ(45deg);
-          border-left: 2px #8ea9bd solid; }
+          border-left: 2px #fff solid; }
       .uw-hud .prevnext a.prev span::after {
         top: auto;
         bottom: 0;
-        border-bottom: 2px #8ea9bd solid;
-        border-right: 2px #8ea9bd solid;
+        border-bottom: 2px #fff solid;
+        border-right: 2px #fff solid;
         border-top: none;
         border-left: none; }
   .uw-hud #uw-site-navigation {
