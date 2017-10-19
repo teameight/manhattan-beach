@@ -25,7 +25,7 @@ body {
   height: 100%;
 
   .loading {
-		background: $yellow-grey;
+		    background: #197380;
 		height:100%;
 		width: 100%;
 		position: absolute;
@@ -34,6 +34,13 @@ body {
 		opacity:0;
 		transition: opacity 1s ease;
 		pointer-events: none;
+		    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+    	max-width:100px;
+    }
 	}
 
   &.not-loaded {

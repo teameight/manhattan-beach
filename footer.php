@@ -83,12 +83,13 @@
 		</div>
 	</div><!-- #b-inner -->
 	<div class="loading">
-		<div class="preloader">
+		<!-- <div class="preloader">
 			<span></span>
 			<span></span>
 			<span></span>
 			<span></span>
-		</div>
+		</div> -->
+		<img src="http://res.cloudinary.com/egan/image/upload/floating/gears-load.png" />
 	</div>
 </div><!-- #body -->
 <div class="canvas-wrap">
