@@ -130,7 +130,7 @@ var uwNodes = [
 						'rotx':3,
 						'rotz':-15,
 						'image': imgRoot + '\/v1\/floating\/phone.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					}
 				]
 			},
@@ -183,7 +183,7 @@ var uwNodes = [
 						'rotx':2,
 						'rotz':15,
 						'image': imgRoot + '\/v1\/floating\/sockets.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					}
 				]
 			},
@@ -292,7 +292,7 @@ var uwNodes = [
 						'rotx':10,
 						'rotz':0,
 						'image': imgRoot + '\/v2\/floating\/gears-3.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					}
 				]
 			},
@@ -385,7 +385,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/1The-Jeremiah-OBrien-From-Pier-39.png',
-						'content':'<div class="imgbox"><\/div><p>The Jeremiah O&rsquo;Brien<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>The Jeremiah O&rsquo;Brien<\/p>'
 					},
 					{
 						'class':'image',
@@ -396,7 +396,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/2JOB-Bow.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -407,7 +407,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/3Gangway-to-JOB.png',
-						'content':'<div class="imgbox"><\/div><p>Gangway<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Gangway<\/p>'
 					},
 					{
 						'class':'image',
@@ -418,7 +418,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/4Booms-and-Raft.png',
-						'content':'<div class="imgbox"><\/div><p>Booms and Raft<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Booms and Raft<\/p>'
 					},
 					{
 						'class':'image',
@@ -429,7 +429,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/5Alley.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -440,7 +440,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/1Exterior\/6.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					}
 				]
 			},
@@ -457,7 +457,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/7View-Forward-From-Flying-Bridge.png',
-						'content':'<div class="imgbox"><\/div><p>View of Forward Main Deck from Flying Bridge<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>View of Forward Main Deck from Flying Bridge<\/p>'
 					},
 					{
 						'class':'image',
@@ -468,7 +468,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/8View-Aft-From-Flying-Bridge.png',
-						'content':'<div class="imgbox"><\/div><p>View Aft From Flying Bridge<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>View Aft From Flying Bridge<\/p>'
 					},
 					{
 						'class':'image',
@@ -479,7 +479,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/3Mast-and-Vent.png',
-						'content':'<div class="imgbox"><\/div><p>Mast and Vent<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Mast and Vent<\/p>'
 					},
 					{
 						'class':'image',
@@ -490,7 +490,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/4Boom-Cables.png',
-						'content':'<div class="imgbox"><\/div><p>Boom Cables<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Boom Cables<\/p>'
 					}
 				]
 			},
@@ -507,7 +507,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/6Stack-With-Smoke.png',
-						'content':'<div class="imgbox"><\/div><p>Stack With Smoke<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Stack With Smoke<\/p>'
 					},
 					{
 						'class':'image',
@@ -518,7 +518,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/10Gun-On-Flying-Bridge.png',
-						'content':'<div class="imgbox"><\/div><p>Gun On Flying Bridge<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Gun On Flying Bridge<\/p>'
 					},
 					{
 						'class':'image',
@@ -529,7 +529,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/2Deckphotos\/11Gun-Sight.png',
-						'content':'<div class="imgbox"><\/div><p>Gun Sight<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Gun Sight<\/p>'
 					}
 				]
 			},
@@ -546,7 +546,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3OfficesCabins\/1Porthole.png',
-						'content':'<div class="imgbox"><\/div><p>Porthole<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Porthole<\/p>'
 					},
 					{
 						'class':'image',
@@ -557,7 +557,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3OfficesCabins\/2SeamanQuarters.png',
-						'content':'<div class="imgbox"><\/div><p>Seaman Quarters<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Seaman Quarters<\/p>'
 					},
 					{
 						'class':'image',
@@ -568,7 +568,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3OfficesCabins\/3FirstMateStateroom.png',
-						'content':'<div class="imgbox"><\/div><p>First Mate Stateroom<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>First Mate Stateroom<\/p>'
 					},
 					{
 						'class':'image',
@@ -579,7 +579,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3OfficesCabins\/4GunnersBunks.png',
-						'content':'<div class="imgbox"><\/div><p>Gunners Bunks<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Gunners Bunks<\/p>'
 					},
 					{
 						'class':'image',
@@ -590,7 +590,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3OfficesCabins\/5MessHall.png',
-						'content':'<div class="imgbox"><\/div><p>Mess Hall<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Mess Hall<\/p>'
 					}
 				]
 			},
@@ -607,7 +607,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3OfficesCabins\/6NavigationChartRoom.png',
-						'content':'<div class="imgbox"><\/div><p>Navigation Chart Room<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Navigation Chart Room<\/p>'
 					},
 					{
 						'class':'image',
@@ -618,7 +618,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3OfficesCabins\/8OfficersSaloon.png',
-						'content':'<div class="imgbox"><\/div><p> Officers&rsquo; Saloon<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p> Officers&rsquo; Saloon<\/p>'
 						},
 					{
 						'class':'image',
@@ -629,7 +629,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3OfficesCabins\/9RadioShack.png',
-						'content':'<div class="imgbox"><\/div><p>Radio Shack<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Radio Shack<\/p>'
 					},
 					{
 						'class':'image',
@@ -640,7 +640,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3OfficesCabins\/10SparksStateroom.png',
-						'content':'<div class="imgbox"><\/div><p>Sparks&rsquo; Stateroom<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Sparks&rsquo; Stateroom<\/p>'
 					},
 					{
 						'class':'image',
@@ -651,7 +651,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/3OfficesCabins\/11ThirdMateStateroom.png',
-						'content':'<div class="imgbox"><\/div><p>Third Mate Stateroom<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Third Mate Stateroom<\/p>'
 					}
 				]
 			},
@@ -668,7 +668,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/Engine-Room.png',
-						'content':'<div class="imgbox"><\/div><p>Engine Room<\/p>',
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Engine Room<\/p>',
 						'orientation': 'landscape',
 						'video':'<iframe src="https://player.vimeo.com/video/238235611" width="640" height="360" frameborder="0"></iframe>'
 					},
@@ -681,7 +681,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/2View-Down-Into-Engine-Room.png',
-						'content':'<div class="imgbox"><\/div><p>View Down Into Engine Room<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>View Down Into Engine Room<\/p>'
 					},
 					{
 						'class':'image',
@@ -692,7 +692,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/4.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'video',
@@ -703,7 +703,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/Pistons-Turning.png',
-						'content':'<div class="imgbox"><\/div><p>Pistons Turning<\/p>',
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Pistons Turning<\/p>',
 						'orientation': 'portrait',
 						'video':'<iframe src="https://player.vimeo.com/video/238235702" width="640" height="1137" frameborder="0"></iframe>'
 					},
@@ -722,7 +722,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/9engineroomtelegraph.png',
-						'content':'<div class="imgbox"><\/div><p>Engine Room Telegraph<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Engine Room Telegraph<\/p>'
 					},
 					{
 						'class':'image',
@@ -733,7 +733,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/10Pistons.png',
-						'content':'<div class="imgbox"><\/div><p>Connecting Rod<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Connecting Rod<\/p>'
 					},
 					{
 						'class':'image',
@@ -744,7 +744,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/12Speaking-Tubes.png',
-						'content':'<div class="imgbox"><\/div><p>Speaking Tubes<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Speaking Tubes<\/p>'
 					}
 				]
 			},
@@ -761,7 +761,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/5BoatsandRafts\/1Starboard-Lifeboats.png',
-						'content':'<div class="imgbox"><\/div><p>Starboard Lifeboats<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Starboard Lifeboats<\/p>'
 					},
 					{
 						'class':'image',
@@ -772,7 +772,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/5BoatsandRafts\/3Boat-and-Falls.png',
-						'content':'<div class="imgbox"><\/div><p>Boat and Falls<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Boat and Falls<\/p>'
 					},
 					{
 						'class':'image',
@@ -783,7 +783,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/5BoatsandRafts\/4Lifeboat-Number-1.png',
-						'content':'<div class="imgbox"><\/div><p>Lifeboat Number 1<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Lifeboat Number 1<\/p>'
 					},
 					{
 						'class':'image',
@@ -794,7 +794,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/5BoatsandRafts\/5Life-Raft.png',
-						'content':'<div class="imgbox"><\/div><p>Life Raft<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Life Raft<\/p>'
 					}
 				]
 			},
@@ -811,7 +811,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/1Flying-Bridge-Compass.png',
-						'content':'<div class="imgbox"><\/div><p>Flying Bridge Compass<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Flying Bridge Compass<\/p>'
 					},
 					{
 						'class':'image',
@@ -822,7 +822,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/2Flying-Bridge-Wheel.png',
-						'content':'<div class="imgbox"><\/div><p>Wheel<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Wheel<\/p>'
 					},
 					{
 						'class':'image',
@@ -833,7 +833,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/4Flying-Bridge-Engine-Room-Telegraph.png',
-						'content':'<div class="imgbox"><\/div><p>Engine Room Telegraph<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Engine Room Telegraph<\/p>'
 					}
 				]
 			},
@@ -850,7 +850,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/8.png',
-						'content':'<div class="imgbox"><\/div><p>Steering Engine<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Steering Engine<\/p>'
 					},
 					{
 						'class':'image',
@@ -861,7 +861,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/10Voice-Activated-Telephone.png',
-						'content':'<div class="imgbox"><\/div><p>Voice Activated Telephone<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Voice Activated Telephone<\/p>'
 					},
 					{
 						'class':'image',
@@ -872,7 +872,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/6Equipment\/11Stored-Signal-Flags.png',
-						'content':'<div class="imgbox"><\/div><p>Stored Signal Flags<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Stored Signal Flags<\/p>'
 					}
 				]
 			},
@@ -889,7 +889,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/4Convoy-Diagram.png',
-						'content':'<div class="imgbox"><\/div><p>Convoy Diagram<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Convoy Diagram<\/p>'
 					},
 					{
 						'class':'image',
@@ -900,7 +900,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/7Mapsanddiagrams\/6Knots.png',
-						'content':'<div class="imgbox"><\/div><p>Knots<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Knots<\/p>'
 					}
 				]
 			}
@@ -947,7 +947,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/1Bldg77.png',
-						'content':'<div class="imgbox"><\/div><p>Building 77 is where the Captain of the Yard&rsquo;s office was located. These images, taken in 2005, show Bldg 77 untouched since the War. It has since been fully renovated and is now in industrial use.<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Building 77 is where the Captain of the Yard&rsquo;s office was located. These images, taken in 2005, show Bldg 77 untouched since the War. It has since been fully renovated and is now in industrial use.<\/p>'
 					},
 					{
 						'class':'image',
@@ -958,7 +958,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/2Railroad-Terminal-Map-Bldg-77.png',
-						'content':'<div class="imgbox"><\/div><p>Railroad Terminal Map Bldg 77<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Railroad Terminal Map Bldg 77<\/p>'
 					},
 					{
 						'class':'image',
@@ -969,7 +969,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/3Ghost-Maps.png',
-						'content':'<div class="imgbox"><\/div><p>Ghost Maps<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Ghost Maps<\/p>'
 					},
 					{
 						'class':'image',
@@ -980,7 +980,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/8Mail-Room.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -991,7 +991,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/9Old-Safe.png',
-						'content':'<div class="imgbox"><\/div><p>Old Safe<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Old Safe<\/p>'
 					},
 					{
 						'class':'image',
@@ -1002,7 +1002,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/1Building77\/11Clock-Guide.png',
-						'content':'<div class="imgbox"><\/div><p>Clock Guide<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Clock Guide<\/p>'
 					},
 				]
 			},
@@ -1019,7 +1019,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/2OutdoorViews\/4View-From-Bldg-772.png',
-						'content':'<div class="imgbox"><\/div><p>View from Bldg 77, 2005<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>View from Bldg 77, 2005<\/p>'
 					}
 				]
 			},
@@ -1036,7 +1036,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/3Artifacts\/1Washroom.png',
-						'content':'<div class="imgbox"><\/div><p>Artifacts of WWII: washroom<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Artifacts of WWII: washroom<\/p>'
 					},
 					{
 						'class':'image',
@@ -1047,7 +1047,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/2bny2005\/3Artifacts\/4Molds.png',
-						'content':'<div class="imgbox"><\/div><p>Wood shipfitting molds<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Wood shipfitting molds<\/p>'
 					}
 				]
 			},
@@ -1064,7 +1064,7 @@ var uwNodes = [
 						'rotx':-5,
 						'rotz':8,
 						'image': imgRoot + '\/floating\/hat.png',
-						'content':'<div class="imgbox"><\/div><p><\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p><\/p>'
 					}
 				]
 			},
@@ -1091,7 +1091,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/1JennyinDress\/thumb_100_2467_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -1102,7 +1102,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/1JennyinDress\/thumb_100_2468_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -1113,7 +1113,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/1JennyinDress\/thumb_100_2469_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -1124,7 +1124,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/1JennyinDress\/thumb_100_2470_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -1135,7 +1135,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/1JennyinDress\/thumb_100_2472_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -1146,7 +1146,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/1JennyinDress\/thumb_100_2475_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -1157,7 +1157,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/1JennyinDress\/thumb_100_2477_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -1168,7 +1168,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/1JennyinDress\/thumb_100_2479_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -1179,7 +1179,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/1JennyinDress\/thumb_100_2480_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -1190,7 +1190,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/1JennyinDress\/thumb_100_2481_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					}
 				]
 			},
@@ -1207,7 +1207,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/2JennyInDress\/thumb_100_2482_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -1218,7 +1218,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/2JennyInDress\/thumb_100_2484_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -1229,7 +1229,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/2JennyInDress\/thumb_100_2485_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -1240,7 +1240,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/2JennyInDress\/thumb_100_2486_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -1251,7 +1251,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/2JennyInDress\/thumb_100_2487_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -1262,7 +1262,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/2JennyInDress\/thumb_100_2489_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -1273,7 +1273,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/2JennyInDress\/thumb_100_2490_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -1284,7 +1284,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/2JennyInDress\/thumb_100_2491_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -1295,7 +1295,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/2JennyInDress\/thumb_100_2492_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					}
 				]
 			},
@@ -1312,7 +1312,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/3JennyInHat\/thumb_100_2493_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -1323,7 +1323,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/3JennyInHat\/thumb_100_2494_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -1334,7 +1334,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/3JennyInHat\/thumb_100_2497_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -1345,7 +1345,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/3JennyInHat\/thumb_100_2501_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -1356,7 +1356,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/3JennyInHat\/thumb_100_2502_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -1367,7 +1367,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/3JennyInHat\/thumb_100_2504_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -1378,7 +1378,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/3JennyInHat\/thumb_100_2505_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -1389,7 +1389,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/3JennyInHat\/thumb_100_2506_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					}
 				]
 			},
@@ -1406,7 +1406,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/4JennyDisrobing\/thumb_100_2513_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -1417,7 +1417,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/4JennyDisrobing\/thumb_100_2514_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -1428,7 +1428,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/4JennyDisrobing\/thumb_100_2515_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -1439,7 +1439,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/4JennyDisrobing\/thumb_100_2516_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					}
 				]
 			},
@@ -1456,7 +1456,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/5ArmyDiversinTank\/thumb_100_2509_1024.png',
-						'content':'<div class="imgbox"><\/div><p>Present-Day Divers Using in the old Mark V Dress<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Present-Day Divers Using in the old Mark V Dress<\/p>'
 					},
 					{
 						'class':'image',
@@ -1467,7 +1467,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/5ArmyDiversinTank\/thumb_100_2510_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					}
 				]
 			},
@@ -1483,7 +1483,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/5ArmyDiversinTank\/thumb_100_2518_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -1494,7 +1494,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/MarkV-Present-Day\/5ArmyDiversinTank\/thumb_100_2519_1024.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					}
 				]
 			}
@@ -1525,7 +1525,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/2Bldg-77-View-From-Jan-6-1941.png',
-						'content':'<div class="imgbox"><\/div><p>Bldg 77 View From, Jan 6, 1941<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Bldg 77 View From, Jan 6, 1941<\/p>'
 					},
 					{
 						'class':'image',
@@ -1536,7 +1536,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/4Bldg-77-View-North-Sept-29-1941.png',
-						'content':'<div class="imgbox"><\/div><p>Bldg 77 View North Sept 29, 1941<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Bldg 77 View North Sept 29, 1941<\/p>'
 					},
 					{
 						'class':'image',
@@ -1547,7 +1547,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/5Bldg-77-View-North-from-Oct-18-1941.png',
-						'content':'<div class="imgbox"><\/div><p>Bldg 77 View North from Oct 18, 1941<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Bldg 77 View North from Oct 18, 1941<\/p>'
 					}
 				]
 			},
@@ -1564,7 +1564,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/7Night-View-from-Bldg-77-1942.png',
-						'content':'<div class="imgbox"><\/div><p>Night View from Bldg 77, 1942<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Night View from Bldg 77, 1942<\/p>'
 					},
 					{
 						'class':'image',
@@ -1575,7 +1575,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/1ViewsFromAbove\/8Night-View-2.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					}
 				]
 			},
@@ -1592,7 +1592,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/2Buildings\/1Bldg-4-the-Structural-Shop-1937.png',
-						'content':'<div class="imgbox"><\/div><p>Bldg 4, the Structural Shop, 1937<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Bldg 4, the Structural Shop, 1937<\/p>'
 					},
 					{
 						'class':'image',
@@ -1603,7 +1603,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/2Buildings\/3Bldg-128-Entrance.png',
-						'content':'<div class="imgbox"><\/div><p>Bldg 128, the Machine Shop<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Bldg 128, the Machine Shop<\/p>'
 					},
 					{
 						'class':'image',
@@ -1614,7 +1614,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/2Buildings\/6Bldg-128.png',
-						'content':'<div class="imgbox"><\/div><p>Bldg 128<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Bldg 128<\/p>'
 					},
 					{
 						'class':'image',
@@ -1625,7 +1625,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/2Buildings\/7Bldg-128.png',
-						'content':'<div class="imgbox"><\/div><p>Bldg 128<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Bldg 128<\/p>'
 					}
 				]
 			},
@@ -1642,7 +1642,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/1SandsStreetGate1937.png',
-						'content':'<div class="imgbox"><\/div><p>Sands Street Gate 1937<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Sands Street Gate 1937<\/p>'
 					},
 					{
 						'class':'image',
@@ -1653,7 +1653,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/2Building-Ways-in-Distance.png',
-						'content':'<div class="imgbox"><\/div><p>Building Ways in Distance<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Building Ways in Distance<\/p>'
 					}
 				]
 			},
@@ -1670,7 +1670,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/4Building-Ways-1930.png',
-						'content':'<div class="imgbox"><\/div><p>Building Ways 1930<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Building Ways 1930<\/p>'
 					},
 					{
 						'class':'image',
@@ -1681,7 +1681,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/5BuildingWays2.png',
-						'content':'<div class="imgbox"><\/div><p>Building Ways<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Building Ways<\/p>'
 					},
 					{
 						'class':'image',
@@ -1692,7 +1692,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/6CocoaFactoryFlushing-Avenue.png',
-						'content':'<div class="imgbox"><\/div><p>Cocoa Factory Flushing Avenue<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Cocoa Factory Flushing Avenue<\/p>'
 					}
 				]
 			},
@@ -1709,7 +1709,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/7CommandantsHouse-2.png',
-						'content':'<div class="imgbox"><\/div><p>Commandant&rsquo;s House<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Commandant&rsquo;s House<\/p>'
 					},
 					{
 						'class':'image',
@@ -1720,7 +1720,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/9CommandantsHouse1936.png',
-						'content':'<div class="imgbox"><\/div><p>Commandant&rsquo;s House 1936<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Commandant&rsquo;s House 1936<\/p>'
 					}
 				]
 			},
@@ -1737,7 +1737,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/12Hammerhead-CraneinDistance.png',
-						'content':'<div class="imgbox"><\/div><p>Dredging barge and hammerhead crane in distance<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Dredging barge and hammerhead crane in distance<\/p>'
 					},
 					{
 						'class':'image',
@@ -1748,7 +1748,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/3OutdoorViews\/13HammerheadCrane.png',
-						'content':'<div class="imgbox"><\/div><p>Hammerhead Crane<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Hammerhead Crane<\/p>'
 					}
 				]
 			},
@@ -1765,7 +1765,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/1Bricklayers.png',
-						'content':'<div class="imgbox"><\/div><p>Bricklayers<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Bricklayers<\/p>'
 					},
 					{
 						'class':'image',
@@ -1776,7 +1776,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/5Dry-Docks-5-_-6-Construction-1941.png',
-						'content':'<div class="imgbox"><\/div><p>Dry Docks 5 & 6 Construction, 1941<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Dry Docks 5 & 6 Construction, 1941<\/p>'
 					},
 					{
 						'class':'image',
@@ -1787,7 +1787,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/4RepairsandConstruction\/7Dry-Docks-5_6-Construction-1941.png',
-						'content':'<div class="imgbox"><\/div><p>Dry Docks 5&6 Construction, 1941<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Dry Docks 5&6 Construction, 1941<\/p>'
 					}
 				]
 			},
@@ -1804,7 +1804,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/5Artifacts\/1Ticket-to-Launch.png',
-						'content':'<div class="imgbox"><\/div><p>Ticket to Ship Launch<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Ticket to Ship Launch<\/p>'
 					},
 					{
 						'class':'image',
@@ -1815,7 +1815,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/5Artifacts\/2Ticket-to-Officers-Mess.png',
-						'content':'<div class="imgbox"><\/div><p>Ticket to Officers Mess<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Ticket to Officers Mess<\/p>'
 					},
 					{
 						'class':'image',
@@ -1826,7 +1826,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/1bny1930sand1940s\/5Artifacts\/Urinals-and-Sinks.png',
-						'content':'<div class="imgbox"><\/div><p>Washroom: Urinals and Sinks<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Washroom: Urinals and Sinks<\/p>'
 					}
 				]
 			},
@@ -1843,7 +1843,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':-12,
 						'image': imgRoot + '\/v1\/floating\/suit.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					}
 				]
 			},
@@ -1860,7 +1860,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/1Railroad-Transom.png',
-						'content':'<div class="imgbox"><\/div><p>Naval Yard Railroad Transom, 2015<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Naval Yard Railroad Transom, 2015<\/p>'
 					},
 					{
 						'class':'image',
@@ -1871,7 +1871,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/2Railroad-Transom-4.png',
-						'content':'<div class="imgbox"><\/div><p>Railroad Transom<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Railroad Transom<\/p>'
 					},
 					{
 						'class':'image',
@@ -1882,7 +1882,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/3Old-Tracks.png',
-						'content':'<div class="imgbox"><\/div><p>Old Tracks<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Old Tracks<\/p>'
 					},
 					{
 						'class':'image',
@@ -1893,7 +1893,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/4Ruined-Tracks-and-Pier-Bricks.png',
-						'content':'<div class="imgbox"><\/div><p>Ruined Tracks and Pier Bricks<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Ruined Tracks and Pier Bricks<\/p>'
 					},
 					{
 						'class':'image',
@@ -1904,7 +1904,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/5Hospital-Columns.png',
-						'content':'<div class="imgbox"><\/div><p>Hospital Columns<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Hospital Columns<\/p>'
 					},
 					{
 						'class':'image',
@@ -1915,7 +1915,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/6Hospital-Columns2.png',
-						'content':'<div class="imgbox"><\/div><p>Hospital Facade<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Hospital Facade<\/p>'
 					},
 				]
 			},
@@ -1932,7 +1932,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/7Hospital-Monument.png',
-						'content':'<div class="imgbox"><\/div><p>Hospital Monument<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Hospital Monument<\/p>'
 					},
 					{
 						'class':'image',
@@ -1943,7 +1943,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/8Surgeons-Residence.png',
-						'content':'<div class="imgbox"><\/div><p>Surgeon&rsquo;s Residence<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Surgeon&rsquo;s Residence<\/p>'
 					},
 					{
 						'class':'image',
@@ -1954,7 +1954,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/9The-Splendid-Daniella-Romano.png',
-						'content':'<div class="imgbox"><\/div><p>The Splendid Daniella Romano<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>The Splendid Daniella Romano<\/p>'
 					},
 					{
 						'class':'image',
@@ -1965,7 +1965,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/10Submerging-Pier.png',
-						'content':'<div class="imgbox"><\/div><p>Submerging Pier<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Submerging Pier<\/p>'
 					},
 					{
 						'class':'image',
@@ -1976,7 +1976,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/BrooklynNavyYard\/3BNY2015\/11Goose-Crossing2.png',
-						'content':'<div class="imgbox"><\/div><p>Goose Crossing<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Goose Crossing<\/p>'
 					}
 				]
 			}
@@ -2013,7 +2013,7 @@ var uwNodes = [
 						'rotx':13,
 						'rotz':-15,
 						'image': imgRoot + '\/v1\/floating\/dial.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					}
 				]
 			},
@@ -2040,7 +2040,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/DivingDressEquipment\/1MaritimeModel\/1Mark-V-InSFMaritimeMuseum.png',
-						'content':'<div class="imgbox"><\/div><p>At the Visitors&rsquo; Center at Fisherman&rsquo;s Wharf<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>At the Visitors&rsquo; Center at Fisherman&rsquo;s Wharf<\/p>'
 					},
 					{
 						'class':'image',
@@ -2051,7 +2051,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/DivingDressEquipment\/1MaritimeModel\/3.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					},
 					{
 						'class':'image',
@@ -2062,7 +2062,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/DivingDressEquipment\/1MaritimeModel\/4.png',
-						'content':'<div class="imgbox"><\/div>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					}
 				]
 			},
@@ -2079,7 +2079,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/DivingDressEquipment\/2Canvas\/1DressArtifactsfromSFMaritimeMuseum.png',
-						'content':'<div class="imgbox"><\/div><p>Dress Artifacts from SF Maritime Museum<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Dress Artifacts from SF Maritime Museum<\/p>'
 					},
 					{
 						'class':'image',
@@ -2090,7 +2090,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/DivingDressEquipment\/2Canvas\/2OldDivingDress.png',
-						'content':'<div class="imgbox"><\/div><p>Old Diving Dress<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Old Diving Dress<\/p>'
 					},
 					{
 						'class':'image',
@@ -2101,7 +2101,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/DivingDressEquipment\/2Canvas\/4KneeDetail.png',
-						'content':'<div class="imgbox"><\/div><p>Knee Patches<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Knee Patches<\/p>'
 					},
 					{
 						'class':'image',
@@ -2112,7 +2112,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/DivingDressEquipment\/2Canvas\/5LegLaces.png',
-						'content':'<div class="imgbox"><\/div><p>Leg Laces<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Leg Laces<\/p>'
 					},
 					{
 						'class':'image',
@@ -2123,7 +2123,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/DivingDressEquipment\/2Canvas\/6FootDetail.png',
-						'content':'<div class="imgbox"><\/div><p>Foot Detail<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Foot Detail<\/p>'
 					},
 					{
 						'class':'image',
@@ -2134,7 +2134,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/DivingDressEquipment\/2Canvas\/7RubberCollarDetail.png',
-						'content':'<div class="imgbox"><\/div><p>Rubber Collar Detail<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Rubber Collar Detail<\/p>'
 					}
 				]
 			},
@@ -2151,7 +2151,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/DivingDressEquipment\/3Hats\/2HatLeftSide.png',
-						'content':'<div class="imgbox"><\/div><p>Hat Left Side<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Hat Left Side<\/p>'
 					},
 					{
 						'class':'image',
@@ -2162,7 +2162,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/DivingDressEquipment\/3Hats\/3HatRear.png',
-						'content':'<div class="imgbox"><\/div><p>Hat Rear<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Hat Rear<\/p>'
 					},
 					{
 						'class':'image',
@@ -2173,7 +2173,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/DivingDressEquipment\/3Hats\/5Vent.png',
-						'content':'<div class="imgbox"><\/div><p>Vent<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Vent<\/p>'
 					}
 				]
 			},
@@ -2190,7 +2190,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/DivingDressEquipment\/4Compressors\/1AirCompressor.png',
-						'content':'<div class="imgbox"><\/div><p>Air Compressor<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Air Compressor<\/p>'
 					},
 					{
 						'class':'image',
@@ -2201,7 +2201,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/DivingDressEquipment\/4Compressors\/2Flywheel.png',
-						'content':'<div class="imgbox"><\/div><p>Compressor Flywheel<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Compressor Flywheel<\/p>'
 					},
 					{
 						'class':'image',
@@ -2212,7 +2212,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/DivingDressEquipment\/4Compressors\/3FlyWheelHandle.png',
-						'content':'<div class="imgbox"><\/div><p>Fly Wheel Handle<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Fly Wheel Handle<\/p>'
 					},
 					{
 						'class':'image',
@@ -2223,7 +2223,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/DivingDressEquipment\/4Compressors\/4OpenCompressor.png',
-						'content':'<div class="imgbox"><\/div><p>Open Compressor<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Open Compressor<\/p>'
 					},
 					{
 						'class':'image',
@@ -2234,7 +2234,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/DivingDressEquipment\/4Compressors\/5Interior.png',
-						'content':'<div class="imgbox"><\/div><p>Interior<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Interior<\/p>'
 					},
 					{
 						'class':'image',
@@ -2245,7 +2245,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/DivingDressEquipment\/4Compressors\/61_2Divers.png',
-						'content':'<div class="imgbox"><\/div><p>1 &amp; 2 Divers<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>1 &amp; 2 Divers<\/p>'
 					},
 					{
 						'class':'image',
@@ -2256,7 +2256,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/DivingDressEquipment\/4Compressors\/8Gauges.png',
-						'content':'<div class="imgbox"><\/div><p>Gauges<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Gauges<\/p>'
 					},
 					{
 						'class':'image',
@@ -2267,7 +2267,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/DivingDressEquipment\/4Compressors\/9AirCompressorGuages.png',
-						'content':'<div class="imgbox"><\/div><p>Air Compressor Guages<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Air Compressor Guages<\/p>'
 					}
 				]
 			},
@@ -2284,7 +2284,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/DivingDressEquipment\/5DressElements\/1DDCollar.png',
-						'content':'<div class="imgbox"><\/div><p>Collar<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Collar<\/p>'
 					},
 					{
 						'class':'image',
@@ -2295,7 +2295,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/DivingDressEquipment\/5DressElements\/4EganInPussyCushion.png',
-						'content':'<div class="imgbox"><\/div><p>Pussy Cushion<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Pussy Cushion<\/p>'
 					},
 					{
 						'class':'image',
@@ -2306,7 +2306,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/DivingDressEquipment\/5DressElements\/5DDLeadBelt2.png',
-						'content':'<div class="imgbox"><\/div><p>Lead Belt<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Lead Belt<\/p>'
 					},
 					{
 						'class':'image',
@@ -2317,7 +2317,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/DivingDressEquipment\/5DressElements\/7DDLeadBeltDetail.png',
-						'content':'<div class="imgbox"><\/div><p>DD Lead Belt Detail<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>DD Lead Belt Detail<\/p>'
 					},
 					{
 						'class':'image',
@@ -2328,7 +2328,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/DivingDressEquipment\/5DressElements\/9DDShoeFront2.png',
-						'content':'<div class="imgbox"><\/div><p>Shoe Front<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Shoe Front<\/p>'
 					},
 					{
 						'class':'image',
@@ -2339,7 +2339,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/DivingDressEquipment\/5DressElements\/10DDShoeSide.png',
-						'content':'<div class="imgbox"><\/div><p>Shoe Side<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Shoe Side<\/p>'
 					},
 					{
 						'class':'image',
@@ -2350,7 +2350,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/DivingDressEquipment\/5DressElements\/11DDShoeBottom.png',
-						'content':'<div class="imgbox"><\/div><p>Shoe Bottom<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Shoe Bottom<\/p>'
 					},
 					{
 						'class':'image',
@@ -2361,7 +2361,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/DivingDressEquipment\/5DressElements\/13DDAirHoseCovers.png',
-						'content':'<div class="imgbox"><\/div><p>Air Hose Covers<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Air Hose Covers<\/p>'
 					}
 				]
 			},
@@ -2378,7 +2378,7 @@ var uwNodes = [
 						'rotx':0,
 						'rotz':0,
 						'image': imgRoot + '\/lucy.png',
-						'content':'<div class="imgbox"><\/div><p>Lucille Kolkin and pals.<\/p>'
+						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Lucille Kolkin and pals.<\/p>'
 					},
 					{
 						'class':'scrollbar text closed no-click',
