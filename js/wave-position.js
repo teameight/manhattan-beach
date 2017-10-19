@@ -457,7 +457,7 @@ function drawWave(t) {
 
 			  clearTimeout(resizeTimer);
 			  resizeTimer = setTimeout(function() {
-					console.log("RESIZING");
+					// console.log("RESIZING");
 					resize = true;
 			    setWaterHeight();
 			    nodeWrapperOffsets = getNodeWrapperOffsets();
@@ -727,11 +727,11 @@ function drawWave(t) {
 		buildNodes();
 
 		function getNodeWrapperOffsets(){
-			
+
 			uwNodes.forEach(function(tier, t) {
 				nodeWrapperOffsets['nw-' + t] = {top: $('.nw-'+t).offset().top, margin: $('.nw-'+t).css('margin-top'), height: $('.nw-'+t+ ' .node').outerHeight()};
 			});
-			console.log(nodeWrapperOffsets);
+			// console.log(nodeWrapperOffsets);
 			return nodeWrapperOffsets;
 		}
 
@@ -976,7 +976,7 @@ function drawWave(t) {
 		  		}
 		  	});
 
-		  	console.log(elem);
+		  	// console.log(elem);
 
 				// Loop forward
 				if ( clickCount > 10 ) {
@@ -1037,7 +1037,7 @@ function drawWave(t) {
 
 		  	});
 		  } else {
-		  	console.log('same');
+		  	// console.log('same');
 		  }
 			// $('.background').css('transform', 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)').find('.here').removeClass('here');
 		  // elem.parent().find('.object').each( function(){
