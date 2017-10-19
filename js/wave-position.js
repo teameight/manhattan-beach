@@ -46,7 +46,7 @@ if (!Array.prototype.findIndex) {
 var resize = false;
 var nodeWrapperOffsets = {};
 var tierKey = false;
-var isMobile = true;
+var isMobile = false;
 /**
  *
  * Air lines on Home page
@@ -432,6 +432,12 @@ function drawWave(t) {
 
 		var windowH = $( window ).height();
 		var windowW = $( window ).width();
+
+		if ( windowW < 768 ) {
+			isMobile = true;
+			console.log(isMobile);
+		}
+
 		var isUnderWater = false,
 				showFootMenu = false,
 				$underwater = $('.underwater');
@@ -470,9 +476,9 @@ function drawWave(t) {
 			  // }, 300);
 
 			});
-
-			buildBackground();
-
+			if(!isMobile){
+				buildBackground();
+			}
 		}else{
 			$('#body').removeClass('not-loaded').addClass('loaded');
 		} // end if current_slug
@@ -693,17 +699,6 @@ function drawWave(t) {
 
 		      var o = 0;
 
-		      function isCurrentSlug(node) {
-						return node.slug === currSlug;
-		      }
-
-		      var nodeStartIndex = tier.nodes.findIndex(isCurrentSlug);
-
-		      if ( nodeStartIndex !== 0 ) {
-			      var firstHalf = tier.nodes.slice(0, nodeStartIndex);
-			      var secondHalf = tier.nodes.slice(nodeStartIndex);
-			      tier.nodes = secondHalf.concat(firstHalf);
-		      }
 		      // console.log('node list', tier.nodes);
 
 				  tier.nodes.forEach(function(node, n) {
@@ -1139,26 +1134,28 @@ function drawWave(t) {
 
 		  	// swap background image
 
-				var bgWrap = $('.st-1');
-				var bgImg = $('.st-1 img');
+				if ( !isMobile ) {
 
 		  	uwBackgrounds.forEach(function(bg, index) {
 		  		if ( bg.slug === nextSlug ) {
+					var bgWrap = $('.st-1');
+					var bgImg = $('.st-1 img');
 
+						bgWrap
+							.data('posy', bg.posy)
+							.data('posx', bg.posx)
+							.data('posz', bg.posz)
+							.data('scale', bg.scale);
 
-					bgWrap
-						.data('posy', bg.posy)
-						.data('posx', bg.posx)
-						.data('posz', bg.posz)
-						.data('scale', bg.scale);
+			  			bgImg.fadeOut(1000, function() {
+						  	bgWrap.css({'transform': 'translate3d(' + bg.posx + 'vw, ' + bg.posy + 'vh, ' + bg.posz + 'vw) scale(' + bg.scale + ')', 'transition': 'none'});
+						  	$(this).clone().attr('src', bg.content).hide().appendTo(bgWrap).fadeIn('slow');
+			  				$(this).remove();
+			  			});
+			  		}
+			  	});
 
-		  			bgImg.fadeOut(1000, function() {
-					  	bgWrap.css({'transform': 'translate3d(' + bg.posx + 'vw, ' + bg.posy + 'vh, ' + bg.posz + 'vw) scale(' + bg.scale + ')', 'transition': 'none'});
-					  	$(this).clone().attr('src', bg.content).hide().appendTo(bgWrap).fadeIn('slow');
-		  				$(this).remove();
-		  			});
-		  		}
-		  	});
+			  }
 
 		  	console.log(elem);
 
