@@ -2451,7 +2451,7 @@ var uwBackgrounds = [
  	'posy': 0,
  	'posz': -1600,
  	'scale': 70,
- 	'content': bgImgRoot + '/background/nyscraper.png'
+ 	'content': bgImgRoot + '/background/final-building.png'
  },
  {
  	'slug': 'books/manhattan-beach',
@@ -2459,7 +2459,7 @@ var uwBackgrounds = [
  	'posy': 100,
  	'posz': -1000,
  	'scale': 70,
- 	'content': bgImgRoot + '/background/small-ship_xjfipu.png'
+ 	'content': bgImgRoot + '/background/final-small-ship.png'
  },
  {
  	'slug': 'books/a-visit-from-the-goon-squad',
@@ -2467,7 +2467,7 @@ var uwBackgrounds = [
  	'posy': 1500,
  	'posz': -1600,
  	'scale': 100,
- 	'content': bgImgRoot + '/background/side-mountain.png'
+ 	'content': bgImgRoot + '/background/final-mountain.png'
  },
  {
  	'slug': 'books/the-keep',
@@ -2475,7 +2475,7 @@ var uwBackgrounds = [
  	'posy': 1000,
  	'posz': -1000,
  	'scale': 100,
- 	'content': bgImgRoot + '/background/mountain.png'
+ 	'content': bgImgRoot + '/background/final-mountain.png'
  },
  {
  	'slug': 'books/look-at-me',
@@ -2483,7 +2483,7 @@ var uwBackgrounds = [
  	'posy': 1000,
  	'posz': -2000,
  	'scale': 80,
- 	'content': bgImgRoot + '/background/big-ship.png'
+ 	'content': bgImgRoot + '/background/final-big-ship.png'
  },
  {
  	'slug': 'books/the-invisible-circus',
@@ -2491,7 +2491,7 @@ var uwBackgrounds = [
  	'posy': 0,
  	'posz': -1600,
  	'scale': 70,
- 	'content': bgImgRoot + '/background/nyscraper.png'
+ 	'content': bgImgRoot + '/background/final-building.png'
  },
  {
  	'slug': 'books/emerald-city-and-other-stories',
@@ -2499,7 +2499,7 @@ var uwBackgrounds = [
  	'posy': 1500,
  	'posz': -1600,
  	'scale': 100,
- 	'content': bgImgRoot + '/background/side-mountain.png'
+ 	'content': bgImgRoot + '/background/final-mountain.png'
  },
  {
  	'slug': 'non-fiction',
@@ -2507,7 +2507,7 @@ var uwBackgrounds = [
  	'posy': 100,
  	'posz': -1000,
  	'scale': 70,
- 	'content': bgImgRoot + '/background/NEW-small-ship.png'
+ 	'content': bgImgRoot + '/background/final-small-ship.png'
  },
  {
  	'slug': 'category/news',
@@ -2515,7 +2515,7 @@ var uwBackgrounds = [
  	'posy': 100,
  	'posz': 0,
  	'scale': 0,
- 	'content': bgImgRoot + '/background/mountain.png'
+ 	'content': bgImgRoot + '/background/final-mountain.png'
  },
  {
  	'slug': 'about',
@@ -2523,7 +2523,7 @@ var uwBackgrounds = [
  	'posy': 1000,
  	'posz': -2000,
  	'scale': 80,
- 	'content': bgImgRoot + '/background/big-ship.png'
+ 	'content': bgImgRoot + '/background/final-big-ship.png'
  },
  {
  	'slug': 'contact',
@@ -2531,6 +2531,6 @@ var uwBackgrounds = [
  	'posy': 1500,
  	'posz': -1600,
  	'scale': 100,
- 	'content': bgImgRoot + '/background/side-mountain.png'
+ 	'content': bgImgRoot + '/background/final-mountain.png'
  }
 ];
