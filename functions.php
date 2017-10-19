@@ -496,3 +496,10 @@ function filter_empty_events($query) {
 
 add_filter( 'pre_get_posts', 'filter_empty_events' );
 
+
+// remove jquery migrate
+add_action( 'wp_default_scripts', function( $scripts ) {
+    if ( ! empty( $scripts->registered['jquery'] ) ) {
+        $scripts->registered['jquery']->deps = array_diff( $scripts->registered['jquery']->deps, array( 'jquery-migrate' ) );
+    }
+} );

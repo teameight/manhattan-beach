@@ -37,6 +37,14 @@
 
 ?>
 <body <?php body_class('above water'); ?>>
+<div class="underwater-video-modal">
+	<div class="video-holder"></div>
+	<button type="button" class="video-modal-close tcon tcon-menu--xcross" aria-label="close video">
+	  <span class="tcon-menu__lines" aria-hidden="true"></span>
+	  <span class="tcon-visuallyhidden">Close</span>
+	</button>
+</div>
+
 	<!-- Google Tag Manager (noscript) -->
 <!-- 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCRDVJP"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
@@ -46,17 +54,25 @@
 		<div class="b-bg"></div>
 		<div class="b-inner">
 
-<?php 
+<?php
 		}else{
 ?>
 
 <body <?php body_class('above'); ?>>
+<div class="underwater-video-modal">
+	<div class="video-holder"></div>
+	<button type="button" class="video-modal-close tcon tcon-menu--xcross" aria-label="close video">
+	  <span class="tcon-menu__lines" aria-hidden="true"></span>
+	  <span class="tcon-visuallyhidden">Close</span>
+	</button>
+</div>
+
 	<!-- Google Tag Manager (noscript) -->
 <!-- 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCRDVJP"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
 	<!-- End Google Tag Manager (noscript) -->
 
-<?php 
+<?php
 		}
 ?>
 

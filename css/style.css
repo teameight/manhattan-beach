@@ -1040,6 +1040,54 @@ a.open-handle {
   a.open-handle:hover, a.open-handle:active {
     color: white; }
 
+.underwater-video-modal {
+  position: fixed;
+  z-index: 1000;
+  max-width: 640px;
+  width: 80vw;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 0px 1000px black;
+  display: none; }
+  .underwater-video-modal.portrait {
+    max-width: 400px; }
+    .underwater-video-modal.portrait .video-holder {
+      padding-bottom: 162.1%; }
+  .underwater-video-modal .video-holder {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0; }
+  .underwater-video-modal iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute; }
+  .underwater-video-modal button {
+    position: absolute;
+    top: -30px;
+    right: -30px; }
+    .underwater-video-modal button .tcon-menu__lines {
+      transform: scale3d(0.8, 0.8, 0.8);
+      background: transparent;
+      height: 1px; }
+      .underwater-video-modal button .tcon-menu__lines:before {
+        transform: rotate3d(0, 0, 1, 45deg);
+        transform-origin: 50% 50%;
+        top: 0;
+        width: 2em;
+        height: 1px;
+        background-color: white; }
+      .underwater-video-modal button .tcon-menu__lines:after {
+        transform: rotate3d(0, 0, 1, -45deg);
+        transform-origin: 50% 50%;
+        top: 0;
+        width: 2em;
+        height: 1px;
+        background-color: white; }
+
 .uw-segway {
   position: relative;
   top: -1px;
