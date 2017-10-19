@@ -60,7 +60,8 @@ body {
   font-family: "ff-tisa-web-pro", serif;
   font-size: 16px;
   background-color: #F0F5F5;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   @media screen and (min-width: 740px) {
     body {
       font-size: 20px; } }

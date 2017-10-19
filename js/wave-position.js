@@ -46,6 +46,7 @@ if (!Array.prototype.findIndex) {
 var resize = false;
 var nodeWrapperOffsets = {};
 var tierKey = false;
+var isMobile = true;
 /**
  *
  * Air lines on Home page
@@ -668,6 +669,123 @@ function drawWave(t) {
 
 		var currentWrapper;
 
+		function buildMobileNodes(){
+
+			// console.log(windowW);
+
+			var nodeTemplate = $('.nw-template');
+			var zOffset = -200;
+			var currSlug = current_slug.slug;
+
+			//console.log(uwNodes);
+
+
+			uwNodesMobile.forEach(function(tier, t) {
+				// console.log(tier.tier);
+
+				if(tier.page === currSlug){
+
+
+			    nodeTemplate.clone()
+			      .removeClass('nw-template')
+			      .addClass('nw-'+ t)
+			      .appendTo( $underwater );
+
+		      var o = 0;
+
+		      function isCurrentSlug(node) {
+						return node.slug === currSlug;
+		      }
+
+		      var nodeStartIndex = tier.nodes.findIndex(isCurrentSlug);
+
+		      if ( nodeStartIndex !== 0 ) {
+			      var firstHalf = tier.nodes.slice(0, nodeStartIndex);
+			      var secondHalf = tier.nodes.slice(nodeStartIndex);
+			      tier.nodes = secondHalf.concat(firstHalf);
+		      }
+		      // console.log('node list', tier.nodes);
+
+				  tier.nodes.forEach(function(node, n) {
+				  	if ( n > 0 ) {
+							o = o+1.5;
+				  	}
+				    var node = tier.nodes[n];
+				    var thisSlug = node.slug;
+				    var thisLabel = node.label;
+				    if ( !thisLabel ) {
+				    	thisLabel = '';
+				    }
+				    var objTemplate = $('.nw-'+ t + ' .obj-template');
+
+				    	for (var i = 0; i < node.objects.length; i++) {
+
+					      var obj = node.objects[i],
+					      		bgimg = '',
+					      		bgimgsm = '';
+
+					      if(obj.image){
+					      	bgimg = obj.image;
+					      	bgimgsm = bgimg.replace('upload\/', 'upload\/mobile\/');
+					      //	console.log(bgimgsm);
+					      }
+
+
+					      objTemplate.clone()
+					        .removeClass('obj-template')
+					        .addClass('object-' + n + '-' + i + ' ' + obj.class)
+					        .attr('data-slug', thisSlug)
+					        .css({'transform': 'translate3d(' + obj.posx + 'vw, ' + obj.posy + 'vw, ' + zOffset*o + 'vw) rotateX('+ obj.rotx +'deg) rotateY('+  obj.roty +'deg) rotateZ('+ obj.rotz +'deg'})
+					        .data( "posx", obj.posx )
+					        .data( "posy", obj.posy )
+					        .data( "posz", zOffset*o )
+					        .data( "rotx", obj.rotx )
+					        .data( "roty", obj.roty )
+					        .data( "rotz", obj.rotz )
+					        .data( "bgimg", bgimg )
+					        .data( "bgimgsm", bgimgsm )
+					        .data( "label", thisLabel )
+					        .html('<div class="inner">'+obj.content+'</div>')
+					        .appendTo( '.nw-' + t + ' .camera');
+
+				        if ( obj.class === 'video' ) {
+				        	$('.object-' + n + '-' + i ).data('video', obj.video).data('orientation', obj.orientation);
+				        }
+
+					        //load the images as backgrounds, to start, just for the first two slide groups in each tier
+					        var imgSize = bgimg;
+					        if(windowW < 900){
+					        	imgSize = bgimgsm;
+					        }
+					        if(obj.image && n < 2 && t < 2){
+
+					        	$('.nw-'+ t +' .object-' + n + '-' + i + ' .imgbox').css({
+					        		'background-image': 'url(' + imgSize + ')'
+					        	});
+					        }
+					      o++;
+					    }
+
+				    // objTemplate.remove();
+				    $('.nw-' + t + ' .object').not('.obj-template').first().addClass('here');
+				  });
+
+				}
+
+			});
+
+		  nodeTemplate.remove();
+
+			$('.camera').each(function(){
+				var elem = $( this );
+			  		posz = 0 - elem.find('.here').data('posz');
+						setDistance(elem, posz);
+			});
+
+			nodeWrapperOffsets = getNodeWrapperOffsets();
+	
+		}
+
 		function buildNodes(){
 
 			// console.log(windowW);
@@ -778,13 +896,21 @@ function drawWave(t) {
 			nodeWrapperOffsets = getNodeWrapperOffsets();
 		}
 
-		buildNodes();
-
+		if(isMobile){
+			buildMobileNodes();
+		}else{
+			buildNodes();
+		}
 		function getNodeWrapperOffsets(){
 			
-			uwNodes.forEach(function(tier, t) {
+			if(isMobile){
+				nodeWrapperOffsets['node-wrapper'] = {top: $('.node-wrapper').offset().top, margin: $('.node-wrapper').css('margin-top'), height: $('.node-wrapper .node').outerHeight()};
+			}else{
+				uwNodes.forEach(function(tier, t) {
 				nodeWrapperOffsets['nw-' + t] = {top: $('.nw-'+t).offset().top, margin: $('.nw-'+t).css('margin-top'), height: $('.nw-'+t+ ' .node').outerHeight()};
-			});
+				});
+			}
+			
 			//console.log(nodeWrapperOffsets);
 			return nodeWrapperOffsets;
 		}
