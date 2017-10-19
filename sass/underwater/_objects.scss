@@ -2,8 +2,8 @@
 
   position: relative;
   margin-top: 280vh;
-  width: 80vw;
-  max-width: 70vh;
+  width: 70vw;
+  max-width: 60vh;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
@@ -88,6 +88,14 @@
   .camera .object {
     position: absolute;
     pointer-events: initial;
+  }
+
+  .object.text:not(.scrollbar) .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    min-height: 60vh;
   }
 
   .object {

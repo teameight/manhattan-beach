@@ -287,10 +287,10 @@ var unit = 30,
 
   waveGrdStop1='rgba(50, 70, 80, 1)',
   waveGrdStop2='rgba(53, 74, 85, 1)',
-  wavestrokecolor="rgba(255,255,255, 1)",
+  wavestrokecolor="rgba(225,236,255, 1)",
 	wavecolor="#5b7b7b",
 
-	wavestrokeWidth = wWidth*.002,
+	wavestrokeWidth = wWidth*.0014,
 	parameters={
 			freq: 1,
 			amp: 55,
@@ -455,15 +455,18 @@ function drawWave(t) {
 
 			$(window).on('resize', function(e) {
 
+				if(windowW != $(window).width() || windowH != $(window).height()) {
+		      location.reload();
+		      return;
+		    }
+			  // clearTimeout(resizeTimer);
+			  // resizeTimer = setTimeout(function() {
+					// console.log("RESIZING");
+					// resize = true;
+			  //   setWaterHeight();
+			  //   nodeWrapperOffsets = getNodeWrapperOffsets();
 
-			  clearTimeout(resizeTimer);
-			  resizeTimer = setTimeout(function() {
-					console.log("RESIZING");
-					resize = true;
-			    setWaterHeight();
-			    nodeWrapperOffsets = getNodeWrapperOffsets();
-
-			  }, 300);
+			  // }, 300);
 
 			});
 
