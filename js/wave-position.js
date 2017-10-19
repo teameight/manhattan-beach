@@ -45,6 +45,7 @@ if (!Array.prototype.findIndex) {
 
 var resize = false;
 var nodeWrapperOffsets = {};
+var tierKey = false;
 /**
  *
  * Air lines on Home page
@@ -319,7 +320,7 @@ function waveInit() {
     xAxis = Math.floor(height*.333);
     yAxis = 0;
 
-		scale={x: width/4,y: .25};
+		scale={x: width/4,y: .55};
 
     waveCtx.save();
     waveDraw();
@@ -342,7 +343,7 @@ waveDraw = function () {
 
 	    // Update the time and waveDraw again
 
-			waveDraw.seconds = waveDraw.seconds - 0.012;
+			waveDraw.seconds = waveDraw.seconds - 0.02;
 	    waveDraw.t = waveDraw.seconds*Math.PI;
 
 			requestAnimFrame(waveDraw);
@@ -598,18 +599,57 @@ function drawWave(t) {
 					$('.uw-hud').removeClass('show');
 				}
 			}
+			// console.log('nodeWrapperOffsets');
+			// console.log(nodeWrapperOffsets);
 
-			for ( var key in nodeWrappersHeight ) {
-				var top = nodeWrappersHeight[key].top;
-				var margin = parseInt(nodeWrappersHeight[key].margin);
-				var height = nodeWrappersHeight[key].height;
-				console.log(key, 'scroll:', newScrollTop, 'uwTop:', uwTop, 'windowH:', windowH, 'top:', top, 'margin:', margin, 'height:', height);
+			var newTierKey = false;
+
+			for ( var key in nodeWrapperOffsets ) {
+				var top = nodeWrapperOffsets[key].top;
+				var margin = parseInt(nodeWrapperOffsets[key].margin);
+				var height = nodeWrapperOffsets[key].height;
+				//console.log(key, 'scroll:', newScrollTop, 'uwTop:', uwTop, 'windowH:', windowH, 'top:', top, 'margin:', margin, 'height:', height);
 				if ( ( newScrollTop > ( top - ( height*2.25 ) ) ) && ( newScrollTop < (top + (height*2.25) + 2500 ) ) ) {
-					// console.log(key);
+					newTierKey = key;
+				}
+			}
+			if(tierKey !== newTierKey){
+				tierKey = newTierKey;
+				//console.log(tierKey);
+				if(tierKey){
+					tierNum = tierKey.split('-')[1];
+					tierClass = parseInt(tierNum) + 2;
+
+					console.log(tierClass)
+
+					if( $('.nw-' + tierClass).length && !$('.nw-' + tierClass).data('loadedimg')) {
+						loadUwImages(tierClass);
+					}
 				}
 			}
 
 		});
+
+		function loadUwImages(tierClass){
+			
+			console.log('.nw-' + tierClass);
+
+			$('.nw-' + tierClass).data('loadedimg', true).find('.object').each( function(){
+
+				var imgSize = $(this).data( "bgimg" );
+				//console.log(imgSize);
+				if(imgSize){
+					if(windowW < 900){
+		      	imgSize = $(this).data( "bgimgsm" );
+		      }
+			  	$(this).find('.imgbox').css({
+		    		'background-image': 'url(' + imgSize + ')'
+		    	});
+	    	}
+
+    	});
+
+		}
 
 		var currentWrapper;
 
@@ -654,7 +694,7 @@ function drawWave(t) {
 				    var thisSlug = node.slug;
 				    var thisLabel = node.label;
 				    if ( !thisLabel ) {
-				    	thisLabel = 'Needs label';
+				    	thisLabel = '';
 				    }
 				    var objTemplate = $('.nw-'+ t + ' .obj-template');
 
@@ -675,12 +715,13 @@ function drawWave(t) {
 					        .removeClass('obj-template')
 					        .addClass('object-' + n + '-' + i + ' ' + obj.class)
 					        .attr('data-slug', thisSlug)
-					        .css({'transform': 'translate3d(' + obj.posx + 'vw, ' + obj.posy + 'vw, ' + zOffset*o + 'vw) rotateX('+ obj.rotx +'deg) rotateY('+  obj.roty +'deg)'})
+					        .css({'transform': 'translate3d(' + obj.posx + 'vw, ' + obj.posy + 'vw, ' + zOffset*o + 'vw) rotateX('+ obj.rotx +'deg) rotateY('+  obj.roty +'deg) rotateZ('+ obj.rotz +'deg'})
 					        .data( "posx", obj.posx )
 					        .data( "posy", obj.posy )
 					        .data( "posz", zOffset*o )
 					        .data( "rotx", obj.rotx )
 					        .data( "roty", obj.roty )
+					        .data( "rotz", obj.rotz )
 					        .data( "bgimg", bgimg )
 					        .data( "bgimgsm", bgimgsm )
 					        .data( "label", thisLabel )
@@ -692,11 +733,11 @@ function drawWave(t) {
 					        if(windowW < 900){
 					        	imgSize = bgimgsm;
 					        }
-					        if(obj.image && n < 2){
+					        if(obj.image && n < 2 && t < 2){
 
 					        	$('.nw-'+ t +' .object-' + n + '-' + i + ' .imgbox').css({
 					        		'background-image': 'url(' + imgSize + ')'
-					        	})
+					        	});
 					        }
 					      o++;
 					    }
@@ -727,7 +768,7 @@ function drawWave(t) {
 			uwNodes.forEach(function(tier, t) {
 				nodeWrapperOffsets['nw-' + t] = {top: $('.nw-'+t).offset().top, margin: $('.nw-'+t).css('margin-top'), height: $('.nw-'+t+ ' .node').outerHeight()};
 			});
-			console.log(nodeWrapperOffsets);
+			//console.log(nodeWrapperOffsets);
 			return nodeWrapperOffsets;
 		}
 

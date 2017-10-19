@@ -79,6 +79,7 @@
 				</section>
 			</div><!-- wave-l-8 -->
 		</div><!-- wave-wrap -->
+		<div class="floor"></div>
 	</div><!-- #b-inner -->
 	<div class="loading">
 		<div class="preloader">

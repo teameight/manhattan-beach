@@ -189,6 +189,11 @@
 
     }
 
+    &.floating .inner .imgbox {
+      width: 70%;
+      padding-top: 70%;
+    }
+    
     .text &, &.text {
       width: 100%;
     }

@@ -671,7 +671,7 @@ a.btn {
   perspective-origin: center -12vw;
   background: #e1ecff; }
   .below #body {
-    background: #0a0f14; }
+    background: black; }
 
 .below #body {
   /*perspective-origin: center 45vh;*/
@@ -688,7 +688,7 @@ a.btn {
   bottom: 0;
   /*overflow: hidden;*/ }
   .below .b-bg {
-    background: linear-gradient(2deg, #0a0f14 0%, #0a0f14 40%, #324650 85%, #3f626f 92%, #3f626f 100%); }
+    background: linear-gradient(0deg, black 0%, #0a0f14 5%, #0a0f14 40%, #324650 85%, #3f626f 92%, #3f626f 100%); }
 
 .b-inner {
   width: 100%;
@@ -811,16 +811,6 @@ a.btn {
   margin-top: -2px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d; }
-  .underwater:after {
-    width: 16px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: transparent;
-    background-image: linear-gradient(white 2px, transparent 2px), linear-gradient(90deg, white 2px, transparent 2px), linear-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
-    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
-    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px; }
 
 .canvas-wrap {
   position: fixed;
@@ -877,6 +867,14 @@ a.btn {
   background-image: url(http://team-eight.com/open-dev/jegan/assets/white-grit-2.png);
   opacity: 0.15;
   transform: translateZ(-100vw) scale(3); }
+
+.floor {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 37vw;
+  background: linear-gradient(0deg, black 0%, black 70%, transparent 97%, transparent 100%); }
 
 .node-wrapper {
   position: relative;
@@ -1005,6 +1003,9 @@ a.btn {
         max-width: 36ch;
         margin-left: auto;
         margin-right: auto; }
+    .node .object.floating .inner .imgbox {
+      width: 70%;
+      padding-top: 70%; }
     .text .node .object, .node .object.text {
       width: 100%; }
 

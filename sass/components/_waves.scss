@@ -25,7 +25,7 @@ $v_o_factor: $v_o_seed * $persp; //this number increases as $persp-o increases
     background: rgba(225, 236, 257, 1); 
 
     .below & {
-      background: $under-mid;
+      background: rgb(0,0,0);
     }
 }
 .below #body {
@@ -44,7 +44,7 @@ $v_o_factor: $v_o_seed * $persp; //this number increases as $persp-o increases
   bottom:0;
   /*overflow: hidden;*/
   .below & {
-    background: linear-gradient(2deg, $under-mid 0%, $under-mid 40%, $under-dark 85%, $under-black 92%, $under-black 100%);
+    background: linear-gradient(0deg, rgb(0,0,0) 0%, $under-mid 5%, $under-mid 40%, $under-dark 85%, $under-black 92%, $under-black 100%);
   }
 
 }
