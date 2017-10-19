@@ -595,7 +595,7 @@ function drawWave(t) {
 				var top = nodeWrappersHeight[key].top;
 				var margin = parseInt(nodeWrappersHeight[key].margin);
 				var height = nodeWrappersHeight[key].height;
-				console.log(key, 'scroll:', newScrollTop, 'uwTop:', uwTop, 'windowH:', windowH, 'top:', top, 'margin:', margin, 'height:', height);
+				// console.log(key, 'scroll:', newScrollTop, 'uwTop:', uwTop, 'windowH:', windowH, 'top:', top, 'margin:', margin, 'height:', height);
 				if ( ( newScrollTop > ( top - ( height*2.25 ) ) ) && ( newScrollTop < (top + (height*2.25) + 2500 ) ) ) {
 					// console.log(key);
 				}
@@ -680,6 +680,10 @@ function drawWave(t) {
 					        .data( "label", thisLabel )
 					        .html('<div class="inner">'+obj.content+'</div>')
 					        .appendTo( '.nw-' + t + ' .camera');
+
+				        if ( obj.class === 'video' ) {
+				        	$('.object-' + n + '-' + i ).data('video', obj.video).data('orientation', obj.orientation);
+				        }
 
 					        //load the images as backgrounds, to start, just for the first two slide groups in each tier
 					        var imgSize = bgimg;
@@ -796,7 +800,12 @@ function drawWave(t) {
 			$(this).removeClass('closed no-click');
 		});
 
-		$( ".underwater" ).on( "click", ".camera .object:not(.no-click)", function(event) {
+		$( ".underwater" ).on( "click", ".camera .object.video", function(event) {
+			event.preventDefault();
+			$('.video-holder').html($(this).data('video'));
+		});
+
+		$( ".underwater" ).on( "click", ".camera .object:not(.no-click, .video)", function(event) {
 			event.preventDefault();
 
 			$that = $(this);

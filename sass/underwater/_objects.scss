@@ -232,3 +232,29 @@ a.open-handle {
       color:white;
     }
 }
+
+.underwater-video-modal {
+  position: fixed;
+  z-index: 1000;
+  max-width: 640px;
+  width: 80vw;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  .video-holder {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+  }
+
+  iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
+}
+
