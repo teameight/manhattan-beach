@@ -728,6 +728,10 @@ function drawWave(t) {
 					        .html('<div class="inner">'+obj.content+'</div>')
 					        .appendTo( '.nw-' + t + ' .camera');
 
+				        if ( obj.class === 'video' ) {
+				        	$('.object-' + n + '-' + i ).data('video', obj.video).data('orientation', obj.orientation);
+				        }
+
 					        //load the images as backgrounds, to start, just for the first two slide groups in each tier
 					        var imgSize = bgimg;
 					        if(windowW < 900){
@@ -745,8 +749,6 @@ function drawWave(t) {
 				    // objTemplate.remove();
 				    $('.nw-' + t + ' .object').not('.obj-template').first().addClass('here');
 				  });
-
-				  
 
 			});
 
@@ -854,7 +856,34 @@ function drawWave(t) {
 			$(this).removeClass('closed no-click');
 		});
 
-		$( ".underwater" ).on( "click", ".camera .object:not(.no-click)", function(event) {
+		$( ".underwater" ).on( "click", ".camera .object.video", function(event) {
+			event.preventDefault();
+			var uwbody = $('#body');
+			console.log(body);
+			var modal = $('.underwater-video-modal');
+			var videoHolder = $('.video-holder');
+			if ( $(this).data('orientation') === 'portrait' ) {
+				modal.addClass('portrait');
+			} else {
+				modal.removeClass('portrait');
+			}
+			videoHolder.html($(this).data('video'));
+			modal.fadeIn(500);
+			uwbody.addClass('no-scroll');
+		});
+
+		$('.video-modal-close').on('click', function() {
+			var body = $('#body');
+			var modal = $('.underwater-video-modal');
+			var videoHolder = $('.video-holder');
+			modal.fadeOut(500, function() {
+				$(this).removeClass('portrait');
+				videoHolder.empty();
+			});
+			body.removeClass('no-scroll');
+		});
+
+		$( ".underwater" ).on( "click", ".camera .object:not(.no-click, .video)", function(event) {
 			event.preventDefault();
 
 			$that = $(this);

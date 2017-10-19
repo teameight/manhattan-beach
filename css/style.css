@@ -1048,6 +1048,7 @@ a.open-handle {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  background-color: black;
   box-shadow: 0px 0px 0px 1000px black;
   display: none; }
   .underwater-video-modal.portrait {
