@@ -2458,7 +2458,7 @@ var uwBackgrounds = [
  	'posx': -120,
  	'posy': 0,
  	'posz': -1000,
- 	'scale': 70,
+ 	'scale': 80,
  	'content': bgImgRoot + '/background/final-small-ship.png'
  },
  {
@@ -2506,7 +2506,7 @@ var uwBackgrounds = [
  	'posx': -120,
  	'posy': 0,
  	'posz': -1000,
- 	'scale': 70,
+ 	'scale': 80,
  	'content': bgImgRoot + '/background/final-small-ship.png'
  },
  {
