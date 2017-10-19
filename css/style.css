@@ -527,7 +527,7 @@ h4,
         height: 40px;
         width: 1px;
         position: relative;
-        background: #8ea9bd;
+        background: #fff;
         transform: rotateX(65deg);
         left: 20px;
         transition: opacity 500ms ease; }
@@ -535,18 +535,18 @@ h4,
           content: '';
           height: 15px;
           width: 15px;
-          border-top: 2px #8ea9bd solid;
+          border-top: 2px #fff solid;
           display: block;
           position: absolute;
           top: 0;
           left: -7.5px;
           transform: rotateZ(45deg);
-          border-left: 2px #8ea9bd solid; }
+          border-left: 2px #fff solid; }
       .uw-hud .prevnext a.prev span::after {
         top: auto;
         bottom: 0;
-        border-bottom: 2px #8ea9bd solid;
-        border-right: 2px #8ea9bd solid;
+        border-bottom: 2px #fff solid;
+        border-right: 2px #fff solid;
         border-top: none;
         border-left: none; }
   .uw-hud #uw-site-navigation {
@@ -863,24 +863,14 @@ a.btn {
     width: 200%;
     height: 200%; }
 
-.bg-d-1 {
-  opacity: 0.1;
-  background-image: url(http://team-eight.com/open-dev/jegan/assets/white-grit.png);
-  background-size: 1600px;
-  transform: translateZ(-10vw) scale(1.1); }
-
-.bg-d-2 {
-  background-image: url(http://team-eight.com/open-dev/jegan/assets/white-grit-2.png);
-  opacity: 0.15;
-  transform: translateZ(-100vw) scale(3); }
-
 .floor {
   width: 100%;
+  height: 50vh;
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 37vw;
-  background: linear-gradient(0deg, black 0%, black 70%, transparent 97%, transparent 100%); }
+  background-size: cover;
+  background-image: url("//res.cloudinary.com/egan/image/upload/background/floor.png"); }
 
 .node-wrapper {
   position: relative;
@@ -1174,7 +1164,8 @@ a.open-handle {
       width: 100vw;
       /*border: 1px solid yellow;*/ }
   .background .st-1 {
-    transition: transform 2000ms ease-in-out; }
+    transition: transform 2000ms ease-in-out;
+    transform-origin: center bottom; }
     .background .st-1 img {
       width: 15vw; }
 

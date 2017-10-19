@@ -2451,39 +2451,39 @@ var uwBackgrounds = [
  	'posy': 0,
  	'posz': -1600,
  	'scale': 70,
- 	'content': bgImgRoot + '/background/nyscraper.png'
+ 	'content': bgImgRoot + '/background/final-building.png'
  },
  {
  	'slug': 'books/manhattan-beach',
  	'posx': -120,
- 	'posy': 100,
+ 	'posy': 0,
  	'posz': -1000,
- 	'scale': 70,
- 	'content': bgImgRoot + '/background/small-ship_xjfipu.png'
+ 	'scale': 80,
+ 	'content': bgImgRoot + '/background/final-small-ship.png'
  },
  {
  	'slug': 'books/a-visit-from-the-goon-squad',
  	'posx': 350,
- 	'posy': 1500,
+ 	'posy': 0,
  	'posz': -1600,
  	'scale': 100,
- 	'content': bgImgRoot + '/background/side-mountain.png'
+ 	'content': bgImgRoot + '/background/final-mountain.png'
  },
  {
  	'slug': 'books/the-keep',
  	'posx': 0,
- 	'posy': 1000,
+ 	'posy': 0,
  	'posz': -1000,
  	'scale': 100,
- 	'content': bgImgRoot + '/background/mountain.png'
+ 	'content': bgImgRoot + '/background/final-mountain.png'
  },
  {
  	'slug': 'books/look-at-me',
  	'posx': 800,
- 	'posy': 1000,
+ 	'posy': 0,
  	'posz': -2000,
  	'scale': 80,
- 	'content': bgImgRoot + '/background/big-ship.png'
+ 	'content': bgImgRoot + '/background/final-big-ship.png'
  },
  {
  	'slug': 'books/the-invisible-circus',
@@ -2491,47 +2491,47 @@ var uwBackgrounds = [
  	'posy': 0,
  	'posz': -1600,
  	'scale': 70,
- 	'content': bgImgRoot + '/background/nyscraper.png'
+ 	'content': bgImgRoot + '/background/final-building.png'
  },
  {
  	'slug': 'books/emerald-city-and-other-stories',
  	'posx': 350,
- 	'posy': 1500,
+ 	'posy': 0,
  	'posz': -1600,
  	'scale': 100,
- 	'content': bgImgRoot + '/background/side-mountain.png'
+ 	'content': bgImgRoot + '/background/final-mountain.png'
  },
  {
  	'slug': 'non-fiction',
  	'posx': -120,
- 	'posy': 100,
+ 	'posy': 0,
  	'posz': -1000,
- 	'scale': 70,
- 	'content': bgImgRoot + '/background/NEW-small-ship.png'
+ 	'scale': 80,
+ 	'content': bgImgRoot + '/background/final-small-ship.png'
  },
  {
  	'slug': 'category/news',
  	'posx': -10,
- 	'posy': 100,
+ 	'posy': 0,
  	'posz': 0,
  	'scale': 0,
- 	'content': bgImgRoot + '/background/mountain.png'
+ 	'content': bgImgRoot + '/background/final-mountain.png'
  },
  {
  	'slug': 'about',
  	'posx': 800,
- 	'posy': 1000,
+ 	'posy': 0,
  	'posz': -2000,
  	'scale': 80,
- 	'content': bgImgRoot + '/background/big-ship.png'
+ 	'content': bgImgRoot + '/background/final-big-ship.png'
  },
  {
  	'slug': 'contact',
  	'posx': 350,
- 	'posy': 1500,
+ 	'posy': 0,
  	'posz': -1600,
  	'scale': 100,
- 	'content': bgImgRoot + '/background/side-mountain.png'
+ 	'content': bgImgRoot + '/background/final-mountain.png'
  }
 ];
 

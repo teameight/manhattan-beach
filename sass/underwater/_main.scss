@@ -32,8 +32,7 @@
 }
 
 #detritus-canvas {
-  
-	position: fixed;  
+	position: fixed;
 /* 	position: relative; */
     margin: auto;
     top: -5%;
@@ -68,22 +67,14 @@
 
 }
 
-.bg-d-1 {
-  opacity: 0.1;
-  background-image: url(http://team-eight.com/open-dev/jegan/assets/white-grit.png);
-  background-size:1600px;
-  transform: translateZ(-10vw) scale(1.1);
-}
-.bg-d-2 {
-  background-image: url(http://team-eight.com/open-dev/jegan/assets/white-grit-2.png); 
-  opacity: 0.15;
-  transform: translateZ(-100vw) scale(3);
-}
+
 .floor {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 37vw;
-    background: linear-gradient(0deg, rgb(0,0,0) 0%, rgb(0,0,0) 70%, rgba(0,0,0,0) 97%, rgba(0,0,0,0) 100%);
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-image: url('//res.cloudinary.com/egan/image/upload/background/floor.png');
+
 }
