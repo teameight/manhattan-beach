@@ -13,7 +13,7 @@ var uwNodes = [
 				'objects': [
 
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -22,7 +22,7 @@ var uwNodes = [
 						'content':'<p>Anna watched the sea. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -31,7 +31,7 @@ var uwNodes = [
 						'content':'<p>A landscape of lost objects: sunken ships, hidden treasure, gold and gems and the charm bracelet that had fallen from her wrist into a storm drain.<\/p>'
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -46,7 +46,7 @@ var uwNodes = [
 				'label': '',
 				'objects': [
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -55,7 +55,7 @@ var uwNodes = [
 						'content':'<p>He&rsquo;d been about to get back in his car when he found himself staring into the dark of the Upper Bay, where boats and waterfront were blacked out.<\/p>'
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -64,7 +64,7 @@ var uwNodes = [
 						'content':'<p>He&rsquo;d perceived a new, dynamic density in the darkness. All at once his eyes had organized the mystery and he&rsquo;d seen it.<\/p>'
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -80,7 +80,7 @@ var uwNodes = [
 				'objects': [
 
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -89,7 +89,7 @@ var uwNodes = [
 						'content':'<p>Anna leaned her head against her sister&rsquo;s and watched a long wave form, stretching until it achieved translucence, then somersaulting forward and collapsing into creamy suds that eked toward them over the sand. <\/p>'
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -98,7 +98,7 @@ var uwNodes = [
 						'content':'<p>Then another wave gathered, reaching, stretching, a streak of silver dashing along its surface where the weak sunlight touched it. The strange, violent, beautiful sea. this was what she had wanted Lydia to see.<\/p>'
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -129,7 +129,7 @@ var uwNodes = [
 				'label': '',
 				'objects': [
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -138,7 +138,7 @@ var uwNodes = [
 						'content':'<p>He&rsquo;d looked out and noticed the sea as if it were entirely new. An infinite hypnotic expanse that could look like scales, wax, hammered silver, wrinkled flesh. It had structure and layers you couldn&rsquo;t see from land.<\/p>'
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -147,7 +147,7 @@ var uwNodes = [
 						'content':'<p>Fixing his eyes upon this unfamiliar sea, he&rsquo;d learned to float in a semi-conscious state, alert but not fully awake.<\/p>',
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -178,7 +178,7 @@ var uwNodes = [
 				'label': '',
 				'objects': [
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -187,7 +187,7 @@ var uwNodes = [
 						'content':'<p>She descended the ladder backward, then held the descending line and let the harbor swallow her.<\/p>'
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -196,7 +196,7 @@ var uwNodes = [
 						'content':'<p>The current was tremendous, a pull with the force of the ocean behind it. Here, there was no difference between opening her eyes and closing them.<\/p>'
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -205,7 +205,7 @@ var uwNodes = [
 						'content':'<p>This made for an eerie dislocation, as if she were sliding toward nothing or floating in a void.<\/p>',
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -214,7 +214,7 @@ var uwNodes = [
 						'content':'<p>When at last she reached the bottom, she clutched the line and blinked into the dark, wondering if she&rsquo;d come down too quickly.<\/p>',
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -229,7 +229,7 @@ var uwNodes = [
 				'label': '',
 				'objects': [
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -238,7 +238,7 @@ var uwNodes = [
 						'content':'<p>He was alone at the bottom of the sea. The extremity of his position mesmerized him.<\/p>'
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -247,7 +247,7 @@ var uwNodes = [
 						'content':'<p>He&rsquo;d always liked the dark, but night was the only version of it he&rsquo;d known until now. This was the primeval dark of nightmares. It covered secrets too atrocious to be exposed. drowned children, sunken ships.<\/p>'
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -278,7 +278,7 @@ var uwNodes = [
 				'label': '',
 					'objects': [
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -287,7 +287,7 @@ var uwNodes = [
 						'content':'<p>The night was cool and clear, a rolling sea just visible under a paring of moon.<\/p>'
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -296,7 +296,7 @@ var uwNodes = [
 						'content':'<p>He couldn&rsquo;t see the ships around them, but he perceived their density, five hundred feet away fore and aft, a thousand feet abeam, all nosing together through the swells like a spectral herd.<\/p>'
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -311,7 +311,7 @@ var uwNodes = [
 				'label': '',
 				'objects': [
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -320,7 +320,7 @@ var uwNodes = [
 						'content':'<p>In their new life, the wind was high, the water heavy and black. There was no buffer from the elements—wind, sun, and rain groped and clawed them at will.<\/p>'
 					},
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -838,7 +838,7 @@ var uwNodes = [
 				'label': 'Mr. Gratzky',
 				'objects': [
 					{
-						'class':'scrollbar closed no-click',
+						'class':'scrollbar text closed no-click',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -853,7 +853,7 @@ var uwNodes = [
 				'label': 'The Brooklyn Navy Yard',
 				'objects': [
 					{
-						'class':'',
+						'class':'text',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -1833,11 +1833,9 @@ var uwNodes = [
 						'posx':0,
 						'posy':0,
 						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'image': imgRoot + '\/noah_scalin\/skull-placeholder.png',
-						'content':'<div class="imgbox"><\/div><p>[placeholder for Skull]<\/p>',
-						'content-old':'<div class="layer-1"><img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/skull-comp\/skull-1.png"><\/div><div class="layer-2"><img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/skull-comp\/skull-2.png"><\/div><div class="layer-3"><img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/skull-comp\/skull-3.png"><\/div><div class="layer-4"><img alt="" src="http:\/\/team-eight.com\/open-dev\/jegan\/assets\/skull-comp\/skull-4.png"><\/div>'
+						'roty':-30,
+						'rotx':-5,
+						'content':'<div class="layer-1"><img alt="" src="' + imgRoot + '\/noah_scalin\/skull-1.png"><\/div><div class="layer-2"><img alt="" src="' + imgRoot + '\/noah_scalin\/skull-2.png"><\/div><div class="layer-3"><img alt="" src="' + imgRoot + '\/noah_scalin\/skull-3.png"><\/div><div class="layer-4"><img alt="" src="' + imgRoot + '\/noah_scalin\/skull-4.png"><\/div>'
 					}
 				]
 			},
@@ -2191,7 +2189,7 @@ var uwNodes = [
 						'content':'<div class="imgbox"><\/div><p>Lucille Kolkin and pals.<\/p>'
 					},
 					{
-						'class':'scrollbar closed no-click',
+						'class':'scrollbar text closed no-click',
 						'posx':0,
 						'posy':0,
 						'posz':0,
@@ -2225,8 +2223,8 @@ var uwNodes = [
 						'posx':0,
 						'posy':0,
 						'posz':0,
-						'roty':30,
-						'rotx':5,
+						'roty':-30,
+						'rotx':-5,
 						'content':'<div class="layer-1"><img alt="" src="' + imgRoot + '\/noah_scalin\/jenny-1.png"><\/div><div class="layer-2"><img alt="" src="' + imgRoot + '\/noah_scalin\/jenny-2.png"><\/div><div class="layer-3"><img alt="" src="' + imgRoot + '\/noah_scalin\/jenny-3.png"><\/div><div class="layer-4"><img alt="" src="' + imgRoot + '\/noah_scalin\/jenny-4.png"><\/div>'
 					}
 				]

@@ -43,6 +43,8 @@ if (!Array.prototype.findIndex) {
   });
 }
 
+var resize = false;
+var nodeWrapperOffsets = {};
 /**
  *
  * Air lines on Home page
@@ -133,7 +135,7 @@ function getRandomArbitrary(min, max) {
  * Initialize variables and begin the animation.
  */
 window.requestAnimFrame = (function(){
-return window.requestAnimationFrame   ||
+	return window.requestAnimationFrame   ||
 	window.webkitRequestAnimationFrame ||
 	window.mozRequestAnimationFrame    ||
 	function(callback){
@@ -142,6 +144,7 @@ return window.requestAnimationFrame   ||
 })();
 function airLinesInit() {
 
+		resize = false;
     canvas = document.getElementById("airlinesCanvas");
     container = document.getElementById("airlinesWrap");
 
@@ -174,12 +177,14 @@ drawLines = function () {
     // Clear the canvas
     ctx.clearRect(0, 0, airwidth, airheight);
 
-    drawAirLines(drawLines.t);
+    if(!resize){ 
+	    drawAirLines(drawLines.t);
 
-		drawLines.seconds = drawLines.seconds - 0.003;
-    drawLines.t = drawLines.seconds*Math.PI;
+			drawLines.seconds = drawLines.seconds - 0.003;
+	    drawLines.t = drawLines.seconds*Math.PI;
 
-		requestAnimFrame(drawLines);
+			requestAnimFrame(drawLines);
+		}
 
 };
 drawLines.seconds = 0;
@@ -299,6 +304,7 @@ var unit = 30,
  */
 function waveInit() {
 
+		resize = false;
     waveCanvas = document.getElementById("waveCanvas");
 
     waveCanvas.width = waveCanvas.offsetWidth;
@@ -330,15 +336,18 @@ waveDraw = function () {
     // Clear the canvas
     waveCtx.clearRect(0, 0, width, height);
 
-    drawWave(waveDraw.t);
+    if(!resize){
 
-    // Update the time and waveDraw again
+	    drawWave(waveDraw.t);
 
-		waveDraw.seconds = waveDraw.seconds - 0.012;
-    waveDraw.t = waveDraw.seconds*Math.PI;
+	    // Update the time and waveDraw again
 
-		requestAnimFrame(waveDraw);
+			waveDraw.seconds = waveDraw.seconds - 0.012;
+	    waveDraw.t = waveDraw.seconds*Math.PI;
 
+			requestAnimFrame(waveDraw);
+
+		}
 };
 waveDraw.seconds = 0;
 waveDraw.t = 0;
@@ -439,16 +448,19 @@ function drawWave(t) {
 
 			resizeTimer = setTimeout(function() {
 
-			    nodeWrappersHeight = setWaterHeight();
+			    setWaterHeight();
 
 			  }, 300);
 
 			$(window).on('resize', function(e) {
 
+
 			  clearTimeout(resizeTimer);
 			  resizeTimer = setTimeout(function() {
-
-			    nodeWrappersHeight = setWaterHeight();
+					console.log("RESIZING");
+					resize = true;
+			    setWaterHeight();
+			    nodeWrapperOffsets = getNodeWrapperOffsets();
 
 			  }, 300);
 
@@ -515,12 +527,6 @@ function drawWave(t) {
 			// });
 
 
-			if($airlines.length){
-				$airlines.css({
-					'height': ( $page_offset + (screenHvw * 3) + 180 ) + 'vw'
-				});
-				airLinesInit();
-			}
 
 			for (var i = 8; i >= 1; i--) {
 
@@ -538,6 +544,12 @@ function drawWave(t) {
 				'top': (($wave_offset - ($wave_reveal * (7))) - 10) + 'vw'
 			});
 
+			if($airlines.length){
+				$airlines.css({
+					'height': ( $page_offset + (screenHvw * 3) + 180 ) + 'vw'
+				});
+				airLinesInit();
+			}
 			uwTop = $('.uw-segway').offset().top;
 			// console.log(uwTop);
 			waveInit();
@@ -558,10 +570,6 @@ function drawWave(t) {
 
 			var bgoffsett = offset*1 + windowH*1;
 			$('.b-bg').height(bInnerH - offset - windowH).css({'top': bgoffsett + 'px'});
-
-			nodeWrappersHeight = buildNodes();
-
-			return nodeWrappersHeight;
 		}
 
 		$bodyDiv.scroll(function() {
@@ -614,8 +622,6 @@ function drawWave(t) {
 			var currSlug = current_slug.slug;
 
 			//console.log(uwNodes);
-
-			var nodeWrapperOffsets = {};
 
 			uwNodes.forEach(function(tier, t) {
 				// console.log(tier.tier);
@@ -699,7 +705,7 @@ function drawWave(t) {
 				    $('.nw-' + t + ' .object').not('.obj-template').first().addClass('here');
 				  });
 
-				  nodeWrapperOffsets['nw-' + t] = {top: $('.nw-'+t).offset().top, margin: $('.nw-'+t).css('margin-top'), height: $('.nw-'+t+ ' .node').outerHeight()};
+				  
 
 			});
 
@@ -711,7 +717,18 @@ function drawWave(t) {
 						setDistance(elem, posz);
 			});
 
-		  return nodeWrapperOffsets;
+			nodeWrapperOffsets = getNodeWrapperOffsets();
+		}
+
+		buildNodes();
+
+		function getNodeWrapperOffsets(){
+			
+			uwNodes.forEach(function(tier, t) {
+				nodeWrapperOffsets['nw-' + t] = {top: $('.nw-'+t).offset().top, margin: $('.nw-'+t).css('margin-top'), height: $('.nw-'+t+ ' .node').outerHeight()};
+			});
+			console.log(nodeWrapperOffsets);
+			return nodeWrapperOffsets;
 		}
 
 		function buildBackground() {
@@ -1046,8 +1063,8 @@ function drawWave(t) {
 			offset_percent = 0,
 			wrapper_offset = $('.spin').parent().offset(),
 			wrapper_width = $('.spin').parent().width(),
-			startY = 30,
-			startX = 5,
+			startY = -30,
+			startX = -5,
 			trigger;
 		$('.node-wrapper').on('tapstart', '.spin.here', function (e, touch) {
 					trigger = touch.offset.x - wrapper_offset.left;
@@ -1122,6 +1139,8 @@ function drawWave(t) {
 
 		function initDCanvas() {
 
+					resize = false;
+
 					dCanvas.w = dCanvas.width = window.innerWidth
 					dCanvas.h = dCanvas.height = window.innerHeight;
 
@@ -1169,12 +1188,15 @@ function drawWave(t) {
 		}
 
 		function dLoop() {
-			if(isSwimming){
-				swimCount++;
+			if(!resize){ 
+
+				if(isSwimming){
+					swimCount++;
+				}
+				update();
+				dDraw();
+			  requestAnimFrame(dLoop);
 			}
-			update();
-			dDraw();
-		  requestAnimFrame(dLoop);
 		}
 
 		function calcDistance(dx,dy) {

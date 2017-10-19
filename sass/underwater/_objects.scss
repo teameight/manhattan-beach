@@ -38,9 +38,11 @@
     &.object {
       cursor:grab;
       cursor:-webkit-grab;
-      width:100%;
+      width:60%;
       height:100%;
       transform:rotateY(30deg) rotateX(5deg);
+      left:20%;
+      position:relative;
       /*animation: float-wobble 84s infinite linear;*/
     }
 
