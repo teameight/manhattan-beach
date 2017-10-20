@@ -279,7 +279,7 @@ function drawAirLines(t) {
 
 var wWidth = window.innerWidth;
 
-var unit = 30,
+var unit = 30, 
   waveCanvas, waveCtx,
   height, width, xAxis, yAxis,
   waveDraw, interval,
@@ -293,8 +293,8 @@ var unit = 30,
 
 	wavestrokeWidth = wWidth*.0014,
 	parameters={
-			freq: 1.75,
-			amp: 50,
+			freq: 1,
+			amp: 55,
 			type: "sin",
 			rand: getRandomArbitrary(0, Math.PI)
 		};
@@ -371,8 +371,8 @@ function drawWave(t) {
 
 		var p=parameters;
 
-		p.newFreq = p.freq;// + (p.freq*Math.cos( p.rand + t ))/15;
-		p.newAmp = p.amp;// + (p.amp*Math.cos( p.rand + t ))/2;
+		p.newFreq = p.freq + (p.freq*Math.cos( p.rand + t ))/15;
+		p.newAmp = p.amp + (p.amp*Math.cos( p.rand + t ))/2;
 
 		var prevY = 0;
     // Loop to draw segments
@@ -386,7 +386,7 @@ function drawWave(t) {
 			currentY+=addToY;
 
 			prevY = currentY;
-			var xPos = i - (scale.x/7) + (scale.x/3.5 * Math.sin(t));
+			var xPos = i - (scale.x/7) + (scale.x/8 * Math.sin(t));
 
 			cpath.push({x:xPos,y:currentY});
 
@@ -425,7 +425,6 @@ function drawWave(t) {
 (function($){
 
 	$(window).on("load", function() {
-		var staticWave = false;
 		var uWScrollDiff = 0,
 				newScrollTop = 0,
 				nodeWrappersHeight = {},
@@ -442,10 +441,8 @@ function drawWave(t) {
 		var isUnderWater = false,
 				showFootMenu = false,
 				$underwater = $('.underwater');
-		var uwSegway = $('.uw-segway');
-		if ( uwSegway.length ) {
-			var uwTop = uwSegway.offset().top;
-		}
+		var uwTop = $('.uw-segway').offset().top;
+		// console.log('onload ' + uwTop);
 		var maxRange = 250; //range of visibility, in z-space
 				// scrollRun = false,
 				// scrollqueue = false;
@@ -453,51 +450,141 @@ function drawWave(t) {
 
 		var $airlines = $('#airlinesCanvas');
 
-		if ( $('.firefox, .msie, .edge').length ) {
-			staticWave = true;
-		}
-
 		if(current_slug.slug !== ''){
 
-			if ( staticWave ) {
-				var $page_offset = $('#page-wrap').outerHeight();
-			} else {
+			var resizeTimer;
 
-				var resizeTimer;
+			resizeTimer = setTimeout(function() {
 
-				resizeTimer = setTimeout(function() {
+			    setWaterHeight();
 
-				    setWaterHeight();
+			  }, 300);
 
-				  }, 300);
+			$(window).on('resize', function(e) {
 
-				$(window).on('resize', function(e) {
+				if(windowW != $(window).width() || windowH != $(window).height()) {
+		      location.reload();
+		      return;
+		    }
+			  // clearTimeout(resizeTimer);
+			  // resizeTimer = setTimeout(function() {
+					// console.log("RESIZING");
+					// resize = true;
+			  //   setWaterHeight();
+			  //   nodeWrapperOffsets = getNodeWrapperOffsets();
 
-					if(windowW != $(window).width() || windowH != $(window).height()) {
-			      location.reload();
-			      return;
-			    }
+			  // }, 300);
 
-				});
-				if ( !isMobile ) {
-					buildBackground();
-				}
+			});
+			if(!isMobile){
+				buildBackground();
 			}
-		} else {
+		}else{
 			$('#body').removeClass('not-loaded').addClass('loaded');
-		}
+		} // end if current_slug
 
 
-		if ( staticWave ) {
+		function setWaterHeight() {
+			// var waterline = $('.waterline');
+
+			// waterline.css('top', offset + 'px');
+
+			var offset = $('#page-wrap').outerHeight(true);
+			windowW = $( window ).width();
+			windowH = $( window ).height();
+			var screenHvw = windowH/windowW,
+				pageHvw = offset/windowW;
+
+				// console.log(screenHvw);
+				// console.log(pageHvw);
+
+				if(pageHvw < screenHvw){
+					pageHvw = screenHvw;
+				}
+
+
+			var ratioH = screenHvw/pageHvw;
+
+			var $page_offset = (pageHvw) * 100;
+			var $persp = 80,
+				$persp_o = screenHvw * 50;
+
+			var ratioMult = screenHvw > 1 ? 1 : screenHvw;
+
+			var $wave_offset = (pageHvw - screenHvw) * ((300 * ratioH) - (60 * ratioMult)); // this also sets the speed of the wave parallax compared to scroll. higher = slower.
+				//it also controls at which point in the scroll the last slide goes off the top of the screen
+
+			// console.log(ratioH);
+
+
+			$wave_reveal = 25.118 * ratioMult - (10 * ratioH);
+
+
+			var	$v_o_factor = ($wave_reveal / $persp_o);//($wave_reveal / $persp_o); //this number increases as $persp-o increases
+
+			var $vert_offset = 1 - ($persp/$persp);
+			var $translate_z = $persp * ( $vert_offset );
+			var $scale = ( $persp - $translate_z ) / $persp;
+
+
+			$('#body').css({
+			    'perspective': $persp + 'vw',
+			    'perspective-origin': 'center ' + $persp_o + 'vw'
+			});
+
+
+			// $('.wave-seg').css({
+			// 	'top': $wave_offset + 'vw'
+			// });
+
+
+
+			for (var i = 8; i >= 1; i--) {
+
+				$('.wave-l-'+i).css({
+					'transform': 'translateZ( ' + $translate_z + 'vw ) scale( ' + $scale + ' )',
+					'top': ($wave_offset - ($wave_reveal * (i-1))) + 'vw'
+				});
+
+				$vert_offset = $vert_offset + $v_o_factor;
+				$translate_z = $persp * ( 0 - $vert_offset );
+				$scale = ( $persp - $translate_z ) / $persp;
+
+			}
+			$('.wave-l-8').css({
+				'top': (($wave_offset - ($wave_reveal * (7))) - 10) + 'vw'
+			});
 
 			if($airlines.length){
 				$airlines.css({
-					'height': ( $page_offset + 100 ) + 'px'
+					'height': ( $page_offset + (screenHvw * 3) + 180 ) + 'vw'
 				});
 				airLinesInit();
 			}
-		} else {
-			$bodyDiv.scroll(function() {
+			uwTop = $('.uw-segway').offset().top;
+			// console.log(uwTop);
+			waveInit();
+			initDCanvas();
+			// 	dotSize, speed, circSizeFactor
+			createCircleArray(.3, .3, .3);
+			// createCircleArray(.4, .4, .2);
+			// createCircleArray(.5, .6, .35);
+			createCircleArray(.7, .7, .45);
+			// createCircleArray(.6, .8, .4);
+			update();
+			dDraw();
+			requestAnimFrame(dLoop);
+
+			$bodyDiv.removeClass('not-loaded').addClass('loaded');
+			var bInnerH = $('.b-inner').height();
+			//console.log(bInnerH);
+
+			var bgoffsett = offset*1 + windowH*1;
+			$('.b-bg').height(bInnerH - offset - windowH).css({'top': bgoffsett + 'px'});
+		}
+
+
+		$bodyDiv.scroll(function() {
 			// "Disable" the horizontal scroll.
         if ($bodyDiv.scrollLeft() !== 0) {
             $bodyDiv.scrollLeft(0);
@@ -547,7 +634,7 @@ function drawWave(t) {
 				console.log(tierKey);
 
 				if(tierKey){
-
+					
 					currentWrapper = $('.' + tierKey);
 
 					updateLabel(tierKey);
@@ -565,269 +652,8 @@ function drawWave(t) {
 
 		});
 
-			var currentWrapper;
-
-			if(isMobile){
-				buildMobileNodes();
-			}else{
-				buildNodes();
-			}
-
-			// Node Swim
-			var clickCount = 0;
-
-			$( ".underwater" ).on( "click", ".camera .object.closed", function(event) {
-				$(this).removeClass('closed no-click');
-			});
-
-			$( ".underwater" ).on( "click", ".camera .object.video", function(event) {
-				event.preventDefault();
-				var uwbody = $('#body');
-				// console.log(body);
-				var modal = $('.underwater-video-modal');
-				var videoHolder = $('.video-holder');
-				if ( $(this).data('orientation') === 'portrait' ) {
-					modal.addClass('portrait');
-				} else {
-					modal.removeClass('portrait');
-				}
-				videoHolder.html($(this).data('video'));
-				modal.fadeIn(500);
-				uwbody.addClass('no-scroll');
-			});
-
-			$('.video-modal-close').on('click', function() {
-				var body = $('#body');
-				var modal = $('.underwater-video-modal');
-				var videoHolder = $('.video-holder');
-				modal.fadeOut(500, function() {
-					$(this).removeClass('portrait');
-					videoHolder.empty();
-				});
-				body.removeClass('no-scroll');
-			});
-
-			$( ".underwater" ).on( "click", ".camera .object:not(.no-click, .video)", function(event) {
-				event.preventDefault();
-
-				$that = $(this);
-
-				clickCount++;
-
-				var previous = false;
-
-				if ($(event.target).closest('.prev').length) {
-					//console.log('prev');
-					previous = true;
-				}
-
-				nudgeBackground(previous);
-
-				currentWrapper = $(this).closest('.node-wrapper');
-
-				swimAround($(this), previous);
-
-			});
-
-			$( ".uw-hud" ).on( "click", ".prev", function(event) {
-				event.preventDefault();
-
-				var hereObj = currentWrapper.find('.here');
-				var previous = true;
-				swimAround(hereObj, previous);
-				nudgeBackground(previous);
-			});
-
-			$( ".uw-hud" ).on( "click", ".next", function(event) {
-				event.preventDefault();
-
-				var hereObj = currentWrapper.find('.here');
-				var previous = false;
-				swimAround(hereObj, previous);
-			});
-
-			var swimTimer,
-					swimCount = 0;
-
-		 // 	BEGIN SKULL GRAB AND ROTATE
-		  var offsetY = 0,
-				offsetX = 0,
-				offset_percent = 0,
-				wrapper_offset = $('.spin').parent().offset(),
-				wrapper_width = $('.spin').parent().width(),
-				startY = -30,
-				startX = -5,
-				trigger;
-			$('.node-wrapper').on('tapstart', '.spin.here', function (e, touch) {
-						trigger = touch.offset.x - wrapper_offset.left;
-		      	// console.log(touch);
-		    })
-		    .on('tapend', '.spin.here', function() {
-		        startY = offsetY;
-						startX = offsetX;
-						trigger = null;
-						// console.log('mu');
-		    })
-		    .on('tapmove', '.spin.here', function (e, touch) {
-						// console.log('mm');
-						// console.log('offset'+offsetY);
-		        if(trigger) {
-
-		        	var object = $(this);
-		        	posx = $( this ).data('posx'),
-				  		posy = $( this ).data('posy'),
-				  		posz = $( this ).data('posz');
-
-				  		posx = posx || 0;
-				  		posy = posy || 0;
-				  		posz = posz || 0;
-							offset_percent = (((touch.offset.x - wrapper_offset.left)-trigger)/wrapper_width); // 60 degree range
-
-							// console.log(offset_percent);
-
-							var offsettemp = startY + (offset_percent)*60;
-
-							if(offsettemp > -31 && offsettemp < 31 ){
-
-								offsetX = startX + (offset_percent)*10;
-
-								offsetY = startY + (offset_percent)*60;
-								if(offsetY > -8 && offsetY < 8){
-									offsetY = 0;
-									offsetX = 0;
-								}
-
-								object.css('transform', 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw) rotateX(' + offsetX + 'deg) rotateY(' + offsetY + 'deg)');
-
-							}
-		        }
-		    });
-				// 	END SKULL GRAB AND ROTATE
-
-		// Detritus STUFF, go here to edit and troubleshoot: https://codepen.io/spencer8/pen/vJxqGV
-
-				//general
-				var dCanvas = document.getElementById('detritus-canvas'),
-				    dCtx,
-				    center = new Point(),
-				    r = 0;
-				// console.log(dCanvas);
-				var circles = [];
-				var circleSize = 100; // the space between dots, roughly, in pixels
-				var dotOpacity = 0.15;
-
-				// speed of orbit, if dotSpeedX = dotSpeedY you get a perfect circle
-				//   larger number = slower orbit
-				var dotSpeedX = 560,
-				    dotSpeedY = 560;
-
-				var placeRfactor = .8; // amount of randomization to original dot placement
-				var sizeRfactor = .9; // amount of randomization to original dot placement
-
-				var DAMPING = .934;
-
-				var cId = 0;
-
-		}
-
-		function setWaterHeight() {
-			// var waterline = $('.waterline');
-
-			// waterline.css('top', offset + 'px');
-
-			var offset = $('#page-wrap').outerHeight(true);
-			windowW = $( window ).width();
-			windowH = $( window ).height();
-			var screenHvw = windowH/windowW,
-				pageHvw = offset/windowW;
-
-				// console.log(screenHvw);
-				// console.log(pageHvw);
-
-				if(pageHvw < screenHvw){
-					pageHvw = screenHvw;
-				}
-
-
-			var ratioH = screenHvw/pageHvw;
-
-			var $page_offset = (pageHvw) * 100;
-			var $persp = 80,
-				$persp_o = screenHvw * 50;
-
-			var ratioMult = screenHvw > 1 ? 1 : screenHvw;
-
-			if(ratioH < .22){
-				ratioH = .22;
-			}
-
-			var $wave_offset = (pageHvw - screenHvw) * ((300 * ratioH) - (60 * ratioMult)); // this also sets the speed of the wave parallax compared to scroll. higher = slower.
-				//it also controls at which point in the scroll the last slide goes off the top of the screen
-
-			console.log(ratioH);
-
-
-
-			$wave_reveal = 25.118 * ratioMult - (10 * ratioH);
-
-
-			var	$v_o_factor = ($wave_reveal / $persp_o); //($wave_reveal / $persp_o); //this number increases as $persp-o increases
-
-			var $vert_offset = 1 - ($persp/$persp);
-			var $translate_z = $persp * ( $vert_offset );
-			var $scale = ( $persp - $translate_z ) / $persp;
-
-
-			$('#body').css({
-			    'perspective': $persp + 'vw',
-			    'perspective-origin': 'center ' + $persp_o + 'vw'
-			});
-
-
-			for (var i = 8; i >= 1; i--) {
-
-				$('.wave-l-'+i).css({
-					'transform': 'translateZ( ' + $translate_z + 'vw ) scale( ' + $scale + ' )',
-					'top': ($wave_offset - ($wave_reveal * (i-1))) + 'vw'
-				});
-
-				$vert_offset = $vert_offset + $v_o_factor;
-				$translate_z = $persp * ( 0 - $vert_offset );
-				$scale = ( $persp - $translate_z ) / $persp;
-
-			}
-			$('.wave-l-8').css({
-				'top': (($wave_offset - ($wave_reveal * (7))) - 10) + 'vw'
-			});
-
-			if($airlines.length){
-				$airlines.css({
-					'height': ( $page_offset + (screenHvw * 3) + 180 ) + 'vw'
-				});
-				airLinesInit();
-			}
-			uwTop = $('.uw-segway').offset().top;
-			waveInit();
-			initDCanvas();
-			// 	dotSize, speed, circSizeFactor
-			createCircleArray(.3, .3, .3);
-			// createCircleArray(.4, .4, .2);
-			// createCircleArray(.5, .6, .35);
-			createCircleArray(.7, .7, .45);
-			// createCircleArray(.6, .8, .4);
-			update();
-			dDraw();
-			requestAnimFrame(dLoop);
-
-			$bodyDiv.removeClass('not-loaded').addClass('loaded');
-			var bInnerH = $('.b-inner').height();
-
-			var bgoffsett = offset*1 + windowH*1;
-			$('.b-bg').height(bInnerH - offset - windowH).css({'top': bgoffsett + 'px'});
-		}
-
 		function loadUwImages(tierClass){
-
+			
 			// console.log('.nw-' + tierClass);
 
 			$('.nw-' + tierClass).data('loadedimg', true).find('.object').each( function(){
@@ -852,6 +678,7 @@ function drawWave(t) {
 			$('.node-label-text').html(elem.data('label'));
 		}
 
+		var currentWrapper;
 
 		function buildMobileNodes(){
 
@@ -956,7 +783,7 @@ function drawWave(t) {
 			});
 
 			nodeWrapperOffsets = getNodeWrapperOffsets();
-
+	
 		}
 
 		function buildNodes(){
@@ -1069,8 +896,13 @@ function drawWave(t) {
 			nodeWrapperOffsets = getNodeWrapperOffsets();
 		}
 
+		if(isMobile){
+			buildMobileNodes();
+		}else{
+			buildNodes();
+		}
 		function getNodeWrapperOffsets(){
-
+			
 			if(isMobile){
 				nodeWrapperOffsets['node-wrapper'] = {top: $('.node-wrapper').offset().top, margin: $('.node-wrapper').css('margin-top'), height: $('.node-wrapper .node').outerHeight()};
 			}else{
@@ -1078,7 +910,7 @@ function drawWave(t) {
 				nodeWrapperOffsets['nw-' + t] = {top: $('.nw-'+t).offset().top, margin: $('.nw-'+t).css('margin-top'), height: $('.nw-'+t+ ' .node').outerHeight()};
 				});
 			}
-
+			
 			//console.log(nodeWrapperOffsets);
 			return nodeWrapperOffsets;
 		}
@@ -1156,6 +988,86 @@ function drawWave(t) {
 			bg.data('posz', posz);
 
 		}
+
+
+		// Node Swim
+		var clickCount = 0;
+
+		$( ".underwater" ).on( "click", ".camera .object.closed", function(event) {
+			$(this).removeClass('closed no-click');
+		});
+
+		$( ".underwater" ).on( "click", ".camera .object.video", function(event) {
+			event.preventDefault();
+			var uwbody = $('#body');
+			console.log(body);
+			var modal = $('.underwater-video-modal');
+			var videoHolder = $('.video-holder');
+			if ( $(this).data('orientation') === 'portrait' ) {
+				modal.addClass('portrait');
+			} else {
+				modal.removeClass('portrait');
+			}
+			videoHolder.html($(this).data('video'));
+			modal.fadeIn(500);
+			uwbody.addClass('no-scroll');
+		});
+
+		$('.video-modal-close').on('click', function() {
+			var body = $('#body');
+			var modal = $('.underwater-video-modal');
+			var videoHolder = $('.video-holder');
+			modal.fadeOut(500, function() {
+				$(this).removeClass('portrait');
+				videoHolder.empty();
+			});
+			body.removeClass('no-scroll');
+		});
+
+		$( ".underwater" ).on( "click", ".camera .object:not(.no-click, .video)", function(event) {
+			event.preventDefault();
+
+			$that = $(this);
+
+			clickCount++;
+
+			var previous = false;
+
+			if ($(event.target).closest('.prev').length) {
+				//console.log('prev');
+				previous = true;
+			}
+
+			nudgeBackground(previous);
+
+			currentWrapper = $(this).closest('.node-wrapper');
+
+			swimAround($(this), previous);
+
+		});
+
+		$( ".uw-hud" ).on( "click", ".prev", function(event) {
+			event.preventDefault();
+
+			console.log('prev');
+			console.log(currentWrapper);
+
+			var hereObj = currentWrapper.find('.here');
+			var previous = true;
+			swimAround(hereObj, previous);
+			nudgeBackground(previous);
+		});
+
+		$( ".uw-hud" ).on( "click", ".next", function(event) {
+			event.preventDefault();
+
+			console.log('next');
+			console.log(currentWrapper);
+
+			var hereObj = currentWrapper.find('.here');
+			var previous = false;
+			swimAround(hereObj, previous);
+		});
 
 		function swimAround(nodeObj, previous) {
 
@@ -1330,6 +1242,9 @@ function drawWave(t) {
 
 		} // end swimAround()
 
+		var swimTimer,
+				swimCount = 0;
+
 		function swimDetritus() {
 			isSwimming = true;
 			clearTimeout(swimTimer);
@@ -1357,6 +1272,87 @@ function drawWave(t) {
 		}
 
 		// End Node Swim
+
+
+	 // 	BEGIN SKULL GRAB AND ROTATE
+	  var offsetY = 0,
+			offsetX = 0,
+			offset_percent = 0,
+			wrapper_offset = $('.spin').parent().offset(),
+			wrapper_width = $('.spin').parent().width(),
+			startY = -30,
+			startX = -5,
+			trigger;
+		$('.node-wrapper').on('tapstart', '.spin.here', function (e, touch) {
+					trigger = touch.offset.x - wrapper_offset.left;
+	      	// console.log(touch);
+	    })
+	    .on('tapend', '.spin.here', function() {
+	        startY = offsetY;
+					startX = offsetX;
+					trigger = null;
+					// console.log('mu');
+	    })
+	    .on('tapmove', '.spin.here', function (e, touch) {
+					// console.log('mm');
+					// console.log('offset'+offsetY);
+	        if(trigger) {
+
+	        	var object = $(this);
+	        	posx = $( this ).data('posx'),
+			  		posy = $( this ).data('posy'),
+			  		posz = $( this ).data('posz');
+
+			  		posx = posx || 0;
+			  		posy = posy || 0;
+			  		posz = posz || 0;
+						offset_percent = (((touch.offset.x - wrapper_offset.left)-trigger)/wrapper_width); // 60 degree range
+
+						// console.log(offset_percent);
+
+						var offsettemp = startY + (offset_percent)*60;
+
+						if(offsettemp > -31 && offsettemp < 31 ){
+
+							offsetX = startX + (offset_percent)*10;
+
+							offsetY = startY + (offset_percent)*60;
+							if(offsetY > -8 && offsetY < 8){
+								offsetY = 0;
+								offsetX = 0;
+							}
+
+							object.css('transform', 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw) rotateX(' + offsetX + 'deg) rotateY(' + offsetY + 'deg)');
+
+						}
+	        }
+	    });
+			// 	END SKULL GRAB AND ROTATE
+
+
+		// Detritus STUFF, go here to edit and troubleshoot: https://codepen.io/spencer8/pen/vJxqGV
+
+		//general
+		var dCanvas = document.getElementById('detritus-canvas'),
+		    dCtx,
+		    center = new Point(),
+		    r = 0;
+		// console.log(dCanvas);
+		var circles = [];
+		var circleSize = 100; // the space between dots, roughly, in pixels
+		var dotOpacity = 0.15;
+
+		// speed of orbit, if dotSpeedX = dotSpeedY you get a perfect circle
+		//   larger number = slower orbit
+		var dotSpeedX = 560,
+		    dotSpeedY = 560;
+
+		var placeRfactor = .8; // amount of randomization to original dot placement
+		var sizeRfactor = .9; // amount of randomization to original dot placement
+
+		var DAMPING = .934;
+
+		var cId = 0;
 
 		function initDCanvas() {
 
@@ -1545,6 +1541,6 @@ function drawWave(t) {
 		}
 
 	});
-
+	
 
 })(jQuery);
