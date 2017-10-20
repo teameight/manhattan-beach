@@ -461,6 +461,15 @@ function drawWave(t) {
 
 			if ( staticWave ) {
 				var $page_offset = $('#page-wrap').outerHeight();
+
+				$(window).on('resize', function(e) {
+
+					if(windowW != $(window).width() || windowH != $(window).height()) {
+			      location.reload();
+			      return;
+			    }
+
+				});
 			} else {
 
 				var resizeTimer;
@@ -1409,7 +1418,7 @@ function drawWave(t) {
 		}
 
 		function dLoop() {
-			if(!resize){ 
+			if(!resize){
 
 				if(isSwimming){
 					swimCount++;

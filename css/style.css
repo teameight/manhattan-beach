@@ -48,7 +48,8 @@
 /* BASE STYLES */
 html {
   box-sizing: border-box;
-  position: relative; }
+  position: relative;
+  background-color: #e1ecff; }
 
 *,
 *:before,
