@@ -11,6 +11,8 @@
 
 ?>
 
+
+
 				</div><!-- #content -->
 
 			</div><!-- #page -->
@@ -20,6 +22,26 @@
 		<?php
 
 		global $wave_slug;
+
+		require 'vendor/autoload.php';
+
+		$result = new WhichBrowser\Parser($_SERVER['HTTP_USER_AGENT']);
+
+		// echo '<pre>';
+		// print_r($result);
+		// echo '</pre>';
+
+		$static_wave = false;
+
+		if ($result->isBrowser('Internet Explorer') || $result->isBrowser('Edge') || $result->isBrowser('Firefox') ) $static_wave = true;
+		if ( $static_wave && $wave_slug ) {
+			?>
+			<div class="wave-wrap">
+				<img class="wave-full static-wave" src="http://jenniferegan.com/wp-content/themes/manhattan-beach/img/waves/wave-full.jpg" alt"waves"="">
+			</div>
+		<?php
+		} else {
+
 
 		if($wave_slug){
 
@@ -91,7 +113,14 @@
 		</div> -->
 		<img src="http://res.cloudinary.com/egan/image/upload/floating/gears-load.png" />
 	</div>
+
+<?php if ( $static_wave ) { ?>
+
+<?php } else { ?>
 </div><!-- #body -->
+<?php } ?>
+
+
 <div class="canvas-wrap">
 	<canvas id="detritus-canvas"></canvas>
 </div>
@@ -117,9 +146,10 @@
 					'container_class' => 'menu-uw'
 				) );
 			?>
-		</nav><!-- #site-navigation -->
+		</nav><!-- #uw-site-navigation -->
 	</div>
-</div><!-- #masthead -->
+</div><!-- #uw-hud -->
+<?php } ?>
 </div>
 
 <?php wp_footer(); ?>

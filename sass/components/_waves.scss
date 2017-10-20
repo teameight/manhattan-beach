@@ -54,7 +54,9 @@ $v_o_factor: $v_o_seed * $persp; //this number increases as $persp-o increases
   pointer-events: none;
   @include preserve3d;
   /*overflow: hidden;*/
-
+  &.static-wave {
+    background-color: #e1ecff;
+  }
 }
 
 .lastwave.wave-seg {
@@ -72,6 +74,11 @@ $v_o_factor: $v_o_seed * $persp; //this number increases as $persp-o increases
     /*display:none;*/
   }
 
+}
+
+.wave-full.static-wave {
+  width: 100%;
+  float: left;
 }
 
 .waterline {

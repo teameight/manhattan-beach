@@ -48,7 +48,8 @@
 /* BASE STYLES */
 html {
   box-sizing: border-box;
-  position: relative; }
+  position: relative;
+  background-color: #e1ecff; }
 
 *,
 *:before,
@@ -61,7 +62,7 @@ body {
   font-size: 16px;
   background-color: #F0F5F5;
   position: relative;
-  overflow: hidden; }
+  overflow-x: hidden; }
   @media screen and (min-width: 740px) {
     body {
       font-size: 20px; } }
@@ -88,7 +89,7 @@ body {
     overflow: hidden; }
     #body.not-loaded .loading {
       opacity: 1;
-      pointer-events: initial; }
+      pointer-events: auto; }
       #body.not-loaded .loading .preloader {
         position: absolute;
         left: 50%;
@@ -137,7 +138,9 @@ body {
   transform: translateZ(0vw);
   background: linear-gradient(0deg, rgba(225, 236, 255, 0) 5%, #e1ecff 40%, white 100%);
   margin-bottom: -25vw;
-  pointer-events: initial; }
+  pointer-events: auto; }
+  #page-wrap.static-wave {
+    background: linear-gradient(0deg, rgba(225, 236, 255, 0) 5%, #e1ecff 40%, white 100%); }
   body:not(.water) #page-wrap {
     padding-bottom: 20vh;
     min-height: 100vh;
@@ -499,7 +502,7 @@ h4,
       flex-direction: row; } }
   .uw-hud.show {
     opacity: .85;
-    pointer-events: initial; }
+    pointer-events: auto; }
   .uw-hud .totop {
     font-size: 14px;
     text-decoration: none;
@@ -703,6 +706,8 @@ a.btn {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   /*overflow: hidden;*/ }
+  .b-inner.static-wave {
+    background-color: #e1ecff; }
 
 .lastwave.wave-seg {
   background: blue; }
@@ -716,6 +721,10 @@ a.btn {
   /*overflow: hidden;*/ }
   .below .wave-wrap {
     /*display:none;*/ }
+
+.wave-full.static-wave {
+  width: 100%;
+  float: left; }
 
 .waterline {
   position: absolute;
@@ -936,7 +945,7 @@ a.btn {
     transition: opacity 2000ms ease; }
   .node .camera .object {
     position: absolute;
-    pointer-events: initial; }
+    pointer-events: auto; }
   .node .object.text:not(.scrollbar) .inner {
     display: flex;
     justify-content: center;
