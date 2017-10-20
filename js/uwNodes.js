@@ -3583,19 +3583,6 @@ var uwNodesMobile = [
 				'label': 'The Jeremiah O&rsquo;Brien',
 				'objects': [
 					{
-						'class':'video',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'rotz':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/Engine-Room.png',
-						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Engine Room<\/p>',
-						'orientation': 'landscape',
-						'video':'<iframe src="https://player.vimeo.com/video/238235611" width="640" height="360" frameborder="0"></iframe>'
-					},
-					{
 						'class':'image',
 						'posx':0,
 						'posy':0,
@@ -3616,20 +3603,7 @@ var uwNodesMobile = [
 						'rotz':0,
 						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/4.png',
 						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
-					},
-					{
-						'class':'video',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'rotz':0,
-						'image': imgRoot + '\/LibertyShipJeremiahOBrien\/4EngineRoom\/Pistons-Turning.png',
-						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div><p>Pistons Turning<\/p>',
-						'orientation': 'portrait',
-						'video':'<iframe src="https://player.vimeo.com/video/238235702" width="640" height="1137" frameborder="0"></iframe>'
-					},
+					}
 				]
 			},
 			{
