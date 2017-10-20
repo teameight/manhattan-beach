@@ -518,7 +518,7 @@ h4,
     display: block;
     perspective-origin: 18vw top;
     perspective: 80vw; }
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 740px) {
       .uw-hud .prevnext {
         perspective-origin: -10vw top; } }
     .uw-hud .prevnext a {
@@ -565,7 +565,7 @@ h4,
     z-index: 100;
     position: fixed;
     right: 0;
-    bottom: 70px;
+    bottom: 100px;
     padding-top: 0;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
@@ -576,6 +576,9 @@ h4,
     max-width: 300px;
     transition: transform .5s ease;
     transform: translateX(100%); }
+    @media screen and (min-width: 740px) {
+      .uw-hud .menu-uw {
+        bottom: 70px; } }
     .uw-hud .menu-uw #primary-menu {
       margin: 0;
       padding: 0; }

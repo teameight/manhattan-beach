@@ -291,7 +291,7 @@ var uwNodes = [
 						'roty':-15,
 						'rotx':10,
 						'rotz':0,
-						'image': imgRoot + '\/v2\/floating\/gears-3.png',
+						'image': imgRoot + '\/floating\/gears-3.png',
 						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					}
 				]
@@ -1504,7 +1504,7 @@ var uwNodes = [
 		'nodes': [
 			{
 				'slug':'home',
-				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
+				'label': 'the Brooklyn Navy Yard',
 				'objects': [
 					{
 						'class':'text',
@@ -2675,7 +2675,7 @@ var uwNodesMobile = [
 			},
 			{
 				'slug':'4',
-				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
+				'label': 'the Brooklyn Navy Yard',
 				'objects': [
 					{
 						'class':'text',
@@ -3054,7 +3054,7 @@ var uwNodesMobile = [
 			},
 			{
 				'slug':'14',
-				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
+				'label': 'the Brooklyn Navy Yard',
 				'objects': [
 					{
 						'class':'image',
@@ -3263,7 +3263,7 @@ var uwNodesMobile = [
 			},
 			{
 				'slug':'19',
-				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
+				'label': 'the Brooklyn Navy Yard',
 				'objects': [
 					{
 						'class':'image',
@@ -3481,7 +3481,7 @@ var uwNodesMobile = [
 			},
 			{
 				'slug':'24',
-				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
+				'label': 'the Brooklyn Navy Yard',
 				'objects': [
 					{
 						'class':'image',
@@ -3734,7 +3734,7 @@ var uwNodesMobile = [
 			},
 			{
 				'slug':'29',
-				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
+				'label': 'the Brooklyn Navy Yard',
 				'objects': [
 					{
 						'class':'image',
@@ -3999,7 +3999,7 @@ var uwNodesMobile = [
 			},
 			{
 				'slug':'33',
-				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
+				'label': 'the Brooklyn Navy Yard',
 				'objects': [
 					{
 						'class':'image',
@@ -4305,7 +4305,7 @@ var uwNodesMobile = [
 			},
 				{
 				'slug':'38',
-				'label': 'the Brooklyn Navy Yard: 1930s and 1940s',
+				'label': 'the Brooklyn Navy Yard',
 				'objects': [
 					{
 						'class':'image',
@@ -4385,7 +4385,7 @@ var uwNodesMobile = [
 						'roty':-15,
 						'rotx':10,
 						'rotz':0,
-						'image': imgRoot + '\/v2\/floating\/gears-3.png',
+						'image': imgRoot + '\/floating\/gears-3.png',
 						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					}
 				]
@@ -4493,22 +4493,6 @@ var uwNodesMobile = [
 						'rotz':-12,
 						'image': imgRoot + '\/floating\/suit.png',
 						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
-					}
-				]
-			},
-			{
-				'slug':'44',
-				'label': '',
-				'objects': [
-					{
-						'class':'text',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'rotz':0,
-						'content':''
 					}
 				]
 			}
