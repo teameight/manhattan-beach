@@ -87,7 +87,7 @@
 
   .camera .object {
     position: absolute;
-    pointer-events: initial;
+    pointer-events: auto;
   }
 
   .object.text:not(.scrollbar) .inner {

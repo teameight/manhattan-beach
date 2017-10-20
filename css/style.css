@@ -61,7 +61,8 @@ body {
   font-family: "ff-tisa-web-pro", serif;
   font-size: 16px;
   background-color: #F0F5F5;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
   @media screen and (min-width: 740px) {
     body {
       font-size: 20px; } }
@@ -88,7 +89,7 @@ body {
     overflow: hidden; }
     #body.not-loaded .loading {
       opacity: 1;
-      pointer-events: initial; }
+      pointer-events: auto; }
       #body.not-loaded .loading .preloader {
         position: absolute;
         left: 50%;
@@ -137,7 +138,7 @@ body {
   transform: translateZ(0vw);
   background: linear-gradient(0deg, rgba(225, 236, 255, 0) 5%, #e1ecff 40%, white 100%);
   margin-bottom: -25vw;
-  pointer-events: initial; }
+  pointer-events: auto; }
   #page-wrap.static-wave {
     background: linear-gradient(0deg, rgba(225, 236, 255, 0) 5%, #e1ecff 40%, white 100%); }
   body:not(.water) #page-wrap {
@@ -501,7 +502,7 @@ h4,
       flex-direction: row; } }
   .uw-hud.show {
     opacity: .85;
-    pointer-events: initial; }
+    pointer-events: auto; }
   .uw-hud .totop {
     font-size: 14px;
     text-decoration: none;
@@ -944,7 +945,7 @@ a.btn {
     transition: opacity 2000ms ease; }
   .node .camera .object {
     position: absolute;
-    pointer-events: initial; }
+    pointer-events: auto; }
   .node .object.text:not(.scrollbar) .inner {
     display: flex;
     justify-content: center;

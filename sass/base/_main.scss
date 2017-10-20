@@ -15,6 +15,7 @@ body {
 	font-size: 16px;
 	background-color: #F0F5F5;
 	position: relative;
+	overflow-x: hidden;
 
 	@media screen and (min-width: $bp-md) {
 		font-size: 20px;
@@ -49,7 +50,7 @@ body {
 
   	.loading {
   		opacity:1;
-  		pointer-events: initial;
+  		pointer-events: auto;
   	
 	  	.preloader {
 			  position: absolute;
@@ -111,7 +112,7 @@ body {
 	transform: translateZ(0vw);
 	background: linear-gradient(0deg, rgba(225, 236, 257, 0) 5%, rgba(225, 236, 257, 1) 40%, rgba(255, 255, 255, 1) 100%);
 	margin-bottom: -25vw;
-	pointer-events: initial;
+	pointer-events: auto;
 
 	&.static-wave {
 		background: linear-gradient(0deg, rgba(225, 236, 255, 0) 5%, #e1ecff 40%, white 100%);
