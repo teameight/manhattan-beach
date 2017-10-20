@@ -189,7 +189,7 @@
   text-transform: uppercase;
   color: rgba(255,255,255,.7);
 	display: flex;
-	flex-direction: column;
+	flex-direction: column-reverse;
 	align-items: center;
 	justify-content: space-between;
 	pointer-events: none;
@@ -223,8 +223,12 @@
 		    height: 40px;
 		    width: 80px;
 		    display: block;
-		    perspective-origin: -10vw top;
+		    perspective-origin: 18vw top;
     		perspective: 80vw;
+
+    		@media screen and (min-width: $bp-nav) {
+		    	perspective-origin: -10vw top;
+    		}
 
 		    a {
 		      height: 40px;
@@ -323,6 +327,11 @@
 	width: 270px;
 	display: flex;
 	justify-content: space-around;
+}
+
+.node-label{
+	margin-top: 16px;
+	height: 24px;
 }
 
 .node-label-text {

@@ -436,7 +436,6 @@ function drawWave(t) {
 
 		if ( windowW < 768 ) {
 			isMobile = true;
-			console.log(isMobile);
 		}
 
 		var isUnderWater = false,
@@ -536,8 +535,6 @@ function drawWave(t) {
 					$('.uw-hud').removeClass('show');
 				}
 			}
-			// console.log('nodeWrapperOffsets');
-			// console.log(nodeWrapperOffsets);
 
 			var newTierKey = false;
 
@@ -545,16 +542,13 @@ function drawWave(t) {
 				var top = nodeWrapperOffsets[key].top;
 				var margin = parseInt(nodeWrapperOffsets[key].margin);
 				var height = nodeWrapperOffsets[key].height;
-				//console.log(key, 'scroll:', newScrollTop, 'uwTop:', uwTop, 'windowH:', windowH, 'top:', top, 'margin:', margin, 'height:', height);
-				//if ( ( newScrollTop > ( top - ( height*2.25 ) ) ) && ( newScrollTop < (top + (height*2.25) + 2500 ) ) ) {
 				if ( ( newScrollTop > ( top - ( height*2.75 ) ) ) && ( newScrollTop < (top + (height*2.25) ) ) ) {
 					newTierKey = key;
 				}
 			}
 			if(tierKey !== newTierKey){
 				tierKey = newTierKey;
-				console.log(tierKey);
-
+				
 				if(tierKey){
 
 					currentWrapper = $('.' + tierKey);
@@ -563,8 +557,6 @@ function drawWave(t) {
 
 					tierNum = tierKey.split('-')[1];
 					tierClass = parseInt(tierNum) + 2;
-
-					// console.log(tierClass)
 
 					if( $('.nw-' + tierClass).length && !$('.nw-' + tierClass).data('loadedimg')) {
 						loadUwImages(tierClass);
@@ -592,7 +584,6 @@ function drawWave(t) {
 			$( ".underwater" ).on( "click", ".camera .object.video", function(event) {
 				event.preventDefault();
 				var uwbody = $('#body');
-				// console.log(body);
 				var modal = $('.underwater-video-modal');
 				var videoHolder = $('.video-holder');
 				if ( $(this).data('orientation') === 'portrait' ) {
@@ -626,7 +617,6 @@ function drawWave(t) {
 				var previous = false;
 
 				if ($(event.target).closest('.prev').length) {
-					//console.log('prev');
 					previous = true;
 				}
 
@@ -669,17 +659,15 @@ function drawWave(t) {
 				trigger;
 			$('.node-wrapper').on('tapstart', '.spin.here', function (e, touch) {
 						trigger = touch.offset.x - wrapper_offset.left;
-		      	// console.log(touch);
+
 		    })
 		    .on('tapend', '.spin.here', function() {
 		        startY = offsetY;
 						startX = offsetX;
 						trigger = null;
-						// console.log('mu');
 		    })
 		    .on('tapmove', '.spin.here', function (e, touch) {
-						// console.log('mm');
-						// console.log('offset'+offsetY);
+
 		        if(trigger) {
 
 		        	var object = $(this);
@@ -691,8 +679,6 @@ function drawWave(t) {
 				  		posy = posy || 0;
 				  		posz = posz || 0;
 							offset_percent = (((touch.offset.x - wrapper_offset.left)-trigger)/wrapper_width); // 60 degree range
-
-							// console.log(offset_percent);
 
 							var offsettemp = startY + (offset_percent)*60;
 
@@ -720,7 +706,6 @@ function drawWave(t) {
 				    dCtx,
 				    center = new Point(),
 				    r = 0;
-				// console.log(dCanvas);
 				var circles = [];
 				var circleSize = 100; // the space between dots, roughly, in pixels
 				var dotOpacity = 0.15;
@@ -740,18 +725,12 @@ function drawWave(t) {
 		}
 
 		function setWaterHeight() {
-			// var waterline = $('.waterline');
-
-			// waterline.css('top', offset + 'px');
 
 			var offset = $('#page-wrap').outerHeight(true);
 			windowW = $( window ).width();
 			windowH = $( window ).height();
 			var screenHvw = windowH/windowW,
 				pageHvw = offset/windowW;
-
-				// console.log(screenHvw);
-				// console.log(pageHvw);
 
 				if(pageHvw < screenHvw){
 					pageHvw = screenHvw;
@@ -772,10 +751,6 @@ function drawWave(t) {
 
 			var $wave_offset = (pageHvw - screenHvw) * ((300 * ratioH) - (60 * ratioMult)); // this also sets the speed of the wave parallax compared to scroll. higher = slower.
 				//it also controls at which point in the scroll the last slide goes off the top of the screen
-
-			console.log(ratioH);
-
-
 
 			$wave_reveal = 25.118 * ratioMult - (10 * ratioH);
 
@@ -820,10 +795,7 @@ function drawWave(t) {
 			initDCanvas();
 			// 	dotSize, speed, circSizeFactor
 			createCircleArray(.3, .3, .3);
-			// createCircleArray(.4, .4, .2);
-			// createCircleArray(.5, .6, .35);
 			createCircleArray(.7, .7, .45);
-			// createCircleArray(.6, .8, .4);
 			update();
 			dDraw();
 			requestAnimFrame(dLoop);
@@ -837,16 +809,14 @@ function drawWave(t) {
 
 		function loadUwImages(tierClass){
 
-			// console.log('.nw-' + tierClass);
-
 			$('.nw-' + tierClass).data('loadedimg', true).find('.object').each( function(){
 
 				var imgSize = $(this).data( "bgimg" );
-				//console.log(imgSize);
 				if(imgSize){
 					if(windowW < 900){
 		      	imgSize = $(this).data( "bgimgsm" );
 		      }
+		      console.log(imgSize);
 			  	$(this).find('.imgbox').css({
 		    		'background-image': 'url(' + imgSize + ')'
 		    	});
@@ -864,41 +834,38 @@ function drawWave(t) {
 
 		function buildMobileNodes(){
 
-			// console.log(windowW);
 
 			var nodeTemplate = $('.nw-template');
 			var zOffset = -200;
 			var currSlug = current_slug.slug;
 
-			//console.log(uwNodes);
-
 
 			uwNodesMobile.forEach(function(tier, t) {
-				// console.log(tier.tier);
 
 				if(tier.page === currSlug){
 
 
 			    nodeTemplate.clone()
 			      .removeClass('nw-template')
-			      .addClass('nw-'+ t)
+			      .addClass('nw-0')
 			      .appendTo( $underwater );
 
-		      var o = 0;
+			      console.log(t);
 
-		      // console.log('node list', tier.nodes);
+		      var o = 0;
 
 				  tier.nodes.forEach(function(node, n) {
 				  	if ( n > 0 ) {
 							o = o+1.5;
 				  	}
+				  	console.log(n);
 				    var node = tier.nodes[n];
 				    var thisSlug = node.slug;
 				    var thisLabel = node.label;
 				    if ( !thisLabel ) {
 				    	thisLabel = '';
 				    }
-				    var objTemplate = $('.nw-'+ t + ' .obj-template');
+				    var objTemplate = $('.nw-0 .obj-template');
 
 				    	for (var i = 0; i < node.objects.length; i++) {
 
@@ -909,8 +876,8 @@ function drawWave(t) {
 					      if(obj.image){
 					      	bgimg = obj.image;
 					      	bgimgsm = bgimg.replace('upload\/', 'upload\/mobile\/');
-					      //	console.log(bgimgsm);
-					      }
+					    	}
+
 
 
 					      objTemplate.clone()
@@ -928,28 +895,27 @@ function drawWave(t) {
 					        .data( "bgimgsm", bgimgsm )
 					        .data( "label", thisLabel )
 					        .html('<div class="inner">'+obj.content+'</div>')
-					        .appendTo( '.nw-' + t + ' .camera');
+					        .appendTo( '.nw-0 .camera');
 
 				        if ( obj.class === 'video' ) {
 				        	$('.object-' + n + '-' + i ).data('video', obj.video).data('orientation', obj.orientation);
 				        }
-
+				        	//console.log(n + ' ' + t + ' ' + bgimg);
 					        //load the images as backgrounds, to start, just for the first two slide groups in each tier
 					        var imgSize = bgimg;
 					        if(windowW < 900){
 					        	imgSize = bgimgsm;
 					        }
-					        if(obj.image && n < 2 && t < 2){
-
-					        	$('.nw-'+ t +' .object-' + n + '-' + i + ' .imgbox').css({
+					        if(obj.image && n < 2){
+					        	console.log(imgSize);
+					        	$('.nw-0 .object-' + n + '-' + i + ' .imgbox').css({
 					        		'background-image': 'url(' + imgSize + ')'
 					        	});
 					        }
 					      o++;
 					    }
 
-				    // objTemplate.remove();
-				    $('.nw-' + t + ' .object').not('.obj-template').first().addClass('here');
+				    $('.nw-0 .object').not('.obj-template').first().addClass('here');
 				  });
 
 				}
@@ -970,16 +936,13 @@ function drawWave(t) {
 
 		function buildNodes(){
 
-			// console.log(windowW);
 
 			var nodeTemplate = $('.nw-template');
 			var zOffset = -200;
 			var currSlug = current_slug.slug;
 
-			//console.log(uwNodes);
 
 			uwNodes.forEach(function(tier, t) {
-				// console.log(tier.tier);
 
 			    nodeTemplate.clone()
 			      .removeClass('nw-template')
@@ -999,7 +962,6 @@ function drawWave(t) {
 			      var secondHalf = tier.nodes.slice(nodeStartIndex);
 			      tier.nodes = secondHalf.concat(firstHalf);
 		      }
-		      // console.log('node list', tier.nodes);
 
 				  tier.nodes.forEach(function(node, n) {
 				  	if ( n > 0 ) {
@@ -1022,7 +984,6 @@ function drawWave(t) {
 					      if(obj.image){
 					      	bgimg = obj.image;
 					      	bgimgsm = bgimg.replace('upload\/', 'upload\/mobile\/');
-					      //	console.log(bgimgsm);
 					      }
 
 
@@ -1052,6 +1013,7 @@ function drawWave(t) {
 					        if(windowW < 900){
 					        	imgSize = bgimgsm;
 					        }
+
 					        if(obj.image && n < 2 && t < 2){
 
 					        	$('.nw-'+ t +' .object-' + n + '-' + i + ' .imgbox').css({
@@ -1061,7 +1023,6 @@ function drawWave(t) {
 					      o++;
 					    }
 
-				    // objTemplate.remove();
 				    $('.nw-' + t + ' .object').not('.obj-template').first().addClass('here');
 				  });
 
@@ -1088,20 +1049,16 @@ function drawWave(t) {
 				});
 			}
 
-			//console.log(nodeWrapperOffsets);
 			return nodeWrapperOffsets;
 		}
 
 		function buildBackground() {
 			var bgWrap = $('.st-1');
 			var bgImg = $('.st-1 img');
-			// console.log(uwBackgrounds);
 
 			uwBackgrounds.forEach(function(bg, index) {
 				if ( bg.slug === current_slug.slug ) {
 					bgImg.attr('src', bg.content);
-					// console.log('bg', bg);
-
 					bgWrap
 						.data('posy', bg.posy)
 						.data('posx', bg.posx)
@@ -1149,7 +1106,6 @@ function drawWave(t) {
 			} else {
 				var interval = 50;
 			}
-			// console.log(interval)
 			var bg = $('.st-1');
 			var bgImg = bg.find('img');
 			var posx = bg.data('posx');
@@ -1157,7 +1113,6 @@ function drawWave(t) {
 			var posz = bg.data('posz') + interval;
 			var scale = bg.data('scale');
 
-			// console.log(posz);
 
 
 			bg.css({'transform': 'translate3d('+posx+'vw, ' +posy+ 'vh, ' +posz+'vw) scale('+scale+')', 'transition': 'transform 2000ms ease-in-out'});
@@ -1167,8 +1122,6 @@ function drawWave(t) {
 		}
 
 		function swimAround(nodeObj, previous) {
-
-			// console.log(currentWrapper);
 
 			var currz = currentWrapper.find('.here').data('posz'),
 					hereSlug = currentWrapper.find('.here').data('slug'),
@@ -1192,10 +1145,6 @@ function drawWave(t) {
 				// get the next element's label
 				nextLabel = elem.data('label');
 
-				// } else {
-				// 	// var elem = $( this ).siblings(':first-child');
-				// 	// console.log('first');
-				// }
 
 		  } else {
 		  	var elem = nodeObj;
@@ -1204,8 +1153,6 @@ function drawWave(t) {
 		  }
 
 			$('.node-label-text').html(elem.data('label'));
-
-		  // console.log('here', hereSlug, 'next', nextSlug);
 
 		  var rotx = 0 - elem.data('rotx'),
 		  		roty = 0 - elem.data('roty'),
@@ -1219,7 +1166,6 @@ function drawWave(t) {
 		  		posy = posy || 0;
 		  		posz = posz || 0;
 
-  		// console.log((posz + currz)*5);
 			elem.find('.inner :first-child').css('transition', 'opacity ' +  Math.abs(posz + currz)*14 + 'ms ease');
 		  elem.addClass('here').siblings('.here').removeClass('here').addClass('inactive').parent().css({'transform': 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)', 'transition' : 'transform ' + Math.abs(posz + currz)*10 + 'ms ease' }); //
 
@@ -1231,6 +1177,13 @@ function drawWave(t) {
 
 		  setDistance(elem.parent(), posz);
 
+
+			var others = elem.nextAll().length;
+		  //console.log(others);
+			// Loop forward
+			if ( others <= 3 ) {
+		  	forwardSlideLoop(currentWrapper, hereSlug);
+			}
 
 		  if ( hereSlug != nextSlug ) {
 
@@ -1258,13 +1211,6 @@ function drawWave(t) {
 			  	});
 
 			  }
-
-		  	console.log(elem);
-
-				// Loop forward
-				if ( clickCount > 10 ) {
-			  	forwardSlideLoop(currentWrapper, hereSlug);
-				}
 
 
 		  	// find all other node-wrappers and pull the nextSlug nodes into view
@@ -1295,42 +1241,37 @@ function drawWave(t) {
 		  		var firstNodeInPage = $(this).find('.object[data-slug="'+nextSlug+'"]').first();
 		  		elem = firstNodeInPage;
 
-				  thisGroupClass = elem.attr("class");
-				  thisGroupInc = thisGroupClass.split('object-')[1];
-				  thisGroupInc = thisGroupInc.split('-')[0];
+		  		if(elem.length){
 
-				  var afterSlug = $(this).find('.object-' + (thisGroupInc * 1 + 1) + '-0').data('slug');
+					  thisGroupClass = elem.attr("class");
+					  thisGroupInc = thisGroupClass.split('object-')[1];
+					  thisGroupInc = thisGroupInc.split('-')[0];
 
-				  $(this).find('.object[data-slug="'+afterSlug+'"]').each(function() {
+					  var afterSlug = $(this).find('.object-' + (thisGroupInc * 1 + 1) + '-0').data('slug');
 
-				  		var bgimg = $(this).data('bgimg');
-			        if(windowW < 900){
-			        	bgimg = $(this).data('bgimgsm');
-			        }
+					  $(this).find('.object[data-slug="'+afterSlug+'"]').each(function() {
 
-				  		if( bgimg ){
+					  		var bgimg = $(this).data('bgimg');
+				        if(windowW < 900){
+				        	bgimg = $(this).data('bgimgsm');
+				        }
 
-			        	$(this).find('.imgbox').css({
-			        		'background-image': 'url(' + bgimg + ')'
-			        	});
+					  		if( bgimg ){
 
-			        }
+				        	$(this).find('.imgbox').css({
+				        		'background-image': 'url(' + bgimg + ')'
+				        	});
 
-				  });
+				        }
+
+					  });
+
+					}
 
 		  	});
 		  } else {
-		  	console.log('same');
+
 		  }
-			// $('.background').css('transform', 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)').find('.here').removeClass('here');
-		  // elem.parent().find('.object').each( function(){
-
-		  // 	var distz = ( Math.abs( -1*posz - $( this ).data('posz') ) ) / maxRange;
-				// if(distz > 1){ distz = 1; }
-		  // 	$( this ).find('.inner').children().css('opacity', 1 - distz);
-
-
-		  // });
 
 		  swimDetritus();
 
@@ -1517,7 +1458,6 @@ function drawWave(t) {
 									dopacity = this.dotOpacity = this.dotOpacity + (.01);
 								}
 							}
-							//console.log(dotOpacity +" < "+ this.ogDotOpacity)
 							dCtx.fillStyle = 'rgba(255,255,255,'+ dopacity +')';
 							fillCircle(this.dotPosition.x, this.dotPosition.y, this.dotRadius * 2);
 						}
@@ -1550,7 +1490,6 @@ function drawWave(t) {
 			for (var i = 0; i < circles.length; i++) {
 						circles[i].traveling = 1;
 			 }
-			// console.log('!!!');
 		}
 
 	});
