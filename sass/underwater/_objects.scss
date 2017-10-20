@@ -73,6 +73,15 @@
   }
 
 }
+
+.safari.iphone,
+.safair.ipad {
+
+  .scrollbar .inner {
+    animation: none;
+  }
+}
+
 .node {
   height: 70%;
   width: 100%;

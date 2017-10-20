@@ -939,6 +939,10 @@ a.btn {
     padding: 0 4vw;
     opacity: .6; }
 
+.safari.iphone .scrollbar .inner,
+.safair.ipad .scrollbar .inner {
+  animation: none; }
+
 .node {
   height: 70%;
   width: 100%;
