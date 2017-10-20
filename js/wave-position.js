@@ -46,6 +46,7 @@ if (!Array.prototype.findIndex) {
 var resize = false;
 var nodeWrapperOffsets = {};
 var tierKey = false;
+var isMobile = false;
 /**
  *
  * Air lines on Home page
@@ -287,10 +288,10 @@ var unit = 30,
 
   waveGrdStop1='rgba(50, 70, 80, 1)',
   waveGrdStop2='rgba(53, 74, 85, 1)',
-  wavestrokecolor="rgba(255,255,255, 1)",
+  wavestrokecolor="rgba(225,236,255, 1)",
 	wavecolor="#5b7b7b",
 
-	wavestrokeWidth = wWidth*.002,
+	wavestrokeWidth = wWidth*.0014,
 	parameters={
 			freq: 1,
 			amp: 55,
@@ -419,6 +420,8 @@ function drawWave(t) {
 	}
 
 
+
+
 (function($){
 
 	$(window).on("load", function() {
@@ -430,6 +433,12 @@ function drawWave(t) {
 
 		var windowH = $( window ).height();
 		var windowW = $( window ).width();
+
+		if ( windowW < 768 ) {
+			isMobile = true;
+			console.log(isMobile);
+		}
+
 		var isUnderWater = false,
 				showFootMenu = false,
 				$underwater = $('.underwater');
@@ -437,7 +446,6 @@ function drawWave(t) {
 		if ( uwSegway.length ) {
 			var uwTop = uwSegway.offset().top;
 		}
-		// console.log('onload ' + uwTop);
 		var maxRange = 250; //range of visibility, in z-space
 				// scrollRun = false,
 				// scrollqueue = false;
@@ -449,51 +457,38 @@ function drawWave(t) {
 			staticWave = true;
 		}
 
-				// console.log(staticWave);
-
-
 		if(current_slug.slug !== ''){
 
 			if ( staticWave ) {
 				var $page_offset = $('#page-wrap').outerHeight();
 			} else {
 
-			var resizeTimer;
+				var resizeTimer;
 
-			resizeTimer = setTimeout(function() {
+				resizeTimer = setTimeout(function() {
 
-			    setWaterHeight();
-			    console.log('after resize timer');
+				    setWaterHeight();
 
-			  }, 300);
+				  }, 300);
 
-			$(window).on('resize', function(e) {
+				$(window).on('resize', function(e) {
 
+					if(windowW != $(window).width() || windowH != $(window).height()) {
+			      location.reload();
+			      return;
+			    }
 
-			  clearTimeout(resizeTimer);
-			  resizeTimer = setTimeout(function() {
-					console.log("RESIZING");
-					resize = true;
-			    setWaterHeight();
-			    nodeWrapperOffsets = getNodeWrapperOffsets();
-
-			  }, 300);
-
-			});
-
-			if ( $(window).width() > 768 ) {
-				buildBackground();
+				});
+				if ( !isMobile ) {
+					buildBackground();
+				}
 			}
+		} else {
+			$('#body').removeClass('not-loaded').addClass('loaded');
 		}
 
-		}else{
-			$('#body').removeClass('not-loaded').addClass('loaded');
-		} // end if current_slug
-
-		// console.log(staticWave);
 
 		if ( staticWave ) {
-
 
 			if($airlines.length){
 				$airlines.css({
@@ -546,6 +541,8 @@ function drawWave(t) {
 					tierKey = newTierKey;
 					//console.log(tierKey);
 					if(tierKey){
+						currentWrapper = $('.' + tierKey);
+						updateLabel(tierKey);
 						tierNum = tierKey.split('-')[1];
 						tierClass = parseInt(tierNum) + 2;
 
@@ -561,7 +558,11 @@ function drawWave(t) {
 
 			var currentWrapper;
 
-			buildNodes();
+			if(isMobile){
+				buildMobileNodes();
+			}else{
+				buildNodes();
+			}
 
 			// Node Swim
 			var clickCount = 0;
@@ -800,20 +801,16 @@ function drawWave(t) {
 			uwTop = $('.uw-segway').offset().top;
 			// console.log(uwTop);
 			waveInit();
-
-			if ( $(window).width > 768 ) {
-				initDCanvas();
-				console.log('after canvas');
-				// 	dotSize, speed, circSizeFactor
-				createCircleArray(.3, .3, .3);
-				// createCircleArray(.4, .4, .2);
-				// createCircleArray(.5, .6, .35);
-				createCircleArray(.7, .7, .45);
-				// createCircleArray(.6, .8, .4);
-				update();
-				dDraw();
-				requestAnimFrame(dLoop);
-			}
+			initDCanvas();
+			// 	dotSize, speed, circSizeFactor
+			createCircleArray(.3, .3, .3);
+			// createCircleArray(.4, .4, .2);
+			// createCircleArray(.5, .6, .35);
+			createCircleArray(.7, .7, .45);
+			// createCircleArray(.6, .8, .4);
+			update();
+			dDraw();
+			requestAnimFrame(dLoop);
 
 			$bodyDiv.removeClass('not-loaded').addClass('loaded');
 			var bInnerH = $('.b-inner').height();
@@ -822,7 +819,6 @@ function drawWave(t) {
 			var bgoffsett = offset*1 + windowH*1;
 			$('.b-bg').height(bInnerH - offset - windowH).css({'top': bgoffsett + 'px'});
 		}
-
 
 		function loadUwImages(tierClass){
 
@@ -845,6 +841,117 @@ function drawWave(t) {
 
 		}
 
+		function updateLabel(tierKey){
+			elem = $('.' + tierKey).find('.here');
+			$('.node-label-text').html(elem.data('label'));
+		}
+
+
+		function buildMobileNodes(){
+
+			// console.log(windowW);
+
+			var nodeTemplate = $('.nw-template');
+			var zOffset = -200;
+			var currSlug = current_slug.slug;
+
+			//console.log(uwNodes);
+
+
+			uwNodesMobile.forEach(function(tier, t) {
+				// console.log(tier.tier);
+
+				if(tier.page === currSlug){
+
+
+			    nodeTemplate.clone()
+			      .removeClass('nw-template')
+			      .addClass('nw-'+ t)
+			      .appendTo( $underwater );
+
+		      var o = 0;
+
+		      // console.log('node list', tier.nodes);
+
+				  tier.nodes.forEach(function(node, n) {
+				  	if ( n > 0 ) {
+							o = o+1.5;
+				  	}
+				    var node = tier.nodes[n];
+				    var thisSlug = node.slug;
+				    var thisLabel = node.label;
+				    if ( !thisLabel ) {
+				    	thisLabel = '';
+				    }
+				    var objTemplate = $('.nw-'+ t + ' .obj-template');
+
+				    	for (var i = 0; i < node.objects.length; i++) {
+
+					      var obj = node.objects[i],
+					      		bgimg = '',
+					      		bgimgsm = '';
+
+					      if(obj.image){
+					      	bgimg = obj.image;
+					      	bgimgsm = bgimg.replace('upload\/', 'upload\/mobile\/');
+					      //	console.log(bgimgsm);
+					      }
+
+
+					      objTemplate.clone()
+					        .removeClass('obj-template')
+					        .addClass('object-' + n + '-' + i + ' ' + obj.class)
+					        .attr('data-slug', thisSlug)
+					        .css({'transform': 'translate3d(' + obj.posx + 'vw, ' + obj.posy + 'vw, ' + zOffset*o + 'vw) rotateX('+ obj.rotx +'deg) rotateY('+  obj.roty +'deg) rotateZ('+ obj.rotz +'deg'})
+					        .data( "posx", obj.posx )
+					        .data( "posy", obj.posy )
+					        .data( "posz", zOffset*o )
+					        .data( "rotx", obj.rotx )
+					        .data( "roty", obj.roty )
+					        .data( "rotz", obj.rotz )
+					        .data( "bgimg", bgimg )
+					        .data( "bgimgsm", bgimgsm )
+					        .data( "label", thisLabel )
+					        .html('<div class="inner">'+obj.content+'</div>')
+					        .appendTo( '.nw-' + t + ' .camera');
+
+				        if ( obj.class === 'video' ) {
+				        	$('.object-' + n + '-' + i ).data('video', obj.video).data('orientation', obj.orientation);
+				        }
+
+					        //load the images as backgrounds, to start, just for the first two slide groups in each tier
+					        var imgSize = bgimg;
+					        if(windowW < 900){
+					        	imgSize = bgimgsm;
+					        }
+					        if(obj.image && n < 2 && t < 2){
+
+					        	$('.nw-'+ t +' .object-' + n + '-' + i + ' .imgbox').css({
+					        		'background-image': 'url(' + imgSize + ')'
+					        	});
+					        }
+					      o++;
+					    }
+
+				    // objTemplate.remove();
+				    $('.nw-' + t + ' .object').not('.obj-template').first().addClass('here');
+				  });
+
+				}
+
+			});
+
+		  nodeTemplate.remove();
+
+			$('.camera').each(function(){
+				var elem = $( this );
+			  		posz = 0 - elem.find('.here').data('posz');
+						setDistance(elem, posz);
+			});
+
+			nodeWrapperOffsets = getNodeWrapperOffsets();
+
+		}
 
 		function buildNodes(){
 
@@ -956,12 +1063,16 @@ function drawWave(t) {
 			nodeWrapperOffsets = getNodeWrapperOffsets();
 		}
 
-
 		function getNodeWrapperOffsets(){
 
-			uwNodes.forEach(function(tier, t) {
+			if(isMobile){
+				nodeWrapperOffsets['node-wrapper'] = {top: $('.node-wrapper').offset().top, margin: $('.node-wrapper').css('margin-top'), height: $('.node-wrapper .node').outerHeight()};
+			}else{
+				uwNodes.forEach(function(tier, t) {
 				nodeWrapperOffsets['nw-' + t] = {top: $('.nw-'+t).offset().top, margin: $('.nw-'+t).css('margin-top'), height: $('.nw-'+t+ ' .node').outerHeight()};
-			});
+				});
+			}
+
 			//console.log(nodeWrapperOffsets);
 			return nodeWrapperOffsets;
 		}
@@ -1077,9 +1188,7 @@ function drawWave(t) {
 				nextLabel = elem.data('label');
 		  }
 
-			$('.node-label-text').fadeOut( 400, function() {
-    			$(this).html(elem.data('label')).fadeIn('slow');
-  		});
+			$('.node-label-text').html(elem.data('label'));
 
 		  // console.log('here', hereSlug, 'next', nextSlug);
 
@@ -1112,14 +1221,12 @@ function drawWave(t) {
 
 		  	// swap background image
 
-		  	if ( $(window).width > 768 ) {
+				if ( !isMobile ) {
 
+		  	uwBackgrounds.forEach(function(bg, index) {
+		  		if ( bg.slug === nextSlug ) {
 					var bgWrap = $('.st-1');
 					var bgImg = $('.st-1 img');
-
-			  	uwBackgrounds.forEach(function(bg, index) {
-			  		if ( bg.slug === nextSlug ) {
-
 
 						bgWrap
 							.data('posy', bg.posy)
@@ -1137,7 +1244,7 @@ function drawWave(t) {
 
 			  }
 
-		  	// console.log(elem);
+		  	console.log(elem);
 
 				// Loop forward
 				if ( clickCount > 10 ) {
@@ -1198,7 +1305,7 @@ function drawWave(t) {
 
 		  	});
 		  } else {
-		  	// console.log('same');
+		  	console.log('same');
 		  }
 			// $('.background').css('transform', 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw)').find('.here').removeClass('here');
 		  // elem.parent().find('.object').each( function(){
@@ -1213,6 +1320,7 @@ function drawWave(t) {
 		  swimDetritus();
 
 		  elem.addClass('here');
+
 
 		} // end swimAround()
 
