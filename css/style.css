@@ -932,6 +932,10 @@ a.btn {
     padding: 0 4vw;
     opacity: .6; }
 
+.safari.iphone .scrollbar .inner,
+.safair.ipad .scrollbar .inner {
+  animation: none; }
+
 .node {
   height: 70%;
   width: 100%;
@@ -943,8 +947,6 @@ a.btn {
     transform-style: preserve-3d;
     animation: float-wobble 55s infinite linear;
     transition: opacity 2000ms ease; }
-  .node .scrollbar .inner {
-    animation: none; }
   .node .camera .object {
     position: absolute;
     pointer-events: auto; }

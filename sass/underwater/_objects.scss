@@ -74,6 +74,14 @@
 
 }
 
+.safari.iphone,
+.safair.ipad {
+
+  .scrollbar .inner {
+    animation: none;
+  }
+}
+
 .node {
   height: 70%;
   width: 100%;
@@ -84,10 +92,6 @@
     @include preserve3d;
     animation: float-wobble 55s infinite linear;
     transition: opacity $cycleLength ease;
-  }
-
-  .scrollbar .inner {
-    animation: none;
   }
 
   .camera .object {
