@@ -293,8 +293,8 @@ var unit = 30,
 
 	wavestrokeWidth = wWidth*.0014,
 	parameters={
-			freq: 1.75,
-			amp: 50,
+			freq: 1,
+			amp: 55,
 			type: "sin",
 			rand: getRandomArbitrary(0, Math.PI)
 		};
@@ -371,8 +371,8 @@ function drawWave(t) {
 
 		var p=parameters;
 
-		p.newFreq = p.freq;// + (p.freq*Math.cos( p.rand + t ))/15;
-		p.newAmp = p.amp;// + (p.amp*Math.cos( p.rand + t ))/2;
+		p.newFreq = p.freq + (p.freq*Math.cos( p.rand + t ))/15;
+		p.newAmp = p.amp + (p.amp*Math.cos( p.rand + t ))/2;
 
 		var prevY = 0;
     // Loop to draw segments
@@ -386,7 +386,7 @@ function drawWave(t) {
 			currentY+=addToY;
 
 			prevY = currentY;
-			var xPos = i - (scale.x/7) + (scale.x/3.5 * Math.sin(t));
+			var xPos = i - (scale.x/7) + (scale.x/8 * Math.sin(t));
 
 			cpath.push({x:xPos,y:currentY});
 
@@ -511,21 +511,16 @@ function drawWave(t) {
 
 			var ratioMult = screenHvw > 1 ? 1 : screenHvw;
 
-			if(ratioH < .22){
-				ratioH = .22;
-			}
-
 			var $wave_offset = (pageHvw - screenHvw) * ((300 * ratioH) - (60 * ratioMult)); // this also sets the speed of the wave parallax compared to scroll. higher = slower.
 				//it also controls at which point in the scroll the last slide goes off the top of the screen
 
-			console.log(ratioH);
-
+			// console.log(ratioH);
 
 
 			$wave_reveal = 25.118 * ratioMult - (10 * ratioH);
 
 
-			var	$v_o_factor = ($wave_reveal / $persp_o); //($wave_reveal / $persp_o); //this number increases as $persp-o increases
+			var	$v_o_factor = ($wave_reveal / $persp_o);//($wave_reveal / $persp_o); //this number increases as $persp-o increases
 
 			var $vert_offset = 1 - ($persp/$persp);
 			var $translate_z = $persp * ( $vert_offset );
@@ -536,6 +531,12 @@ function drawWave(t) {
 			    'perspective': $persp + 'vw',
 			    'perspective-origin': 'center ' + $persp_o + 'vw'
 			});
+
+
+			// $('.wave-seg').css({
+			// 	'top': $wave_offset + 'vw'
+			// });
+
 
 
 			for (var i = 8; i >= 1; i--) {
@@ -561,6 +562,7 @@ function drawWave(t) {
 				airLinesInit();
 			}
 			uwTop = $('.uw-segway').offset().top;
+			// console.log(uwTop);
 			waveInit();
 			initDCanvas();
 			// 	dotSize, speed, circSizeFactor
@@ -575,6 +577,7 @@ function drawWave(t) {
 
 			$bodyDiv.removeClass('not-loaded').addClass('loaded');
 			var bInnerH = $('.b-inner').height();
+			//console.log(bInnerH);
 
 			var bgoffsett = offset*1 + windowH*1;
 			$('.b-bg').height(bInnerH - offset - windowH).css({'top': bgoffsett + 'px'});

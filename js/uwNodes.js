@@ -1,8 +1,8 @@
 var zInterval = -200,
 
 		// imgRoot = '\/\/localhost/htdocs/egan-img';
-		imgRoot = '\/\/res.cloudinary.com\/egan\/image\/upload';
-		bgImgRoot = '\/\/res.cloudinary.com\/egan\/image\/upload';
+		imgRoot = '\/\/res.cloudinary.com\/egan\/image\/upload\/v2';
+		bgImgRoot = '\/\/res.cloudinary.com\/egan\/image\/upload\/v2';
 
 var uwNodes = [
 	{ 'tier': 1,
@@ -129,7 +129,7 @@ var uwNodes = [
 						'roty':4,
 						'rotx':3,
 						'rotz':-15,
-						'image': imgRoot + '\/v1\/floating\/phone.png',
+						'image': imgRoot + '\/floating\/phone.png',
 						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					}
 				]
@@ -182,7 +182,7 @@ var uwNodes = [
 						'roty':3,
 						'rotx':2,
 						'rotz':15,
-						'image': imgRoot + '\/v1\/floating\/sockets.png',
+						'image': imgRoot + '\/floating\/sockets.png',
 						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					}
 				]
@@ -1842,7 +1842,7 @@ var uwNodes = [
 						'roty':-10,
 						'rotx':0,
 						'rotz':-12,
-						'image': imgRoot + '\/v1\/floating\/suit.png',
+						'image': imgRoot + '\/floating\/suit.png',
 						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					}
 				]
@@ -2012,7 +2012,7 @@ var uwNodes = [
 						'roty':4,
 						'rotx':13,
 						'rotz':-15,
-						'image': imgRoot + '\/v1\/floating\/dial.png',
+						'image': imgRoot + '\/floating\/dial.png',
 						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					}
 				]
@@ -2950,7 +2950,7 @@ var uwNodesMobile = [
 						'roty':4,
 						'rotx':13,
 						'rotz':-15,
-						'image': imgRoot + '\/v1\/floating\/dial.png',
+						'image': imgRoot + '\/floating\/dial.png',
 						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					}
 				]
@@ -3167,7 +3167,7 @@ var uwNodesMobile = [
 						'roty':4,
 						'rotx':3,
 						'rotz':-15,
-						'image': imgRoot + '\/v1\/floating\/phone.png',
+						'image': imgRoot + '\/floating\/phone.png',
 						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					}
 				]
@@ -3573,7 +3573,7 @@ var uwNodesMobile = [
 						'roty':3,
 						'rotx':2,
 						'rotz':15,
-						'image': imgRoot + '\/v1\/floating\/sockets.png',
+						'image': imgRoot + '\/floating\/sockets.png',
 						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					}
 				]
@@ -4517,7 +4517,7 @@ var uwNodesMobile = [
 						'roty':-10,
 						'rotx':0,
 						'rotz':-12,
-						'image': imgRoot + '\/v1\/floating\/suit.png',
+						'image': imgRoot + '\/floating\/suit.png',
 						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>'
 					}
 				]

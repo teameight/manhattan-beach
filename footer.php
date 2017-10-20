@@ -62,7 +62,7 @@
 				<section id="underwater" class="underwater">
 					<div class="background">
 						<div class="structure st-0">
-							<!-- <img alt="" src="<?php echo get_template_directory_uri(); ?>/img/bg/bg-texture.png"> -->
+							<img alt="" src="<?php echo get_template_directory_uri(); ?>/img/bg/bg-texture.png">
 						</div>
 						<div class="structure st-1">
 							<img alt="" src="">
