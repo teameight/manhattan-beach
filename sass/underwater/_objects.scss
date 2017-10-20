@@ -73,6 +73,7 @@
   }
 
 }
+
 .node {
   height: 70%;
   width: 100%;
@@ -83,10 +84,10 @@
     @include preserve3d;
     animation: float-wobble 55s infinite linear;
     transition: opacity $cycleLength ease;
+  }
 
-    .scrollbar & {
-      animation: none;
-    }
+  .scrollbar .inner {
+    animation: none;
   }
 
   .camera .object {

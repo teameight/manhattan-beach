@@ -943,8 +943,8 @@ a.btn {
     transform-style: preserve-3d;
     animation: float-wobble 55s infinite linear;
     transition: opacity 2000ms ease; }
-    .scrollbar .node .inner {
-      animation: none; }
+  .node .scrollbar .inner {
+    animation: none; }
   .node .camera .object {
     position: absolute;
     pointer-events: auto; }
