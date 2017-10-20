@@ -291,7 +291,7 @@ var unit = 30,
   wavestrokecolor="rgba(225,236,255, 1)",
 	wavecolor="#5b7b7b",
 
-	wavestrokeWidth = wWidth*.0014,
+	wavestrokeWidth = 1.5,
 	parameters={
 			freq: 1.75,
 			amp: 50,
@@ -344,7 +344,7 @@ waveDraw = function () {
 
 	    // Update the time and waveDraw again
 
-			waveDraw.seconds = waveDraw.seconds - 0.018;
+			waveDraw.seconds = waveDraw.seconds - 0.012;
 	    waveDraw.t = waveDraw.seconds*Math.PI;
 
 			requestAnimFrame(waveDraw);
