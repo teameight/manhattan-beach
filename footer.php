@@ -78,6 +78,7 @@
 				<div id="canvas-container">
 				  <canvas id="waveCanvas"></canvas>
 				</div>
+				<div class="go-down" id="godown"><span></span></div>
 				<div class="uw-segway">
 					<!-- <img alt="" src="<?php echo get_template_directory_uri(); ?>/img/bg/light-bg.png"> -->
 				</div>
@@ -91,7 +92,7 @@
 						</div>
 					</div>
 					<div class="node-wrapper nw-template">
-				    <div class="node">
+						<div class="node">
 				      <div class="camera">
 				        <div class="object obj-template">
 				        </div>

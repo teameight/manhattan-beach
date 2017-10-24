@@ -55,3 +55,21 @@
   80%   { transform: rotate(1080deg) translateX(2.0%) rotate(-1078.5deg); }
   100%   { transform: rotate(1440deg) translateX(1.8%) rotate(-1440deg); }
 }
+
+@keyframes arrow-wobble {
+    0% {
+        transform: rotate(45deg) translateX(4.8px) rotate(0deg);
+    }
+    25% {
+        transform: rotate(405deg) translateX(8.4px) rotate(-357deg);
+    }
+    55% {
+        transform: rotate(765deg) translateX(4.2px) rotate(-724deg);
+    }
+    80% {
+        transform: rotate(1125deg) translateX(8px) rotate(-1074.5deg);
+    }
+    100% {
+        transform: rotate(1485deg) translateX(4.8px) rotate(-1440deg);
+    }
+}

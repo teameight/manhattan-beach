@@ -41,7 +41,24 @@ get_header(); ?>
 
 			$term_slug = get_queried_object()->slug;
 
-			echo '<a href="'.home_url().'/interviewed-book/'.$term_slug.'" class="btn">Read the interviews</a>';
+			// Query this book's interviews
+					$args = array(
+						'post_type' 			=> 'interviews',
+						'posts_per_page' 	=> 1,
+						'tax_query' 			=> array(
+							array(
+								'taxonomy' 	=> 'interviewed-book',
+								'field'			=> 'slug',
+								'terms'			=> $term_slug
+							)
+						)
+					);
+					$interviews_query = new WP_Query($args);
+					if ( $interviews_query->have_posts() ) {
+
+						echo '<a href="'.home_url().'/interviewed-book/'.$term_slug.'" class="btn">Read the interviews</a>';
+						
+					}
 
 		?>
 		</main><!-- #main -->

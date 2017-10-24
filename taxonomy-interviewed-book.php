@@ -41,7 +41,24 @@ get_header(); ?>
 
 			$term_slug = get_queried_object()->slug;
 
-			echo '<a href="'.home_url().'/reviewed-book/'.$term_slug.'" class="btn">Read the reviews</a>';
+			// Query this book's interviews
+					$args = array(
+						'post_type' 			=> 'reviews',
+						'posts_per_page' 	=> 1,
+						'tax_query' 			=> array(
+							array(
+								'taxonomy' 	=> 'reviewed-book',
+								'field'			=> 'slug',
+								'terms'			=> $term_slug
+							)
+						)
+					);
+					$reviews_query = new WP_Query($args);
+					if ( $reviews_query->have_posts() ) {
+
+						echo '<a href="'.home_url().'/reviewed-book/'.$term_slug.'" class="btn">Read the reviews</a>';
+						
+					}
 
 		?>
 		</main><!-- #main -->

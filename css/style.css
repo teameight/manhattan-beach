@@ -677,6 +677,18 @@ a.btn {
   100% {
     transform: rotate(1440deg) translateX(1.8%) rotate(-1440deg); } }
 
+@keyframes arrow-wobble {
+  0% {
+    transform: rotate(45deg) translateX(4.8px) rotate(0deg); }
+  25% {
+    transform: rotate(405deg) translateX(8.4px) rotate(-357deg); }
+  55% {
+    transform: rotate(765deg) translateX(4.2px) rotate(-724deg); }
+  80% {
+    transform: rotate(1125deg) translateX(8px) rotate(-1074.5deg); }
+  100% {
+    transform: rotate(1485deg) translateX(4.8px) rotate(-1440deg); } }
+
 #page-wrap .bottom {
   width: 100%;
   height: 1px; }
@@ -852,6 +864,26 @@ a.btn {
   .above .canvas-wrap {
     /*opacity:0;*/ }
 
+.go-down {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  position: absolute;
+  top: 20vw;
+  pointer-events: all;
+  cursor: pointer; }
+  .go-down span {
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    transform: rotateZ(45deg);
+    border-bottom: 2px #83969a solid;
+    border-right: 2px #83969a solid;
+    animation: arrow-wobble 25s infinite linear;
+    pointer-events: all;
+    cursor: pointer; }
+
 #detritus-canvas {
   position: fixed;
   /* 	position: relative; */
@@ -913,6 +945,11 @@ a.btn {
   .node-wrapper h3 {
     text-align: left;
     color: #bdccd4; }
+  .node-wrapper > a {
+    position: absolute;
+    top: -280vh; }
+  .node-wrapper.nw-0 > a {
+    top: -80vh; }
   .node-wrapper .camera {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;

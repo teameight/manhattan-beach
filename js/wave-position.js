@@ -505,6 +505,23 @@ function drawWave(t) {
 				airLinesInit();
 			}
 		} else {
+
+
+		$('#godown').click(function(event){
+			var firstNodeTop;
+			if(isMobile){
+				firstNodeTop = nodeWrapperOffsets['node-wrapper'].top;
+			}else{
+				firstNodeTop = nodeWrapperOffsets['nw-0'].top - windowH;
+			}
+			$('html, #body').animate({
+          scrollTop: firstNodeTop
+        }, 2500, function() {
+        	
+        });
+		});
+
+
 			$bodyDiv.scroll(function() {
 			// "Disable" the horizontal scroll.
         if ($bodyDiv.scrollLeft() !== 0) {
@@ -667,7 +684,7 @@ function drawWave(t) {
 						trigger = null;
 		    })
 		    .on('tapmove', '.spin.here', function (e, touch) {
-
+					
 		        if(trigger) {
 
 		        	var object = $(this);
@@ -687,7 +704,7 @@ function drawWave(t) {
 								offsetX = startX + (offset_percent)*10;
 
 								offsetY = startY + (offset_percent)*60;
-								if(offsetY > -8 && offsetY < 8){
+								if(offsetY > -12 && offsetY < 12){
 									offsetY = 0;
 									offsetX = 0;
 								}
@@ -696,6 +713,23 @@ function drawWave(t) {
 
 							}
 		        }
+		    })
+		    .on('tap', '.spin.here', function() {
+		    	
+		        	var object = $(this);
+		        	posx = $( this ).data('posx'),
+				  		posy = $( this ).data('posy'),
+				  		posz = $( this ).data('posz');
+
+				  		posx = posx || 0;
+				  		posy = posy || 0;
+				  		posz = posz || 0;
+
+								offsetY = 0;
+								offsetX = 0;
+
+								object.css('transform', 'translate3d(' + posx + 'vw , ' + posy + 'vw, ' + posz + 'vw) rotateX(' + offsetX + 'deg) rotateY(' + offsetY + 'deg)');
+
 		    });
 				// 	END SKULL GRAB AND ROTATE
 
@@ -816,7 +850,7 @@ function drawWave(t) {
 					if(windowW < 900){
 		      	imgSize = $(this).data( "bgimgsm" );
 		      }
-		      console.log(imgSize);
+		      // console.log(imgSize);
 			  	$(this).find('.imgbox').css({
 		    		'background-image': 'url(' + imgSize + ')'
 		    	});
@@ -850,15 +884,13 @@ function drawWave(t) {
 			      .addClass('nw-0')
 			      .appendTo( $underwater );
 
-			      console.log(t);
-
 		      var o = 0;
 
 				  tier.nodes.forEach(function(node, n) {
 				  	if ( n > 0 ) {
 							o = o+1.5;
 				  	}
-				  	console.log(n);
+				  	// console.log(n);
 				    var node = tier.nodes[n];
 				    var thisSlug = node.slug;
 				    var thisLabel = node.label;
@@ -907,7 +939,7 @@ function drawWave(t) {
 					        	imgSize = bgimgsm;
 					        }
 					        if(obj.image && n < 2){
-					        	console.log(imgSize);
+					        	// console.log(imgSize);
 					        	$('.nw-0 .object-' + n + '-' + i + ' .imgbox').css({
 					        		'background-image': 'url(' + imgSize + ')'
 					        	});
@@ -1042,10 +1074,10 @@ function drawWave(t) {
 		function getNodeWrapperOffsets(){
 
 			if(isMobile){
-				nodeWrapperOffsets['node-wrapper'] = {top: $('.node-wrapper').offset().top, margin: $('.node-wrapper').css('margin-top'), height: $('.node-wrapper .node').outerHeight()};
+				nodeWrapperOffsets['node-wrapper'] = {top: $('.node-wrapper').offset().top + windowH, margin: $('.node-wrapper').css('margin-top'), height: $('.node-wrapper .node').outerHeight()};
 			}else{
 				uwNodes.forEach(function(tier, t) {
-				nodeWrapperOffsets['nw-' + t] = {top: $('.nw-'+t).offset().top, margin: $('.nw-'+t).css('margin-top'), height: $('.nw-'+t+ ' .node').outerHeight()};
+				nodeWrapperOffsets['nw-' + t] = {top: $('.nw-'+t).offset().top + windowH, margin: $('.nw-'+t).css('margin-top'), height: $('.nw-'+t+ ' .node').outerHeight()};
 				});
 			}
 

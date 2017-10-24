@@ -21,6 +21,15 @@
     color:$lt-blue;
   }
 
+  > a {
+    position: absolute;
+    top: -280vh;
+  }
+
+  &.nw-0 > a {
+    top: -80vh;
+  }
+
 /*
   .above & {
     visibility: hidden;
