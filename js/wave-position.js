@@ -510,7 +510,11 @@ function drawWave(t) {
 		$('#godown').click(function(event){
 			var firstNodeTop;
 			if(isMobile){
-				firstNodeTop = nodeWrapperOffsets['node-wrapper'].top;
+				if($('.iphone').length){
+					firstNodeTop = nodeWrapperOffsets['node-wrapper'].top + windowH*1.75;
+				}else{
+					firstNodeTop = nodeWrapperOffsets['node-wrapper'].top + windowH*.75;
+				}
 			}else{
 				firstNodeTop = nodeWrapperOffsets['nw-0'].top - windowH;
 			}
@@ -533,25 +537,27 @@ function drawWave(t) {
 				if(!isUnderWater){
 					isUnderWater = true;
 					$('body').removeClass('above').addClass('below');
+					$('.uw-hud').addClass('show');
 				}
 			}else{
 				if(isUnderWater){
 					isUnderWater = false;
 					$('body').removeClass('below').addClass('above');
-				}
-			}
-
-			if(newScrollTop > windowH*2){
-				if(!showFootMenu){
-					showFootMenu = true;
-					$('.uw-hud').addClass('show');
-				}
-			}else{
-				if(showFootMenu){
-					showFootMenu = false;
 					$('.uw-hud').removeClass('show');
 				}
 			}
+
+			// if(newScrollTop > windowH*2){
+			// 	if(!showFootMenu){
+			// 		showFootMenu = true;
+			// 		$('.uw-hud').addClass('show');
+			// 	}
+			// }else{
+			// 	if(showFootMenu){
+			// 		showFootMenu = false;
+			// 		$('.uw-hud').removeClass('show');
+			// 	}
+			// }
 
 			var newTierKey = false;
 
