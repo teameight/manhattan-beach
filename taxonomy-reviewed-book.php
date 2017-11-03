@@ -59,6 +59,7 @@ get_header(); ?>
 						echo '<a href="'.home_url().'/interviewed-book/'.$term_slug.'" class="btn">Read the interviews</a>';
 						
 					}
+					echo ' <a style="float:right; margin-top: 1em;" href="'.home_url().'/books/'.$term_slug.'">Back to '.single_term_title('', false).'</a>';
 
 		?>
 		</main><!-- #main -->
