@@ -509,14 +509,28 @@ function drawWave(t) {
 
 		$('#godown').click(function(event){
 			var firstNodeTop;
+			var downOffset = 1;
+
 			if(isMobile){
-				if($('.iphone').length){
-					firstNodeTop = nodeWrapperOffsets['node-wrapper'].top + windowH*1.75;
+
+				if($('.home').length){
+					downOffset = 1.6;
+					console.log('home');
 				}else{
-					firstNodeTop = nodeWrapperOffsets['node-wrapper'].top + windowH*.75;
+					downOffset = .25;
 				}
+
+				firstNodeTop = nodeWrapperOffsets['node-wrapper'].top + windowH*downOffset;
+				console.log('mobile');
+				console.log(downOffset);
 			}else{
-				firstNodeTop = nodeWrapperOffsets['nw-0'].top - windowH;
+
+				if($('.home').length){
+					downOffset = .5;
+					console.log('home');
+				}
+				firstNodeTop = nodeWrapperOffsets['nw-0'].top - windowH*downOffset;
+				console.log(downOffset);
 			}
 			$('html, #body').animate({
           scrollTop: firstNodeTop
