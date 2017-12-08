@@ -2421,7 +2421,13 @@ var uwNodes = [
 						'rotx':-5,
 						'rotz':0,
 						'content':'<div class="layer-1"><img alt="" src="' + imgRoot + '\/noah_scalin\/jenny-1.png"><\/div><div class="layer-2"><img alt="" src="' + imgRoot + '\/noah_scalin\/jenny-2.png"><\/div><div class="layer-3"><img alt="" src="' + imgRoot + '\/noah_scalin\/jenny-3.png"><\/div><div class="layer-4"><img alt="" src="' + imgRoot + '\/noah_scalin\/jenny-4.png"><\/div>'
-					},
+					}
+				]
+			},
+			{
+				'slug':'contact',
+				'label': '',
+				'objects': [
 					{
 						'class':'video',
 						'posx':0,
@@ -2434,22 +2440,6 @@ var uwNodes = [
 						'content':'<div class="imgwrap"><div class="imgloader"><img src="http:\/\/res.cloudinary.com\/egan\/image\/upload\/floating\/gears-load.png" \/><\/div><div class="imgbox"><\/div><\/div>',
 						'orientation': 'landscape',
 						'video':'<iframe src="https://player.vimeo.com/video/241172083" width="640" height="360" frameborder="0"></iframe>'
-					}
-				]
-			},
-			{
-				'slug':'contact',
-				'label': '',
-				'objects': [
-					{
-						'class':'text',
-						'posx':0,
-						'posy':0,
-						'posz':0,
-						'roty':0,
-						'rotx':0,
-						'rotz':0,
-						'content':''
 					}
 				]
 			}
