@@ -20,7 +20,7 @@ var uwNodes = [
 						'roty':0,
 						'rotx':0,
 						'rotz':0,
-						'content':'<p>Anna watched the sea. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
+						'content':'<p>Anna watched the sea. There was a feeling she had, standing at its edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
 					},
 					{
 						'class':'text',
@@ -2554,7 +2554,7 @@ var uwNodesMobile = [
 						'roty':0,
 						'rotx':0,
 						'rotz':0,
-						'content':'<p>Anna watched the sea. There was a feeling she had, standing at it&rsquo;s edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
+						'content':'<p>Anna watched the sea. There was a feeling she had, standing at its edge: an electric mix of attraction and dread. What would be exposed if all the water were suddenly to vanish?<\/p>'
 					},
 					{
 						'class':'text',
